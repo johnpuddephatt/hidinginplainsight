@@ -34,3 +34,4 @@ collections:
         media_library:
           config:
             multiple: true
+            folder: hidinginplainsight
