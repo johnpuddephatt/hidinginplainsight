@@ -25,9 +25,9 @@ collections:
         widget: image
       - { label: 'Description', name: 'description', widget: 'text'}
       - { label: 'Extended description', name: 'description_extended', widget: 'markdown', buttons: ["bold", "italic", "link"]}
-      - label: "Photos"
-        name: "photos"
-        widget: "image"
+      - label: Photos
+        name: photo
+        widget: image
         media_library:
           config:
-          multiple: true
+            multiple: true
