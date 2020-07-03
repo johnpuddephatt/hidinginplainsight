@@ -1,0 +1,23 @@
+{
+  "name": "hidinginplainsight",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnpuddephatt/hidinginplainsight.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnpuddephatt/hidinginplainsight/issues"
+  },
+  "homepage": "https://github.com/johnpuddephatt/hidinginplainsight#readme"
+}
