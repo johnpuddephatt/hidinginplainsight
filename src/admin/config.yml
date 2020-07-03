@@ -7,6 +7,7 @@ media_library:
   config:
     cloud_name: hpph
     api_key: 732351866945655
+    folder: hidinginplainsight
 media_folder: 'src/uploads'
 public_folder: "/uploads"
 collections:
