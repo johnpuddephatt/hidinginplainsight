@@ -2,6 +2,11 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: hpph
+    api_key: 732351866945655
 media_folder: 'src/uploads'
 public_folder: "/uploads"
 collections:
@@ -26,8 +31,5 @@ collections:
         widget: image
         required: false
         media_library:
-          name: cloudinary
           config:
-            cloud_name: hpph
-            api_key: 732351866945655
             multiple: true
