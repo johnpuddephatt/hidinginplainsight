@@ -22,6 +22,13 @@ collections:
       - {label: 'Name', name: 'title', widget: 'string' }
       - {label: 'Opening date', name: 'date_open', widget: 'string', hint: 'Leave blank if unknown', required: false  }
       - {label: 'Closing date', name: 'date_close', widget: 'string', hint: 'Leave blank if unknown', required: false }
+      - {label: 'Closing date', name: 'date_close', widget: 'string', hint: 'Leave blank if unknown', required: false }
+      - {label: "Location", name: "location", widget: "map", required: false }
+      - {label: 'Address or location description', name: 'address', widget: 'string', required: false }
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        options: ["Open", "Closed", "Demolished"]
       - label: Image
         name: image
         widget: image
