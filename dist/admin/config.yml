@@ -24,7 +24,7 @@ collections:
         name: image
         widget: image
       - { label: 'Description', name: 'description', widget: 'text'}
-      - { label: 'Extended description', name: 'description_extended', widget: 'markdown', buttons: '["bold", "italic", "link"]'}
+      - { label: 'Extended description', name: 'description_extended', widget: 'markdown', buttons: ["bold", "italic", "link"]}
       - label: "Photos"
         name: "photos"
         widget: "image"
