@@ -1,5 +1,5 @@
 ---
-name: Test cinema
+title: Test cinema
 date_open: "1975"
 date_close: "2017"
 image: https://res.cloudinary.com/hpph/image/fetch/v1580767173/https://hydeparkpicturehouse.co.uk/storage/thumbnails/e09a3926c3a27fae703c8498482a848e.jpg

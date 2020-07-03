@@ -17,7 +17,7 @@ collections:
     editor:
       preview: false
     fields:
-      - {label: 'Name', name: 'name', widget: 'string' }
+      - {label: 'Name', name: 'title', widget: 'string' }
       - {label: 'Opening date', name: 'date_open', widget: 'string', hint: 'Leave blank if unknown'  }
       - {label: 'Closing date', name: 'date_close', widget: 'string', hint: 'Leave blank if unknown' }
       - label: Image
