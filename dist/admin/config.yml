@@ -1,0 +1,33 @@
+# config.yml
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: hpph
+    api_key: 732351866945655
+media_folder: 'src/uploads'
+public_folder: "/uploads"
+collections:
+  - name: 'cinemas'
+    label: 'Cinemas'
+    folder: 'src/cinemas'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: 'Name', name: 'name', widget: 'string' }
+      - {label: 'Opening date', name: 'date_open', widget: 'string', hint: 'Leave blank if unknown'  }
+      - {label: 'Closing date', name: 'date_close', widget: 'string', hint: 'Leave blank if unknown' }
+      - label: Image
+        name: image
+        widget: image
+      - { label: 'Description', name: 'description', widget: 'text'}
+      - { label: 'Extended description', name: 'description_extended', widget: 'markdown', buttons: '["bold", "italic", "link"]'}
+      - label: "Photos"
+        name: "photos"
+        widget: "image"
+        media_library:
+          config:
+          multiple: true

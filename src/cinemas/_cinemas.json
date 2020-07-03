@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/cinema.njk",
+  "permalink": "/cinema/{{ name | slug }}/index.html"
+}
