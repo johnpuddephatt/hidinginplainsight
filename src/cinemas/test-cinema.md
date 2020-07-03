@@ -2,6 +2,8 @@
 title: Test cinema
 date_open: "1975"
 date_close: "2017"
+location: '{"type":"Point","coordinates":[-1.5692493,53.8120951]}'
+status: Open
 image: https://res.cloudinary.com/hpph/image/fetch/v1580767173/https://hydeparkpicturehouse.co.uk/storage/thumbnails/e09a3926c3a27fae703c8498482a848e.jpg
 description: This is a short description
 description_extended: This is something longer
