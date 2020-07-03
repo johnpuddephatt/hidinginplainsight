@@ -18,16 +18,18 @@ collections:
       preview: false
     fields:
       - {label: 'Name', name: 'title', widget: 'string' }
-      - {label: 'Opening date', name: 'date_open', widget: 'string', hint: 'Leave blank if unknown'  }
-      - {label: 'Closing date', name: 'date_close', widget: 'string', hint: 'Leave blank if unknown' }
+      - {label: 'Opening date', name: 'date_open', widget: 'string', hint: 'Leave blank if unknown', required: false  }
+      - {label: 'Closing date', name: 'date_close', widget: 'string', hint: 'Leave blank if unknown', required: false }
       - label: Image
         name: image
         widget: image
-      - { label: 'Description', name: 'description', widget: 'text'}
-      - { label: 'Extended description', name: 'description_extended', widget: 'markdown', buttons: ["bold", "italic", "link"]}
+        required: false
+      - { label: 'Description', name: 'description', widget: 'text', required: false}
+      - { label: 'Extended description', name: 'description_extended', widget: 'markdown', buttons: ["bold", "italic", "link"], required: false}
       - label: Photos
         name: photo
         widget: image
+        required: false
         media_library:
           config:
             multiple: true
