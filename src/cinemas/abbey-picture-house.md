@@ -10,14 +10,9 @@ description: "Taking its name from the adjacent Kirkstall Abbey, the cinema
   orchestral balcony. After closure in 1960, the building had a stint as a bingo
   hall, and today functions as a recruitment centre. "
 description_extended: >-
-  <!--StartFragment-->
-
-
-  According to local legend, in the early days a farmer would routinely visit the cinema on horseback, leaving the steed pitched outside during screenings.
+  According to local legend, in the early days a farmer would routinely visit
+  the cinema on horseback, leaving the steed pitched outside during screenings.
 
 
   Sources used: City of Leeds Directory 1961, Barret's Publications LTD
-
-
-  <!--EndFragment-->
 ---
