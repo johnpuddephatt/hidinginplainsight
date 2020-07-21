@@ -1,6 +1,7 @@
 ---
 title: Cottage Road
 date_open: "1912"
+date_close: Present
 status: Open
 location: '{"type":"Point","coordinates":[-1.5816638,53.8268865]}'
 address: " Cottage Rd, Leeds LS6 4DD"
