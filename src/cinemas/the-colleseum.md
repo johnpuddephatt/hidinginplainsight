@@ -1,5 +1,5 @@
 ---
-title: The Colleseum
+title: The Coliseum
 date_open: "1908"
 date_close: "1961"
 status: Closed
