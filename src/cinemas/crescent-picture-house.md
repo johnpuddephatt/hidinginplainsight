@@ -3,7 +3,7 @@ title: Crescent Picture House
 date_open: "1921"
 date_close: "1968"
 status: Closed
-location: '{"type":"Point","coordinates":[-1.5692493,53.8120951]}'
+location: '{"type":"Point","coordinates":[-1.5468326,53.7730578]}'
 address: 295 Dewsbury Road, Leeds, West Yorkshire, LS11 5LS.
 description: Opening in 1921, the purpose-built Crescent cinema featured a large
   organ and an impressive 1158 seating capacity. Like many other cinemas, it is
