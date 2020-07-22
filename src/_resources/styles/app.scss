@@ -1,0 +1,27 @@
+@import 'base';
+
+#app {
+  height: 100vh;
+  position: relative;
+}
+
+.primary-navigation {
+  background-color: $blue;
+  padding: ms(1) ms(2);
+  line-height: ms(1);
+}
+
+.sidebar {
+  width: $sidebar-width;
+  height: calc(100vh - #{3 * ms(1)});
+  background-color: white;
+  padding: ms(1) ms(2);
+  border-right: 1px solid lightgray;
+  float: left;
+}
+
+.leaflet-container {
+  float: left;
+  width: calc(100vw - #{$sidebar-width}) !important;
+  height: calc(100vh - #{3 * ms(1)}) !important;
+}
