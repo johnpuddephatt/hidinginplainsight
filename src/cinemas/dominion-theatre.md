@@ -7,7 +7,7 @@ location: '{"type":"Point","coordinates":[-1.5311269,53.8269743]}'
 address: Montreal Avenue
 description: This large 1539-seat cinema opened in 1934, and included facilities
   for theatrical productions (such as changing rooms), though apparately they
-  were rarely used. The cinema closed in 1967, entered bingo hall purgatory and
+  were rarely used. The cinema closed in 1967, became a bingo hall and
   eventually burned down. The plot has since been developed over.
 description_extended: The cinema was likely named Dominion in reference to the
   adjacent streets all being named after Canadian cities (Montreal Avenue etc);
