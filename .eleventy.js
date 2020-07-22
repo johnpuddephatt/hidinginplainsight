@@ -3,12 +3,18 @@ module.exports = function(eleventyConfig) {
   // Copy files
   eleventyConfig.addPassthroughCopy('./src/admin');
   eleventyConfig.addPassthroughCopy('./src/assets');
-  // eleventyConfig.addPassthroughCopy({ "./src/favicons/**/*": "./" });
 
   // Collections
   eleventyConfig.addCollection('cinemas', collection => {
     return collection.getFilteredByGlob('./src/cinemas/*.md');
   });
+
+  eleventyConfig.setBrowserSyncConfig({
+     files: [
+       'assets/css',
+       'assets/js'
+     ]
+   });
 
   return {
     dir: {

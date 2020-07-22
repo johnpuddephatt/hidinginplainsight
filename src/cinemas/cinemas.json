@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/cinema.njk",
+  "permalink": "/api/cinema/{{ title | slug }}.json"
+}
