@@ -1975,6 +1975,10 @@ __webpack_require__.r(__webpack_exports__);
     this.getCinema(this.slug);
     var commentoScript = document.createElement('script');
     commentoScript.setAttribute('src', 'https://commento.letsdance.agency/js/commento.js');
+    commentoScript.setAttribute('data-hide-deleted', true);
+    commentoScript.setAttribute('data-page-id', "/cinema/".concat(this.slug));
+    commentoScript.setAttribute('data-no-fonts', true);
+    commentoScript.setAttribute('data-auto-init', false);
     var commentoPlaceholder = document.getElementById('commento');
     commentoPlaceholder.parentNode.appendChild(commentoScript);
   },

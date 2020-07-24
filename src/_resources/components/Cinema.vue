@@ -51,6 +51,7 @@ export default {
     commentoScript.setAttribute('data-hide-deleted', true);
     commentoScript.setAttribute('data-page-id', `/cinema/${this.slug}`);
     commentoScript.setAttribute('data-no-fonts', true);
+    commentoScript.setAttribute('data-auto-init', false);
     let commentoPlaceholder = document.getElementById('commento');
     commentoPlaceholder.parentNode.appendChild(commentoScript);
   },
