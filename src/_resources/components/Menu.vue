@@ -1,8 +1,8 @@
 <template>
   <div class="sidebar">
     <h2 class="sidebar--title">Cinemas</h2>
-    <nav class="sidebar-menu">
-      <router-link :to="{ name: 'cinema', params: { slug: cinema.slug } }" class="sidebar-menu--item" :ref="cinema.slug" @mouseover.native="mouseoverStart($event, cinema.slug)" @mouseleave.native="mouseoverCancel()" v-for="cinema in cinemas" :key="cinema.slug">
+    <nav class="sidebar-menu" @mouseleave="mouseoverCancel()">
+      <router-link :to="{ name: 'cinema', params: { slug: cinema.slug } }" class="sidebar-menu--item" :ref="cinema.slug" @mouseover.self.native.self="mouseoverStart($event, cinema.slug)" v-for="cinema in cinemas" :key="cinema.slug">
         <h3 class="sidebar-menu--title">{{ cinema.title }}</h3>
       </router-link>
     </nav>
@@ -26,7 +26,9 @@ export default {
         this.clearActiveMenuElement();
         if(hoveredMenuElement) {
           hoveredMenuElement.classList.add('active');
-          hoveredMenuElement.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+          if(!this.currentlyHovered) {
+            hoveredMenuElement.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+          }
         }
       }
     }
@@ -44,9 +46,8 @@ export default {
       setTimeout(() => {
         if(this.currentlyHovered === slug ) {
           this.clearActiveMenuElement();
-          let hoveredMenuElement = this.$refs[slug][0].$el;
-          hoveredMenuElement.classList.add('active');
-          this.$emit('menu-hovered', slug);
+          this.$refs[slug][0].$el.classList.add('active');
+          this.$emit('menu-hovered',slug);
         }
       },1000);
     },
@@ -59,10 +60,20 @@ export default {
 </script>
 
 <style lang="scss">
+
 @import '../styles/base.scss';
 
 .sidebar {
   overflow-y: auto;
+  background-color: white;
+  padding: ms(1) ms(2);
+  height: calc(100vh - 100vw);
+
+  @media screen and (orientation: landscape) {
+    border-right: 1px solid lightgray;
+    width: $sidebar-width;
+    height: calc(100vh - #{3 * ms(1)});
+  }
 }
 
 .sidebar--title {

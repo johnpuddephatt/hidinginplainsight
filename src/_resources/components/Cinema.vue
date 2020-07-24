@@ -7,6 +7,8 @@
       <h2>{{ cinema.title }}</h2>
       <p>{{ cinema.description }}</p>
     </div>
+    <div id="commento"></div>
+
   </div>
 </template>
 
@@ -43,7 +45,17 @@ export default {
   },
   mounted () {
     this.getCinema(this.slug);
+
+    let commentoScript = document.createElement('script');
+    commentoScript.setAttribute('src', 'https://commento.letsdance.agency/js/commento.js');
+    let commentoPlaceholder = document.getElementById('commento');
+    commentoPlaceholder.parentNode.appendChild(commentoScript);
+
+  },
+  beforeDestroy() {
+    window.commento = null;
   }
+
 }
 </script>
 

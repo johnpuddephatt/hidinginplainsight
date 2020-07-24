@@ -1,7 +1,7 @@
 <template>
   <div class="map-wrapper">
-    <Menu v-if="cinemas" :cinemas="cinemas" :hovered="hovered" @menu-hovered="onMenuHovered()"></Menu>
-    <Map v-if="cinemas" :cinemas="cinemas"  :hovered="hovered" @marker-clicked="onMarkerClicked()" @marker-hovered="onMarkerHovered"></Map>
+    <Menu v-if="cinemas" :cinemas="cinemas" :hovered="hovered" @menu-hovered="onMenuHovered"></Menu>
+    <Map v-if="cinemas" :cinemas="cinemas"  :hovered="hovered" @marker-clicked="onMarkerClicked" @marker-hovered="onMarkerHovered"></Map>
     <router-view></router-view>
   </div>
 </template>
@@ -27,7 +27,9 @@ export default {
   },
   methods: {
     onMarkerClicked: function(slug) {
-      this.$router.push({ name: 'cinema', params: { slug: slug } })
+      if(slug != this.$route.params.slug) {
+        this.$router.push({ name: 'cinema', params: { slug: slug } })
+      }
     },
     onMarkerHovered: function(slug) {
       this.hovered = slug;
@@ -51,6 +53,14 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 
+.map-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media screen and (orientation: landscape) {
+    flex-direction: row;
+  }
+}
 </style>
