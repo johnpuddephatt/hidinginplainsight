@@ -6,9 +6,8 @@
     <div v-else>
       <h2>{{ cinema.title }}</h2>
       <p>{{ cinema.description }}</p>
+      <div id="commento"></div>
     </div>
-    <div id="commento"></div>
-
   </div>
 </template>
 
@@ -51,7 +50,7 @@ export default {
     commentoScript.setAttribute('data-hide-deleted', true);
     commentoScript.setAttribute('data-page-id', `/cinema/${this.slug}`);
     commentoScript.setAttribute('data-no-fonts', true);
-    commentoScript.setAttribute('data-auto-init', false);
+    commentoScript.setAttribute('data-auto-init', true);
     let commentoPlaceholder = document.getElementById('commento');
     commentoPlaceholder.parentNode.appendChild(commentoScript);
   },
