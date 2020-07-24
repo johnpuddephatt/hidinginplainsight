@@ -34,26 +34,32 @@ export default {
       axios
         .get(`/api/cinema/${ slug }.json`)
         .then(response => {
-          this.cinema = response.data
+          this.cinema = response.data;
         })
         .catch(error => {
           console.log(error)
           this.errored = true
         })
-        .finally(() => this.cinemaLoaded = true)
+        .finally(() => {
+          this.cinemaLoaded = true;
+          this.loadCommento();
+        })
+    },
+    loadCommento() {
+      let commentoScript = document.createElement('script');
+      commentoScript.setAttribute('src', 'https://commento.letsdance.agency/js/commento.js');
+      commentoScript.setAttribute('data-hide-deleted', true);
+      commentoScript.setAttribute('data-page-id', `/cinema/${this.slug}`);
+      commentoScript.setAttribute('data-no-fonts', true);
+      commentoScript.setAttribute('data-auto-init', true);
+      let commentoPlaceholder = document.getElementById('commento');
+      commentoPlaceholder.parentNode.appendChild(commentoScript);
     }
   },
   mounted () {
     this.getCinema(this.slug);
 
-    let commentoScript = document.createElement('script');
-    commentoScript.setAttribute('src', 'https://commento.letsdance.agency/js/commento.js');
-    commentoScript.setAttribute('data-hide-deleted', true);
-    commentoScript.setAttribute('data-page-id', `/cinema/${this.slug}`);
-    commentoScript.setAttribute('data-no-fonts', true);
-    commentoScript.setAttribute('data-auto-init', true);
-    let commentoPlaceholder = document.getElementById('commento');
-    commentoPlaceholder.parentNode.appendChild(commentoScript);
+
   },
   beforeDestroy() {
     window.commento = null;
