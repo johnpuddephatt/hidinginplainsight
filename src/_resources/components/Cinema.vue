@@ -42,7 +42,9 @@ export default {
         })
         .finally(() => {
           this.cinemaLoaded = true;
-          this.loadCommento();
+          this.$nextTick(function () {
+            this.loadCommento();
+          });
         })
     },
     loadCommento() {
@@ -52,7 +54,7 @@ export default {
       commentoScript.setAttribute('data-page-id', `/cinema/${this.slug}`);
       commentoScript.setAttribute('data-no-fonts', true);
       commentoScript.setAttribute('data-auto-init', true);
-      
+
       this.$refs.commento.parentNode.appendChild(commentoScript);
     }
   },
