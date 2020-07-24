@@ -4,19 +4,22 @@
       Loading...
     </div>
     <div v-else>
-      •
       <h2>{{ cinema.title }}</h2>
       <p>{{ cinema.description }}</p>
-      <div ref="commento" id="commento"></div>
+      <commento :slug="slug"></commento>
     </div>
   </div>
 </template>
 
 <script>
+import Commento from './Commento.vue';
+
 export default {
   name: 'Cinema',
   props: ['slug'],
-  components: {},
+  components: {
+    Commento
+  },
   data() {
     return {
       cinemaLoaded: false,
@@ -42,31 +45,12 @@ export default {
         })
         .finally(() => {
           this.cinemaLoaded = true;
-          this.$nextTick(function () {
-            this.loadCommento();
-          });
         })
-    },
-    loadCommento() {
-      let commentoScript = document.createElement('script');
-      commentoScript.setAttribute('src', 'https://commento.letsdance.agency/js/commento.js');
-      commentoScript.setAttribute('data-hide-deleted', true);
-      commentoScript.setAttribute('data-page-id', `/cinema/${this.slug}`);
-      commentoScript.setAttribute('data-no-fonts', true);
-      commentoScript.setAttribute('data-auto-init', true);
-
-      this.$refs.commento.parentNode.appendChild(commentoScript);
     }
   },
   mounted () {
     this.getCinema(this.slug);
-
-
-  },
-  beforeDestroy() {
-    window.commento = null;
   }
-
 }
 </script>
 

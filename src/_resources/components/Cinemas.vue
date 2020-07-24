@@ -2,7 +2,7 @@
   <div class="map-wrapper">
     <Menu v-if="cinemas" :cinemas="cinemas" :hovered="hovered" @menu-hovered="onMenuHovered"></Menu>
     <Map v-if="cinemas" :cinemas="cinemas"  :hovered="hovered" @marker-clicked="onMarkerClicked" @marker-hovered="onMarkerHovered"></Map>
-    <router-view></router-view>
+    <router-view :key="$route.params.slug"></router-view>
   </div>
 </template>
 
