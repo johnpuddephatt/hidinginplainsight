@@ -4,6 +4,7 @@
       Loading...
     </div>
     <div v-else>
+      •
       <h2>{{ cinema.title }}</h2>
       <p>{{ cinema.description }}</p>
       <div id="commento"></div>
