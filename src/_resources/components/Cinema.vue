@@ -48,9 +48,11 @@ export default {
 
     let commentoScript = document.createElement('script');
     commentoScript.setAttribute('src', 'https://commento.letsdance.agency/js/commento.js');
+    commentoScript.setAttribute('data-hide-deleted', true);
+    commentoScript.setAttribute('data-page-id', `/cinema/${this.slug}`);
+    commentoScript.setAttribute('data-no-fonts', true);
     let commentoPlaceholder = document.getElementById('commento');
     commentoPlaceholder.parentNode.appendChild(commentoScript);
-
   },
   beforeDestroy() {
     window.commento = null;
