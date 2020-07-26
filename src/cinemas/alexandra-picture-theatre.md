@@ -1,5 +1,6 @@
 ---
 title: Alexandra Picture Theatre
+image: '/uploads/Cinemas-02.svg'
 date_open: "1912"
 date_close: "1938"
 status: Demolished
@@ -11,9 +12,7 @@ description: "Converted from a barracks, this cinema was believed to sit around
 description_extended: >-
   Camp Road, where the Alexandra Picture Theatre was located, was renamed when
   the area was redeveloped in the 1950s, it is now called Lovell Park Road and
-  Oatlands Lane.\
-
-  \
+  Oatlands Lane.
 
   Sources: City of Leeds Directory 1961, Barret's Publications LTD, Wikipedia
 ---

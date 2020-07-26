@@ -3,6 +3,7 @@ module.exports = function(eleventyConfig) {
   // Copy files
   eleventyConfig.addPassthroughCopy('./src/admin');
   eleventyConfig.addPassthroughCopy('./src/assets');
+  eleventyConfig.addPassthroughCopy('./src/uploads');
 
   // Collections
   eleventyConfig.addCollection('cinemas', collection => {

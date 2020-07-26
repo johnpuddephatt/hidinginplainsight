@@ -1,7 +1,9 @@
 {% set data = cinema.data %}
 {
   "slug": "{{ title | slug }}",
-  "title": "{{ title }}",
+  "title": "{{ title | safe }}",
+  "image": "{{ image | safe }}",
   "location": {{ location | safe }},
-  "description": "{{ description | safe }}"
+  "description": "{{ description | striptags(false) }}",
+  "description_extended": "{{ description_extended | striptags(false) }}"
 }

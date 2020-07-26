@@ -30,6 +30,10 @@ collections:
         name: image
         widget: image
         required: false
+        media_library:
+          config:
+            media_folder: '/{{media_folder}}/cinemas'
+            public_folder: '{{public_folder}}/cinemas'
       - {label: "Location", name: "location", widget: "map", default: '{"type":"Point","coordinates":[-1.5692493,53.8120951]}', required: false }
       - {label: 'Address or location description', name: 'address', widget: 'string', required: false }
       - { label: 'Description', name: 'description', widget: 'text', required: false}

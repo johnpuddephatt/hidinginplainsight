@@ -4,8 +4,13 @@
       Loading...
     </div>
     <div v-else>
+      <img :src="cinema.image" />
       <h2>{{ cinema.title }}</h2>
-      <p>{{ cinema.description }}</p>
+      <div v-html="cinema.description"></div>
+      <details v-if="cinema.description_extended">
+        <summary>Details</summary>
+        <div v-html="cinema.description_extended"></div>
+      </details>
       <commento :slug="slug"></commento>
     </div>
   </div>
@@ -59,6 +64,7 @@ export default {
 
 .cinema-panel {
   position: fixed;
+  overflow-y: auto;
   padding: ms(2) ms(4);
   top: 3 * ms(1);
   height: calc(100vh - #{3 * ms(1)}) !important;

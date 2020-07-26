@@ -3,7 +3,7 @@
     <h2 class="sidebar--title">Cinemas</h2>
     <nav class="sidebar-menu" @mouseleave="mouseoverCancel()">
       <router-link :to="{ name: 'cinema', params: { slug: cinema.slug } }" class="sidebar-menu--item" :ref="cinema.slug" @mouseover.self.native.self="mouseoverStart($event, cinema.slug)" v-for="cinema in cinemas" :key="cinema.slug">
-        <h3 class="sidebar-menu--title">{{ cinema.title }}</h3>
+        <h3 class="sidebar-menu--title" v-html="cinema.title"></h3>
       </router-link>
     </nav>
   </div>

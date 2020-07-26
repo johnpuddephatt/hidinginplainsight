@@ -1,5 +1,6 @@
 ---
 title: Abbey Picture House
+image: '/uploads/Cinemas-01.svg'
 date_open: "1913"
 date_close: "1960"
 status: Closed
