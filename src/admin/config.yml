@@ -10,8 +10,8 @@ media_library:
     api_key: 732351866945655
     folder:
       path: 'hidinginplainsight'
-media_folder: 'src/uploads'
-public_folder: "/uploads"
+# media_folder: 'src/uploads'
+# public_folder: "/uploads"
 collections:
   - name: 'cinemas'
     label: 'Cinemas'
