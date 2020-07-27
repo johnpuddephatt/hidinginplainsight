@@ -3,6 +3,7 @@ title: Burley Picture House
 date_open: "1913"
 date_close: "1959"
 status: Demolished
+image: /uploads/Cinemas-01.svg
 location: '{"type":"Point","coordinates":[-1.5742314,53.8057387]}'
 address: 185 Burley Road
 description: Opened in 1913, the Burley Picture House was colloqually known as
