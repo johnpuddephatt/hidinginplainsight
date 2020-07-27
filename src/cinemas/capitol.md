@@ -3,7 +3,7 @@ title: Capitol
 date_open: "1922"
 date_close: "1968"
 status: Demolished
-image: /uploads/Cinemas-01.svg
+image: /uploads/01.svg
 location: '{"type":"Point","coordinates":[-1.5681106,53.8282717]}'
 description: "Opened in 1922, the Capitol Cinema and Ballroom Complex seemed to
   have been a rather large site, the cinema is said to have had 1294 setas.
