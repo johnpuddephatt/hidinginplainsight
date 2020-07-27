@@ -2,9 +2,9 @@
   <div class="loading-wrapper">
     <div class="loading-inner">
       <div class="welcome">
-        <h1>Hiding in Plain Sight</h1>
-        <p>Uncovering the history of cinema in Leeds</p>
-        <router-link :to="{ name: 'cinemas'}">Enter</router-link>
+        <h1>Hiding in<br> Plain Sight</h1>
+        <p>Discovering the lost cinemas of Leeds</p>
+        <router-link class="enter-link" :to="{ name: 'cinemas'}">Enter</router-link>
       </div>
       <div class=""></div>
       <div class="double-width no-delay"></div>
@@ -95,22 +95,22 @@ export default {
     display: grid;
     top: 0;
     grid-auto-rows: 14.28vh;
-    grid-template-columns: repeat(5, 14.28vh);
+    grid-template-columns: repeat(4, 14.28vh);
     grid-auto-flow: row dense;
     animation: downScroll 8s forwards cubic-bezier(.11,0,.92,.98);
     transform: translateY(-105%);
 
     @media screen and (orientation: landscape) {
       top: auto;
-      bottom: 0;
+      bottom: auto;
       direction: rtl;
       right: 0;
-      grid-auto-columns: 12.5vw;
+      grid-auto-columns: 10vw;
       grid-auto-rows: none;
       grid-template-columns: none;
-      grid-template-rows: repeat(4, 12.5vw);
+      grid-template-rows: repeat(5, 10vw);
       grid-auto-flow: column dense;
-      animation: sideScroll 12s forwards cubic-bezier(.11,0,.92,.98);
+      animation: sideScroll 8s forwards cubic-bezier(.11,0,.92,.98);
       transform: translateX(105%);
     }
 
@@ -197,23 +197,24 @@ export default {
       }
 
       &.welcome {
+        direction: ltr;
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: center;
-        grid-column-end: span 3;
-        grid-column-start: 2;
-        grid-row-start: 2;
-        grid-row-end: span 5;
+        grid-column-end: span 4;
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-row-end: span 3;
         background-color: white !important;
         transition-delay: 3.5s;
 
         @media screen and (orientation: landscape) {
-          grid-column-end: span 4;
+          grid-column-end: span 6;
           grid-column-start: 3;
           grid-row-start: 2;
-          grid-row-end: span 2;
+          grid-row-end: span 3;
         }
 
         &::after {
@@ -221,10 +222,25 @@ export default {
         }
 
         h1 {
-          font-weight: 700;
-          font-size: ms(3);
+          font-family: mikado;
+          font-weight: 900;
+          font-style: italic;
+          font-size: ms(9);
           margin-bottom: ms(1);
         }
+      }
+    }
+
+    .enter-link {
+      display: inline-block;
+      margin-top: 1em;
+      font-weight: 700;
+      font-size: ms(2);
+
+      &::after {
+        display: inline-block;
+        margin-left: .5em;
+        content: '→';
       }
     }
   }

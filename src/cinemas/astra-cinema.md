@@ -1,6 +1,5 @@
 ---
 title: Astra Cinema
-image: '/uploads/Cinemas-03.svg'
 date_open: "1911"
 date_close: "1946"
 status: Demolished

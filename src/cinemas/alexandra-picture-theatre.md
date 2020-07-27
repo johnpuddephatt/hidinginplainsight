@@ -1,6 +1,5 @@
 ---
 title: Alexandra Picture Theatre
-image: '/uploads/Cinemas-02.svg'
 date_open: "1912"
 date_close: "1938"
 status: Demolished

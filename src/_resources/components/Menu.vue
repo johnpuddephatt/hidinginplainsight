@@ -3,6 +3,7 @@
     <h2 class="sidebar--title">Cinemas</h2>
     <nav class="sidebar-menu" @mouseleave="mouseoverCancel()">
       <router-link :to="{ name: 'cinema', params: { slug: cinema.slug } }" class="sidebar-menu--item" :ref="cinema.slug" @mouseover.self.native.self="mouseoverStart($event, cinema.slug)" v-for="cinema in cinemas" :key="cinema.slug">
+        <img :src="cinema.image" />
         <h3 class="sidebar-menu--title" v-html="cinema.title"></h3>
       </router-link>
     </nav>
@@ -66,11 +67,11 @@ export default {
 .sidebar {
   overflow-y: auto;
   background-color: white;
-  padding: ms(1) ms(2);
+  padding: ms(6) ms(2);
   height: calc(100vh - 100vw);
 
   @media screen and (orientation: landscape) {
-    border-right: 1px solid lightgray;
+    border-right: 1px solid darken($light-blue, 4%);
     width: $sidebar-width;
     height: calc(100vh - #{3 * ms(1)});
   }
@@ -83,21 +84,34 @@ export default {
 }
 
 .sidebar-menu--item {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   cursor: pointer;
-  transition: background-color $base-timing $base-duration;
-  margin-left: -(ms(0));
-  margin-right: -(ms(0));
-  padding: ms(0);
+  transition: background-color $base-timing $base-duration, border $base-timing $base-duration;
+  margin-left: -(ms(0)/2);
+  padding: 0 ms(0)/2 0 0;
+  border-left: ms(0)/2 solid white;
+  margin-bottom: ms(0);
 
   &:hover {
-    background-color: whitesmoke;
+    background-color: $light-blue;
   }
 
   &.active,
   &.router-link-exact-active {
-    outline: 1px solid $orange;
+    border-left-color: $orange;
   }
+
+  img {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-color: $cream;
+    margin-right: ms(0);
+  }
+
+
 }
 
 </style>

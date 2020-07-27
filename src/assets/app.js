@@ -2327,6 +2327,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Menu',
   props: ['cinemas', 'hovered'],
@@ -2398,7 +2399,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".cinema-panel {\n  position: fixed;\n  overflow-y: auto;\n  padding: 2.25rem 5.0625rem;\n  top: 4.5rem;\n  height: calc(100vh - 4.5rem) !important;\n  left: 300px;\n  right: 0;\n  background-color: #fef6dd;\n  z-index: 9999;\n}", ""]);
+exports.push([module.i, "@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-italic-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: italic;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-bold-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-bold-webfont.woff\") format(\"woff\");\n  font-weight: 700;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-regular-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-regular-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"mikado\";\n  src: url(\"/assets/fonts/mikadoblack-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/mikadoblack-italic-webfont.woff\") format(\"woff\");\n  font-weight: 900;\n  font-style: italic;\n}\n* {\n  font-family: karla, sans-serif;\n}\n.cinema-panel {\n  position: fixed;\n  overflow-y: auto;\n  padding: 1.44rem 2.0736rem;\n  top: 3.6rem;\n  height: calc(100vh - 3.6rem) !important;\n  left: 300px;\n  right: 0;\n  background-color: #fef6dd;\n  z-index: 9999;\n}", ""]);
 
 // exports
 
@@ -2436,7 +2437,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-italic-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: italic;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-bold-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-bold-webfont.woff\") format(\"woff\");\n  font-weight: 700;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-regular-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-regular-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"mikado\";\n  src: url(\"/assets/fonts/mikadoblack-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/mikadoblack-italic-webfont.woff\") format(\"woff\");\n  font-weight: 900;\n  font-style: italic;\n}\n* {\n  font-family: karla, sans-serif;\n}", ""]);
 
 // exports
 
@@ -2455,7 +2456,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".loading-wrapper {\n  position: fixed !important;\n  top: 0;\n  left: 0;\n  border: 0.5vw solid white;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  width: 100vw;\n  overflow: hidden;\n  background-color: white;\n}\n.loading-inner {\n  position: absolute;\n  display: grid;\n  top: 0;\n  grid-auto-rows: 14.28vh;\n  grid-template-columns: repeat(5, 14.28vh);\n  grid-auto-flow: row dense;\n  -webkit-animation: downScroll 8s forwards cubic-bezier(0.11, 0, 0.92, 0.98);\n          animation: downScroll 8s forwards cubic-bezier(0.11, 0, 0.92, 0.98);\n  transform: translateY(-105%);\n}\n@media screen and (orientation: landscape) {\n.loading-inner {\n    top: auto;\n    bottom: 0;\n    direction: rtl;\n    right: 0;\n    grid-auto-columns: 12.5vw;\n    grid-auto-rows: none;\n    grid-template-columns: none;\n    grid-template-rows: repeat(4, 12.5vw);\n    grid-auto-flow: column dense;\n    -webkit-animation: sideScroll 12s forwards cubic-bezier(0.11, 0, 0.92, 0.98);\n            animation: sideScroll 12s forwards cubic-bezier(0.11, 0, 0.92, 0.98);\n    transform: translateX(105%);\n}\n}\n.loading-inner div {\n  position: relative;\n  border: 0.5vw solid white;\n  opacity: 0;\n  transition: opacity 0.5s ease-in;\n}\n.loading-inner div::after {\n  position: absolute;\n  top: 10%;\n  left: 10%;\n  right: 10%;\n  bottom: 10%;\n  content: \"\";\n  background-image: url(\"https://static.jdp.org.uk/yogi.svg\");\n  background-position: center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n.loading-inner div.in-view {\n  opacity: 1;\n}\n.loading-inner div.in-view::after {\n  opacity: 1;\n}\n.loading-inner div.double-height {\n  grid-row-end: span 2;\n}\n.loading-inner div.double-width {\n  grid-column-end: span 2;\n}\n.loading-inner div:nth-child(12n+1), .loading-inner div:nth-child(12n+4), .loading-inner div:nth-child(12n+7), .loading-inner div:nth-child(12n+11) {\n  background-color: #FEF8E3;\n}\n.loading-inner div:nth-child(12n+2), .loading-inner div:nth-child(12n+6), .loading-inner div:nth-child(12n+10) {\n  background-color: #FCD88E;\n}\n.loading-inner div:nth-child(12n+12), .loading-inner div:nth-child(12n+5), .loading-inner div:nth-child(12n+9) {\n  background-color: #AED3EE;\n}\n.loading-inner div:nth-child(12n+8), .loading-inner div:nth-child(12n+3) {\n  background-color: #EB7841;\n}\n.loading-inner div.empty {\n  opacity: 0 !important;\n}\n.loading-inner div.empty::after {\n  display: none;\n}\n.loading-inner div.no-delay {\n  transition-delay: 0 !important;\n}\n.loading-inner div:nth-child(4n+2) {\n  transition-delay: 0.2s;\n}\n.loading-inner div:nth-child(4n+3) {\n  transition-delay: 0.8s;\n}\n.loading-inner div:nth-child(4n+4) {\n  transition-delay: 1.6s;\n}\n.loading-inner div.welcome {\n  display: flex;\n  flex-direction: column;\n  text-align: center;\n  justify-content: center;\n  align-items: center;\n  grid-column-end: span 3;\n  grid-column-start: 2;\n  grid-row-start: 2;\n  grid-row-end: span 5;\n  background-color: white !important;\n  transition-delay: 3.5s;\n}\n@media screen and (orientation: landscape) {\n.loading-inner div.welcome {\n    grid-column-end: span 4;\n    grid-column-start: 3;\n    grid-row-start: 2;\n    grid-row-end: span 2;\n}\n}\n.loading-inner div.welcome::after {\n  content: none;\n}\n.loading-inner div.welcome h1 {\n  font-weight: 700;\n  font-size: 3.375rem;\n  margin-bottom: 1.5rem;\n}\n@-webkit-keyframes sideScroll {\n100% {\n    transform: translateX(0%);\n}\n}\n@keyframes sideScroll {\n100% {\n    transform: translateX(0%);\n}\n}\n@-webkit-keyframes downScroll {\n100% {\n    transform: translateY(0%);\n}\n}\n@keyframes downScroll {\n100% {\n    transform: translateY(0%);\n}\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-italic-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: italic;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-bold-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-bold-webfont.woff\") format(\"woff\");\n  font-weight: 700;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-regular-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-regular-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"mikado\";\n  src: url(\"/assets/fonts/mikadoblack-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/mikadoblack-italic-webfont.woff\") format(\"woff\");\n  font-weight: 900;\n  font-style: italic;\n}\n* {\n  font-family: karla, sans-serif;\n}\n.loading-wrapper {\n  position: fixed !important;\n  top: 0;\n  left: 0;\n  border: 0.5vw solid white;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  width: 100vw;\n  overflow: hidden;\n  background-color: white;\n}\n.loading-inner {\n  position: absolute;\n  display: grid;\n  top: 0;\n  grid-auto-rows: 14.28vh;\n  grid-template-columns: repeat(4, 14.28vh);\n  grid-auto-flow: row dense;\n  -webkit-animation: downScroll 8s forwards cubic-bezier(0.11, 0, 0.92, 0.98);\n          animation: downScroll 8s forwards cubic-bezier(0.11, 0, 0.92, 0.98);\n  transform: translateY(-105%);\n}\n@media screen and (orientation: landscape) {\n.loading-inner {\n    top: auto;\n    bottom: auto;\n    direction: rtl;\n    right: 0;\n    grid-auto-columns: 10vw;\n    grid-auto-rows: none;\n    grid-template-columns: none;\n    grid-template-rows: repeat(5, 10vw);\n    grid-auto-flow: column dense;\n    -webkit-animation: sideScroll 8s forwards cubic-bezier(0.11, 0, 0.92, 0.98);\n            animation: sideScroll 8s forwards cubic-bezier(0.11, 0, 0.92, 0.98);\n    transform: translateX(105%);\n}\n}\n.loading-inner div {\n  position: relative;\n  border: 0.5vw solid white;\n  opacity: 0;\n  transition: opacity 0.5s ease-in;\n}\n.loading-inner div::after {\n  position: absolute;\n  top: 10%;\n  left: 10%;\n  right: 10%;\n  bottom: 10%;\n  content: \"\";\n  background-image: url(\"https://static.jdp.org.uk/yogi.svg\");\n  background-position: center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n.loading-inner div.in-view {\n  opacity: 1;\n}\n.loading-inner div.in-view::after {\n  opacity: 1;\n}\n.loading-inner div.double-height {\n  grid-row-end: span 2;\n}\n.loading-inner div.double-width {\n  grid-column-end: span 2;\n}\n.loading-inner div:nth-child(12n+1), .loading-inner div:nth-child(12n+4), .loading-inner div:nth-child(12n+7), .loading-inner div:nth-child(12n+11) {\n  background-color: #FEF8E3;\n}\n.loading-inner div:nth-child(12n+2), .loading-inner div:nth-child(12n+6), .loading-inner div:nth-child(12n+10) {\n  background-color: #FCD88E;\n}\n.loading-inner div:nth-child(12n+12), .loading-inner div:nth-child(12n+5), .loading-inner div:nth-child(12n+9) {\n  background-color: #AED3EE;\n}\n.loading-inner div:nth-child(12n+8), .loading-inner div:nth-child(12n+3) {\n  background-color: #EB7841;\n}\n.loading-inner div.empty {\n  opacity: 0 !important;\n}\n.loading-inner div.empty::after {\n  display: none;\n}\n.loading-inner div.no-delay {\n  transition-delay: 0 !important;\n}\n.loading-inner div:nth-child(4n+2) {\n  transition-delay: 0.2s;\n}\n.loading-inner div:nth-child(4n+3) {\n  transition-delay: 0.8s;\n}\n.loading-inner div:nth-child(4n+4) {\n  transition-delay: 1.6s;\n}\n.loading-inner div.welcome {\n  direction: ltr;\n  display: flex;\n  flex-direction: column;\n  text-align: center;\n  justify-content: center;\n  align-items: center;\n  grid-column-end: span 4;\n  grid-column-start: 1;\n  grid-row-start: 3;\n  grid-row-end: span 3;\n  background-color: white !important;\n  transition-delay: 3.5s;\n}\n@media screen and (orientation: landscape) {\n.loading-inner div.welcome {\n    grid-column-end: span 6;\n    grid-column-start: 3;\n    grid-row-start: 2;\n    grid-row-end: span 3;\n}\n}\n.loading-inner div.welcome::after {\n  content: none;\n}\n.loading-inner div.welcome h1 {\n  font-family: mikado;\n  font-weight: 900;\n  font-style: italic;\n  font-size: 5.159780352rem;\n  margin-bottom: 1.2rem;\n}\n.loading-inner .enter-link {\n  display: inline-block;\n  margin-top: 1em;\n  font-weight: 700;\n  font-size: 1.44rem;\n}\n.loading-inner .enter-link::after {\n  display: inline-block;\n  margin-left: 0.5em;\n  content: \"\\2192\";\n}\n@-webkit-keyframes sideScroll {\n100% {\n    transform: translateX(0%);\n}\n}\n@keyframes sideScroll {\n100% {\n    transform: translateX(0%);\n}\n}\n@-webkit-keyframes downScroll {\n100% {\n    transform: translateY(0%);\n}\n}\n@keyframes downScroll {\n100% {\n    transform: translateY(0%);\n}\n}", ""]);
 
 // exports
 
@@ -2474,7 +2475,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".leaflet-container {\n  width: 100%;\n  height: 100vw !important;\n}\n@media screen and (orientation: landscape) {\n.leaflet-container {\n    width: calc(100vw - 300px) !important;\n    height: calc(100vh - 4.5rem) !important;\n}\n}\n.leaflet-marker-icon {\n  margin-top: -41px !important;\n  margin-left: -12px !important;\n}\n.marker-cluster,\n.marker-cluster div {\n  border-radius: 500px;\n}\n.marker-cluster.active {\n  outline: 2px solid yellow;\n}\n.marker-cluster div {\n  height: 30px;\n  width: 30px;\n  margin: 5px;\n  text-align: center;\n  line-height: 30px;\n}\n\n/* Small */\n.my-marker-cluster-small {\n  background-color: rgba(181, 226, 140, 0.5);\n}\n.my-marker-cluster-small div {\n  background-color: #6ecc39;\n}\n\n/* Medium */\n.my-marker-cluster-large {\n  background-color: rgba(226, 181, 140, 0.5);\n}\n.my-marker-cluster-large div {\n  background-color: #e2b58c;\n}", ""]);
+exports.push([module.i, "@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-italic-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: italic;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-bold-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-bold-webfont.woff\") format(\"woff\");\n  font-weight: 700;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-regular-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-regular-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"mikado\";\n  src: url(\"/assets/fonts/mikadoblack-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/mikadoblack-italic-webfont.woff\") format(\"woff\");\n  font-weight: 900;\n  font-style: italic;\n}\n* {\n  font-family: karla, sans-serif;\n}\n.leaflet-container {\n  width: 100%;\n  height: 100vw !important;\n}\n@media screen and (orientation: landscape) {\n.leaflet-container {\n    width: calc(100vw - 300px) !important;\n    height: calc(100vh - 3.6rem) !important;\n}\n}\n.leaflet-marker-icon {\n  margin-top: -41px !important;\n  margin-left: -12px !important;\n}\n.marker-cluster,\n.marker-cluster div {\n  border-radius: 500px;\n}\n.marker-cluster.active {\n  outline: 2px solid yellow;\n}\n.marker-cluster div {\n  height: 30px;\n  width: 30px;\n  margin: 5px;\n  text-align: center;\n  line-height: 30px;\n}\n\n/* Small */\n.my-marker-cluster-small {\n  background-color: rgba(181, 226, 140, 0.5);\n}\n.my-marker-cluster-small div {\n  background-color: #6ecc39;\n}\n\n/* Medium */\n.my-marker-cluster-large {\n  background-color: rgba(226, 181, 140, 0.5);\n}\n.my-marker-cluster-large div {\n  background-color: #e2b58c;\n}", ""]);
 
 // exports
 
@@ -2493,7 +2494,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".sidebar {\n  overflow-y: auto;\n  background-color: white;\n  padding: 1.5rem 2.25rem;\n  height: calc(100vh - 100vw);\n}\n@media screen and (orientation: landscape) {\n.sidebar {\n    border-right: 1px solid lightgray;\n    width: 300px;\n    height: calc(100vh - 4.5rem);\n}\n}\n.sidebar--title {\n  font-weight: 700;\n  font-size: 1.5rem;\n  margin-bottom: 1rem;\n}\n.sidebar-menu--item {\n  display: block;\n  cursor: pointer;\n  transition: background-color ease 500ms;\n  margin-left: -1rem;\n  margin-right: -1rem;\n  padding: 1rem;\n}\n.sidebar-menu--item:hover {\n  background-color: whitesmoke;\n}\n.sidebar-menu--item.active, .sidebar-menu--item.router-link-exact-active {\n  outline: 1px solid #f4d582;\n}", ""]);
+exports.push([module.i, "@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-italic-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: italic;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-bold-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-bold-webfont.woff\") format(\"woff\");\n  font-weight: 700;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-regular-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-regular-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"mikado\";\n  src: url(\"/assets/fonts/mikadoblack-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/mikadoblack-italic-webfont.woff\") format(\"woff\");\n  font-weight: 900;\n  font-style: italic;\n}\n* {\n  font-family: karla, sans-serif;\n}\n.sidebar {\n  overflow-y: auto;\n  background-color: white;\n  padding: 2.985984rem 1.44rem;\n  height: calc(100vh - 100vw);\n}\n@media screen and (orientation: landscape) {\n.sidebar {\n    border-right: 1px solid #dfecf9;\n    width: 300px;\n    height: calc(100vh - 3.6rem);\n}\n}\n.sidebar--title {\n  font-weight: 700;\n  font-size: 1.2rem;\n  margin-bottom: 1rem;\n}\n.sidebar-menu--item {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  cursor: pointer;\n  transition: background-color ease 500ms, border ease 500ms;\n  margin-left: -0.5rem;\n  padding: 0 0.5rem 0 0;\n  border-left: 0.5rem solid white;\n  margin-bottom: 1rem;\n}\n.sidebar-menu--item:hover {\n  background-color: #f0f6fc;\n}\n.sidebar-menu--item.active, .sidebar-menu--item.router-link-exact-active {\n  border-left-color: #f4d582;\n}\n.sidebar-menu--item img {\n  display: block;\n  width: 75px;\n  height: 75px;\n  background-color: #fef6dd;\n  margin-right: 1rem;\n}", ""]);
 
 // exports
 
@@ -20824,13 +20825,15 @@ var render = function() {
         "div",
         { staticClass: "welcome" },
         [
-          _c("h1", [_vm._v("Hiding in Plain Sight")]),
+          _vm._m(0),
           _vm._v(" "),
-          _c("p", [_vm._v("Uncovering the history of cinema in Leeds")]),
+          _c("p", [_vm._v("Discovering the lost cinemas of Leeds")]),
           _vm._v(" "),
-          _c("router-link", { attrs: { to: { name: "cinemas" } } }, [
-            _vm._v("Enter")
-          ])
+          _c(
+            "router-link",
+            { staticClass: "enter-link", attrs: { to: { name: "cinemas" } } },
+            [_vm._v("Enter")]
+          )
         ],
         1
       ),
@@ -20923,7 +20926,14 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h1", [_vm._v("Hiding in"), _c("br"), _vm._v(" Plain Sight")])
+  }
+]
 render._withStripped = true
 
 
@@ -21066,6 +21076,8 @@ var render = function() {
             }
           },
           [
+            _c("img", { attrs: { src: cinema.image } }),
+            _vm._v(" "),
             _c("h3", {
               staticClass: "sidebar-menu--title",
               domProps: { innerHTML: _vm._s(cinema.title) }
