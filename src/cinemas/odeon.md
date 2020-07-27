@@ -1,5 +1,5 @@
 ---
-title: Odeon
+title: Odeon, Merrion Centre
 date_open: "1964"
 date_close: "1977"
 status: Closed
