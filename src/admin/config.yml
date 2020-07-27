@@ -4,7 +4,6 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_library:
   name: cloudinary
-  output_filename_only: false
   config:
     cloud_name: hpph
     api_key: 732351866945655
