@@ -3,7 +3,7 @@ title: Astra Cinema
 date_open: "1911"
 date_close: "1946"
 status: Demolished
-image: https://res.cloudinary.com/hpph/image/upload/v1595892506/hidinginplainsight/Cinemas-03.svg
+image: https://res.cloudinary.com/hpph/image/upload/v1595964822/hidinginplainsight/astracinema.svg
 location: '{"type":"Point","coordinates":[-1.5545601,53.8141167]}'
 address: Woodhouse Street
 description: At present, we have no imagery of the cinema during its hayday.
