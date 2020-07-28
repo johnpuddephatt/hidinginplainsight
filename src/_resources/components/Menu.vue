@@ -3,7 +3,9 @@
     <h2 class="sidebar--title">Cinemas</h2>
     <nav class="sidebar-menu" @mouseleave="mouseoverCancel()">
       <router-link :to="{ name: 'cinema', params: { slug: cinema.slug } }" class="sidebar-menu--item" :ref="cinema.slug" @mouseover.self.native.self="mouseoverStart($event, cinema.slug)" v-for="cinema in cinemas" :key="cinema.slug">
-        <img :src="cinema.image" />
+        <div class="image">
+          <img :src="cinema.image_small" />
+        </div>
         <h3 class="sidebar-menu--title" v-html="cinema.title"></h3>
       </router-link>
     </nav>
@@ -103,12 +105,20 @@ export default {
     border-left-color: $orange;
   }
 
-  img {
+  .image {
     display: block;
     width: 75px;
     height: 75px;
     background-color: $cream;
     margin-right: ms(0);
+
+    img {
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      height: 100%;
+      image-rendering: -webkit-optimize-contrast;
+    }
   }
 
 

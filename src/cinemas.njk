@@ -8,7 +8,7 @@ permalink: /api/cinemas.json
       "slug": "{{ data.title | slug }}",
       "title": "{{ data.title }}",
       "image": "{{ data.image | safe }}",
-      "image_small": "https://res.cloudinary.com/hpph/image/upload/w_100,h_100,f_auto,e_trim/{{ data.image | safe}}",
+      "image_small": "{{ data.image | replace('/image/upload/', '/image/upload/w_75/e_trim/w_75,h_75,c_fill,g_north_west/f_auto/') | safe}}",
       "location": {{ data.location | safe }}
     }{{ '' if loop.last else ',' }}
   {% endfor  %}
