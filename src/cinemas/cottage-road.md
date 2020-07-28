@@ -3,6 +3,7 @@ title: Cottage Road
 date_open: "1912"
 date_close: Present
 status: Open
+image: https://res.cloudinary.com/hpph/image/upload/v1595964822/hidinginplainsight/cottageroad.svg
 location: '{"type":"Point","coordinates":[-1.5816638,53.8268865]}'
 address: " Cottage Rd, Leeds LS6 4DD"
 description: Converted from a garage, the Headingley Picture House opened in
