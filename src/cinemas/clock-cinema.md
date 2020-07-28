@@ -3,6 +3,7 @@ title: Clock Cinema
 date_open: "1938"
 date_close: "1976"
 status: Closed
+image: https://res.cloudinary.com/hpph/image/upload/v1595964818/hidinginplainsight/clockcinema.svg
 location: '{"type":"Point","coordinates":[-1.5145764,53.8183621]}'
 address: 247-249 Roundhay Road, Harehills, Leeds LS8 4HS
 description: This impressive art moderne cinema opened in 1938, boasting a
