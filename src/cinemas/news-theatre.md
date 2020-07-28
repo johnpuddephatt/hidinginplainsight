@@ -13,9 +13,9 @@ description: "Opening in 1938, the News Theatre was part of the Queen's Hotel
 description_extended: The Queens Hotel opened in 1937 and the News Theatre
   opened the following year, offering a newsreel service. In 1966 it became
   known as The Classic but the name quickly changed to Tatler Film Club in 1969.
-  It was a notorious venue for watching soft pron films and was frequently
+  It was a notorious venue for watching soft porn films and was frequently
   raided by police. The name reverted to The Classic in 1979, but it closed and
-  became Planet Earth, then Bondi Beach Bar. You can still see the original name
-  News Theatre outside on the ground, there is an entrance that opened onto the
-  station concourse which is now used by Bagel Nash as a service counter.
+  became Planet Earth, then Bondi Beach Bar.  You can still see the original
+  name News Theatre outside on the ground, there is an entrance that opened onto
+  the station concourse which is now used by Bagel Nash as a service counter.
 ---
