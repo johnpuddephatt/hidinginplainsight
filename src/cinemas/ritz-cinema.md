@@ -1,5 +1,5 @@
 ---
-title: Ritz Cinema
+title: Ritz Cinema Cross Gates
 date_open: "1920"
 date_close: "1965"
 status: Demolished
