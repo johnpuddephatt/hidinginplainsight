@@ -3,6 +3,7 @@ title: The Coliseum
 date_open: "1908"
 date_close: "1961"
 status: Closed
+image: https://res.cloudinary.com/hpph/image/upload/v1595964816/hidinginplainsight/colleseum_gaumontcinema.svg
 location: '{"type":"Point","coordinates":[-1.5471706,53.8022143]}'
 address: Cookridge Street
 description: The gothic-revival Coliseum opened in 1885 as concert hall with a
