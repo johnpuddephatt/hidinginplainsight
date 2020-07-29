@@ -4,7 +4,7 @@ date_open: "1913"
 date_close: "1966"
 status: Demolished
 location: '{"type":"Point","coordinates":[-1.5407789,53.8108259]}'
-address: 136 Meanwood Road
+address: "136 Meanwood Road, Sheepscar "
 description: "This 345 seat cinema opened at 136 Meanwood Road in 1913. In 1935
   its name was changed to Royal. The cinema closed down in 1966 and a firm
   called Kingfisher Lubrication took on the premises.  "
