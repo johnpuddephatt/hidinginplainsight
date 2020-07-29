@@ -1,5 +1,5 @@
 ---
-title: "News Theatre "
+title: News Theatre
 date_open: "1938"
 date_close: "1988"
 status: Closed
