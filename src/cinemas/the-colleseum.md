@@ -8,11 +8,10 @@ location: '{"type":"Point","coordinates":[-1.5471706,53.8022143]}'
 address: Cookridge Street
 description: The gothic-revival Coliseum opened in 1885 as concert hall with a
   capacity of over 3,000. In 1905 New Century Pictures converted it for film
-  screenings, with reduced capacity. It was the first picture hall to be
-  licensed. The Gaumont organisation took it over in 1928, making further
-  changes. The cinema closed in 1961, and was used for film, TV, then
-  inevitably, bingo. It was renovated as a music venue in 2001, and has remained
-  so since.
+  screenings, with reduced capacity. The Gaumont organisation took it over in
+  1928, making further changes. The cinema closed in 1961, and was used for
+  film, TV, then inevitably, bingo. It was renovated as a music venue in 2001,
+  and has remained so since.
 description_extended: >-
   The Coliseum was the first picture hall to be licensed. A man called Sydney
   Carter first hired the theatre for a short season of projections, then he
