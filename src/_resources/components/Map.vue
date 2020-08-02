@@ -1,4 +1,5 @@
 <template>
+
   <l-map
     id="map"
     ref="map"
@@ -8,16 +9,29 @@
     :options="mapOptions"
     :inertia="true"
     :zoomAnimation="true"
-    :noBlockingAnimations="true">
+    :noBlockingAnimations="true"
+    @mouseenter="mapActive = true"
+    @mouseleave="mapActive = false">
+    <l-control-zoom :position="'bottomright'" />
     <l-tile-layer :url="url" :attribution="attribution" />
     <v-icondefault :image-path="'/assets/images/'"></v-icondefault>
     <v-marker-cluster :options="clusterOptions">
-      <l-marker :ref="cinema.slug" v-for="cinema in cinemas" :key="cinema.slug" :lat-lng="getLatLng(cinema.location.coordinates)" @mouseover="mouseoverStart($event, cinema.slug)" @mouseleave="mouseoverCancel()" @click="$emit('marker-clicked',cinema.slug)">
-        <l-popup :options="{offset: [0, -34]}" :content="`<div><h3>${cinema.title}</h3><p>La la la</p></div>`"></l-popup>
+      <l-marker :ref="cinema.slug" v-for="cinema in cinemas" :key="cinema.slug" :lat-lng="getLatLng(cinema.location.coordinates)" @click="markerClicked($event, cinema.slug)">
+        <l-popup :options="{offset: [0, -34], closeButton: false}">
+          <div class="popup-header">
+            <h3 class="cinema-title" v-html="cinema.title"></h3>
+            <p class="cinema-address">{{ cinema.address }}</p>
+          </div>
+          <div class="popup-footer">
+            <button class="button" v-if="" @click="currentPopup.closePopup()">Close</button>
+            <router-link class="button is-primary" :to="{ name: 'cinema', params: { slug: cinema.slug } }">View</router-link>
+          </div>
+        </l-popup>
         <l-icon icon-url="/assets/images/marker-icon.png" />
       </l-marker>
     </v-marker-cluster>
   </l-map>
+
 </template>
 
 <script>
@@ -26,12 +40,12 @@ import "leaflet/dist/leaflet.css";
 import L from 'leaflet';
 import { divIcon as DivIcon, point as Point } from "leaflet";
 import { latLng } from "leaflet";
-import { LIconDefault,LPopup, LIcon, LMap, LTileLayer, LMarker } from 'vue2-leaflet';
+import { LIconDefault,LPopup, LIcon, LMap, LTileLayer, LMarker, LControlZoom } from 'vue2-leaflet';
 import Vue2LeafletMarkerCluster from 'vue2-leaflet-markercluster'
 
 export default {
   name: 'Map',
-  props: ['cinemas','hovered'],
+  props: ['cinemas','clicked'],
   components: {
     'v-icondefault': LIconDefault,
     LPopup,
@@ -39,19 +53,22 @@ export default {
     LTileLayer,
     LMarker,
     LIcon,
+    LControlZoom,
     'v-marker-cluster': Vue2LeafletMarkerCluster
   },
   data () {
     return {
-      currentlyHovered: null,
       zoom: 13,
       center: latLng(53.8125403,-1.5735477),
       url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
       mapOptions: {
-        zoomSnap: 0.5
+        zoomSnap: 0.5,
+        zoomControl: false
       },
       showMap: true,
+      mapActive: false,
+      currentPopup: null,
       clusterOptions: {
         // Create our custom cluster icon replacement with the `iconCreateFunction` api
         // See: https://github.com/Leaflet/Leaflet.markercluster#customising-the-clustered-markers
@@ -67,26 +84,22 @@ export default {
     }
   },
   watch: {
-    hovered: function (hovered) {
-      if(hovered) {
-        if(!this.currentlyHovered) {
-          this.$refs.map.mapObject.flyTo(this.$refs[hovered][0].latLng, 16);
-          var marker = this.$refs[hovered][0].mapObject;
+    clicked: function (clicked) {
+      if(clicked) {
+        if(!this.mapActive) {
+          this.$refs.map.mapObject.flyTo(this.$refs[clicked][0].latLng, 17);
+          var marker = this.$refs[clicked][0].mapObject;
 
           this.$refs.map.mapObject.on('zoomend', function () {
             marker.openPopup();
           });
         }
-        // setTimeout(() => {
-          // this.$nextTick(() => {
 
         else {
-          this.$refs[hovered][0].mapObject.openPopup();
+          this.$refs[clicked][0].mapObject.openPopup();
         }
 
-            // });
-        // },5000);
-
+        this.currentPopup = this.$refs[clicked][0].mapObject;
       }
     }
   },
@@ -96,16 +109,10 @@ export default {
       newArray.push(value[1], value[0]);
       return newArray;
     },
-    mouseoverStart($event, slug) {
-      this.currentlyHovered = slug;
-      setTimeout(() => {
-        if(this.currentlyHovered === slug ) {
-          this.$emit('marker-hovered', slug);
-        }
-      },1000)
-    },
-    mouseoverCancel() {
-      this.currentlyHovered = null;
+
+    markerClicked($event, slug) {
+      this.$emit('marker-clicked', slug);
+      this.currentlyClicked = slug;
     }
   },
 }
@@ -116,11 +123,11 @@ export default {
 
   .leaflet-container {
     width: 100%;
-    height: 100vw !important;
+    height: calc(100% - #{2 * ms(2) + ms(4)}) !important;
 
     @media screen and (orientation: landscape) {
       width: calc(100vw - #{$sidebar-width}) !important;
-      height: calc(100vh - #{3 * ms(1)}) !important;
+      height: 100% !important;
     }
   }
 
@@ -162,6 +169,43 @@ export default {
   }
   .my-marker-cluster-large div {
     background-color: rgba(226, 181, 140, 1);
+  }
+
+  // Popup
+  .leaflet-container a.leaflet-popup-close-button {
+    width: 30px;
+    height: 24px;
+    font: 30px/17px Tahoma, Verdana, sans-serif;
+  }
+
+  .leaflet-popup-content-wrapper {
+      max-width: $sidebar-width;
+      width: 100vw;
+      font-size: 1rem !important;
+      padding: ms(0) ms(-1);
+      border-radius: 0 !important;
+      box-shadow: 13px 19px 12px -7px rgba(0,0,0,0.2) !important;
+
+      .cinema-title {
+        font-size: ms(1);
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+
+      .cinema-address {
+        font-size: ms(-1);
+        color: $gray;
+      }
+
+      p {
+        margin: 0 0 ms(1);
+      }
+  }
+
+  @media screen and (orientation: portrait) {
+    .leaflet-popup {
+      display: none;
+    }
   }
 
 </style>

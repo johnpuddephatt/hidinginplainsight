@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<title>Hiding in Plain Sight | Hyde Park Picture House</title>
+    <link rel="stylesheet" href="/assets/app.css" />
+  </head>
+
+  <body style="background-color: #aecdeb;">
+    <h1>Hiding in Plain sight</h1>
+    <p>{{ collections.cinemas | length }} cinemas added so far</p>
+    {% for cinemaData in collections.cinemas %}
+      {% set cinema = cinemaData.data %}
+      <div style="background-color: white; max-width: 800px; margin: 4em auto; box-shadow: 0 0 1em 1em rgba(0,0,0,.1); border-radius: 5px; padding: 2em;">
+        <h3 style="font-size: 1.4em; font-weight: bold; margin-bottom: 0.5em">{{ cinema.title }}</h3>
+        <ul>
+          <li><strong style="font-weight: bold;">Date opened:</strong> {{ cinema.date_open}}</li>
+          <li><strong style="font-weight: bold;">Date closed:</strong> {{ cinema.date_close}}</li>
+          <li><strong style="font-weight: bold;">Status:</strong> {{ cinema.status }}</li>
+          <li><strong style="font-weight: bold;">Address:</strong> {{ cinema.address }}</li>
+        </ul>
+        <h4 style="font-weight: bold; margin-top: 0.5em;">Description:</h4>
+        {{ cinema.description }}
+        <h4 style="font-weight: bold; margin-top: 0.5em;">Extended description:</h4>
+        {{ cinema.description_extended }}
+      </div>
+    {% endfor %}
+  </body>
+</html>

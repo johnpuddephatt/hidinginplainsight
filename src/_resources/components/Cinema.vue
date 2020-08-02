@@ -1,19 +1,34 @@
 <template>
-  <div class="cinema-panel">
-    <div v-if="!cinemaLoaded">
-      Loading...
+  <transition mode="out-in" name="slide">
+    <div class="cinema-panel">
+      <div v-if="!cinemaLoaded">
+        Loading...
+      </div>
+      <div v-else class="container">
+        <div class="image-container">
+          <transition name="slide-from-right">
+            <img :class="imageClass" v-show="isImageLoaded ":src="cinema.image" @load="imageLoaded($event)" />
+          </transition>
+        </div>
+        <div class="panel">
+          <h2 class="cinema-title"><span>{{ cinema.title }}</span> <small>{{ cinema.date_open || 'unknown' }} – {{ cinema.date_open || 'unknown'}}</small></h2>
+          <div class="cinema-address">{{ cinema.address }}</div>
+          <div class="cinema-description" v-html="cinema.description"></div>
+          <details v-if="cinema.description_extended">
+            <summary>Read more</summary>
+            <div v-html="cinema.description_extended"></div>
+          </details>
+        </div>
+        <div class="panel">
+          <h3 class="panel-heading">Photos</h3>
+        </div>
+        <div class="panel">
+          <h3 class="panel-heading">Comments</h3>
+          <commento :slug="slug"></commento>
+        </div>
+      </div>
     </div>
-    <div v-else>
-      <img :src="cinema.image" />
-      <h2>{{ cinema.title }}</h2>
-      <div v-html="cinema.description"></div>
-      <details v-if="cinema.description_extended">
-        <summary>Details</summary>
-        <div v-html="cinema.description_extended"></div>
-      </details>
-      <commento :slug="slug"></commento>
-    </div>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -29,7 +44,9 @@ export default {
     return {
       cinemaLoaded: false,
       cinema: {},
-      errored: false
+      errored: false,
+      isImageLoaded: false,
+      imageClass: null
     }
   },
   watch: {
@@ -51,6 +68,20 @@ export default {
         .finally(() => {
           this.cinemaLoaded = true;
         })
+    },
+    imageLoaded($event) {
+      let ratio = $event.target.naturalWidth/$event.target.naturalHeight;
+
+      if(ratio >= 1.2) {
+        this.imageClass = 'is-wide';
+      }
+      else if(ratio <= 0.8) {
+        this.imageClass = 'is-tall';
+      }
+      else {
+        this.imageClass = 'is-square';
+      }
+      this.isImageLoaded = true;
     }
   },
   mounted () {
@@ -63,15 +94,103 @@ export default {
 @import '../styles/base.scss';
 
 .cinema-panel {
-  position: fixed;
+  left: 0;
+  position: absolute;
   overflow-y: auto;
-  padding: ms(2) ms(4);
-  top: 3 * ms(1);
-  height: calc(100vh - #{3 * ms(1)}) !important;
-  left: $sidebar-width;
+  padding: 0 ms(2) ms(2);
+  top: 0;
+  bottom: 0;
   right: 0;
-  background-color: $cream;
-  z-index: 9999;
+  z-index: 99999;
+  background-color: white;
 
+  @media screen and (orientation: landscape) {
+    padding: 0 ms(4) ms(2);
+    left: $sidebar-width;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: ms(8) auto;
+  }
+
+  .panel {
+    margin-top: ms(4);
+    padding-top: ms(4);
+    border-top: 1px solid $medium-gray;
+  }
+
+  .panel-heading {
+    font-size: ms(2);
+    font-weight: 700;
+  }
+
+  .cinema-title {
+    font-size: ms(5);
+    font-weight: 700;
+    margin-bottom: 0;
+
+    small {
+      font-weight: 400;
+      display: inline-block;
+      margin-left: ms(1);
+      color: $gray;
+      font-size: ms(2);
+      vertical-align: baseline;
+    }
+  }
+
+  .cinema-address {
+    font-size: ms(0);
+    margin-bottom: ms(2);
+  }
+
+  .cinema-description {
+    margin-bottom: ms(2);
+  }
+
+  .image-container {
+    background-image: linear-gradient(to top, $blue 30%, white 30%);
+    margin-bottom: ms(2);
+    padding-bottom: ms(4);
+    height: 50vw;
+    @media screen and (orientation: landscape) {
+      height: 0.5 * 800px;
+      background-image: linear-gradient(to top, $blue 40%, white 40%);
+    }
+
+    img {
+      margin: 0 auto;
+      height: 50vw;
+      width: 50vw;
+      object-fit: contain;
+      object-position: center 75%;
+      padding-bottom: ms(2);
+
+      @media screen and (orientation: landscape) {
+        height: 0.5 * 800px;
+        width: 0.5 * 800px;
+      }
+      &.is-square {
+        padding-left: ms(2);
+        padding-right: ms(2);
+
+        @media screen and (orientation: landscape) {
+          padding-left: ms(6);
+          padding-right: ms(6);
+        }
+      }
+    }
+  }
+}
+
+summary {
+  cursor: default;
+  padding-right: 1em;
+  display: inline-block;
+  font-weight: 700;
+  &:focus {
+    outline: 2px solid $medium-gray;
+  }
 }
 </style>

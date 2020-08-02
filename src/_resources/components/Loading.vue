@@ -128,7 +128,7 @@ export default {
         right: 10%;
         bottom: 10%;
         content: "";
-        background-image: url('https://static.jdp.org.uk/yogi.svg');
+        background-image: url('https://res.cloudinary.com/hpph/image/upload/v1595964823/hidinginplainsight/abbeypicturehouse.svg');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;

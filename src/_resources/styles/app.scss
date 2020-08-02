@@ -1,4 +1,5 @@
 @import 'normalize';
+@import 'transitions';
 @import 'base';
 
 h1, h2, h3, h4, h5, h6  {
@@ -10,15 +11,98 @@ h1, h2, h3, h4, h5, h6  {
   position: relative;
 }
 
+.button {
+  line-height: ms(0);
+  background-color: $medium-gray;
+  color: $black !important;
+  border-radius: 9999px;
+  font-size: ms(0);
+  padding: ms(-2) ms(0);
+  display: inline-block;
+
+   &.is-primary {
+     background-color: $orange;
+   }
+}
+
 .site-header {
   display: flex;
   flex-direction: row;
   background-color: $blue;
   padding: ms(1) ms(2);
+
+  @media screen and (orientation: portrait) {
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+#navTrigger {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999999;
+  display: none;
+
+  @media screen and (orientation: portrait) {
+    display: block;
+  }
+}
+
+#navToggle {
+  display: none
+}
+
+#navToggle:checked + .primary-navigation {
+  transform: translateX(25vw);
+}
+
+.primary-navigation {
+  line-height: ms(1);
+
+  @media screen and (orientation: portrait) {
+    transition: transform 0.5s ease-in-out;
+    background-color: $blue;
+    padding: ms(8) ms(2);
+    position: fixed;
+    width: 75vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    transform: translateX(100vw);
+  }
 }
 
 .site-title {
   font-weight: 700;
   font-size: ms(1);
   line-height: ms(1);
+  margin-right: ms(0);
+
+  br {
+    display: none;
+  }
+
+  @media screen and (orientation: portrait) {
+    display: block;
+    z-index: 999999;
+    text-align: center;
+    position: fixed;
+    margin-right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: ms(2);
+    font-family: mikado;
+    font-weight: 900;
+    font-style: italic;
+    font-size: ms(3);
+    line-height: ms(3);
+    pointer-events: none;
+
+    br {
+      display: block;
+    }
+  }
 }

@@ -10,8 +10,10 @@
   <body>
     <div id="app">
       <header class="site-header">
-        <h1><a class="site-title">Hiding in Plain Sight</a></h1>
-        <nav class="primary-navigation"></nav>
+        <h1><a class="site-title">Hiding in <br>Plain Sight</a></h1>
+        <label id="navTrigger" for="navToggle">Menu</label>
+        <input type="checkbox" id="navToggle">
+        <nav class="primary-navigation">Primary navigation...</nav>
       </header>
       <router-view></router-view>
     </div>

@@ -3,7 +3,12 @@ $modularscale: (
   ratio: 1.2
 );
 
-$sidebar-width: 300px;
+$sidebar-width: 320px;
+
+$light-gray: #f8f8f8;
+$medium-gray: #efefef;
+$gray: #85898E;
+$black: #222;
 
 $blue: #aecdeb;
 $light-blue: #f0f6fc;
@@ -13,3 +18,5 @@ $cream: #fef6dd;
 
 $base-timing: ease;
 $base-duration: 500ms;
+
+$base-radius: 0.25rem;

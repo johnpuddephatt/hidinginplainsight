@@ -1,7 +1,8 @@
 <template>
   <div class="map-wrapper">
-    <Menu v-if="cinemas" :cinemas="cinemas" :hovered="hovered" @menu-hovered="onMenuHovered"></Menu>
-    <Map v-if="cinemas" :cinemas="cinemas"  :hovered="hovered" @marker-clicked="onMarkerClicked" @marker-hovered="onMarkerHovered"></Map>
+    <Menu v-if="cinemas" :cinemas="cinemas" :clicked="clicked" @menu-clicked="onMenuClicked"></Menu>
+    <Map v-if="cinemas" :cinemas="cinemas"  :clicked="clicked" @marker-clicked="onMarkerClicked"></Map>
+    <Popup v-for="cinema in cinemas" :cinema="cinema" v-if="clicked == cinema.slug" :key="cinema.slug"></Popup>
     <router-view :key="$route.params.slug"></router-view>
   </div>
 </template>
@@ -9,33 +10,33 @@
 <script>
 import Map from './Map.vue';
 import Menu from './Menu.vue';
+import Popup from './Popup.vue';
 
 export default {
   name: 'Overview',
   props: [],
   components: {
     Map,
-    Menu
+    Menu,
+    Popup
   },
   data () {
     return {
       cinemas: [],
-      hovered: null,
+      clicked: null,
       errored: false,
       cinemasLoaded: false
     }
   },
   methods: {
     onMarkerClicked: function(slug) {
-      if(slug != this.$route.params.slug) {
-        this.$router.push({ name: 'cinema', params: { slug: slug } })
+      this.clicked = slug;
+    },
+    onMenuClicked: function(slug) {
+      if(this.$router.currentRoute.name != 'cinemas') {
+        this.$router.push({ name: 'cinemas' })
       }
-    },
-    onMarkerHovered: function(slug) {
-      this.hovered = slug;
-    },
-    onMenuHovered: function(slug) {
-      this.hovered = slug;
+      this.clicked = slug;
     }
   },
   mounted () {
@@ -54,12 +55,16 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../styles/base.scss';
 
 .map-wrapper {
-  display: flex;
-  flex-direction: column-reverse;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
 
   @media screen and (orientation: landscape) {
+    height: calc(100vh - #{3 * ms(1)});
+    display: flex;
     flex-direction: row;
   }
 }

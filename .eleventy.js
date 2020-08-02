@@ -7,7 +7,13 @@ module.exports = function(eleventyConfig) {
 
   // Collections
   eleventyConfig.addCollection('cinemas', collection => {
-    return collection.getFilteredByGlob('./src/cinemas/*.md');
+    return collection.getFilteredByGlob('./src/cinemas/*.md').sort(function(a, b) {
+      let aTitle = a.data.title.replace("The ", "");
+      let bTitle = b.data.title.replace("The ", "");
+      if (aTitle < bTitle) return -1;
+      else if (aTitle > bTitle) return 1;
+      else return 0;
+    });
   });
 
   eleventyConfig.setBrowserSyncConfig({

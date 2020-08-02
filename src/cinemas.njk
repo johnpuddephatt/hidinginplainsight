@@ -8,8 +8,9 @@ permalink: /api/cinemas.json
       "slug": "{{ data.title | slug }}",
       "title": "{{ data.title }}",
       "image": "{{ data.image | safe }}",
-      "image_small": "{{ data.image | replace('/image/upload/', '/image/upload/w_75/e_trim/w_75,h_75,c_fill,g_north_west/f_auto/') | safe}}",
-      "location": {{ data.location | safe }}
+      "image_small": "{{ data.image | replace('/image/upload/', '/image/upload/w_750,h_750,e_trim,c_crop,g_north_west/e_trim/w_75,h_75,c_pad/w_75,h_65,c_crop,g_north/f_auto/') | safe}}",
+      "location": {{ data.location | safe }},
+      "address": "{{ data.address | safe }}"
     }{{ '' if loop.last else ',' }}
   {% endfor  %}
 ]
