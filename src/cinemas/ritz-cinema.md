@@ -3,6 +3,7 @@ title: Ritz Cinema Cross Gates
 date_open: "1920"
 date_close: "1965"
 status: Demolished
+image: https://res.cloudinary.com/hpph/image/upload/v1596451159/hidinginplainsight/ritzcinema.svg
 location: '{"type":"Point","coordinates":[-1.4526683,53.8050924]}'
 address: Station Road, Crossgates
 description: "An 800 seat cinema on Station Street in Cross Gates, this cinema
