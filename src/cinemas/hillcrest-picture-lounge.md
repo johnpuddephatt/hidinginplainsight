@@ -3,6 +3,7 @@ title: Hillcrest Picture Lounge
 date_open: "1920"
 date_close: "1963"
 status: Demolished
+image: https://res.cloudinary.com/hpph/image/upload/v1596451167/hidinginplainsight/hillcrestpicturelounge.svg
 location: '{"type":"Point","coordinates":[-1.506004,53.8059303]}'
 address: 386 Harehills Lane
 description: The Hillcrest Picture Lounge was a 1,131 seater cinema with its own
