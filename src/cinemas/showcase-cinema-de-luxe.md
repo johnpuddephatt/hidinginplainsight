@@ -3,6 +3,7 @@ title: Showcase Cinema de Lux
 date_open: "1989"
 date_close: Present
 status: Open
+image: https://res.cloudinary.com/hpph/image/upload/v1596451155/hidinginplainsight/showcasecinemadeluxe.svg
 location: '{"type":"Point","coordinates":[-1.6402164,53.7439539]}'
 address: Gelderd Road, Birstall
 description: This out-of-town multiplex has 16 screens and is owned by National
