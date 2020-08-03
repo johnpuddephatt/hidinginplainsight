@@ -3,6 +3,7 @@ title: Victoria Picture Hall
 date_open: "1912"
 date_close: "1937"
 status: Demolished
+image: https://res.cloudinary.com/hpph/image/upload/v1596451149/hidinginplainsight/victoriapicturehall.svg
 location: '{"type":"Point","coordinates":[-1.5147024,53.7976631]}'
 address: Glenthorpe Crescent, Leeds
 description: "The Victoria Cinema was designed by Harehills-based architect W.C.
