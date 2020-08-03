@@ -6,4 +6,14 @@ status: Closed
 image: https://res.cloudinary.com/hpph/image/upload/v1596451154/hidinginplainsight/theatredeluxe.svg
 location: '{"type":"Point","coordinates":[-1.5408929,53.7970714]}'
 address: 16 & 17 Kirkgate, Leeds, LS1 6BY
+description: This cinema started out as a theatre, as many did in the first
+  decade of the 20th century. It opened as a luxurious small picture theatre in
+  1910, with just 383 seats. After 1934 the building appears to have been used
+  as a clothes shop. Photographs taken in the early 1930s show the theatre
+  sandwiched in between Lipton Grocers and Alexandra Cafe Tea Rooms on Kirkgate.
+description_extended: |-
+  Sources:
+
+  Leodis\
+  Leeds Cinemas Remembered by Robert E. Preedy
 ---
