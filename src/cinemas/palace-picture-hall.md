@@ -3,6 +3,7 @@ title: Palace Picture Hall
 date_open: "1912"
 date_close: "1964"
 status: Demolished
+image: https://res.cloudinary.com/hpph/image/upload/v1596451151/hidinginplainsight/palacepicturehall.svg
 location: '{"type":"Point","coordinates":[-1.5906921,53.7983903]}'
 address: Eyres Avenue, Armley
 description: The Palace Picture Hall opened in 1912. It seems to have been
