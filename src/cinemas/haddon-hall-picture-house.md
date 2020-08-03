@@ -3,6 +3,7 @@ title: Haddon Hall Picture House
 date_open: "1914"
 date_close: "1960"
 status: Closed
+image: https://res.cloudinary.com/hpph/image/upload/v1596451167/hidinginplainsight/haddonhallpicturehouse.svg
 location: '{"type":"Point","coordinates":[-1.5852633,53.8093071]}'
 address: 44 Bankfield Terrace, Burley
 description: "When the Haddon Hall Picture House was open, it had a most
