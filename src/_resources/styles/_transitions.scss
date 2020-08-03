@@ -4,24 +4,15 @@
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
-//
-// .fade-out-enter-active,
-// .fade-out-leave-active {
-//   transition: all $speed ease;
-// }
-//
-// .fade-out-enter,
-// .fade-out-leave-to {
-//   opacity: 0;
-// }
 
 .popup-enter-active, .popup-leave-active {
-  transition: transform 1s;
+  transition: transform 0.75s;
   transition-timing-function: ease-in;
 }
 
 .popup-leave-active {
   transition-timing-function: ease-out;
+  transition-delay: 0.5s;
 }
 
 .popup-enter, .popup-leave-to /* .fade-leave-active below version 2.1.8 */ {
@@ -36,8 +27,9 @@
 
 
 .slide-enter-active, .slide-leave-active {
-  transition: transform 1.5s;
+  transition: transform 0.75s;
 }
+
 .slide-enter /* .fade-leave-active below version 2.1.8 */ {
   transform: translateX(100%);
 }

@@ -20,14 +20,19 @@
         <l-popup :options="{offset: [0, -34], closeButton: false}">
           <div class="popup-header">
             <h3 class="cinema-title" v-html="cinema.title"></h3>
-            <p class="cinema-address">{{ cinema.address }}</p>
+            <p class="cinema-address" v-if="cinema.address">{{ cinema.address }}</p>
           </div>
           <div class="popup-footer">
             <button class="button" v-if="" @click="currentPopup.closePopup()">Close</button>
             <router-link class="button is-primary" :to="{ name: 'cinema', params: { slug: cinema.slug } }">View</router-link>
           </div>
         </l-popup>
-        <l-icon icon-url="/assets/images/marker-icon.png" />
+        <l-icon
+          :iconSize="clicked == cinema.slug ? [50,82] : [25,41]"
+          :icon-anchor="clicked == cinema.slug ? [25,82] : [12.5,41]"
+          :popupAnchor="[0,-37]"
+          :className="clicked == cinema.slug ? 'large' : ''"
+          :icon-url="clicked == cinema.slug ? '/assets/images/marker-icon-red.svg' : '/assets/images/marker-icon.svg'" />
       </l-marker>
     </v-marker-cluster>
   </l-map>
@@ -70,6 +75,7 @@ export default {
       mapActive: false,
       currentPopup: null,
       clusterOptions: {
+        spiderLegPolylineOptions: { weight: 4, color: '#aecdeb', opacity: 0.75 },
         // Create our custom cluster icon replacement with the `iconCreateFunction` api
         // See: https://github.com/Leaflet/Leaflet.markercluster#customising-the-clustered-markers
         iconCreateFunction: cluster => {
@@ -85,16 +91,18 @@ export default {
   },
   watch: {
     clicked: function (clicked) {
-      if(clicked) {
+      if(this.$router.currentRoute.name == 'cinemas' && clicked) {
+
+        // if !mapActive, then we're interacting with the sidebar so should flyTo.
         if(!this.mapActive) {
           this.$refs.map.mapObject.flyTo(this.$refs[clicked][0].latLng, 17);
           var marker = this.$refs[clicked][0].mapObject;
-
           this.$refs.map.mapObject.on('zoomend', function () {
             marker.openPopup();
           });
         }
 
+        // otherwise map is active, don't flyTo just open the popup
         else {
           this.$refs[clicked][0].mapObject.openPopup();
         }
@@ -133,8 +141,17 @@ export default {
 
 
   .leaflet-marker-icon {
-    margin-top: -41px !important;
-    margin-left: -12px !important;
+    // margin-top: -41px !important;
+    // margin-left: -12.5px !important;
+    // width: 25px !important;
+    // height: 41px !important;
+    //
+    // &.large {
+    //   width: 50px !important;
+    //   height: 82px !important;
+    //   margin-top: -82px !important;
+    //   margin-left: -25px !important;
+    // }
   }
 
   .marker-cluster,
@@ -156,19 +173,21 @@ export default {
 
   /* Small */
   .my-marker-cluster-small {
-    background-color: rgba(181, 226, 140, 0.5);
+    background-color: #f0f6fc;
+    box-shadow: 9px 9px 12px -7px rgba(0,0,0,0.25) !important;
   }
 
   .my-marker-cluster-small div {
-    background-color: rgba(110, 204, 57, 1);
+    background-color: white;
   }
 
   /* Medium */
   .my-marker-cluster-large {
-    background-color: rgba(226, 181, 140, 0.5);
+    background-color: #aecdeb;
+    box-shadow: 9px 9px 12px -7px rgba(0,0,0,0.25) !important;
   }
   .my-marker-cluster-large div {
-    background-color: rgba(226, 181, 140, 1);
+    background-color: white;
   }
 
   // Popup
@@ -182,19 +201,31 @@ export default {
       max-width: $sidebar-width;
       width: 100vw;
       font-size: 1rem !important;
-      padding: ms(0) ms(-1);
+      padding: ms(0) ms(-2);
       border-radius: 0 !important;
       box-shadow: 13px 19px 12px -7px rgba(0,0,0,0.2) !important;
 
       .cinema-title {
         font-size: ms(1);
         font-weight: 700;
-        margin-bottom: 0;
+        margin-bottom: 0.25em;
       }
 
       .cinema-address {
         font-size: ms(-1);
         color: $gray;
+
+        &::before {
+          content: '';
+          display: inline-block;
+          background-image: url(/assets/images/marker-icon-red.svg);
+          width: 0.75em;
+          height: 1em;
+          margin-right: .25em;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: left;
+        }
       }
 
       p {
@@ -206,6 +237,11 @@ export default {
     .leaflet-popup {
       display: none;
     }
+  }
+
+  .leaflet-overlay-pane svg path {
+    stroke: $red !important;
+    fill: transparentize($red, 0.5) !important;
   }
 
 </style>

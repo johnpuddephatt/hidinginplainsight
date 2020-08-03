@@ -1,9 +1,13 @@
 <template>
   <div class="map-wrapper">
-    <Menu v-if="cinemas" :cinemas="cinemas" :clicked="clicked" @menu-clicked="onMenuClicked"></Menu>
-    <Map v-if="cinemas" :cinemas="cinemas"  :clicked="clicked" @marker-clicked="onMarkerClicked"></Map>
-    <Popup v-for="cinema in cinemas" :cinema="cinema" v-if="clicked == cinema.slug" :key="cinema.slug"></Popup>
-    <router-view :key="$route.params.slug"></router-view>
+    <Menu v-if="cinemas" :cinemas="cinemas" :isLandscape="isLandscape()" :clicked="clicked" @menu-clicked="onMenuClicked"></Menu>
+    <Map v-if="cinemas" :cinemas="cinemas" :clicked="clicked" @marker-clicked="onMarkerClicked"></Map>
+    <transition name="popup">
+      <Popup v-for="cinema in cinemas" :cinema="cinema" @close="clicked = null" v-if="clicked == cinema.slug" :key="cinema.slug"></Popup>
+    </transition>
+    <transition name="slide">
+      <router-view :key="$route.params.slug"></router-view>
+    </transition>
   </div>
 </template>
 
@@ -37,7 +41,10 @@ export default {
         this.$router.push({ name: 'cinemas' })
       }
       this.clicked = slug;
-    }
+    },
+    isLandscape() {
+      return (document.documentElement.clientWidth > document.documentElement.clientHeight);
+    },
   },
   mounted () {
     axios

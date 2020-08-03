@@ -1,17 +1,17 @@
 <template>
-  <transition mode="out-in" name="slide">
     <div class="cinema-panel">
       <div v-if="!cinemaLoaded">
         Loading...
       </div>
       <div v-else class="container">
-        <div class="image-container">
+        <router-link class="back-link" :to="{ name: 'cinemas'}">&larr; Back to map</router-link>
+        <div v-if="cinema.image" class="image-container">
           <transition name="slide-from-right">
             <img :class="imageClass" v-show="isImageLoaded ":src="cinema.image" @load="imageLoaded($event)" />
           </transition>
         </div>
         <div class="panel">
-          <h2 class="cinema-title"><span>{{ cinema.title }}</span> <small>{{ cinema.date_open || 'unknown' }} – {{ cinema.date_open || 'unknown'}}</small></h2>
+          <h2 class="cinema-title"><span>{{ cinema.title }}</span> <small>{{ cinema.date_open || 'unknown' }} – {{ cinema.date_close || 'unknown'}}</small></h2>
           <div class="cinema-address">{{ cinema.address }}</div>
           <div class="cinema-description" v-html="cinema.description"></div>
           <details v-if="cinema.description_extended">
@@ -19,16 +19,15 @@
             <div v-html="cinema.description_extended"></div>
           </details>
         </div>
-        <div class="panel">
+        <!-- <div class="panel">
           <h3 class="panel-heading">Photos</h3>
-        </div>
+        </div> -->
         <div class="panel">
           <h3 class="panel-heading">Comments</h3>
           <commento :slug="slug"></commento>
         </div>
       </div>
     </div>
-  </transition>
 </template>
 
 <script>
@@ -101,7 +100,7 @@ export default {
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: 99999;
+  z-index: 999999;
   background-color: white;
 
   @media screen and (orientation: landscape) {
@@ -143,6 +142,18 @@ export default {
   .cinema-address {
     font-size: ms(0);
     margin-bottom: ms(2);
+
+    &::before {
+      content: '';
+      display: inline-block;
+      background-image: url(/assets/images/marker-icon-red.svg);
+      width: 0.75em;
+      height: 1em;
+      margin-right: .25em;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left;
+    }
   }
 
   .cinema-description {
@@ -192,5 +203,9 @@ summary {
   &:focus {
     outline: 2px solid $medium-gray;
   }
+}
+
+.back-link {
+  color: $gray;
 }
 </style>

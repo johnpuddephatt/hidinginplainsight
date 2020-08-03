@@ -1,13 +1,18 @@
 <template>
   <div class="sidebar" :class="menuOpen ? 'menu-open' : ''" @mouseleave="currentlyHovered = null">
     <div class="sidebar--header">
-      <h2 class="sidebar--title"><span class="count">{{ cinemas.length}}</span> cinemas</h2>
-      <button class="button" v-if="!isLandscape()" @click="menuOpen = !menuOpen" v-html="menuOpen ? 'Show map' : 'Show list'"></button>
+      <h2 class="sidebar--title"> <ICountUp
+      :delay="500"
+      :endVal="cinemas.length"
+      :options="{useEasing: false, duration: 3}"
+    /> cinemas</h2>
+      <button class="button" v-if="!isLandscape" @click="menuOpen = !menuOpen" v-html="menuOpen ? 'Show map' : 'Show list'"></button>
     </div>
     <nav class="sidebar-menu">
-      <router-link class="sidebar-menu--item" :to="{ name: 'cinema', params: { slug: cinema.slug } }" :ref="cinema.slug" @mouseenter.native="mouseoverStart($event, cinema.slug)" v-for="cinema in cinemas" :key="cinema.slug">
+      <router-link class="sidebar-menu--item" :class="cinema.slug == clicked ? 'active' : ''" :to="{ name: 'cinema', params: { slug: cinema.slug } }" :ref="cinema.slug" @mouseenter.native="mouseoverStart($event, cinema.slug)" v-for="cinema in cinemas" :key="cinema.slug">
         <div class="image">
-          <img :src="cinema.image_small" />
+          <img v-if="cinema.image_small" :src="cinema.image_small" />
+          <span v-else>?</span>
         </div>
         <h3 class="sidebar-menu--title" v-html="cinema.title"></h3>
       </router-link>
@@ -16,10 +21,12 @@
 </template>
 
 <script>
+import ICountUp from 'vue-countup-v2';
+
 export default {
   name: 'Menu',
-  props: ['cinemas','clicked'],
-  components: {},
+  props: ['cinemas','clicked', 'isLandscape'],
+  components: {ICountUp},
   data() {
     return {
       menuOpen: false,
@@ -28,41 +35,25 @@ export default {
   },
   watch: {
     clicked: function (clicked) {
-      let clickedMenuElement = this.$refs[clicked][0].$el;
-      this.clearActiveMenuElement();
-      if(clickedMenuElement && (this.menuOpen || this.isLandscape())) {
-        clickedMenuElement.classList.add('active');
-        if(!this.currentlyHovered) {
-          clickedMenuElement.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+      if(clicked) {
+        let clickedMenuElement = this.$refs[clicked][0].$el;
+        if(clickedMenuElement && (this.menuOpen || this.isLandscape)) {
+          if(!this.currentlyHovered) {
+            clickedMenuElement.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+          }
         }
       }
     }
   },
   methods: {
-    isLandscape() {
-      return (document.documentElement.clientWidth > document.documentElement.clientHeight);
-    },
-    clearActiveMenuElement() {
-      let activeMenuElement = document.querySelectorAll('.sidebar-menu .active');
-      if(activeMenuElement.length) {
-        activeMenuElement.forEach((elem) => {
-          elem.classList.remove('active');
-        });
-      }
-    },
     clickMenuElement(event, slug) {
       this.$router.push({ name: 'cinema', params: { slug: slug } })
-      // this.clearActiveMenuElement();
-      // this.$refs[slug][0].classList.add('active');
-      // this.$emit('menu-clicked',slug);
     },
     mouseoverStart(event, slug) {
-      if(this.$router.currentRoute.name == 'cinemas' && !this.menuOpen) {
+      if(!this.menuOpen) {
         this.currentlyHovered = slug;
         setTimeout(() => {
-          if(this.currentlyHovered === slug ) {
-            this.clearActiveMenuElement();
-            this.$refs[slug][0].$el.classList.add('active');
+          if(this.currentlyHovered === slug && this.$router.currentRoute.name == 'cinemas') {
             this.$emit('menu-clicked',slug);
           }
         },750);
@@ -133,9 +124,8 @@ export default {
   align-items: center;
   cursor: pointer;
   transition: background-color $base-timing $base-duration, border $base-timing $base-duration;
-  margin-left: -(ms(-1));
-  padding: ms(-2) ms(-1) ms(-2) ms(2);
-  border-left: ms(-1) solid white;
+  padding: ms(-2) ms(-1) ms(-2) ms(2) * 0.75;
+  border-left: ms(2)/4 solid transparent;
   border-bottom: 1px solid $light-gray;
 
   &:hover {
@@ -155,6 +145,7 @@ export default {
     background-color: $cream;
     margin-right: ms(-1);
     padding-top: 10px;
+    position: relative;
 
     img {
       margin-left: auto;
@@ -165,6 +156,29 @@ export default {
       height: 100%;
       image-rendering: -webkit-optimize-contrast;
     }
+
+    span {
+      font-size: ms(3);
+      color: $red;
+      font-weight: 700;
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  &:nth-child(4n - 3) .image {
+    background-color: transparentize($red,0.9);
+  }
+  &:nth-child(4n - 2) .image {
+    background-color: transparentize($orange,0.25);
+  }
+  &:nth-child(4n - 1) .image {
+    background-color: transparentize($blue,0.6);
+  }
+  &:nth-child(4n) .image {
+    background-color: $cream;
   }
 }
 
