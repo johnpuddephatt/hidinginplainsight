@@ -3,6 +3,7 @@ title: "Paramount Theatre "
 date_open: "1932"
 date_close: "2001"
 status: Closed
+image: https://res.cloudinary.com/hpph/image/upload/v1596451168/hidinginplainsight/paramounttheatre.svg
 location: '{"type":"Point","coordinates":[-1.5416184,53.7992806]}'
 address: 20 The Headrow
 description: Opening in 1932 with a staggering 2,556 seats and a grand Wurlitzer
