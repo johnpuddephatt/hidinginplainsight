@@ -3,6 +3,7 @@ title: The Plaza
 date_open: "1907"
 date_close: "1985"
 status: Closed
+image: https://res.cloudinary.com/hpph/image/upload/v1596451163/hidinginplainsight/plaza_newbriggate.svg
 location: '{"type":"Point","coordinates":[-1.5413944,53.7997994]}'
 address: 32 New Briggate
 description: The Grand Assembly Rooms were built as a concert hall, opening in
