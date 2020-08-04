@@ -9,7 +9,8 @@ permalink: /api/cinemas.json
       "title": "{{ data.title }}",
       {% if data.image %}
         "image": "{{ data.image | safe }}",
-        "image_small": "{{ data.image | replace('/image/upload/', '/image/upload/w_750,h_750,e_trim,c_crop,g_north/w_100,h_100,c_fill,g_north/f_auto/') | safe}}",
+        "image_thumb":  "{{ data.image | replace('/image/upload/', '/image/upload/w_175,e_trim,c_scale/f_auto/') | safe}}",
+        "image_small": "{{ data.image | replace('/image/upload/', '/image/upload/w_750,h_750,e_trim,c_crop,g_north/w_100,h_100,c_fit,g_north/f_auto/') | safe}}",
       {% endif %}
       "location": {{ data.location | safe }},
       "address": "{{ data.address | safe }}"

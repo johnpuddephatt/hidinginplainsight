@@ -14,6 +14,6 @@ description: This cinema started out as a theatre, as many did in the first
 description_extended: |-
   Sources:
 
-  Leodis\
+  Leodis
   Leeds Cinemas Remembered by Robert E. Preedy
 ---

@@ -14,9 +14,7 @@ description: The vast Empire Palace opened in 1898, featuring a 1700-capacity
 description_extended: >-
   Unlike many of its peers the Empire Palace continued to host variety acts
   until the 1950s. It was one of many Empire Theatres in the UK operated by Moss
-  Empires Ltd.\
-
-  \
+  Empires Ltd.
 
   Source: http://www.arthurlloyd.co.uk
 ---

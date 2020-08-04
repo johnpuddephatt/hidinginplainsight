@@ -17,9 +17,9 @@ description_extended: >-
   site is now occupied by flats.
 
 
-  Sources: \
+  Sources:
 
-  Leodis\
+  Leodis
 
   Leeds Cinemas Remembered by Robert Preedy
 ---

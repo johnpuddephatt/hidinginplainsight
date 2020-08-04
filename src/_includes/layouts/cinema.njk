@@ -6,7 +6,8 @@
   "address": "{{ address | safe }}",
   "date_open": "{{ date_open | safe }}",
   "date_close": "{{ date_close | safe }}",
-  "location": {{ location | safe }},
-  "description": "{{ description | striptags(false) }}",
-  "description_extended": "{{ description_extended | striptags(false) }}"
+  "location": {{ location | safe }}
+  {% if description.length %}, "description": "{{ description | markdownify | jsonify | safe }}"{% endif %}
+  {% if description_extended.length %},"description_extended": "{{ description_extended | markdownify | jsonify | safe}}"{% endif %}
+
 }

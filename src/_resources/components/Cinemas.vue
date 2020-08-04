@@ -1,6 +1,6 @@
 <template>
   <div class="map-wrapper">
-    <Menu v-if="cinemas" :cinemas="cinemas" :isLandscape="isLandscape()" :clicked="clicked" @menu-clicked="onMenuClicked"></Menu>
+    <Menu v-if="cinemas" :cinemas="cinemas" :isLandscape="isLandscape()" :clicked="clicked" @menu-hovered="onMenuHovered"></Menu>
     <Map v-if="cinemas" :cinemas="cinemas" :clicked="clicked" @marker-clicked="onMarkerClicked"></Map>
     <transition name="popup">
       <Popup v-for="cinema in cinemas" :cinema="cinema" @close="clicked = null" v-if="clicked == cinema.slug" :key="cinema.slug"></Popup>
@@ -36,7 +36,7 @@ export default {
     onMarkerClicked: function(slug) {
       this.clicked = slug;
     },
-    onMenuClicked: function(slug) {
+    onMenuHovered: function(slug) {
       if(this.$router.currentRoute.name != 'cinemas') {
         this.$router.push({ name: 'cinemas' })
       }

@@ -16,9 +16,9 @@ description_extended: >-
   rather touchingly renamed as ‘The Old Box Office’.
 
 
-  Sources: \
+  Sources:
 
-  Cinema Treasures\
+  Cinema Treasures
 
   Leeds Cinemas Remembered by Robert E. Preedy
 ---

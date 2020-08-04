@@ -30,12 +30,17 @@
   transition: transform 0.75s;
 }
 
+.slide-leave-active {
+  z-index: 9999 !important;
+}
+
 .slide-enter /* .fade-leave-active below version 2.1.8 */ {
   transform: translateX(100%);
 }
 
 .slide-leave-to {
   transform: translateX(-100%);
+
 }
 
 

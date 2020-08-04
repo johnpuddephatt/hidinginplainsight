@@ -11,6 +11,6 @@ description: This cinema in Moortown opened in 1938 as part of a complex of
   The cinema closed in 1940, afterwhich it operated as a casino. In more recent
   years it was redeveloped into offices and retail shops.
 description_extended: |-
-  The cinema complex also included a squash court and a cafe. \
+  The cinema complex also included a squash court and a cafe.
   Source: Leodis
 ---

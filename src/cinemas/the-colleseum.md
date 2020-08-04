@@ -25,11 +25,11 @@ description_extended: >-
   Academy.  
 
 
-  Sources: \
+  Sources:
 
-  Leeds Cinemas Remembered by Robert Preedy\
+  Leeds Cinemas Remembered by Robert Preedy
 
-  The distribution of picture halls in Leeds, 1910 to 1939 by Nick Redfern\
+  The distribution of picture halls in Leeds, 1910 to 1939 by Nick Redfern
 
   Leodis
 ---

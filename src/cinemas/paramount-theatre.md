@@ -24,9 +24,9 @@ description_extended: >-
   and now occupied by Sports Direct.
 
 
-  Sources:\
+  Sources:
 
-  Leodis\
+  Leodis
 
   Leeds Cinemas 2 by Robert Preedy
 ---

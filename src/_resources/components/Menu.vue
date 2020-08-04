@@ -54,7 +54,7 @@ export default {
         this.currentlyHovered = slug;
         setTimeout(() => {
           if(this.currentlyHovered === slug && this.$router.currentRoute.name == 'cinemas') {
-            this.$emit('menu-clicked',slug);
+            this.$emit('menu-hovered',slug);
           }
         },750);
       }
@@ -144,14 +144,14 @@ export default {
     height: 75px;
     background-color: $cream;
     margin-right: ms(-1);
-    padding-top: 10px;
+    padding: 4px 4px 0;
     position: relative;
 
     img {
       margin-left: auto;
       margin-right: auto;
       object-fit: contain;
-      object-position: center;
+      object-position: center bottom;
       display: block;
       height: 100%;
       image-rendering: -webkit-optimize-contrast;

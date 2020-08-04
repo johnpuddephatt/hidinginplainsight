@@ -6,6 +6,7 @@ Vue.use(VueRouter);
 
 window.axios = require('axios');
 
+import Intro from './components/Intro.vue';
 import Loading from './components/Loading.vue';
 import Cinemas from './components/Cinemas.vue';
 import Cinema from './components/Cinema.vue';
@@ -14,8 +15,8 @@ import NotFound from './components/404.vue';
 const routes = [
   {
     path: '/',
-    component: Loading,
-    name: 'loading'
+    component: Intro,
+    name: 'intro'
   },
   {
     path: '/cinemas',

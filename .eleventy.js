@@ -5,6 +5,21 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/assets');
   eleventyConfig.addPassthroughCopy('./src/uploads');
 
+  // Markdown
+  var md = require('markdown-it')({
+    html: false,
+    linkify: true,
+    typographer: true
+  });
+
+  eleventyConfig.addNunjucksFilter("markdownify", markdownString => md.render(markdownString));
+
+  eleventyConfig.addNunjucksFilter('jsonify', function(str) {
+    str = str.replace(/\r|\n|\r\n/g, '');
+    str = str.replace(/"/g, '\\"');
+    return str;
+  })
+
   // Collections
   eleventyConfig.addCollection('cinemas', collection => {
     return collection.getFilteredByGlob('./src/cinemas/*.md').sort(function(a, b) {

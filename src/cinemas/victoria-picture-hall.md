@@ -12,16 +12,14 @@ description: "The Victoria Cinema was designed by Harehills-based architect W.C.
   1937 to make way for York Road. "
 description_extended: >-
   H. Kellet from Leeds said "I remember when the air raids started, a big letter
-  'S' flashed on screen and we had to go home." \
-
-  \
+  'S' flashed on screen and we had to go home."
 
   When the Victoria was demolished, the larger Star Cinema was built close by, which opened the next year in 1938.
 
 
-  Sources: \
+  Sources:
 
-  Leeds Cinemas 2 by Robert Preedy\
+  Leeds Cinemas 2 by Robert Preedy
 
   The distribution of picture halls in Leeds, 1910 to 1939 by Nick Redfern
 ---

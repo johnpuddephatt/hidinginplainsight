@@ -1,8 +1,6 @@
 <template>
     <div class="cinema-panel">
-      <div v-if="!cinemaLoaded">
-        Loading...
-      </div>
+      <loading v-if="!cinemaLoaded"></loading>
       <div v-else class="container">
         <router-link class="back-link" :to="{ name: 'cinemas'}">&larr; Back to map</router-link>
         <div v-if="cinema.image" class="image-container">
@@ -32,12 +30,14 @@
 
 <script>
 import Commento from './Commento.vue';
+import Loading from './Loading.vue';
 
 export default {
   name: 'Cinema',
   props: ['slug'],
   components: {
-    Commento
+    Commento,
+    Loading
   },
   data() {
     return {
@@ -70,9 +70,15 @@ export default {
     },
     imageLoaded($event) {
       let ratio = $event.target.naturalWidth/$event.target.naturalHeight;
-
-      if(ratio >= 1.2) {
+      console.log(ratio);
+      if(ratio >= 1.6) {
+        this.imageClass = 'is-x-wide';
+      }
+      else if(ratio >= 1.35) {
         this.imageClass = 'is-wide';
+      }
+      else if(ratio <= 0.5) {
+        this.imageClass = 'is-x-tall';
       }
       else if(ratio <= 0.8) {
         this.imageClass = 'is-tall';
@@ -141,6 +147,7 @@ export default {
 
   .cinema-address {
     font-size: ms(0);
+    margin-top: ms(-4);
     margin-bottom: ms(2);
 
     &::before {
@@ -189,6 +196,24 @@ export default {
         @media screen and (orientation: landscape) {
           padding-left: ms(6);
           padding-right: ms(6);
+        }
+      }
+
+      &.is-x-wide {
+        width: 65vw;
+
+        @media screen and (orientation: landscape) {
+          width: 0.65 * 800px;
+        }
+      }
+
+      &.is-x-tall {
+        height: 60vw;
+        transform: translateY(-10vw);
+
+        @media screen and (orientation: landscape) {
+          height: 0.575 * 800px;
+          transform: translateY(#{-0.075 * 800px});
         }
       }
     }

@@ -19,10 +19,7 @@ description_extended: >-
   dropping when more people acquired TVs at home, turning cinemas into bingo
   halls became a lucrative prospect.
 
-
-  The Lyceum is fondly remembered in Leeds, it appears to have been quite distinctive during its heyday, especially for a nice fragrance inside the auditorium and a stripy canopy outside. \
-
-  \
+  The Lyceum is fondly remembered in Leeds, it appears to have been quite distinctive during its heyday, especially for a nice fragrance inside the auditorium and a stripy canopy outside.
 
   Source: Leodis
 ---
