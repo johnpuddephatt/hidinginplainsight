@@ -103,10 +103,13 @@ export default {
 
 .sidebar--header {
   line-height: ms(4);
-  padding: 0 ms(2) ms(2);
+  padding: 0 ms(0) ms(2);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (orientation: landscape) {
+    padding: 0 ms(2) ms(2);
+  }
 }
 
 .sidebar--title {
@@ -124,9 +127,13 @@ export default {
   align-items: center;
   cursor: pointer;
   transition: background-color $base-timing $base-duration, border $base-timing $base-duration;
-  padding: ms(-2) ms(-1) ms(-2) ms(2) * 0.75;
+  padding: ms(-2) ms(-1) ms(-2) ms(0) * 0.75;
   border-left: ms(2)/4 solid transparent;
   border-bottom: 1px solid $light-gray;
+  
+  @media screen and (orientation: landscape) {
+    padding: ms(-2) ms(-1) ms(-2) ms(2) * 0.75;
+  }
 
   &:hover {
     background-color: $light-blue;

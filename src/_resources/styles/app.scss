@@ -37,7 +37,7 @@ html, body {
   display: flex;
   flex-direction: row;
   background-color: $blue;
-  padding: ms(1) ms(2);
+  padding: ms(1) ms(0);
 
   @media screen and (orientation: portrait) {
     display: block;
@@ -56,7 +56,7 @@ html, body {
 #navTrigger {
   position: absolute;
   top: 50%;
-  right: ms(2);
+  right: ms(0);
   transform: translateY(-50%);
   z-index: 999999999;
   display: none;
