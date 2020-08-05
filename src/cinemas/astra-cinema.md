@@ -1,7 +1,7 @@
 ---
 title: Astra Cinema
 date_open: "1911"
-date_close: "1946"
+date_close: "1958"
 status: Demolished
 image: https://res.cloudinary.com/hpph/image/upload/v1595964822/hidinginplainsight/astracinema.svg
 location: '{"type":"Point","coordinates":[-1.5545601,53.8141167]}'
