@@ -5,9 +5,10 @@ date_close: "1966"
 status: Demolished
 location: '{"type":"Point","coordinates":[-1.5407789,53.8108259]}'
 address: "136 Meanwood Road, Sheepscar "
-description: "This 345 seat cinema opened at 136 Meanwood Road in 1913. In 1935
+description: "Sadly we have found no picture of the Atlas Picture House in
+  Sheepscar. This 345 seat cinema opened at 136 Meanwood Road in 1913. In 1935
   its name was changed to Royal. The cinema closed down in 1966 and a firm
-  called Kingfisher Lubrication took on the premises.  "
+  called Kingfisher Lubrication took on the premises. "
 description_extended: >-
   This was the second cinema in Leeds to have the name Atlas. When it opened
   there was another, larger cinema in Kirkstall already called The Atlas Picture
