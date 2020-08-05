@@ -254,8 +254,12 @@ export default {
           font-family: mikado;
           font-weight: 900;
           font-style: italic;
-          font-size: ms(9);
           margin-bottom: ms(1);
+          font-size: ms(4);
+          @media screen and (orientation: landscape) {
+            font-size: ms(9);
+          }
+
         }
       }
     }
