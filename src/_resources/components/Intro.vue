@@ -126,6 +126,7 @@ export default {
     width: 100vw;
     overflow: hidden;
     background-color: white;
+    z-index: 99999999;
   }
 
   .loading-inner {
