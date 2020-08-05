@@ -68,9 +68,10 @@ export default {
   position: relative;
   overflow: hidden;
   flex: 1 1 100%;
-
+  display: flex;
+  flex-direction: column;
+  
   @media screen and (orientation: landscape) {
-    display: flex;
     flex-direction: row;
   }
 }
