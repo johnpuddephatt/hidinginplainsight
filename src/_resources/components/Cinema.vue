@@ -111,7 +111,7 @@ export default {
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: 999999;
+  z-index: 9999999;
   background-color: white;
 
   @media screen and (orientation: landscape) {
@@ -261,6 +261,7 @@ summary {
 .back-link {
   color: $gray;
   display: inline-block;
+
   @media screen and (orientation: portrait) {
     margin-bottom: ms(0);
   }
