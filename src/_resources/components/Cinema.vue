@@ -107,7 +107,7 @@ export default {
   left: 0;
   position: absolute;
   overflow-y: auto;
-  padding: 0 ms(2) ms(2);
+  padding: 0 ms(0) ms(2);
   top: 0;
   bottom: 0;
   right: 0;

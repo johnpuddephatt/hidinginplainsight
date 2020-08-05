@@ -50,7 +50,7 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: ms(2);
+  padding: ms(0);
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -104,7 +104,7 @@ export default {
       display: inline-block;
       background-image: url(/assets/images/marker-icon-red.svg);
       width: 0.75em;
-      margin-left: -0.75em;
+      margin-left: -1em;
       height: 1.25em;
       margin-right: .25em;
       background-size: contain;
