@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6  {
 
   @media screen and (orientation: portrait) {
     display: block;
-    z-index: 9999999;
+    z-index: 99999999;
     text-align: center;
     position: fixed;
     margin-right: 0;
@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6  {
   top: 50%;
   right: ms(2);
   transform: translateY(-50%);
-  z-index: 99999999;
+  z-index: 999999999;
   display: none;
 
   @media screen and (orientation: portrait) {
