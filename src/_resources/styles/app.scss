@@ -6,10 +6,16 @@ h1, h2, h3, h4, h5, h6  {
   line-height: 1.2;
 }
 
+html, body {
+  height: 100vh;
+  height: -webkit-fill-available;
+}
+
 #app {
   height: 100vh;
   height: -webkit-fill-available;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .button {
@@ -18,7 +24,7 @@ h1, h2, h3, h4, h5, h6  {
   color: $black !important;
   border-radius: 9999px;
   font-size: ms(0);
-  padding: ms(-2) ms(0);
+  padding: ms(-3) ms(0);
   display: inline-block;
 
    &.is-primary {
@@ -36,7 +42,7 @@ h1, h2, h3, h4, h5, h6  {
     display: block;
     z-index: 99999999;
     text-align: center;
-    position: fixed;
+    position: relative;
     margin-right: 0;
     line-height: ms(8);
     top: 0;

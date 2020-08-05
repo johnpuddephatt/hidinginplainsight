@@ -67,10 +67,9 @@ export default {
 .map-wrapper {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  flex: 1 1 100%;
 
   @media screen and (orientation: landscape) {
-    height: calc(100vh - #{3 * ms(1)});
     display: flex;
     flex-direction: row;
   }

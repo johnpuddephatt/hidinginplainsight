@@ -95,18 +95,21 @@ export default {
 
   .cinema-address {
     font-size: ms(-1);
+    line-height: 1;
     color: $gray;
+    margin-left: 0.75em;
 
     &::before {
       content: '';
       display: inline-block;
       background-image: url(/assets/images/marker-icon-red.svg);
       width: 0.75em;
-      height: 1em;
+      margin-left: -0.75em;
+      height: 1.25em;
       margin-right: .25em;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: left;
+      background-position: left bottom;
     }
   }
 
