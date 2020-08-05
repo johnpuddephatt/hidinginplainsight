@@ -131,12 +131,12 @@ export default {
 
   .leaflet-container {
     width: 100%;
-    height: calc(100% - #{2 * ms(2) + ms(4)}) !important;
+    height: auto !important;
     flex: 1;
 
     @media screen and (orientation: landscape) {
       width: calc(100vw - #{$sidebar-width}) !important;
-      height: 100% !important;
+      // height: 100% !important;
     }
   }
 
