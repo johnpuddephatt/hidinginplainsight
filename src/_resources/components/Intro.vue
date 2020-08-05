@@ -153,7 +153,6 @@ export default {
       transform: translateX(105%);
     }
 
-
     div {
       position: relative;
       border: 0.5vw solid white;
@@ -280,12 +279,18 @@ export default {
 
 
   @keyframes sideScroll {
+    0% {
+      transform: translateX(105%)
+    }
     100% {
       transform: translateX(0%)
     }
   }
 
   @keyframes downScroll {
+    0% {
+      transform: translateY(-105%)
+    }
     100% {
       transform: translateY(0%)
     }
