@@ -10,7 +10,7 @@
 
   <body>
     <div id="app">
-      <header class="site-header">
+      <header class="site-header" v-bind:class="{ 'show': $route.path != '/' }">
         <h1><a class="site-title">Hiding in Plain Sight</a></h1>
         <label id="navTrigger" for="navToggle">
           <span class="menu-icon">

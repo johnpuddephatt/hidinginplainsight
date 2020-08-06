@@ -121,7 +121,10 @@ export default {
 
   .container {
     max-width: 800px;
-    margin: ms(8) auto;
+    margin: ms(2) auto;
+    @media screen and (orientation: landscape) {
+      margin: ms(8) auto;
+    }
   }
 
   .panel {
@@ -167,6 +170,7 @@ export default {
   }
 
   .cinema-address {
+    display: inline-block;
     font-size: ms(0);
     margin-top: ms(-4);
 
@@ -263,7 +267,7 @@ summary {
   display: inline-block;
 
   @media screen and (orientation: portrait) {
-    margin-bottom: ms(0);
+    margin-bottom: ms(2);
   }
 }
 </style>

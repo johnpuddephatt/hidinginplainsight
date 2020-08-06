@@ -35,8 +35,9 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 100px;
-    height: 100px;
+    width: 72px;
+    height: 72px;
+
     div {
       position: absolute;
       border: 4px solid $gray;

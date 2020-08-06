@@ -51,7 +51,7 @@
       <div></div>
     </div>
   </div>
-  <loading v-else></loading>
+  <loading class="loading-panel__home" v-else></loading>
 
 </template>
 
@@ -112,6 +112,16 @@ export default {
 
 <style lang="scss">
   @import '../styles/base.scss';
+
+  .loading-panel__home {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: white;
+    z-index: 99999999;
+  }
 
   .loading-wrapper {
     position: fixed !important;
