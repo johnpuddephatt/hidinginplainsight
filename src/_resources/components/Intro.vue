@@ -11,8 +11,8 @@
       <div class="no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('star-cinema')"></div>
       <div class="double-width no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('savoy-cinema')"></div>
       <div class="double-height no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('rex-cinema')"></div>
-      <div><img @load="imageLoaded" :src="getCinemaImageBySlug('ritz-cinema-cross-gates')"></div>
-      <div><img @load="imageLoaded" :src="getCinemaImageBySlug('pudsey-picture-house')"></div>
+      <div class="no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('ritz-cinema-cross-gates')"></div>
+      <div class="no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('pudsey-picture-house')"></div>
       <div class="double-width"><img @load="imageLoaded" :src="getCinemaImageBySlug('capitol')"></div>
       <div><img @load="imageLoaded" :src="getCinemaImageBySlug('scala')"></div>
       <div><img @load="imageLoaded" :src="getCinemaImageBySlug('shaftesbury-cinema')"></div>
@@ -146,7 +146,7 @@ export default {
     grid-auto-rows: 11.11vh;
     grid-template-columns: repeat(5, 11.11vh);
     grid-auto-flow: row dense;
-    animation: downScroll 8s forwards cubic-bezier(.11,0,.92,.98);
+    animation: downScroll 6s forwards cubic-bezier(.11,0,.92,.98);
     transform: translateY(-105%);
 
     @media screen and (orientation: landscape) {
@@ -159,7 +159,7 @@ export default {
       grid-template-columns: none;
       grid-template-rows: repeat(5, 10vw);
       grid-auto-flow: column dense;
-      animation: sideScroll 8s forwards cubic-bezier(.11,0,.92,.98);
+      animation: sideScroll 7s forwards cubic-bezier(.11,0,.92,.98);
       transform: translateX(105%);
     }
 
@@ -251,14 +251,16 @@ export default {
         grid-row-start: 3;
         grid-row-end: span 5;
         background-color: white !important;
-        transition-delay: 3.5s;
+        transition-delay: 2s;
         padding: ms(-2);
+        transition-duration: 1s;
 
         @media screen and (orientation: landscape) {
           grid-column-end: span 6;
           grid-column-start: 3;
           grid-row-start: 2;
           grid-row-end: span 3;
+          // transition-delay: 1.5s;
         }
 
         h1 {
@@ -292,7 +294,7 @@ export default {
 
   @keyframes sideScroll {
     0% {
-      transform: translateX(105%)
+      transform: translateX(95%)
     }
     100% {
       transform: translateX(0%)
@@ -301,7 +303,7 @@ export default {
 
   @keyframes downScroll {
     0% {
-      transform: translateY(-105%)
+      transform: translateY(-85%)
     }
     100% {
       transform: translateY(0%)
