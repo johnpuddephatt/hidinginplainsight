@@ -6,7 +6,7 @@
     </div>
     <div class="popup-header">
       <h3 class="cinema-title" v-html="cinema.title"></h3>
-      <p v-if="cinema.address" class="cinema-address">{{ cinema.address }}</p>
+      <p v-if="cinema.address" class="cinema-address">{{ cinema.address.split(',')[0] }}</p>
     </div>
     <div class="popup-footer">
       <button @click="$emit('close')" class="button">Close</button>
@@ -61,7 +61,7 @@ export default {
     width: 75px;
     height: 75px;
     background-color: $cream;
-    margin-right: ms(-1);
+    margin-right: ms(-3);
     padding-top: 10px;
     position: relative;
 
@@ -90,7 +90,6 @@ export default {
   .cinema-title {
     font-size: ms(1);
     font-weight: 700;
-    margin-bottom: ms(-4);
   }
 
   .cinema-address {
@@ -119,7 +118,7 @@ export default {
 
   .popup-footer {
     margin-left: auto;
-    padding-left: ms(-2);
+    padding-left: ms(-4);
 
     .button {
       display: block;

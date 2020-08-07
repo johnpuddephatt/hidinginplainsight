@@ -6,11 +6,11 @@
         <p>Discovering the lost cinemas of Leeds</p>
         <router-link class="enter-link" :to="{ name: 'cinemas'}">Enter</router-link>
       </div>
-      <div><img @load="imageLoaded" :src="getCinemaImageBySlug('showcase-cinema-de-lux')"></div>
+      <div class="double-width no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('showcase-cinema-de-lux')"></div>
       <div class="double-width no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('princess-theatre')"></div>
-      <div><img @load="imageLoaded" :src="getCinemaImageBySlug('star-cinema')"></div>
-      <div><img @load="imageLoaded" :src="getCinemaImageBySlug('savoy-cinema')"></div>
-      <div class="double-height"><img @load="imageLoaded" :src="getCinemaImageBySlug('rex-cinema')"></div>
+      <div class="no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('star-cinema')"></div>
+      <div class="double-width no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('savoy-cinema')"></div>
+      <div class="double-height no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('rex-cinema')"></div>
       <div><img @load="imageLoaded" :src="getCinemaImageBySlug('ritz-cinema-cross-gates')"></div>
       <div><img @load="imageLoaded" :src="getCinemaImageBySlug('pudsey-picture-house')"></div>
       <div class="double-width"><img @load="imageLoaded" :src="getCinemaImageBySlug('capitol')"></div>
@@ -143,8 +143,8 @@ export default {
     position: absolute;
     display: grid;
     top: 0;
-    grid-auto-rows: 14.28vh;
-    grid-template-columns: repeat(4, 14.28vh);
+    grid-auto-rows: 11.11vh;
+    grid-template-columns: repeat(5, 11.11vh);
     grid-auto-flow: row dense;
     animation: downScroll 8s forwards cubic-bezier(.11,0,.92,.98);
     transform: translateY(-105%);
@@ -220,12 +220,13 @@ export default {
         background-color: #EB7841;
       }
 
-      &:empty {
-        opacity: 0 !important;
-      }
-
       &.no-delay {
         transition-delay: 0 !important;
+        opacity: 1 !important;
+      }
+
+      &:empty {
+        opacity: 0 !important;
       }
 
       &:nth-child(4n + 2) {
@@ -245,12 +246,13 @@ export default {
         text-align: center;
         justify-content: center;
         align-items: center;
-        grid-column-end: span 4;
-        grid-column-start: 1;
+        grid-column-end: span 3;
+        grid-column-start: 2;
         grid-row-start: 3;
-        grid-row-end: span 3;
+        grid-row-end: span 5;
         background-color: white !important;
         transition-delay: 3.5s;
+        padding: ms(-2);
 
         @media screen and (orientation: landscape) {
           grid-column-end: span 6;
@@ -264,7 +266,7 @@ export default {
           font-weight: 900;
           font-style: italic;
           margin-bottom: ms(1);
-          font-size: ms(4);
+          font-size: ms(5);
           @media screen and (orientation: landscape) {
             font-size: ms(9);
           }
