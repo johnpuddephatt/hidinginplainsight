@@ -8,8 +8,9 @@
     /> cinemas</h2>
       <button class="button" v-if="!isLandscape" @click="menuOpen = !menuOpen" v-html="menuOpen ? 'Show map' : 'Show list'"></button>
     </div>
+    <input class="search-input" type="text" v-model="search" placeholder="Search by name.."/>
     <nav class="sidebar-menu">
-      <router-link class="sidebar-menu--item" :class="cinema.slug == clicked ? 'active' : ''" :to="{ name: 'cinema', params: { slug: cinema.slug } }" :ref="cinema.slug" @mouseenter.native="mouseoverStart($event, cinema.slug)" v-for="cinema in cinemas" :key="cinema.slug">
+      <router-link v-for="cinema in filteredList" class="sidebar-menu--item" :class="cinema.slug == clicked ? 'active' : ''" :to="{ name: 'cinema', params: { slug: cinema.slug } }" :ref="cinema.slug" @mouseenter.native="mouseoverStart($event, cinema.slug)" :key="cinema.slug">
         <div class="image">
           <img v-if="cinema.image_small" :src="cinema.image_small" />
           <span v-else>?</span>
@@ -29,8 +30,21 @@ export default {
   components: {ICountUp},
   data() {
     return {
+      search: null,
       menuOpen: false,
       currentlyHovered: null
+    }
+  },
+  computed: {
+    filteredList() {
+      if(!this.search) {
+        return this.cinemas;
+      }
+      else {
+        return this.cinemas.filter(cinema => {
+          return cinema.title.toLowerCase().includes(this.search.toLowerCase());
+        })
+      }
     }
   },
   watch: {
@@ -101,6 +115,26 @@ export default {
   }
 }
 
+.search-input {
+  border-radius: 99999px;
+  margin: 0 ms(2) ms(-2);
+  border: 1px solid $medium-gray;
+  width: calc(100% - #{2 * ms(2)});
+  padding: ms(-4) ms(0);
+  padding-left: 2em;
+
+  &:focus {
+    outline: none;
+    border-color: $gray;
+  }
+
+  background-image: url(/assets/images/search-icon.svg);
+  background-size: ms(0);
+  background-repeat: no-repeat;
+  background-position: 0.75em center;
+
+}
+
 .sidebar--header {
   line-height: ms(4);
   padding: 0 ms(0) ms(2);
@@ -130,7 +164,7 @@ export default {
   padding: ms(-2) ms(-1) ms(-2) ms(0) * 0.75;
   border-left: ms(2)/4 solid transparent;
   border-bottom: 1px solid $light-gray;
-  
+
   @media screen and (orientation: landscape) {
     padding: ms(-2) ms(-1) ms(-2) ms(2) * 0.75;
   }

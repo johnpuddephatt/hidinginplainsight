@@ -17,9 +17,10 @@
             <div class="summary-content" v-html="cinema.description_extended"></div>
           </details>
         </div>
-        <!-- <div class="panel">
+        <div v-if="cinema.photos.length" class="panel">
           <h3 class="panel-heading">Photos</h3>
-        </div> -->
+          <gallery :photos="cinema.photos"></gallery>
+        </div>
         <div class="panel">
           <h3 class="panel-heading">Share your memories</h3>
           <commento :slug="slug"></commento>
@@ -29,6 +30,7 @@
 </template>
 
 <script>
+import Gallery from './Gallery.vue';
 import Commento from './Commento.vue';
 import Loading from './Loading.vue';
 
@@ -37,7 +39,8 @@ export default {
   props: ['slug'],
   components: {
     Commento,
-    Loading
+    Loading,
+    Gallery
   },
   data() {
     return {

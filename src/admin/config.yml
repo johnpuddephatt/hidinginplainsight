@@ -9,6 +9,17 @@ media_library:
     folder:
       path: 'hidinginplainsight'
 collections:
+  - name: 'pages'
+    label: 'Pages'
+    folder: 'src/pages'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: 'Title', name: 'title', widget: 'string' }
+      - {label: "Body", name: "body", widget: "markdown", buttons: ['bold','italic','link','heading-two','heading-three','quote','bulleted-list','numbered-list']}
+      - {label: 'Order', name: 'order', widget: 'string', hint: 'Sets order in navigation', required: false  }
+      - {label: 'Show in navigation?', name: 'display_in_navigation', widget: 'boolean', required: false }
   - name: 'cinemas'
     label: 'Cinemas'
     folder: 'src/cinemas'

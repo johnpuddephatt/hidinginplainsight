@@ -1,5 +1,9 @@
 module.exports = function(eleventyConfig) {
 
+  eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
+  eleventyConfig.addLayoutAlias('page', 'layouts/page.njk');
+  eleventyConfig.addLayoutAlias('vue', 'layouts/vue.njk');
+
   // Copy files
   eleventyConfig.addPassthroughCopy('./src/admin');
   eleventyConfig.addPassthroughCopy('./src/assets');
@@ -21,6 +25,13 @@ module.exports = function(eleventyConfig) {
   })
 
   // Collections
+
+  eleventyConfig.addCollection('pages', collection => {
+    return collection.getFilteredByGlob('./src/pages/*.md').sort(function(a, b) {
+      return b.data.order - a.data.order;
+    });
+  });
+
   eleventyConfig.addCollection('cinemas', collection => {
     return collection.getFilteredByGlob('./src/cinemas/*.md').sort(function(a, b) {
       let aTitle = a.data.title.replace("The ", "");
