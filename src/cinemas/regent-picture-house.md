@@ -13,13 +13,13 @@ description: The Regent was designed by Leeds architect Fred Mitchell and opened
   The building is now home to Al Murad, a tile shop.
 description_extended: >-
   When the cinema was altered for bingo, the screen was removed and a false
-  ceiling added but the walls, divided by pillasters, remained, as did a flat
-  fronted balcony of approximately ten rows. The tile shop has since covered up
-  these features with product display areas. \
+  ceiling added but the walls and pillasters remained, as did a flat fronted
+  balcony of approximately ten rows. The tile shop has since covered up these
+  features with display areas. \
 
   \
 
-  It is possible to see the orginal name Regent is still painted on the roof, apparently this was done for a publicity stunt in the 1930s. A plane flew over the cinema and did a leaflet drop advertising the cinema. The roof was painted so that the pilot of the plane could find it!
+  It is possible to still see the orginal name Regent, which is painted on the roof. Apparently this was done for a publicity stunt in the 1930s. A plane flew over Burmantofts and did a leaflet drop advertising the cinema. The roof was painted so that the pilot of the plane could find it!
 
 
   Source:\
