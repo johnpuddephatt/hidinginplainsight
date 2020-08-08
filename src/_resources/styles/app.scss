@@ -26,9 +26,22 @@ html, body {
   font-size: ms(0);
   padding: ms(-3) ms(0);
   display: inline-block;
+  transition: background-color 0.5s ease-in-out;
+
+  &:hover {
+    background-color: $gray;
+  }
 
    &.is-primary {
      background-color: $orange;
+     &:hover {
+       background-color: darken($orange, 20%);
+     }
+   }
+
+   &.is-large {
+     padding: ms(0) ms(2);
+     font-size: ms(1);
    }
 }
 

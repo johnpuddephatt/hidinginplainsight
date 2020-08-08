@@ -1,7 +1,11 @@
 ---
 layout: /layouts/default.njk
 ---
+<div id="app">
+  {% include 'header.njk' %}
+  <router-view></router-view>
+</div>
 <script src="/assets/app.js" defer></script>
-<router-view></router-view>
+
 
 

@@ -5,6 +5,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('vue', 'layouts/vue.njk');
 
   // Copy files
+  eleventyConfig.addPassthroughCopy({'./src/_data/site.json' : 'api/site.json'});
+
   eleventyConfig.addPassthroughCopy('./src/admin');
   eleventyConfig.addPassthroughCopy('./src/assets');
   eleventyConfig.addPassthroughCopy('./src/uploads');

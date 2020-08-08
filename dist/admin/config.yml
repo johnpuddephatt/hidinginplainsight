@@ -9,6 +9,19 @@ media_library:
     folder:
       path: 'hidinginplainsight'
 collections:
+  - name: "site" # Used in routes, e.g., /admin/collections/blog
+    label: "Site" # Used in the UI
+    editor:
+      preview: false
+    files:
+      - label: "Config"
+        name: "config"
+        file: "_data/site.json"
+        fields: # The fields for each document, usually in front matter
+          - { label: 'Title', name: 'title', widget: 'string', required: false }
+          - { label: 'Stapline', name: 'strapline', widget: 'string', required: false }
+          - { label: 'Welcome title', name: 'welcome_title', widget: 'string', required: false }
+          - { label: 'Welcome message', name: 'welcome_message', widget: 'string', required: false }
   - name: 'pages'
     label: 'Pages'
     folder: 'src/pages'
