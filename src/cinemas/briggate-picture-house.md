@@ -20,7 +20,8 @@ description_extended: >-
 
   Source: \
 
-  [Cinema Treasures](http://cinematreasures.org/theaters/38396)\
+  [Cinema Treasures](http://cinematreasures.org/theaters/38396)
+
 
   The site where the Rialto stood is now occupied by the central Leeds Marks and Spencer store. The firm purchased the plot in 1939 but with the outbreak of the War, the new building was taken over by the Ministry of Works. The store finally opened in 1951.\
 
