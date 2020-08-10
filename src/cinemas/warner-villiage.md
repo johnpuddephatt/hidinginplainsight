@@ -12,5 +12,5 @@ description: The Warner Village multiplex cinema opened in 1998 with nine
   chain was a joint venture between the American entertainment brand Warner Bros
   and Australian cinema company Village Roadshow.
 description_extended: The chain was acquired by SBC International Cinemas in
-  2003 and re-branded as Vue Cinemas.
+  2003 and the Leeds site was re-branded as a Vue Cinema in 2006.
 ---
