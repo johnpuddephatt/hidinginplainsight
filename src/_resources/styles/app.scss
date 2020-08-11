@@ -32,6 +32,16 @@ html, body {
     background-color: $gray;
   }
 
+  &.is-secondary {
+    background-color: white;
+    border: 1px solid $blue;
+    // color: darken($blue, 30%) !important;
+    &:hover {
+      background-color: darken($blue, 20%);
+      color: white !important;
+    }
+  }
+
    &.is-primary {
      background-color: $orange;
      &:hover {

@@ -16,12 +16,12 @@ collections:
     files:
       - label: "Config"
         name: "config"
-        file: "_data/site.json"
+        file: "src/_data/site.json"
         fields: # The fields for each document, usually in front matter
           - { label: 'Title', name: 'title', widget: 'string', required: false }
           - { label: 'Stapline', name: 'strapline', widget: 'string', required: false }
           - { label: 'Welcome title', name: 'welcome_title', widget: 'string', required: false }
-          - { label: 'Welcome message', name: 'welcome_message', widget: 'string', required: false }
+          - { label: 'Welcome message', name: 'welcome_message', widget: 'string', required: false, hint: 'The string $number will be replaced with the current number of cinemas that appear in the database.' }
   - name: 'pages'
     label: 'Pages'
     folder: 'src/pages'

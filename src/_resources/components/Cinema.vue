@@ -17,9 +17,13 @@
             <div class="summary-content" v-html="cinema.description_extended"></div>
           </details>
         </div>
-        <div v-if="cinema.photos.length" class="panel">
+        <div class="panel">
           <h3 class="panel-heading">Photos</h3>
-          <gallery :photos="cinema.photos"></gallery>
+          <gallery v-if="cinema.photos.length" :cinemaTitle="cinema.title" :photos="cinema.photos"></gallery>
+          <div v-else class="empty-photos">
+            <p>We’ve not found any photos of this cinema yet.</p>
+            <a class="button is-secondary" :href="`mailto:john@jdp.org.uk?subject=Photo%20of%20${cinema.title}&body=${encodeURIComponent('Please indicate if you are the copyright owner, or indicate who you believe the copyright owner to be so we can attempt to gain permission to use the image on the site.')}`" >Send us a photo</a>
+          </div>
         </div>
         <div class="panel">
           <h3 class="panel-heading">Share your memories</h3>
@@ -105,6 +109,16 @@ export default {
 
 <style lang="scss">
 @import '../styles/base.scss';
+
+.empty-photos {
+  padding: ms(8) ms(4);
+  margin-top: ms(0);
+  background-color: $light-blue;
+  text-align: center;
+  .button {
+    margin-top: ms(0);
+  }
+}
 
 .cinema-panel {
   left: 0;

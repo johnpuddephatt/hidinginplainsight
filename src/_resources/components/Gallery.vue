@@ -4,6 +4,10 @@
       <div class="gallery-item" v-for="(photo, key) in photos" @click="open = key">
         <img :src="photo.small"/>
       </div>
+      <div class="gallery-item add">
+        <a class="button is-secondary" :href="`mailto:john@jdp.org.uk?subject=Photo%20of%20${cinemaTitle}&body=${encodeURIComponent('Please indicate if you are the copyright owner, or indicate who you believe the copyright owner to be so we can attempt to gain permission to use the image on the site.')}`" >Send us a photo</a>
+      </div>
+
     </div>
 
     <transition name="fade">
@@ -22,7 +26,7 @@
 <script>
 export default {
   name: 'Gallery',
-  props: ['photos'],
+  props: ['photos', 'cinemaTitle'],
   components: {
   },
   data() {
@@ -171,6 +175,17 @@ export default {
   a {
     pointer-events: auto;
     cursor: pointer;
+  }
+
+  &.add {
+    background-clip: padding-box;
+    background-color: $light-blue;
+    padding: ms(0);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
 }

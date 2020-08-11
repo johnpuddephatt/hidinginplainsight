@@ -15,7 +15,10 @@
           <img v-if="cinema.image_small" :src="cinema.image_small" />
           <span v-else>?</span>
         </div>
-        <h3 class="sidebar-menu--title" v-html="cinema.title"></h3>
+        <div>
+          <h3 class="sidebar-menu--title" v-html="cinema.title"></h3>
+          <p class="sidebar-menu--status">{{cinema.status}}</p>
+        </div>
       </router-link>
     </nav>
   </div>
@@ -225,6 +228,12 @@ export default {
 
 .sidebar-menu--title {
   font-weight: 400 !important;
+}
+
+.sidebar-menu--status {
+  color: $gray;
+  font-size: ms(-1);
+  margin-bottom: 0;
 }
 
 </style>
