@@ -120,7 +120,11 @@ export default {
 
 .search-input {
   border-radius: 99999px;
-  margin: 0 ms(2) ms(-2);
+  margin: 0 ms(0) ms(-2);
+  
+  @media screen and (orientation: landscape) {
+    margin: 0 ms(2) ms(-2);
+  }
   border: 1px solid $medium-gray;
   width: calc(100% - #{2 * ms(2)});
   padding: ms(-4) ms(0);

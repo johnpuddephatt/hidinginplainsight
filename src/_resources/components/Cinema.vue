@@ -138,7 +138,7 @@ export default {
 
   .container {
     max-width: 800px;
-    margin: ms(2) auto;
+    margin: 0 auto;
     @media screen and (orientation: landscape) {
       margin: ms(8) auto;
     }
@@ -238,8 +238,10 @@ export default {
         padding-bottom: ms(2);
       }
       &.is-square {
+        width: 60vw;
 
         @media screen and (orientation: landscape) {
+          width: 75vw;
           padding-left: ms(6);
           padding-right: ms(6);
         }

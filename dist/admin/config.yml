@@ -6,6 +6,7 @@ media_library:
   config:
     cloud_name: hpph
     api_key: 732351866945655
+    username: admin@hydeparkpicturehouse.co.uk
     folder:
       path: 'hidinginplainsight'
 collections:
@@ -56,9 +57,10 @@ collections:
       - { label: 'Description', name: 'description', widget: 'text', required: false}
       - { label: 'Extended description', name: 'description_extended', widget: 'markdown', buttons: ["bold", "italic", "link"], required: false}
       - label: Photos
-        name: photo
-        widget: image
-        required: false
-        media_library:
-          config:
-            multiple: true
+        name: photos
+        widget: object
+        fields:
+          - { label: 'Image', name: 'file', widget: 'image', required: false}
+          - {label: 'Caption', name: 'caption', widget: 'string', required: false }
+          - {label: 'Date', name: 'date', widget: 'string', required: false }
+          - {label: 'Source', name: 'source', widget: 'string', required: false }
