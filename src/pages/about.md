@@ -13,11 +13,7 @@ From small neighbourhood picture houses to gigantic super-cinemas, so many of th
 
 Supported by Leeds Inspired and the National Lottery Heritage Fund, this ever evolving archive will allow you to navigate the city and learn all about Leeds’ amazing cinema heritage.
 
-\---
-
-CINEMA IMAGE
-
-\---
+![](https://res.cloudinary.com/hpph/image/upload/v1597265678/hidinginplainsight/Alexandra_about.jpg)
 
 Huge thanks to Adam and the Picture House’s creative engagement officer Laura, for all their hard work on the project. Thanks also to Lets Dance Agency for bringing the website to life. 
 
