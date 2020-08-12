@@ -15,5 +15,11 @@ description_extended: >-
   the cinema on horseback, leaving the steed pitched outside during screenings.
 
 
-  Sources used: City of Leeds Directory 1961, Barret's Publications LTD
+  \_\_\_\_
+
+
+  ***Sources:*** 
+
+
+  City of Leeds Directory 1961, Barret's Publications LTD
 ---
