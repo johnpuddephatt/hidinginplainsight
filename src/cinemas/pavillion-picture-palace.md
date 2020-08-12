@@ -1,5 +1,5 @@
 ---
-title: Pavillion Picture Palace
+title: Pavilion Picture Palace
 date_open: "1911"
 date_close: "1956"
 status: Closed
