@@ -11,6 +11,8 @@ Presented by the Hyde Park Picture House, **Hiding In Plain Sight** is a new int
 
 CINEMA IMAGE
 
+![](https://res.cloudinary.com/hpph/image/upload/v1596801984/hidinginplainsight/9462.jpg)
+
 \---
 
 From small neighbourhood picture houses to gigantic super-cinemas, so many of these incredible buildings remain in our lives today – repurposed into shops, clubs, offices – strangely familiar and hiding in plain sight. And for those that are no longer standing, their legacy lives on through the stories, photos and memories that so many of you have.
