@@ -11,22 +11,18 @@ description: "The Regal 'Super' Cinema was a handsome art deco-style cinema,
   vehicles. It was owned by Goldstone Cinemas Ltd and there was a sweet shop
   concession called Stephensons at the front of the building. "
 description_extended: >-
-  The Regal was demolished so that a GEM store could be built on the site, this
-  was an early a precursor of out-of-town retailing in the UK which later became
-  ASDA.
+  The Regal was was designed by Leeds-based architect A. V. Montague, who also
+  built the Rex cinema in Beeston. It was demolished so that a GEM store could
+  be built on the site, this was an early a precursor of out-of-town retailing
+  in the UK which later became ASDA.
 
 
-  Source: \
+  Many film goers recall combining a trip to the cinema with a visit to Coe’s Fisheries opposite and that the fish and chip shop often had long queues. Coe’s Fisheries is still trading on Crossgates Road. 
+
+
+  Sources: \
 
   GEM, 1964–1966: Britain's First Out-of-Town Retailer by Paul Whysall\
-
-  \
-
-  Many film goers recall combining a trip to the cinema with a visit to Coe’s Fisheries opposite and that the fish and chip shop often had long queues. Coe’s Fisheries is still trading on Crossgates Road. \
-
-  \
-
-  Source: \
 
   [Leodis](http://www.leodis.net/display.aspx?resourceIdentifier=2002820_65447635&DISPLAY=FULL&COMMENT=YES)
 ---
