@@ -58,7 +58,8 @@ collections:
       - { label: 'Extended description', name: 'description_extended', widget: 'markdown', buttons: ["bold", "italic", "link"], required: false}
       - label: Photos
         name: photos
-        widget: object
+        widget: list
+
         fields:
           - { label: 'Image', name: 'file', widget: 'image', required: false}
           - {label: 'Caption', name: 'caption', widget: 'string', required: false }
