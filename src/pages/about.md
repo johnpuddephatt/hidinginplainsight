@@ -1,5 +1,5 @@
 ---
-title: About the project
+title: About
 order: 1
 display_in_navigation: true
 ---
