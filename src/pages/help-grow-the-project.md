@@ -16,7 +16,7 @@ Lots of work has already gone into creating this resource but there’s still a 
 
 ## Make a donation
 
-Out of these 80 cinemas, the Hyde Park Picture House is one of the few lucky survivors. But we only remain open today thanks to the ongoing support and generosity of our audiences and community. If you'd like to see the Picture House continue working on projects like Hiding in Plain Sight, then please consider making a donation. No matter the size, we are hugely grateful for any support received. 
+Out of 80 cinemas, the Hyde Park Picture House is one of the few lucky survivors. But we only remain open today thanks to the ongoing support and generosity of our audiences and community. If you'd like to see the Picture House continue working on projects like Hiding in Plain Sight, then please consider making a donation. No matter the size, we are hugely grateful for any support received. 
 
 ___
 
