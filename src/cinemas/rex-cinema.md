@@ -6,4 +6,8 @@ status: Demolished
 image: https://res.cloudinary.com/hpph/image/upload/v1596451159/hidinginplainsight/rexcinema.svg
 location: '{"type":"Point","coordinates":[-1.5592486,53.7596342]}'
 address: Gypsy Lane, Beeston
+description: "Opening in 1939, the Rex cinema was designed by Leeds-based
+  architect A. V. Montague, who also built the Regal Cinema in Crossgates. It
+  had 1,350 seats and was a modern picture palace, built in a modernist style.
+  It closed in 1976 and was demolished to make way for new housing. "
 ---
