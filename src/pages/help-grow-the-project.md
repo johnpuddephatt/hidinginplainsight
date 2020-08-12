@@ -1,5 +1,6 @@
 ---
 title: Help grow the project
+display_in_navigation: true
 ---
 Lots of work has already gone into creating this resource but there’s still a lot more work to do! Our ambition is for Hiding in Plain Sight to continue growing and expanding over time – but we can only do so with your help!
 
