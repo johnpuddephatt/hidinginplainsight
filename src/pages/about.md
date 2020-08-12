@@ -3,9 +3,11 @@ title: About the project
 order: 1
 display_in_navigation: true
 ---
-### With at least 80 cinemas once existing in Leeds and now only a handful remaining it begs the question: where have all our cinemas gone? The answer is, they’re all around us – you just need to know where to look!
+With at least 80 cinemas once existing in Leeds and now only a handful remaining it begs the question: where have all our cinemas gone? The answer is, they’re all around us – you just need to know where to look!
 
 ### Presented by the Hyde Park Picture House, Hiding In Plain Sight is a new interactive heritage project, bringing together years of research with illustrations from Adam Allsuch Boardman – allowing you to rediscover the lost cinemas of Leeds.
+
+
 
 
 
