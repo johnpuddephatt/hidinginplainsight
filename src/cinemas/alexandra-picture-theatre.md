@@ -22,5 +22,7 @@ description_extended: >-
   ***Sources:***
 
 
-  City of Leeds Directory 1961, Barret's Publications LTD, Wikipedia
+  City of Leeds Directory 1961, Barret's Publications LTD\
+
+  Wikipedia
 ---
