@@ -17,7 +17,7 @@ Supported by Leeds Inspired and the National Lottery Heritage Fund, this ever ev
 
 Huge thanks to Adam and the Picture House’s creative engagement officer Laura Ager, for all their hard work on the project. Thanks also to Lets Dance Agency for bringing the website to life. 
 
-This project owes a huge debt to research carried out in the 1980s by Robert Preedy, as well as the many individual contributors to the [Cinema Treasures](http://cinematreasures.org/) website.  
+This project owes an enormous debt to research carried out in the 1980s by author Robert Preedy, as well as the many individual contributors to the [Cinema Treasures](http://cinematreasures.org/) website. We'd also like to thank local cinema historians Jane Ellis and Shaun Page for their insights. 
 
 And big thanks to Leeds Libraries and especially the staff at the Local and Family History library for contributing advice, items from their archive and photographs from their amazing Leodis website.
 
