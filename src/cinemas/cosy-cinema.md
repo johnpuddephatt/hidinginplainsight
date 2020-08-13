@@ -9,4 +9,9 @@ address: Accomodation Road (now York Road)
 description: The Miners Institute began screening films in the early 20th
   century, obtaining a license in 1910. It was renamed Cosy Cinema in 1932, and
   closed shortly thereafter in 1938.
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597318512/hidinginplainsight/Cosy_Cinema_Leeds_Libraries_2002820_28669375.jpg
+    source: C LIR ACC (1) 2002820_28669375
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597318512/hidinginplainsight/Cosy_Cinema_Leeds_Libraries_2002820_84516543.jpg
+    source: C LIR ACC (2) 2002820_84516543
 ---
