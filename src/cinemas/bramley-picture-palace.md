@@ -24,4 +24,11 @@ description_extended: >-
   One Leeds resident recalled a commissionaire called Mr. Turney who worked at the Bramley Picture Palace who would hunt for those shouting out during screenings.\
 
   **Source: *[Leodis](http://www.leodis.net/display.aspx?resourceIdentifier=2002820_98431033&DISPLAY=FULL)***
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597316633/hidinginplainsight/Bramley_Picture_Palace_Lido_Cinema_Leeds_Libraries_2002820_98431033.jpg
+    source: C LIR TOWN (1) 2002820_9820193
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597316634/hidinginplainsight/Bramley_Picture_Palace_Lido_Cinema_Leeds_Libraries_2002820_9820193.jpg
+    source: C LIR TOWN (3) 2002820_98431033
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597316635/hidinginplainsight/Bramley_Picture_Palace_Lido_Cinema_Leeds_Libraries_2002820_40058535.jpg
+    source: C LIR TOWN (4) 2002820_40058535
 ---
