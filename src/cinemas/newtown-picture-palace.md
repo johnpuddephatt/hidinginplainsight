@@ -14,10 +14,16 @@ description: The former Newtown Picture Palace is still visible on the corner of
   ceiling.
 description_extended: >-
   Although it was quite a small cinema, it had its own orchestra, the Newtown
-  Orchestra, which was led by Mr Francis Walker.  
+  Orchestra, which was led by Mr Francis Walker. This cinema specialised in
+  showing Yiddish films, it was situated in the heart of Leeds' first Jewish
+  community. 
 
 
 
 
-  Sources:
+  Sources:\
+
+  Leeds Cinemas Remembered by Robert E. Preedy\
+
+  Cinema Treasures
 ---
