@@ -6,6 +6,7 @@ status: Still visible
 image: https://res.cloudinary.com/hpph/image/upload/v1596451150/hidinginplainsight/towercinema.svg
 location: '{"type":"Point","coordinates":[-1.5407883,53.800433]}'
 address: 54, New Briggate
+description: "The Tower Cinema opened in 1920, seating 1,188 people. "
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597321086/hidinginplainsight/Tower_Cinema_Leeds_Libraries_2013220_174356.jpg
     source: Leeds Libraries Leodis.net
