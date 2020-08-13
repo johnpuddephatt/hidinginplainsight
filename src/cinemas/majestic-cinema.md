@@ -14,13 +14,14 @@ description: "The Majestic was Leeds' first 'super cinema' with a huge
   depicting chariots and horsemen. "
 description_extended: >-
   The Majestic had a pipe organ and an in-house Symphony Orchestra, which was
-  conducted by Francois Grandpierre.  The cinema changed hands several times
-  while it was open, but in 1969 it was closed by the Rank Organisation (who had
-  bought Gaumont-British in 1941) and the building was transformed into Majestic
-  Bingo. 
+  conducted by Francois Grandpierre. Its dome was 84 feet, larger than the dome
+  of St Paul's Cathedral in London. The cinema changed hands several times while
+  it was open, but in 1969 it was closed by the Rank Organisation (who had
+  bought the Gaumont-British chani in 1941) and the building was transformed
+  into Majestic Bingo. 
 
 
-  The building is now protected with a grade 2 listing, one of its heritage features is the 'marmo' terracotta tiling of its facade which was made by Leeds Fireclay of Burmantofts. 
+  The building is now protected with a grade 2 listing and one of its heritage features is the 'marmo' terracotta tiling of its facade, which was made by Leeds Fireclay of Burmantofts. 
 
 
   In 1993 it became infamous as the dance club Majestyk, which closed in 2006. A fire broke out in 2014 which destroyed the roof and put the building beyond use for some time. 
