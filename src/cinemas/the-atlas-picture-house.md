@@ -16,5 +16,10 @@ description_extended: >-
 
   \
 
-  Source: Leeds Cinemas Remembered by Robert E. Preedy
+  __
+
+
+  ***Sources:***\
+
+  Leeds Cinemas Remembered by Robert E. Preedy
 ---
