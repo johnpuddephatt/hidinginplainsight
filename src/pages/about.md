@@ -15,11 +15,11 @@ Supported by Leeds Inspired and the National Lottery Heritage Fund, this ever ev
 
 ![](https://res.cloudinary.com/hpph/image/upload/v1597279241/hidinginplainsight/Abbey_about_.4.jpg)
 
-Huge thanks to Adam and the Picture House’s creative engagement officer Laura, for all their hard work on the project. Thanks also to Lets Dance Agency for bringing the website to life. 
+Huge thanks to Adam and the Picture House’s creative engagement officer Laura Ager, for all their hard work on the project. Thanks also to Lets Dance Agency for bringing the website to life. 
 
-This project owes a huge amount to the past research from ??? and ???  
+This project owes a huge debt to research carried out in the 1980s by Robert Preedy, as well as the many individual contributers to  
 
-And big thanks to Leeds Libraries for contributing photographs from their amazing Leodis archive.
+And big thanks to Leeds Libraries and especially the staff at the Local and Family History library for contributing advice, items from their archive and photographs from their amazing Leodis website.
 
 \---
 
