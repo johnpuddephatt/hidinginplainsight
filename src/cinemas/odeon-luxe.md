@@ -9,8 +9,8 @@ address: "Gallagher Leisure Park, Thornbury, Bradford "
 description: "This ODEON multiplex, just outside Leeds, offers 1,117 seats
   across 13 screens. Before this cinema opened, Leeds had seen two previous
   ODEONs come and go. The ODEON Luxe cinemas started opening in the UK in 2017,
-  these were ODEON cinemas that had been upgraded with luxury features. This
-  ODEON was the first one in England to open with the upgrade. "
+  these were existing ODEON cinemas that had been upgraded with luxury features.
+  This ODEON was the first one in England to open with the upgrade. "
 description_extended: >-
   ODEON is a very well-known cinema chain. The first ODEON cinema opened in
   Birmingham in 1930 and the company expanded rapidly from there, building
