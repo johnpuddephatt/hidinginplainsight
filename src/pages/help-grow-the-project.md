@@ -10,7 +10,7 @@ Lots of work has already gone into creating this resource but there’s still a 
 
 • How about any photos of old Leeds cinemas? We'd love to include them, send via: [info@lostcinemas.co.uk](mailto:info@lostcinemas.co.uk)
 
-• Or do you have some extra info that you think we should include? Please get in touch via: [info@lostcinemas.co.uk](mailto:info@lostcinemas.co.uk).
+• Or do you have some extra info that you think we should include? Please get in touch via: [info@lostcinemas.co.uk](mailto:info@lostcinemas.co.uk)
 
 ## Make a donation
 
