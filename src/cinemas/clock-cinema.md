@@ -14,6 +14,7 @@ description: This impressive art moderne cinema opened in 1938, boasting a
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597317122/hidinginplainsight/Clock_Cinema_Leeds_Libraries_2002820_93064517.jpg
     source: Leeds Libraries Leodis.net
+    date: "1939"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597317127/hidinginplainsight/Clock_Cinema_Leeds_Libraries_2010812_171136.jpg
     source: Leeds Libraries Leodis.net
 ---
