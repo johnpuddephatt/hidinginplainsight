@@ -17,7 +17,7 @@ description_extended: >-
   conducted by Francois Grandpierre. Its dome was 84 feet, larger than the dome
   of St Paul's Cathedral in London. The cinema changed hands several times while
   it was open, but in 1969 it was closed by the Rank Organisation (who had
-  bought the Gaumont-British chani in 1941) and the building was transformed
+  bought the Gaumont-British chain in 1941) and the building was transformed
   into Majestic Bingo. 
 
 
