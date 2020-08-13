@@ -16,4 +16,9 @@ description_extended: |-
 
   Leodis
   Leeds Cinemas Remembered by Robert E. Preedy
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597320986/hidinginplainsight/Theatre_de_Luxe_Leeds_Libraries_1105.jpg
+    source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597320989/hidinginplainsight/Theatre_de_Luxe_Leeds_Libraries_409.jpg
+    source: Leeds Libraries Leodis.net
 ---
