@@ -19,9 +19,11 @@ description_extended: >-
   community. 
 
 
+  __
 
 
-  Sources:\
+  ***Sources:***
+
 
   Leeds Cinemas Remembered by Robert E. Preedy\
 
