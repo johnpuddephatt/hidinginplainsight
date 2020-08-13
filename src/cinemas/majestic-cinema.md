@@ -27,4 +27,19 @@ description_extended: >-
 
 
   It has recently been refurbished as an office complex and the building will soon be home to Channel 4's Northern headquarters.
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319903/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_10108.jpg
+    source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319894/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_511.jpg
+    source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319895/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_2002129_81084842.jpg
+    source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319910/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_3603.jpg
+    source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319911/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_3949.jpg
+    source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319908/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_3945.jpg
+    source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319915/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_563.jpg
+    source: Leeds Libraries Leodis.net
 ---
