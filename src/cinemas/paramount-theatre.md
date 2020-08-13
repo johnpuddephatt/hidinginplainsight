@@ -42,10 +42,12 @@ photos:
     source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320462/hidinginplainsight/Paramount_Theatre_Leeds_Libraries_4079.jpg
     source: Leeds Libraries Leodis.net
+    date: "1946"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320464/hidinginplainsight/Paramount_Theatre_Leeds_Libraries_2004225_19201296.jpg
     source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320471/hidinginplainsight/Paramount_Theatre_Leeds_Libraries_2002319_60525149.jpg
     source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320471/hidinginplainsight/Paramount_Theatre_Leeds_Libraries_2007514_163535.jpg
     source: Leeds Libraries Leodis.net
+    date: "2007"
 ---
