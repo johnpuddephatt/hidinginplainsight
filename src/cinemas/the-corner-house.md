@@ -13,4 +13,9 @@ description: This cinema in Moortown opened in 1938 as part of a complex of
 description_extended: |-
   The cinema complex also included a squash court and a cafe.
   Source: Leodis
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597318389/hidinginplainsight/Corner_House_The_Leeds_Libraries_2002814_8298891.jpg
+    source: Corner House, Harrogate Road  2002814_8298891
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597318389/hidinginplainsight/Corner_House_The_Leeds_Libraries_2002814_35854739.jpg
+    source: C LIP STREET (23)  2002814_35854739
 ---
