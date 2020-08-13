@@ -11,6 +11,8 @@ photos:
     source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320297/hidinginplainsight/Odeon_Merrion_Leeds_Libraries_20041027_58658999.jpg
     source: Leeds Libraries Leodis.net
+    date: circa 1965
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320295/hidinginplainsight/Odeon_Merrion_Leeds_Libraries_20041027_31448000.jpg
     source: Leeds Libraries Leodis.net
+    date: circa 1965
 ---
