@@ -9,4 +9,5 @@ address: Bradford Road, Pudsey
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320766/hidinginplainsight/Savoy_Cinema_Leeds_Libraries_2005114_198000.jpg
     source: Leeds Libraries Leodis.net
+    date: "1979"
 ---
