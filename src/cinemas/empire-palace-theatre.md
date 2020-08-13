@@ -16,5 +16,11 @@ description_extended: >-
   until the 1950s. It was one of many Empire Theatres in the UK operated by Moss
   Empires Ltd.
 
-  Source: http://www.arthurlloyd.co.uk
+  __
+
+
+  ***Source:***
+
+
+  http://www.arthurlloyd.co.uk
 ---
