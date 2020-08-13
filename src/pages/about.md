@@ -7,7 +7,7 @@ With at least 80 cinemas once existing in Leeds and now only a handful remaining
 
 Presented by the Hyde Park Picture House, **Hiding In Plain Sight** is a new interactive heritage project, bringing together years of research with illustrations from Adam Allsuch Boardman – allowing you to rediscover the lost cinemas of Leeds.
 
-![](https://res.cloudinary.com/hpph/image/upload/v1597279062/hidinginplainsight/Abbey_about_.3.jpg)
+![](https://res.cloudinary.com/hpph/image/upload/v1597279241/hidinginplainsight/Abbey_about_.4.jpg)
 
 From small neighbourhood picture houses to gigantic super-cinemas, so many of these incredible buildings remain in our lives today – repurposed into shops, clubs, offices – strangely familiar and hiding in plain sight. And for those that are no longer standing, their legacy lives on through the stories, photos and memories that so many of you have.
 
