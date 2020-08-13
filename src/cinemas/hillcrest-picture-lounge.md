@@ -13,4 +13,7 @@ description: The Hillcrest Picture Lounge was a 1,131 seater cinema with its own
   now occupies the site, in a new building called Hillcrest House.
 description_extended: The architect of this cinema was W.H. Beevers who had also
   designed the Malvern Picture Palace in Beeston, several years earlier.
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319779/hidinginplainsight/Hillcrest_Picture_Lounge_Leeds_Libraries_2017613_176160.jpg
+    source: Leeds Libraries Leodis.net
 ---
