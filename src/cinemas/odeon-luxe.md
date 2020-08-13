@@ -11,15 +11,11 @@ description: "This ODEON multiplex, just outside Leeds, offers 1,117 seats
   ODEONs come and go. The ODEON Luxe cinemas started opening in the UK in 2017,
   these were existing ODEON cinemas that had been upgraded with luxury features.
   This ODEON was the first one in England to open with the upgrade. "
-description_extended: >-
-  ODEON is a very well-known cinema chain, not least for the modernist style of
-  their iconic early cinemas. The first ODEON cinema opened in Birmingham in
-  1930 and the company expanded rapidly from there, building hundreds of cinemas
-  in the UK. The firm was owned by Oscar Deutsch until it was taken over by the
-  RANK organisation in 1938. 
-
-
-
-
-  The ODEON chain is now owned by AMC Theatres.
+description_extended: ODEON is a very well-known cinema chain, not least for the
+  modernist style of their iconic early cinemas. The first ODEON cinema opened
+  in Birmingham in 1930 and the company expanded rapidly from there, building
+  hundreds of cinemas in the UK. The firm was owned by Birmingham-based
+  entrepreneur Oscar Deutsch until it was taken over by the RANK organisation in
+  1938, who continued to use the brand. The ODEON chain is now owned by AMC
+  Theatres.
 ---
