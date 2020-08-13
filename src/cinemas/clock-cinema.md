@@ -11,4 +11,9 @@ description: This impressive art moderne cinema opened in 1938, boasting a
   double feature of The Incredible Journey and The Apple Dumpling Gang. Like
   many fellow ex-cinemas, it enjoyed a stint as a bingo hall. Thankfully, the
   building is still standing to this day, now split into offices and retail.
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597317122/hidinginplainsight/Clock_Cinema_Leeds_Libraries_2002820_93064517.jpg
+    source: C LIR ROUND (1) 2002820_93064517
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597317127/hidinginplainsight/Clock_Cinema_Leeds_Libraries_2010812_171136.jpg
+    source: LEO 6204 2010812_171136
 ---
