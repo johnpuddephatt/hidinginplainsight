@@ -11,7 +11,7 @@ description: The Miners Institute began screening films in the early 20th
   closed shortly thereafter in 1938.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318512/hidinginplainsight/Cosy_Cinema_Leeds_Libraries_2002820_28669375.jpg
-    source: C LIR ACC (1) 2002820_28669375
+    source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318512/hidinginplainsight/Cosy_Cinema_Leeds_Libraries_2002820_84516543.jpg
-    source: C LIR ACC (2) 2002820_84516543
+    source: Leeds Libraries Leodis.net
 ---
