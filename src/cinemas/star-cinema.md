@@ -2,7 +2,7 @@
 title: Star Cinema
 date_open: "1938"
 date_close: "1961"
-status: Closed
+status: Still visible
 image: https://res.cloudinary.com/hpph/image/upload/v1596451154/hidinginplainsight/starcinema.svg
 location: '{"type":"Point","coordinates":[-1.5146555,53.7979633]}'
 address: Glenthorpe Crescent, Leeds

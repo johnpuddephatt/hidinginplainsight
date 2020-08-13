@@ -2,7 +2,7 @@
 title: Princess Theatre
 date_open: "1923"
 date_close: "1965"
-status: Closed
+status: Still visible
 image: https://res.cloudinary.com/hpph/image/upload/v1596451163/hidinginplainsight/princesstheatre.svg
 location: '{"type":"Point","coordinates":[-1.5198871,53.7957145]}'
 address: 84 Pontefract Lane, Leeds LS9 8HZ

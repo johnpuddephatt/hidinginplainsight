@@ -2,7 +2,7 @@
 title: The Coliseum
 date_open: "1908"
 date_close: "1961"
-status: Closed
+status: Still visible
 image: https://res.cloudinary.com/hpph/image/upload/v1595964816/hidinginplainsight/colleseum_gaumontcinema.svg
 location: '{"type":"Point","coordinates":[-1.5471706,53.8022143]}'
 address: Cookridge Street

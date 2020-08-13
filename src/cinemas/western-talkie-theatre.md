@@ -2,7 +2,7 @@
 title: Western Talkie Theatre
 date_open: "1910"
 date_close: "1960"
-status: Closed
+status: Still visible
 image: https://res.cloudinary.com/hpph/image/upload/v1596451149/hidinginplainsight/westerntalkie.svg
 location: '{"type":"Point","coordinates":[-1.5873581,53.7978532]}'
 address: 4 Branch Road, Armley

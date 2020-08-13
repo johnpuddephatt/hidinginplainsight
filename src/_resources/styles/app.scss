@@ -121,6 +121,14 @@ html, body {
     z-index: 9999999;
     transform: translateX(100vw);
   }
+
+  a {
+    display: inline-block;
+    margin-right: ms(0);
+    @media screen and (orientation: portrait) {
+      margin-right: 0;
+    }
+  }
 }
 
 .site-title {
@@ -135,6 +143,8 @@ html, body {
   margin-bottom: ms(3);
   font-size: ms(6);
   font-weight: 700;
+  font-family: mikado;
+  font-style: italic;
 }
 
 .container {

@@ -140,7 +140,7 @@ export default {
     max-width: 800px;
     margin: 0 auto;
     @media screen and (orientation: landscape) {
-      margin: ms(8) auto;
+      margin: ms(6) auto;
     }
   }
 
@@ -241,9 +241,7 @@ export default {
         width: 60vw;
 
         @media screen and (orientation: landscape) {
-          width: 75vw;
-          padding-left: ms(6);
-          padding-right: ms(6);
+          width: 0.4 * 800px;
         }
       }
 
@@ -286,7 +284,7 @@ summary {
   display: inline-block;
 
   @media screen and (orientation: portrait) {
-    margin-bottom: ms(2);
+    margin-bottom: ms(0);
   }
 }
 </style>

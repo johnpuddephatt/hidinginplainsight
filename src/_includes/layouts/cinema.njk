@@ -8,11 +8,16 @@
   "date_close": "{{ date_close | safe }}",
   "location": {{ location | safe }},
   "photos": [
-    {% for photo in photo %}
-      {
-        "small": "{{ photo | replace('/image/upload/', '/image/upload/w_300,h_300,c_fill,q_65,f_auto/') | safe}}",
-        "large": "{{ photo | replace('/image/upload/', '/image/upload/w_900,h_900,c_fit,q_85,f_auto/') | safe}}"
-      }{% if loop.last %}{% else %},{% endif %}
+    {% for photo in photos %}
+      {% if photo.file %}
+        {
+          {% if photo.caption %}"caption" : "{{ photo.caption }}",{% endif %}
+          {% if photo.date %}"date" : "{{ photo.date }}",{% endif %}
+          {% if photo.source %}"source" : "{{ photo.source }}",{% endif %}
+          "file_small": "{{ photo.file | replace('/image/upload/', '/image/upload/w_300,h_300,c_fill,q_65,f_auto/') | safe}}",
+          "file_large": "{{ photo.file | replace('/image/upload/', '/image/upload/w_900,h_900,c_fit,q_85,f_auto/') | safe}}"
+        }{% if loop.last %}{% else %},{% endif %}
+      {% endif %}
     {% endfor %}
   ]
   {% if description.length %}, "description": "{{ description | markdownify | jsonify | safe }}"{% endif %}

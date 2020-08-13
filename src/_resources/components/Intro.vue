@@ -2,9 +2,16 @@
   <div v-if="cinemasLoaded" v-show="imagesAllLoaded" class="loading-wrapper">
     <div class="loading-inner">
       <div class="welcome">
+        <p class="pre-title">The Hyde Park Picture House presents</p>
         <h1>Hiding in<br> Plain Sight</h1>
-        <p>Discovering the lost cinemas of Leeds</p>
+        <p class="post-title">Discovering the lost cinemas of Leeds</p>
         <router-link class="enter-link" :to="{ name: 'cinemas'}">Enter</router-link>
+      </div>
+      <div class="funders">
+        <img src="/assets/images/AAAB.png"/>
+        <img src="/assets/images/AAAB.png"/>
+        <img src="/assets/images/AAAB.png"/>
+        <img src="/assets/images/AAAB.png"/>
       </div>
       <div class="double-width no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('showcase-cinema-de-lux')"></div>
       <div class="double-width no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('princess-theatre')"></div>
@@ -196,28 +203,28 @@ export default {
         grid-column-end: span 2;
       }
 
-      &:nth-child(12n + 1),
       &:nth-child(12n + 4),
       &:nth-child(12n + 7),
       &:nth-child(12n + 11){
-        background-color: #FEF8E3;
+        background-color: $blue;
       }
 
       &:nth-child(12n + 2),
       &:nth-child(12n + 6),
       &:nth-child(12n + 10){
-        background-color: #FCD88E;
+        background-color: $orange;
       }
 
+      &:nth-child(12n + 1),
       &:nth-child(12n + 12),
       &:nth-child(12n + 5),
       &:nth-child(12n + 9){
-        background-color: #AED3EE;
+        background-color: $cream;
       }
 
       &:nth-child(12n + 8),
       &:nth-child(12n + 3){
-        background-color: #EB7841;
+        background-color: $red;
       }
 
       &.no-delay {
@@ -251,9 +258,13 @@ export default {
         grid-row-start: 3;
         grid-row-end: span 5;
         background-color: white !important;
-        transition-delay: 2s;
         padding: ms(-2);
-        transition-duration: 1s;
+        transition: all 0.75s 2s ease-in;
+        transform: translateY(#{ms(-4)});
+
+        &.in-view {
+          transform: scale(1);
+        }
 
         @media screen and (orientation: landscape) {
           grid-column-end: span 6;
@@ -267,19 +278,61 @@ export default {
           font-family: mikado;
           font-weight: 900;
           font-style: italic;
-          margin-bottom: ms(1);
+          margin-bottom: ms(-4);
           font-size: ms(5);
           @media screen and (orientation: landscape) {
-            font-size: ms(9);
+            font-size: ms(8);
           }
+        }
 
+        .post-title {
+          margin-top: ms(0);
+          margin-bottom: 0;
+          font-size: ms(0);
+        }
+
+        .pre-title {
+          // color: $gray;
+          font-size: ms(-1);
+          margin-top: ms(0);
+          margin-bottom: ms(-2);
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+      }
+      &.funders {
+        text-align: center;
+        direction: ltr;
+        display: flex;
+        background-color: $cream;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: ms(0) ms(4);
+        @media screen and (orientation: landscape) {
+          grid-column-end: span 4;
+          grid-column-start: 4;
+          grid-row-start: 5;
+          grid-row-end: span 1;
+          transition: all 0.75s 2.5s ease-in;
+          // transition-delay: 1.5s;
+        }
+
+        img {
+          position: static;
+          display: block;
+          width: 4em;
+
+          + img {
+            margin-left: ms(0);
+          }
         }
       }
     }
 
     .enter-link {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: ms(5);
       font-weight: 700;
       font-size: ms(2);
 
