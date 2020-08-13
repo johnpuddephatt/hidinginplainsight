@@ -22,7 +22,10 @@ description_extended: >-
 
   \
 
-  Source:\
+  __
+
+
+  ***Source:***\
 
   Leeds Grand Theatre
 ---
