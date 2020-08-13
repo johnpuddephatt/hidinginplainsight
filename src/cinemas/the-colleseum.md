@@ -32,4 +32,11 @@ description_extended: >-
   The distribution of picture halls in Leeds, 1910 to 1939 by Nick Redfern
 
   Leodis
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597318172/hidinginplainsight/Coliseum_The_Gaumont_Cinema_Leeds_Libraries_2002927_61434573.jpg
+    source: Car Parking No 20 (LQ 942.75 LS17) 2002927_61434573
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597318171/hidinginplainsight/Coliseum_The_Gaumont_Cinema_Leeds_Libraries_2002927_8745974.jpg
+    source: Car Parking No 19 (LQ 942.75 LS17) 2002927_8745974
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597318170/hidinginplainsight/Coliseum_The_Gaumont_Cinema_Leeds_Libraries_201662_175822.jpg
+    source: LEO 8301  201662_175822
 ---
