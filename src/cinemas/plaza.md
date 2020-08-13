@@ -12,4 +12,9 @@ description: "The Plaza was a single screen cinema with 727 seats, it opened as
   were used as a clothing factory premises and now are occupied by an MOT
   testing centre and a carpet shop. "
 description_extended: "Source: Preedy 1980"
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597320648/hidinginplainsight/The_Plaza_Leeds_Libraries_2003103_33582705.jpg
+    source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597320648/hidinginplainsight/The_Plaza_Leeds_Libraries_2003103_69370669.jpg
+    source: Leeds Libraries Leodis.net
 ---
