@@ -27,8 +27,11 @@ description_extended: >-
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597316633/hidinginplainsight/Bramley_Picture_Palace_Lido_Cinema_Leeds_Libraries_2002820_98431033.jpg
     source: Leeds Libraries Leodis.net
+    date: "1937"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597316634/hidinginplainsight/Bramley_Picture_Palace_Lido_Cinema_Leeds_Libraries_2002820_9820193.jpg
     source: Leeds Libraries Leodis.net
+    date: "1931"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597316635/hidinginplainsight/Bramley_Picture_Palace_Lido_Cinema_Leeds_Libraries_2002820_40058535.jpg
     source: Leeds Libraries Leodis.net
+    date: "1937"
 ---
