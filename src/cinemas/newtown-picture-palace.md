@@ -6,13 +6,16 @@ status: Still visible
 image: https://res.cloudinary.com/hpph/image/upload/v1596451157/hidinginplainsight/newtownpicturepalace.svg
 location: '{"type":"Point","coordinates":[-1.5317586,53.8051035]}'
 address: Cross Stamford Street, Sheepscar
-description: "The former Newtown Picture Palace is still visible, on the corner
-  of Bristol Street and Cross Stamford Street in Sheepscar. It opened in 1913
-  with 788 seats in total, split between balcony and stalls. Although it was
-  quite a small cinema, it had its own orchestra which was led by Mr Francis
-  Walker.  "
-description_extended: |-
-  
+description: The former Newtown Picture Palace is still visible on the corner of
+  Bristol Street and Cross Stamford Street in Sheepscar. It opened in 1913 with
+  788 seats in total, split between balcony and stalls. After its closure in
+  1953 the building was used for warehousing textile goods. It is now open as a
+  tile shop and retains some of its original plasterwork behind the false
+  ceiling.
+description_extended: >-
+  Although it was quite a small cinema, it had its own orchestra, the Newtown
+  Orchestra, which was led by Mr Francis Walker.  
+
 
 
 
