@@ -11,4 +11,10 @@ description: "The Grand Theatre and Opera House is included because it is
   which seated 1,100. This was converted into a cinema by New Century Pictures,
   later becoming known as The Plaza - see separate listing. This venue is now
   called the Howard Assembly Rooms. "
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597318707/hidinginplainsight/Grand_Theatre_Opera_House_Leeds_Libraries_20021216_29047793.jpg
+    source: General Views of Yorkshire Vol.5, no.790(iii), Q 942.74 K63Y
+      20021216_29047793
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597318768/hidinginplainsight/Grand_Theatre_Opera_House_Leeds_Civic_Trust_2003213_51559085.jpg
+    source: Leeds Civic Trust Civic Trust F9 2003213_51559085
 ---
