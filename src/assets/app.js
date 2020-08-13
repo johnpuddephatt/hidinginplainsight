@@ -22072,7 +22072,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "funders" }, [
       _c("img", { attrs: { src: "/assets/images/AAAB.png" } }),
       _vm._v(" "),
-      _c("img", { attrs: { src: "/assets/images/AAAB.png" } }),
+      _c("img", { attrs: { src: "/assets/images/leedsinspired.png" } }),
       _vm._v(" "),
       _c("img", { attrs: { src: "/assets/images/AAAB.png" } }),
       _vm._v(" "),

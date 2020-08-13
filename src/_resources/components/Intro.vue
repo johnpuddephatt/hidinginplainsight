@@ -9,7 +9,7 @@
       </div>
       <div class="funders">
         <img src="/assets/images/AAAB.png"/>
-        <img src="/assets/images/AAAB.png"/>
+        <img src="/assets/images/leedsinspired.png"/>
         <img src="/assets/images/AAAB.png"/>
         <img src="/assets/images/AAAB.png"/>
       </div>
