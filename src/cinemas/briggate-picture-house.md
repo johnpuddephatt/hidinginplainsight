@@ -30,4 +30,7 @@ description_extended: >-
   Source: \
 
   Leodis
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597316787/hidinginplainsight/Briggate_Picture_House_later_called_Rialto_Leeds_Libraries_200266_21055239.jpg
+    source: HO 400 200266_21055239
 ---
