@@ -14,5 +14,13 @@ description_extended: >-
   the area was redeveloped in the 1950s, it is now called Lovell Park Road and
   Oatlands Lane.
 
-  Sources: City of Leeds Directory 1961, Barret's Publications LTD, Wikipedia
+
+
+  __
+
+
+  ***Sources:***
+
+
+  City of Leeds Directory 1961, Barret's Publications LTD, Wikipedia
 ---
