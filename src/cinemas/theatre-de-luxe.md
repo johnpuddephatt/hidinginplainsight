@@ -11,11 +11,7 @@ description: This cinema started out as a theatre, as many did in the first
   1910, with just 383 seats. After 1934 the building appears to have been used
   as a clothes shop. Photographs taken in the early 1930s show the theatre
   sandwiched in between Lipton Grocers and Alexandra Cafe Tea Rooms on Kirkgate.
-description_extended: |-
-  Sources:
-
-  Leodis
-  Leeds Cinemas Remembered by Robert E. Preedy
+description_extended: ""
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320986/hidinginplainsight/Theatre_de_Luxe_Leeds_Libraries_1105.jpg
     source: Leeds Libraries Leodis.net
