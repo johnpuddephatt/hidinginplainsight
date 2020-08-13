@@ -9,7 +9,7 @@ address: 54, New Briggate
 description: The Tower Cinema, which is also known as Tower Picture House,
   opened in 1920, with seating for 1,188 people. It was created by converting
   part of the Grand Arcade. It closed in 1985 and has since been used a
-  nightclub, first a subsidiary of Sheffield's Gatecrasher and now The
+  nightclub and bar, first a subsidiary of Sheffield's Gatecrasher and now The
   Brotherhood of Pursuits and Pastimes.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597321086/hidinginplainsight/Tower_Cinema_Leeds_Libraries_2013220_174356.jpg
