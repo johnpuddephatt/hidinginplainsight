@@ -40,4 +40,7 @@ photos:
     source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318170/hidinginplainsight/Coliseum_The_Gaumont_Cinema_Leeds_Libraries_201662_175822.jpg
     source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597323447/hidinginplainsight/The_Gaumont_20041210_86515445.jpg
+    date: "1970"
+    source: Leeds Libraries Leodis.net
 ---
