@@ -17,7 +17,11 @@ description_extended: >-
   some seats and unused carpet.
 
 
-  Sources:\
+  __
+
+
+  ***Sources:***
+
 
   Leeds Cinemas Remembered by Robert E. Preedy \
 
