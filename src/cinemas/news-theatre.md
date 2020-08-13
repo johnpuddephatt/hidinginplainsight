@@ -19,4 +19,11 @@ description_extended: The Queens Hotel opened in 1937 and the News Theatre
   became Planet Earth, then Bondi Beach Bar.  You can still see the original
   name News Theatre outside on the ground, there is an entrance that opened onto
   the station concourse which is now used by Bagel Nash as a service counter.
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597320183/hidinginplainsight/The_News_Theatre_Leeds_Libraries_3610.jpg
+    source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597320185/hidinginplainsight/The_News_Theatre_Leeds_Libraries_4458.jpg
+    source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597320189/hidinginplainsight/The_News_Theatre_Leeds_Libraries_956.jpg
+    source: Leeds Libraries Leodis.net
 ---
