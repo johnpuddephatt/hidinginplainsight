@@ -43,5 +43,5 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597319915/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_563.jpg
     source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597321349/hidinginplainsight/Majestic_Cinema_Leeds_Museums_and_Galleries_201122_171752.jpg
-    source: Leeds Libraries Leodis.net
+    source: Leeds Museum and Galleries
 ---
