@@ -316,7 +316,7 @@ export default {
         padding: ms(-4);
         grid-column-end: span 5;
         grid-column-start: 1;
-        grid-row-start: 9;
+        grid-row-start: 8;
         grid-row-end: span 1;
         transition: all 0.75s 2s ease-in;
         @media screen and (orientation: landscape) {
