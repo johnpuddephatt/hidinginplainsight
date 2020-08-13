@@ -12,15 +12,16 @@ description: "The Bramley Picture Palace was a 520 seat cinema which opened in
   In 1931 it was renamed The Lido but it closed down in 1961 and is now
   demolished. "
 description_extended: >-
-  
+  To its regular patrons, the Bramley Picture Palace was affectionately known as
+  "The Bug Hutch", a name given to many of the small suburban cinemas of its
+  day. There is a joke that goes 'Ladies and Gentlemen, bugs and fleas, take
+  your seats at the cinema please!'\
 
-  To its regular patrons, the Bramley Picture Palace was affectionately known as "The Bug Hutch", a name given to many of the small suburban cinemas of its day. There is a joke that goes 'Ladies and Gentlemen, bugs and fleas, take your seats at the cinema please!'\
-
-  Source: [Historic England Blog](https://heritagecalling.com/2018/01/12/pass-the-popcorn-a-brief-introduction-to-cinemas/)\
+  **Source: *[Historic England Blog](https://heritagecalling.com/2018/01/12/pass-the-popcorn-a-brief-introduction-to-cinemas/)***\
 
   \
 
   One Leeds resident recalled a commissionaire called Mr. Turney who worked at the Bramley Picture Palace who would hunt for those shouting out during screenings.\
 
-  Source: [Leodis](http://www.leodis.net/display.aspx?resourceIdentifier=2002820_98431033&DISPLAY=FULL)
+  **Source: *[Leodis](http://www.leodis.net/display.aspx?resourceIdentifier=2002820_98431033&DISPLAY=FULL)***
 ---
