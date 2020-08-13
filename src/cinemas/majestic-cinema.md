@@ -13,10 +13,10 @@ description: "The Majestic was Leeds' first 'super cinema' with a huge
   1922. The domed ceiling of the auditorium was decorated with a great frieze
   depicting chariots and horsemen. "
 description_extended: >-
-  The Majestic had an organ and a Symphony Orchestra, which was conducted by
-  Francois Grandpierre.  The cinema changed hands several times while it was
-  open, but in 1969 it was closed by the Rank Organisation (who had bought
-  Gaumont-British in 1941) and the building was transformed into Majestic
+  The Majestic had a pipe organ and an in-house Symphony Orchestra, which was
+  conducted by Francois Grandpierre.  The cinema changed hands several times
+  while it was open, but in 1969 it was closed by the Rank Organisation (who had
+  bought Gaumont-British in 1941) and the building was transformed into Majestic
   Bingo. 
 
 
