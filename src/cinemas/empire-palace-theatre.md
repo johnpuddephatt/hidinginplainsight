@@ -12,11 +12,9 @@ description: The vast Empire Palace opened in 1898, featuring a 1700-capacity
   the side entrance remains visible to this day. The site is presently occupied
   by Harvey Nichols.
 description_extended: >-
-  Unlike many of its peers the Empire Palace continued to host variety acts
+  Unlike many of its peers, the Empire Palace continued to host variety acts
   until the 1950s. It was one of many Empire Theatres in the UK operated by Moss
   Empires Ltd.
-
-
 
 
   ***Source:***
