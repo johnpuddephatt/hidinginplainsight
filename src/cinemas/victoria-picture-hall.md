@@ -25,9 +25,12 @@ description_extended: >-
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597321156/hidinginplainsight/Victoria_Picture_Hall_Leeds_Libraries_2002820_40185183.jpg
     source: Leeds Libraries Leodis.net
+    date: "1935"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597321157/hidinginplainsight/Victoria_Picture_Hall_Leeds_Libraries_2002820_12823122.jpg
     caption: ""
     source: Leeds Libraries Leodis.net
+    date: "1935"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597321161/hidinginplainsight/Victoria_Picture_Hall_Leeds_Libraries_2002820_43912905.jpg
     source: Leeds Libraries Leodis.net
+    date: "1935"
 ---
