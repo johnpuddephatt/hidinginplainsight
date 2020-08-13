@@ -17,7 +17,7 @@ description_extended: >-
   snooker was being played here as well.
 
 
-  In 2009 the Yorkshire Evening Post ran an article that read ‘Number’s Up for Tivoili’. “Manager Andy Wood locked the Tivoli Cinema doors for the final time on Sunday 22nd March, 2009” the article said.
+  In 2009 the Yorkshire Evening Post ran an article that read ‘Number’s Up for Tivoli’. “Manager Andy Wood locked the Tivoli Cinema doors for the final time on Sunday 22nd March, 2009” the article said.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597321040/hidinginplainsight/Tivoli_Cinema_Leeds_Libraries_2002820_21601504.jpg
     source: Leeds Libraries Leodis.net
