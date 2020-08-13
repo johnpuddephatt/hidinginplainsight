@@ -1,13 +1,27 @@
 ---
-title: Hyde Park Picture House
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597333475/hidinginplainsight/HPPH.jpg
+    source: Tom Joy
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597333474/hidinginplainsight/HPPH_01.jpg
+    source: Ollie Jenkins
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597333475/hidinginplainsight/HPPH_03.jpg
+    source: Ollie Jenkins
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597333476/hidinginplainsight/HPPH_02.jpg
+    source: Ollie Jenkins
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597333475/hidinginplainsight/HPPH_05.jpg
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597333476/hidinginplainsight/HPPH_07.jpg
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597333473/hidinginplainsight/HPPH_04.jpg
+    source: Ollie Jenkins
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597333478/hidinginplainsight/HPPH_06.jpg
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597333477/hidinginplainsight/HPPH_08.jpg
 alt_title: This is just a test
+title: Hyde Park Picture House
 date_open: "1914"
 date_close: Present
 status: Open
 image: https://res.cloudinary.com/hpph/image/upload/v1596451165/hidinginplainsight/hydeparkpicturehouse.svg
 location: '{"type":"Point","coordinates":[-1.56928,53.8121213]}'
 address: 73 Brudenell Rd, Leeds, LS6 1JD
-
 description: The Hyde Park Picture House is a 275 seat cinema close to the city
   centre. When it opened in 1914 it was announced with a small advert in the
   Yorkshire Evening Post which described it as the “cosiest cinema in Leeds”. In
@@ -28,13 +42,4 @@ description_extended: >-
   \
 
   Source: Kellys directories
-photos:
-  - file: https://res.cloudinary.com/hpph/image/upload/v1596801983/hidinginplainsight/8211.jpg
-    caption: Hyde Park Picture House in the background
-    date: "1930"
-    source: Leodis.net
-  - file: https://res.cloudinary.com/hpph/image/upload/v1596801984/hidinginplainsight/9462.jpg
-    caption: Billboard advertising Hyde Park Picture House in Leeds City Centre.
-    date: "1921"
-    source: Leodis.net
 ---
