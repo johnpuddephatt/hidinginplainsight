@@ -15,4 +15,5 @@ description: "The Star 'Super Cinema' opened in 1938, close to the site of the
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320920/hidinginplainsight/Star_Cinema_Leeds_Libraries_2002820_81689090.jpg
     source: Leeds Libraries Leodis.net
+    date: "1938"
 ---
