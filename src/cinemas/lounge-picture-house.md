@@ -22,4 +22,7 @@ description_extended: >-
   Leeds Cinemas Remembered by Robert E. Preedy \
 
   Cinema Treasures
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319834/hidinginplainsight/Lounge_Picture_House_Leeds_Libraries_2002610_20599001.jpg
+    source: Leeds Libraries Leodis.net
 ---
