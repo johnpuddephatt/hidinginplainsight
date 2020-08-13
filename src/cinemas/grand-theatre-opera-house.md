@@ -15,5 +15,5 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318707/hidinginplainsight/Grand_Theatre_Opera_House_Leeds_Libraries_20021216_29047793.jpg
     source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318768/hidinginplainsight/Grand_Theatre_Opera_House_Leeds_Civic_Trust_2003213_51559085.jpg
-    source: Leeds Libraries Leodis.net
+    source: Leeds Civic Trust
 ---
