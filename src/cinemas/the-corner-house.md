@@ -15,7 +15,7 @@ description_extended: |-
   Source: Leodis
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318389/hidinginplainsight/Corner_House_The_Leeds_Libraries_2002814_8298891.jpg
-    source: Corner House, Harrogate Road  2002814_8298891
+    source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318389/hidinginplainsight/Corner_House_The_Leeds_Libraries_2002814_35854739.jpg
-    source: C LIP STREET (23)  2002814_35854739
+    source: Leeds Libraries Leodis.net
 ---
