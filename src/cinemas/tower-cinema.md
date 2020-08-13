@@ -6,11 +6,14 @@ status: Still visible
 image: https://res.cloudinary.com/hpph/image/upload/v1596451150/hidinginplainsight/towercinema.svg
 location: '{"type":"Point","coordinates":[-1.5407883,53.800433]}'
 address: 54, New Briggate
-description: The Tower Cinema, which is also known as Tower Picture House,
-  opened in 1920, with seating for 1,188 people. It was created by converting
-  part of the Grand Arcade. It closed in 1985 and has since been used a
-  nightclub and bar, first a subsidiary of Sheffield's Gatecrasher and now The
-  Brotherhood of Pursuits and Pastimes.
+description: The Tower Cinema, also known as Tower Picture House, opened in
+  1920, with seating for 1,188 people. It was created by converting part of the
+  Grand Arcade, the designs for this were supplied by Harehill-based architect,
+  J. P. Crawford. It closed in 1985 and has been used a nightclub and bar, it
+  has been a subsidiary of Sheffield's Gatecrasher and now The Brotherhood of
+  Pursuits and Pastimes.
+description_extended: The Grand Arcade was originally built by the New Briggate
+  Arcade Company in 1897.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597321086/hidinginplainsight/Tower_Cinema_Leeds_Libraries_2013220_174356.jpg
     source: Leeds Libraries Leodis.net
