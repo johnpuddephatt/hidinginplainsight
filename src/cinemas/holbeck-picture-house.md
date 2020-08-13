@@ -19,7 +19,8 @@ description_extended: >-
   __
 
 
-  ***Sources:***
+  ***Sources:***\
+
 
   Cinema Treasures\
 
