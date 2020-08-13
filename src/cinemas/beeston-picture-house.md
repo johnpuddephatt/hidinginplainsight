@@ -13,4 +13,5 @@ description: The Beeston Pcture house opened in 1920, and is believed to had
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597312331/hidinginplainsight/Beeston_Picture_House_Leeds_Libraries_2011930_172728.jpg
     source: Leeds Libraries Leodis.net
+    date: "1967"
 ---
