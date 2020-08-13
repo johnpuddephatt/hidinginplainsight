@@ -13,8 +13,7 @@ description: "The Grand Theatre and Opera House is included because it is
   called the Howard Assembly Rooms. "
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318707/hidinginplainsight/Grand_Theatre_Opera_House_Leeds_Libraries_20021216_29047793.jpg
-    source: General Views of Yorkshire Vol.5, no.790(iii), Q 942.74 K63Y
-      20021216_29047793
+    source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318768/hidinginplainsight/Grand_Theatre_Opera_House_Leeds_Civic_Trust_2003213_51559085.jpg
-    source: Leeds Civic Trust Civic Trust F9 2003213_51559085
+    source: Leeds Libraries Leodis.net
 ---
