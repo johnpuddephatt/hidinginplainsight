@@ -35,8 +35,10 @@ photos:
     source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597319895/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_2002129_81084842.jpg
     source: Leeds Libraries Leodis.net
+    date: "1923"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597319910/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_3603.jpg
     source: Leeds Libraries Leodis.net
+    date: "1947"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597319911/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_3949.jpg
     source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597319908/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_3945.jpg
