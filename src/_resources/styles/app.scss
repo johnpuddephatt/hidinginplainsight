@@ -123,6 +123,7 @@ html, body {
     position: fixed;
     width: 75vw;
     height: 100vh;
+    height: -webkit-fill-available;
     top: 0;
     left: 0;
     z-index: 9999999;

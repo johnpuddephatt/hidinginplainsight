@@ -140,6 +140,7 @@ export default {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    height: -webkit-fill-available;
     width: 100vw;
     overflow: hidden;
     background-color: white;
