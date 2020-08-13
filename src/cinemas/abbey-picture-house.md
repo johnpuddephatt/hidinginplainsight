@@ -23,8 +23,6 @@ description_extended: >-
 
   City of Leeds Directory 1961, Barret's Publications LTD
 photos:
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597254202/hidinginplainsight/Photos/Abbey_Road_Leeds_Libraries_200794_164658.jpg
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597312186/hidinginplainsight/Abbey_Picture_House_Abbey_Road_Leeds_Libraries_2002820_4354494.jpg
     source: C LIR KIRK (2) 2002820_4354494
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597254180/hidinginplainsight/Photos/Abbey_Picture_House_Abbey_Road_Leeds_Libraries_2002820_4354494.jpg
-    source: LEO 2089 200794_164658
 ---
