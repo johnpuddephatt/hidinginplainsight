@@ -11,4 +11,9 @@ description: "Another cinema designed by Harehills based architect J.P.
   1932 to the Western Talkie Theatre, no doubt when sound equipment was
   installed, and then again in 1954 when it was changed to Vogue and 'smartened
   up a bit'. "
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597318890/hidinginplainsight/Harehills_Picture_House_Leeds_Libraries_20031013_58454532.jpg
+    source: D LIC Round no. 38 20031013_58454532
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597318886/hidinginplainsight/Harehills_Picture_House_Leeds_Libraries_8874.jpg
+    source: ""
 ---
