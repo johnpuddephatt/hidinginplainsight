@@ -16,6 +16,8 @@ description_extended: >-
   until the 1950s. It was one of many Empire Theatres in the UK operated by Moss
   Empires Ltd.
 
+
+
   __
 
 
