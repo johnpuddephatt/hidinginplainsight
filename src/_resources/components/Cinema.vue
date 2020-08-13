@@ -3,9 +3,11 @@
       <loading v-if="!cinemaLoaded"></loading>
       <div v-else class="container">
         <router-link class="back-link" :to="{ name: 'cinemas'}">&larr; Back to map</router-link>
-        <div v-if="cinema.image" class="image-container">
+        <div v-if="cinema.image" class="image-container" :class="`is-${ cinema.colour.toLowerCase() }`">
           <transition name="slide-from-right">
-            <img :class="imageClass" v-show="isImageLoaded ":src="cinema.image" @load="imageLoaded($event)" />
+            <div v-show="isImageLoaded">
+              <img :class="imageClass" :src="cinema.image" @load="imageLoaded($event)" />
+            </div>
           </transition>
         </div>
         <div class="panel">
@@ -22,7 +24,7 @@
           <gallery v-if="cinema.photos.length" :cinemaTitle="cinema.title" :photos="cinema.photos"></gallery>
           <div v-else class="empty-photos">
             <p>We’ve not found any photos of this cinema yet.</p>
-            <a class="button is-secondary" :href="`mailto:john@jdp.org.uk?subject=Photo%20of%20${cinema.title}&body=${encodeURIComponent('Please indicate if you are the copyright owner, or indicate who you believe the copyright owner to be so we can attempt to gain permission to use the image on the site.')}`" >Send us a photo</a>
+            <a class="button is-secondary" :href="`mailto:info@hydeparkpicturehouse.co.uk?subject=Photo%20of%20${cinema.title}&body=${encodeURIComponent('Please indicate if you are the copyright owner, or indicate who you believe the copyright owner to be so we can attempt to gain permission to use the image on the site.')}`" >Send us a photo</a>
           </div>
         </div>
         <div class="panel">
@@ -124,7 +126,7 @@ export default {
   left: 0;
   position: absolute;
   overflow-y: auto;
-  padding: 0 ms(0) ms(2);
+  padding: 0 0 ms(2);
   top: 0;
   bottom: 0;
   right: 0;
@@ -145,13 +147,9 @@ export default {
   }
 
   .panel {
-    margin-top: ms(0);
-    padding-top: ms(0);
+    margin-top: ms(4);
+    padding-top: ms(4);
     border-top: 1px solid $medium-gray;
-    @media screen and (orientation: landscape) {
-      margin-top: ms(4);
-      padding-top: ms(4);
-    }
   }
 
   .panel-heading {
@@ -217,12 +215,30 @@ export default {
   .image-container {
     position: relative;
     background-image: linear-gradient(to top, $blue 30%, white 30%);
+    &.is-red {
+      background-image: linear-gradient(to top, $red 30%, white 30%);
+    }
+    &.is-orange {
+      background-image: linear-gradient(to top, $orange 30%, white 30%);
+    }
+    &.is-cream {
+      background-image: linear-gradient(to top, $cream 30%, white 30%);
+    }
     margin-bottom: ms(2);
     padding-bottom: ms(4);
     height: calc(100vw - #{2 * ms(2)});
     @media screen and (orientation: landscape) {
       height: 0.5 * 800px;
       background-image: linear-gradient(to top, $blue 40%, white 40%);
+      &.is-red {
+        background-image: linear-gradient(to top, $red 40%, white 40%);
+      }
+      &.is-orange {
+        background-image: linear-gradient(to top, $orange 40%, white 40%);
+      }
+      &.is-cream {
+        background-image: linear-gradient(to top, $cream 40%, white 40%);
+      }
     }
 
     img {

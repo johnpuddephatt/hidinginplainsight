@@ -6,7 +6,7 @@
         <img :src="photo.file_small"/>
       </div>
       <div class="gallery-item add">
-        <a class="button is-secondary" :href="`mailto:john@jdp.org.uk?subject=Photo%20of%20${cinemaTitle}&body=${encodeURIComponent('Please indicate if you are the copyright owner, or indicate who you believe the copyright owner to be so we can attempt to gain permission to use the image on the site.')}`" >Send us a photo</a>
+        <a class="button is-secondary" :href="`mailto:info@hydeparkpicturehouse.co.uk?subject=Photo%20of%20${cinemaTitle}&body=${encodeURIComponent('Please indicate if you are the copyright owner, or indicate who you believe the copyright owner to be so we can attempt to gain permission to use the image on the site.')}`" >Send us a photo</a>
       </div>
 
     </div>
@@ -64,14 +64,12 @@ export default {
           }
 
           if (e.keyCode == 37) {
-            console.log('left');
             if(this.open > 0) {
               this.open--;
             }
           }
 
           if (e.keyCode == 39) {
-            console.log('right');
             if(this.open < (this.photos.length - 1)) {
               this.open++;
             }

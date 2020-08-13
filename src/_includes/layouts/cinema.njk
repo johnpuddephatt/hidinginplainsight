@@ -1,12 +1,13 @@
 {% set data = cinema.data %}
 {
-  "slug": "{{ title | slug }}",
+  "slug": "{{ title | slugify }}",
   "title": "{{ title | safe }}",
   "image": "{{ image | safe }}",
   "address": "{{ address | safe }}",
   "date_open": "{{ date_open | safe }}",
   "date_close": "{{ date_close | safe }}",
   "location": {{ location | safe }},
+  "colour": "{{ colour if colour else 'Blue' }}",
   "photos": [
     {% for photo in photos %}
       {% if photo.file %}

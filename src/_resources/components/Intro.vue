@@ -5,12 +5,12 @@
         <p class="pre-title">The Hyde Park Picture House presents</p>
         <h1>Hiding in<br> Plain Sight</h1>
         <p class="post-title">Discovering the lost cinemas of Leeds</p>
-        <router-link class="enter-link" :to="{ name: 'cinemas'}">Enter</router-link>
+        <router-link class="enter-link button is-primary is-large" :to="{ name: 'cinemas'}">Enter</router-link>
       </div>
       <div class="funders">
-        <img src="/assets/images/AAAB.png"/>
+        <img src="/assets/images/hpph.png"/>
+        <img src="/assets/images/lottery.png"/>
         <img src="/assets/images/leedsinspired.png"/>
-        <img src="/assets/images/AAAB.png"/>
         <img src="/assets/images/AAAB.png"/>
       </div>
       <div class="double-width no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('showcase-cinema-de-lux')"></div>
@@ -18,7 +18,7 @@
       <div class="no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('star-cinema')"></div>
       <div class="double-width no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('savoy-cinema')"></div>
       <div class="double-height no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('rex-cinema')"></div>
-      <div class="no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('ritz-cinema-cross-gates')"></div>
+      <div class="no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('ritz-cinema')"></div>
       <div class="no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('pudsey-picture-house')"></div>
       <div class="double-width"><img @load="imageLoaded" :src="getCinemaImageBySlug('capitol')"></div>
       <div><img @load="imageLoaded" :src="getCinemaImageBySlug('scala')"></div>
@@ -60,6 +60,7 @@
   </div>
   <loading class="loading-panel__home" v-else></loading>
 
+
 </template>
 
 <script>
@@ -96,7 +97,6 @@ export default {
         this.cinemas = response.data
       })
       .catch(error => {
-        console.log(error)
         this.errored = true
       })
       .finally(() => {
@@ -289,15 +289,19 @@ export default {
           margin-top: ms(0);
           margin-bottom: 0;
           font-size: ms(0);
+          line-height: 1.2;
         }
 
         .pre-title {
           // color: $gray;
-          font-size: ms(-1);
+          font-size: ms(-2);
           margin-top: ms(0);
           margin-bottom: ms(-2);
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
+          @media screen and (orientation: landscape) {
+            font-size: ms(-1);
+          }
         }
       }
       &.funders {
@@ -307,24 +311,31 @@ export default {
         background-color: $cream;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-        padding: ms(0) ms(4);
+        justify-content: space-around;
+        padding: ms(-4);
+        grid-column-end: span 5;
+        grid-column-start: 1;
+        grid-row-start: 9;
+        grid-row-end: span 1;
+        transition: all 0.75s 2s ease-in;
         @media screen and (orientation: landscape) {
+          padding: ms(0) ms(4);
           grid-column-end: span 4;
           grid-column-start: 4;
           grid-row-start: 5;
           grid-row-end: span 1;
           transition: all 0.75s 2.5s ease-in;
-          // transition-delay: 1.5s;
         }
 
         img {
           position: static;
           display: block;
           width: 4em;
+          height: auto;
+          flex: 0 1 20%;
 
-          + img {
-            margin-left: ms(0);
+          @media screen and (orientation: landscape) {
+            width: 5em;
           }
         }
       }
@@ -332,15 +343,14 @@ export default {
 
     .enter-link {
       display: inline-block;
-      margin-top: ms(5);
+      margin-top: ms(2);
       font-weight: 700;
-      font-size: ms(2);
 
-      &::after {
-        display: inline-block;
-        margin-left: .5em;
-        content: '→';
-      }
+      // &::after {
+      //   display: inline-block;
+      //   margin-left: .5em;
+      //   content: '→';
+      // }
     }
   }
 

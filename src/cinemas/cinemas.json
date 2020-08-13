@@ -1,4 +1,4 @@
 {
   "layout": "layouts/cinema.njk",
-  "permalink": "/api/cinema/{{ title | slug }}.json"
+  "permalink": "/api/cinema/{{ title | slugify }}.json"
 }

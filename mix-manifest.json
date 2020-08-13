@@ -2,8 +2,12 @@
     "/src/assets/app.js": "/src/assets/app.js",
     "/src/assets/app.css": "/src/assets/app.css",
     "/src/assets/images/259833.jpeg": "/src/assets/images/259833.jpeg",
+    "/src/assets/images/AAAB.png": "/src/assets/images/AAAB.png",
     "/src/assets/images/default-marker.png": "/src/assets/images/default-marker.png",
     "/src/assets/images/external_link.svg": "/src/assets/images/external_link.svg",
+    "/src/assets/images/hpph.png": "/src/assets/images/hpph.png",
+    "/src/assets/images/leedsinspired.png": "/src/assets/images/leedsinspired.png",
+    "/src/assets/images/lottery.png": "/src/assets/images/lottery.png",
     "/src/assets/images/marker-icon-red.svg": "/src/assets/images/marker-icon-red.svg",
     "/src/assets/images/marker-icon.svg": "/src/assets/images/marker-icon.svg",
     "/src/assets/fonts/karla-bold-webfont.woff": "/src/assets/fonts/karla-bold-webfont.woff",
@@ -13,7 +17,5 @@
     "/src/assets/fonts/karla-regular-webfont.woff": "/src/assets/fonts/karla-regular-webfont.woff",
     "/src/assets/fonts/karla-regular-webfont.woff2": "/src/assets/fonts/karla-regular-webfont.woff2",
     "/src/assets/fonts/mikadoblack-italic-webfont.woff": "/src/assets/fonts/mikadoblack-italic-webfont.woff",
-    "/src/assets/fonts/mikadoblack-italic-webfont.woff2": "/src/assets/fonts/mikadoblack-italic-webfont.woff2",
-    "/src/assets/images/AAAB.png": "/src/assets/images/AAAB.png",
-    "/src/assets/images/leedsinspired.png": "/src/assets/images/leedsinspired.png"
+    "/src/assets/fonts/mikadoblack-italic-webfont.woff2": "/src/assets/fonts/mikadoblack-italic-webfont.woff2"
 }

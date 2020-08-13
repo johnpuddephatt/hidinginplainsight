@@ -1,3 +1,5 @@
+const slugify = require("slugify");
+
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
@@ -18,10 +20,19 @@ module.exports = function(eleventyConfig) {
     typographer: true
   });
 
+  // Universal slug filter strips unsafe chars from URLs
+  eleventyConfig.addFilter("slugify", function(str) {
+    return slugify(str, {
+      lower: true,
+      replacement: "-",
+      remove: /[*+~.·,()'"`´%!?¿:@]/g
+    });
+  });
+
   eleventyConfig.addNunjucksFilter("markdownify", markdownString => md.render(markdownString));
 
   eleventyConfig.addNunjucksFilter('jsonify', function(str) {
-    str = str.replace(/\r|\n|\r\n/g, '');
+    str = str.replace(/\r|\n|\r\n/g, '<br>');
     str = str.replace(/"/g, '\\"');
     return str;
   })

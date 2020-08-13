@@ -5,7 +5,7 @@ permalink: /api/cinemas.json
   {% for cinema in collections.cinemas  %}
     {% set data = cinema.data %}
     {
-      "slug": "{{ data.title | slug }}",
+      "slug": "{{ data.title | slugify }}",
       "title": "{{ data.title }}",
       {% if data.image %}
         "image": "{{ data.image | safe }}",

@@ -48,6 +48,12 @@ collections:
         name: "status"
         widget: "select"
         options: ["Open", "Still visible", "Demolished"]
+      - label: "Colour"
+        name: "colour"
+        widget: "select"
+        options: ["Red", "Blue", "Orange", "Cream"]
+        default: "Blue"
+        hint: "Used to determine the background colour on individual cinema pages"
       - label: Image
         name: image
         widget: image
