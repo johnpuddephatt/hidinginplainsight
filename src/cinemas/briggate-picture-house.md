@@ -18,7 +18,7 @@ description_extended: >-
   use of gentlemen.
 
 
-  Source: \
+  ***Source:***\
 
   [Cinema Treasures](http://cinematreasures.org/theaters/38396)
 
@@ -27,7 +27,7 @@ description_extended: >-
 
   \
 
-  Source: \
+  ***Source:***\
 
   Leodis
 photos:
