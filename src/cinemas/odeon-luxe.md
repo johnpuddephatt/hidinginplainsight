@@ -10,7 +10,7 @@ description: "ODEON is a well-known cinema chain, this ODEON multiplex just
   outside Leeds has 1,117 seats across 13 screens.   Before this cinema opened,
   Leeds had seen two previous ODEONs come and go. The ODEON Luxe cinemas started
   opening in the UK in 2017, these were ODEON cinemas that had been upgraded
-  with luxury features. This ODEON was the first one in the UK to open with the
+  with luxury features. This ODEON was the first one in England to open with the
   upgrade. "
 description_extended: |-
   The first ODEON cinema opened in Birmingham in 1930 
