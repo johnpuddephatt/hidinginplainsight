@@ -12,7 +12,7 @@ description: The elaborately decorated Gaiety Kinema opened in 1921. In regards
   a bar and later joined the ranks of the demolished.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318615/hidinginplainsight/Gaiety_Kinema_Leeds_Libraries_2011125_172986.jpg
-    source: LEO 5815 2011125_172986
+    source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318613/hidinginplainsight/Gaiety_Kinema_Leeds_Libraries_200673_161483.jpg
-    source: LEO 1280 200673_161483
+    source: Leeds Libraries Leodis.net
 ---
