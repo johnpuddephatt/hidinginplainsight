@@ -12,6 +12,8 @@ description: The Miners Institute began screening films in the early 20th
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318512/hidinginplainsight/Cosy_Cinema_Leeds_Libraries_2002820_28669375.jpg
     source: Leeds Libraries Leodis.net
+    date: "1938"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318512/hidinginplainsight/Cosy_Cinema_Leeds_Libraries_2002820_84516543.jpg
     source: Leeds Libraries Leodis.net
+    date: "1938"
 ---
