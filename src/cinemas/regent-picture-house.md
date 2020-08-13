@@ -22,7 +22,11 @@ description_extended: >-
   It is possible to still see the orginal name Regent, which is painted on the roof. Apparently this was done for a publicity stunt in the 1930s. A plane flew over Burmantofts and did a leaflet drop advertising the cinema. The roof was painted so that the pilot of the plane could find it!
 
 
-  Source:\
+  __
+
+
+  ***Source:***
+
 
   Cinema Treasures
 ---
