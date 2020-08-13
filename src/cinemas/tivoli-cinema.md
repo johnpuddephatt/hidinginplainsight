@@ -12,12 +12,12 @@ description: "This 1152 seat, attractive red brick cinema was designed by
   films were still shown until 1961, after which it became a Walkers Bingo,
   rivals of the Mecca empire. "
 description_extended: >-
-  
+  People commenting online on the Leodis website have mentioned a men’s barber
+  shop inside a one time, and cinema historian Brian Hornsey discovered that in
+  1986 snooker was being played here as well.
 
-  In 2009 the Yorkshire Evening Post ran an article that read ‘Number’s Up for Tivoili’. 
 
-
-  “Manager Andy Wood locked the Tivoli Cinema doors for the final time on Sunday 22nd March, 2009” it said.
+  In 2009 the Yorkshire Evening Post ran an article that read ‘Number’s Up for Tivoili’. “Manager Andy Wood locked the Tivoli Cinema doors for the final time on Sunday 22nd March, 2009” the article said.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597321040/hidinginplainsight/Tivoli_Cinema_Leeds_Libraries_2002820_21601504.jpg
     source: Leeds Libraries Leodis.net
