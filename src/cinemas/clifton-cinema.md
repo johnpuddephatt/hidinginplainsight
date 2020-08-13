@@ -12,4 +12,8 @@ description: With a capicty of over 1,300 patrons, the Clifton cinema opened in
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597316963/hidinginplainsight/Clifton_Cinema_Leeds_Libraries_594.jpg
     source: Leeds Libraries Leodis.net
+    date: "1939"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597322860/hidinginplainsight/Clifton_Cinema_20041210_30080813.jpg
+    date: "1970"
+    source: Leeds Libraries Leodis.net
 ---
