@@ -20,7 +20,10 @@ description_extended: >-
   Many film goers recall combining a trip to the cinema with a visit to Coe’s Fisheries opposite and that the fish and chip shop often had long queues. Coe’s Fisheries is still trading on Crossgates Road. 
 
 
-  \
+  __
+
+
+  ***Sources:***\
 
   GEM, 1964–1966: Britain's First Out-of-Town Retailer by Paul Whysall\
 
