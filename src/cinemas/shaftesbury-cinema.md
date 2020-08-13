@@ -9,10 +9,14 @@ address: Corner of Harehills Lane and York Road
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320822/hidinginplainsight/Shaftesbury_Cinema_Leeds_Libraries_3619.jpg
     source: Leeds Libraries Leodis.net
+    date: "1956"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320823/hidinginplainsight/Shaftesbury_Cinema_Leeds_Libraries_3618.jpg
     source: Leeds Libraries Leodis.net
+    date: "1956"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320830/hidinginplainsight/Shaftesbury_Cinema_Leeds_Libraries_4044.jpg
     source: Leeds Libraries Leodis.net
+    date: "1955"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320831/hidinginplainsight/Shaftesbury_Cinema_Leeds_Libraries_2002820_96709842.jpg
     source: Leeds Libraries Leodis.net
+    date: "1931"
 ---
