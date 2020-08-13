@@ -7,8 +7,8 @@ image: https://res.cloudinary.com/hpph/image/upload/v1595964823/hidinginplainsig
 location: '{"type":"Point","coordinates":[-1.5446252,53.8105123]}'
 address: 10a Camp Road (road now renamed)
 description: "Converted from a barracks, this cinema was believed to sit around
-  400 patrons. It closed in 1938, it has since been demolished, having been
-  somewhere in the vacinity of Servia Hill. "
+  400 patrons. It closed in 1938 and has since been demolished. It would have
+  been somewhere in the vacinity of Servia Hill. "
 description_extended: >-
   Camp Road, where the Alexandra Picture Theatre was located, was renamed when
   the area was redeveloped in the 1950s, it is now called Lovell Park Road and
