@@ -18,8 +18,6 @@ description_extended: >-
 
 
 
-  __
-
 
   ***Source:***
 
