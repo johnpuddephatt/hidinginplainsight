@@ -11,5 +11,5 @@ description: With a capicty of over 1,300 patrons, the Clifton cinema opened in
   materials until it was demolished.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597316963/hidinginplainsight/Clifton_Cinema_Leeds_Libraries_594.jpg
-    source: CLIB Stan 17 594
+    source: Leeds Libraries Leodis.net
 ---
