@@ -15,5 +15,10 @@ description_extended: >-
   House. Both cinemas were owned by John Newton Sharp.
 
 
-  Source: Leeds Cinemas Remembered by Robert E. Preedy
+  __
+
+
+  ***Sources:***\
+
+  Leeds Cinemas Remembered by Robert E. Preedy
 ---
