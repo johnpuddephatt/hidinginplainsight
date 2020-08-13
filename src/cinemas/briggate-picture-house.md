@@ -33,4 +33,5 @@ description_extended: >-
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597316787/hidinginplainsight/Briggate_Picture_House_later_called_Rialto_Leeds_Libraries_200266_21055239.jpg
     source: Leeds Libraries Leodis.net
+    date: "1939"
 ---
