@@ -21,7 +21,7 @@ description_extended: >-
 
   ***Sources:***
 
-  Cinema Treasures
+  Cinema Treasures\
 
   Leeds Cinemas Remembered by Robert E. Preedy
 ---
