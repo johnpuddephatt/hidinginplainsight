@@ -3,6 +3,7 @@ title: Regal Cinema
 date_open: "1936"
 date_close: "1964"
 status: Demolished
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1596451161/hidinginplainsight/regelcinema_crossgates.svg
 location: '{"type":"Point","coordinates":[-1.4516008,53.8062645]}'
 address: 40 Crossgates Road
@@ -28,4 +29,8 @@ description_extended: >-
   GEM, 1964–1966: Britain's First Out-of-Town Retailer by Paul Whysall\
 
   [Leodis](http://www.leodis.net/display.aspx?resourceIdentifier=2002820_65447635&DISPLAY=FULL&COMMENT=YES)
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597395626/hidinginplainsight/Regal_Cinema_Hunslet.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
