@@ -20,4 +20,4 @@ Out of 80 cinemas, the Hyde Park Picture House is one of the few lucky survivors
 
 ![](https://res.cloudinary.com/hpph/image/upload/v1597400194/hidinginplainsight/Donate_button3.jpg)
 
-<a href="https://hydeparkpicturehouse.co.uk/donate" target="_blank" class="button">I’d like to make a donation!</a>
+<a href="https://hydeparkpicturehouse.co.uk/donate" target="_blank" class="button is-primary is-large">I’d like to make a donation!</a>
