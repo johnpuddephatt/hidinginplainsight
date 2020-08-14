@@ -179,10 +179,11 @@ html, body {
 }
 
 .site-title {
-  font-weight: 700;
+  font-weight: 900;
   font-size: ms(2);
   line-height: ms(1);
   margin-right: ms(4);
+  font-style: italic;
   font-family: mikado;
   color: white;
   -webkit-font-smoothing: antialiased;
@@ -198,7 +199,7 @@ html, body {
   margin-top: ms(8);
   margin-bottom: ms(3);
   font-size: ms(6);
-  font-weight: 700;
+  font-weight: 900;
   font-family: mikado;
   font-style: italic;
 }
