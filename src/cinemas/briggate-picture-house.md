@@ -32,10 +32,10 @@ description_extended: >-
 
   Leodis
 photos:
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597316787/hidinginplainsight/Briggate_Picture_House_later_called_Rialto_Leeds_Libraries_200266_21055239.jpg
-    source: Leeds Libraries Leodis.net
-    date: "1939"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597391905/hidinginplainsight/Briggate_Picture_House_200266_21055239.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597316787/hidinginplainsight/Briggate_Picture_House_later_called_Rialto_Leeds_Libraries_200266_21055239.jpg
+    source: Leeds Libraries Leodis.net
+    date: "1939"
 ---
