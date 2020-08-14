@@ -37,7 +37,11 @@ description_extended: >-
   It looks as though a building there may have been adapted.
 
 
-  The Hyde Park Picture House retains many heritage assets that you can still see today. Inside the cinema there are nine working gas lights, which are lit every day when the is cinema open. Alongside modern equipment in the projection room there are two restored Cinemeccanica 'Victoria 8' 35mm projectors, these date fom the 1960s and were previously installed in the Louge cinema. The ornate iron lamp pillar outside is also Grade II listed.\
+  The Hyde Park Picture House retains many heritage assets that you can still see today. Inside the cinema there are nine working gas lights, which are lit every day when the is cinema open. Alongside modern equipment in the projection room there are two restored Cinemeccanica 'Victoria 8' 35mm projectors, these date fom the 1960s and were previously installed in the Louge cinema. The ornate iron lamp pillar outside is also Grade II listed.
+
+
+  You will now find that the former ticket office of the 1950s and 60s is a tiny shop that sells sweets, cakes and drinks. Going back to the cinema’s earliest years, that same space would have been occupied by a fireplace.
+
 
   \
 
