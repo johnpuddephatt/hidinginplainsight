@@ -3,6 +3,7 @@ title: News Theatre
 date_open: "1938"
 date_close: "1988"
 status: Still visible
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1595964819/hidinginplainsight/classic_tatlernewstheatre.svg
 location: '{"type":"Point","coordinates":[-1.5483172,53.7959672]}'
 address: Queens Hotel Building, City Square, Leeds
@@ -29,4 +30,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320189/hidinginplainsight/The_News_Theatre_Leeds_Libraries_956.jpg
     source: Leeds Libraries Leodis.net
     caption: "1938"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597394616/hidinginplainsight/The_News_Theatre.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
