@@ -2,7 +2,7 @@
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597333475/hidinginplainsight/HPPH.jpg
     source: Tom Joy
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597333474/hidinginplainsight/HPPH_01.jpg
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597423142/hidinginplainsight/Hyde_Park_-_Thomas_Morris_1.tiff
     source: Ollie Jenkins
   - file: https://res.cloudinary.com/hpph/image/upload/v1597333475/hidinginplainsight/HPPH_03.jpg
     source: Ollie Jenkins
