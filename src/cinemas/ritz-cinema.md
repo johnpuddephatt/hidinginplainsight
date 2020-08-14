@@ -4,7 +4,7 @@ date_open: "1920"
 date_close: "1965"
 status: Demolished
 colour: Blue
-image: https://res.cloudinary.com/hpph/image/upload/v1597398126/hidinginplainsight/ritzcrossgates.svg
+image: https://res.cloudinary.com/hpph/image/upload/v1597398285/hidinginplainsight/ritzcrossgates2.svg
 location: '{"type":"Point","coordinates":[-1.4526683,53.8050924]}'
 address: Station Road, Crossgates
 description: "An 800 seat cinema on Station Street in Cross Gates, this cinema
