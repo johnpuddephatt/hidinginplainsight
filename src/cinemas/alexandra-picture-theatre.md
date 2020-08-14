@@ -3,7 +3,7 @@ title: Alexandra Picture Theatre
 date_open: "1912"
 date_close: "1938"
 status: Demolished
-colour: Blue
+colour: Orange
 image: https://res.cloudinary.com/hpph/image/upload/v1595964823/hidinginplainsight/alexandrapicturetheatre.svg
 location: '{"type":"Point","coordinates":[-1.5446252,53.8105123]}'
 address: 10a Camp Road (road now renamed)
