@@ -16,13 +16,13 @@ This project wouldn't have been possible were it not for the pre-existing resear
 
 • *Leeds Cinemas* by Robert E. Preedy (2005), Stroud: Tempus Publishing Ltd. 
 
-
+  
 
 ### Papers
 
 • [*GEM, 1964–1966: Britain's First Out-of-Town Retailer* by Paul Whysall (2005)](https://www.tandfonline.com/doi/abs/10.1080/09593960500049183)
 
-
+  
 
 ### Websites
 
