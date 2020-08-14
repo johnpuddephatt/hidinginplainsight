@@ -11,7 +11,7 @@ description: This small cinema was converted from a Primitive Methodist Chapel
   and opened in 1910. In 1933 it was renamed the Western Talkie Cinema, the most
   likely reason for this would be that it had installed a Western Electric sound
   system. It has also been known as the New Western and Branch Road Picture
-  House. When it closed in 1960 it was converted to a bingo hall, it has also
+  House. When it closed in 1960 it was converted to a bingo hall. It has also
   housed a launderette at one time, but is currently a European Food
   Supermarket.
 photos:
