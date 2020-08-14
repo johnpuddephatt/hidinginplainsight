@@ -9,7 +9,9 @@ location: '{"type":"Point","coordinates":[-1.4992422,53.8015949]}'
 address: Corner of Harehills Lane and York Road
 description: "This is another of the many cinemas in Leeds to have been designed
   by J.P. Crawford of Harehills. It was one of his later cinemas, built in
-  Art-Deco style. It opened in 1928 and was fitted with some double seats. "
+  Art-Deco style. It opened in 1928 and had a capcity of 1,603 across stalls and
+  balcony, according to one source it was fitted with 'the provision of wide
+  chairs for tow'. "
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320822/hidinginplainsight/Shaftesbury_Cinema_Leeds_Libraries_3619.jpg
     source: Leeds Libraries Leodis.net
