@@ -29,10 +29,4 @@ This project owes an enormous debt to earlier research carried out in the 1980s 
 
 And big thanks to Leeds Libraries and especially the staff at the Local and Family History library for contributing advice, items from their archive and photographs from their amazing Leodis website.
 
-
-
-\---
-
-LOGOS
-
-\---
+![](https://res.cloudinary.com/hpph/image/upload/v1597398941/hidinginplainsight/website_logos.jpg)
