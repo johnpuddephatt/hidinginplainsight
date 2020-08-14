@@ -3,6 +3,7 @@ title: The Plaza
 date_open: "1907"
 date_close: "1985"
 status: Still visible
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1596451163/hidinginplainsight/plaza_newbriggate.svg
 location: '{"type":"Point","coordinates":[-1.5413944,53.7997994]}'
 address: 32 New Briggate
@@ -28,4 +29,8 @@ description_extended: >-
   ***Source:***\
 
   Leeds Grand Theatre
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597395331/hidinginplainsight/The_Plaza.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
