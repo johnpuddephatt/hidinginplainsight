@@ -3,6 +3,7 @@ title: Carlton Cinema Picture Theatre
 date_open: "1920"
 date_close: "1965"
 status: Demolished
+colour: Cream
 image: https://res.cloudinary.com/hpph/image/upload/v1595964816/hidinginplainsight/carltoncinemapicturetheatre.svg
 location: '{"type":"Point","coordinates":[-1.5440404,53.8054599]}'
 address: 19-21 Carlton Street, Little London
