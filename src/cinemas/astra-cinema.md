@@ -13,6 +13,6 @@ description: At present, we have no imagery of the cinema during its hayday.
   demolished.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597391509/hidinginplainsight/Astra_Cinema.jpg
-    source: We're making every effort to discover the ownership of this photo.
+    source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
 ---
