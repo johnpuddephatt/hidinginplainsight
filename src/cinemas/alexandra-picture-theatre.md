@@ -3,6 +3,7 @@ title: Alexandra Picture Theatre
 date_open: "1912"
 date_close: "1938"
 status: Demolished
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1595964823/hidinginplainsight/alexandrapicturetheatre.svg
 location: '{"type":"Point","coordinates":[-1.5446252,53.8105123]}'
 address: 10a Camp Road (road now renamed)
@@ -25,4 +26,8 @@ description_extended: >-
   City of Leeds Directory 1961, Barret's Publications LTD\
 
   Wikipedia
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597391463/hidinginplainsight/Alexandra_Picture_Theatre.jpg
+    source: We're making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
