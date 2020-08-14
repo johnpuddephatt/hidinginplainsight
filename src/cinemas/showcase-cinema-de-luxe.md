@@ -3,7 +3,7 @@ title: Showcase Cinema de Lux
 date_open: "1989"
 date_close: Present
 status: Open
-colour: Cream
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1596451155/hidinginplainsight/showcasecinemadeluxe.svg
 location: '{"type":"Point","coordinates":[-1.6402164,53.7439539]}'
 address: Gelderd Road, Birstall
