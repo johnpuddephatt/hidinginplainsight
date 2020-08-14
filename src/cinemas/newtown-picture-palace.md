@@ -3,6 +3,7 @@ title: Newtown Picture Palace
 date_open: "1913"
 date_close: "1953"
 status: Still visible
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1596451157/hidinginplainsight/newtownpicturepalace.svg
 location: '{"type":"Point","coordinates":[-1.5317586,53.8051035]}'
 address: Cross Stamford Street, Sheepscar
@@ -28,4 +29,11 @@ description_extended: >-
   Leeds Cinemas Remembered by Robert E. Preedy\
 
   Cinema Treasures
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597394569/hidinginplainsight/Newtown_Picture_Palace_01.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597394667/hidinginplainsight/Newtown_Picture_Palace.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---

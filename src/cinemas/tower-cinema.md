@@ -3,6 +3,7 @@ title: Tower Cinema
 date_open: "1920"
 date_close: "1985"
 status: Still visible
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1596451150/hidinginplainsight/towercinema.svg
 location: '{"type":"Point","coordinates":[-1.5407883,53.800433]}'
 address: 54, New Briggate
@@ -23,4 +24,7 @@ photos:
   - source: Leeds Libraries Leodis.net
     file: https://res.cloudinary.com/hpph/image/upload/v1597327031/hidinginplainsight/The_Tower_20171011_176305.jpg
     date: circa 1920s
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597396274/hidinginplainsight/Tower_Cinema.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---

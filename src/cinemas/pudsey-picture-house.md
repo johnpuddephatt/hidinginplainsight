@@ -3,6 +3,7 @@ title: Pudsey Picture House
 date_open: "1920"
 date_close: "1960"
 status: Still visible
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1596451162/hidinginplainsight/pudseypicturehouse.svg
 location: '{"type":"Point","coordinates":[-1.6643134,53.7959109]}'
 address: 29 Church Lane, Pudsey
@@ -13,4 +14,8 @@ description: The auditorium of Pudsey Picture House is still clearly visible on
   allegedly sold sweet and tobacco, the other was a clothing shop. These have
   since been demolished.
 description_extended: After it closed in 1960, it has been a Fine Fare, a Co-op and a Kwik Save.
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597395494/hidinginplainsight/Pudsey_Picture_House.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---

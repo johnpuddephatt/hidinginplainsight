@@ -3,6 +3,7 @@ title: "Paramount Theatre "
 date_open: "1932"
 date_close: "2001"
 status: Still visible
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1596451168/hidinginplainsight/paramounttheatre.svg
 location: '{"type":"Point","coordinates":[-1.5416184,53.7992806]}'
 address: 20 The Headrow
@@ -56,4 +57,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320471/hidinginplainsight/Paramount_Theatre_Leeds_Libraries_2007514_163535.jpg
     source: Leeds Libraries Leodis.net
     date: "2007"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597395071/hidinginplainsight/Paramount_Theatre.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---

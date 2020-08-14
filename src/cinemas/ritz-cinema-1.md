@@ -3,6 +3,7 @@ title: Ritz Cinema
 date_open: "1934"
 date_close: "2000"
 status: Demolished
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1596451159/hidinginplainsight/ritzcinema.svg
 location: '{"type":"Point","coordinates":[-1.5391615,53.8005526]}'
 address: Vicar Lane, Leeds
@@ -27,4 +28,11 @@ description_extended: >-
   Cinema Treasures\
 
   Leodis
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597395908/hidinginplainsight/Ritz_Super_Cinema_01.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597395928/hidinginplainsight/Ritz_Super_Cinema.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---

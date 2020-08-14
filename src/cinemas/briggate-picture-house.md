@@ -14,7 +14,7 @@ description: Opened in 1911, the Briggate Picture House could seat around 600
   cinemas around Briggate.
 description_extended: >-
   The Briggate Picture House was advertised as ‘The most luxurious
-  cinematotgraph theatre in Yorkshire’,with two tea lounges, one decorated in a
+  cinematotgraph theatre in Yorkshire’, with two tea lounges, one decorated in a
   Wedgewood style for the use of ladies, the other in a Jacobean style for the
   use of gentlemen.
 

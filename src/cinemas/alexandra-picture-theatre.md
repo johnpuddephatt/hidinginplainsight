@@ -12,9 +12,8 @@ description: "Converted from a barracks, this cinema was believed to sit around
   been somewhere in the vacinity of Servia Hill. "
 description_extended: >-
   Camp Road, where the Alexandra Picture Theatre was located, was renamed when
-  the area was redeveloped in the 1950s, it is now called Lovell Park Road and
+  the area was redeveloped in the 1950s. It is now called Lovell Park Road and
   Oatlands Lane.
-
 
 
   __

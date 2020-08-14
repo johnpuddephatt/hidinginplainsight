@@ -3,6 +3,7 @@ title: Majestic Cinema
 date_open: "1920"
 date_close: "1969"
 status: Still visible
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1596451160/hidinginplainsight/majesticcinema.svg
 location: '{"type":"Point","coordinates":[-1.5476239,53.7965383]}'
 address: Corner of Quebec Street and Wellington Street, Leeds City Square
@@ -47,4 +48,16 @@ photos:
     source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597321349/hidinginplainsight/Majestic_Cinema_Leeds_Museums_and_Galleries_201122_171752.jpg
     source: Leeds Museum and Galleries
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597394481/hidinginplainsight/Majestic_1923.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+    date: "1923"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597394480/hidinginplainsight/Majestic_02_1923.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+    date: "1923"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597394480/hidinginplainsight/Majestic_1923_01.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+    date: "1923"
 ---

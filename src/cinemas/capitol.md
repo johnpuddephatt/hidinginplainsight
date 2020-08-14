@@ -7,7 +7,7 @@ colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1595964819/hidinginplainsight/capitol.svg
 location: '{"type":"Point","coordinates":[-1.5681106,53.8282717]}'
 description: "Opened in 1922, the Capitol Cinema and Ballroom Complex seemed to
-  have been a rather large site, the cinema is said to have had 1294 setas.
+  have been a rather large site, with the cinema said to have had 1,294 seats.
   After closure in 1968 it served as a bingo hall and has since been demolished,
   with the Meanwood Waitrose standing on the plot. "
 description_extended: The text reading 'Picture House' on the Capitol cinema's
