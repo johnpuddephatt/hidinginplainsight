@@ -12,6 +12,12 @@ description: The Merrion Centre Odeon opened in 1964 and closed only 13 years
   very modern and luxurious single screen cinema compared to others in Leeds at
   the time. When it was built it was the first new cinema in the city for 30
   years.
+description_extended: When it was built, the cinema was integral to the Merrion
+  Centre, a new mixed-use retail and office development in the north of the city
+  centre. The ground floor entrance to the cinema was situated opposite the
+  entrance to Morrisons supermarket, with another set of doors on the balcony
+  above. The cinema closed in 1977 after just 13 years and for many years the
+  boarded-up entrances coule be seen.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320302/hidinginplainsight/Odeon_Merrion_Leeds_Libraries_2003102_19016665.jpg
     source: Leeds Libraries Leodis.net
