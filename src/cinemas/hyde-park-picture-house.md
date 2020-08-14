@@ -34,13 +34,18 @@ description_extended: >-
   unclear whether or not the cinema was adapted from that building or was a
   completely new build in 1914. In 1913, number 73 Brudenell Rd vanished and
   number 75 became the next building along after the social club/picture house.
-  It looks as though a building there may have been adapted. \
+  It looks as though a building there may have been adapted.
+
+
+  The Hyde Park Picture House retains many heritage assets that you can still see today. Inside the cinema there are nine working gas lights, which are lit every day when the is cinema open. The ornate iron lamp pillar outside is also Grade II listed.\
 
   \
 
-  The ornate iron lamp pillar outside is also Grade II listed.\
+  __ 
 
-  \
 
-  Source: Kelly's directories
+  ***Source:***
+
+
+  Kelly's directories
 ---
