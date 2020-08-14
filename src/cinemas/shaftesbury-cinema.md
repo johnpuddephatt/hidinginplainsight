@@ -23,4 +23,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320831/hidinginplainsight/Shaftesbury_Cinema_Leeds_Libraries_2002820_96709842.jpg
     source: Leeds Libraries Leodis.net
     date: "1931"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597396120/hidinginplainsight/Shaftesbury_Cinema.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
