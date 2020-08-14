@@ -3,6 +3,7 @@ title: Burley Picture House
 date_open: "1913"
 date_close: "1959"
 status: Demolished
+colour: Red
 image: https://res.cloudinary.com/hpph/image/upload/v1595964820/hidinginplainsight/burleypicturehouse.svg
 location: '{"type":"Point","coordinates":[-1.5742314,53.8057387]}'
 address: 185 Burley Road
