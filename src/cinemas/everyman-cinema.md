@@ -3,6 +3,7 @@ title: "Everyman Cinema "
 date_open: "2013"
 date_close: Present
 status: Open
+colour: Orange
 image: https://res.cloudinary.com/hpph/image/upload/v1596451168/hidinginplainsight/everyman.svg
 location: '{"type":"Point","coordinates":[-1.5440552,53.7966785]}'
 address: Leeds Trinity, Albion Street, Leeds LS1 5AT
