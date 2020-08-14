@@ -21,13 +21,10 @@ description_extended: >-
   part of the Rank cinema chain, who also owend The Majestic. 
 
 
-  When it first opened, the Merrion Centre was an open air development, it was claimed that it was the biggest shopping centre of its kind, although it was quickly eclipsed by Birmingham's Bull Ring centre which opened later the same year. 
+  When it first opened, the Merrion Centre was an open air development, it was claimed that it was the biggest shopping centre of its kind, although it was quickly eclipsed by Birmingham's Bull Ring centre which opened later the same year. In the early 1970s the Merrion House office block was added, which was occupied by Leeds City Council. The centre was also enclosed with a roof and the cinema was now accessed through a set of doors on a balcony above the ground floor shopping level. 
 
 
-
-   with a set of doors on a balcony above the ground floor shopping level. 
-
-  The cinema closed in 1977 after just 13 years and for many years the boarded-up entrances coule be seen.
+  The cinema closed in 1977 after just 13 years, for many years afterwards the boarded-up entrances could still be seen from within the Merrion Centre atrium. Much of the cinema's interior remained intact, hidden away from the public apart from on the occasional Heritage Open Day event, but the old cinema fittings have now been removed and the site is ready for a new development.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320302/hidinginplainsight/Odeon_Merrion_Leeds_Libraries_2003102_19016665.jpg
     source: Leeds Libraries Leodis.net

@@ -3,6 +3,7 @@ title: Crown Cinema
 date_open: "1919"
 date_close: "1968"
 status: Still visible
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1595964814/hidinginplainsight/crowncinema.svg
 location: '{"type":"Point","coordinates":[-1.5752533,53.7909613]}'
 address: 14-16 Tong Rd Armley, Leeds LS12 1HX
@@ -14,4 +15,11 @@ description_extended: Building of the cinema began in 1916, but the First World
   War delayed completion until 1919. According to historian Robert E. Preedy,
   the Crown was the second cinema in Leeds to feature sound or 'talkies', the
   first being the Rialto.
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597392838/hidinginplainsight/Crown_Cinema.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597392842/hidinginplainsight/Crown_Cinema01.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---

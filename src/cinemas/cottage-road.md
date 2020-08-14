@@ -3,6 +3,7 @@ title: Cottage Road
 date_open: "1912"
 date_close: Present
 status: Open
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1595964822/hidinginplainsight/cottageroad.svg
 location: '{"type":"Point","coordinates":[-1.5816638,53.8268865]}'
 address: " Cottage Rd, Leeds LS6 4DD"
@@ -17,4 +18,8 @@ description_extended: >-
 
 
   Charles Morris owns five other independent cinemas across the north of England, his company is called Northern Morris Cinemas and they operate the Rex cinema in Elland, the Picture House in Keighley, the Plaza in Skipton, the Roxy in Ulverston and the Royalty in Windermere.
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597392726/hidinginplainsight/Cottage_Road.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---

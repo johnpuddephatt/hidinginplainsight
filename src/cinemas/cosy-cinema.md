@@ -3,6 +3,7 @@ title: Cosy Cinema
 date_open: "1910"
 date_close: "1938"
 status: Demolished
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1595964813/hidinginplainsight/cosycinema.svg
 location: '{"type":"Point","coordinates":[-1.5051994,53.8000409]}'
 address: Accomodation Road (now York Road)
@@ -16,4 +17,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318512/hidinginplainsight/Cosy_Cinema_Leeds_Libraries_2002820_84516543.jpg
     source: Leeds Libraries Leodis.net
     date: "1938"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597392681/hidinginplainsight/Cosy_Cinema.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
