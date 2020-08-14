@@ -122,7 +122,8 @@ export default {
   h3 {
     font-family: mikado;
     font-size: ms(6);
-    font-weight: 700;
+    font-weight: 900;
+    font-style: italic;
     margin-bottom: ms(2);
   }
 
