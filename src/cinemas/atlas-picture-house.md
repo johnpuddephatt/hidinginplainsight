@@ -3,7 +3,7 @@ title: "Atlas Picture House "
 date_open: "1913"
 date_close: "1966"
 status: Demolished
-colour: Blue
+colour: Cream
 location: '{"type":"Point","coordinates":[-1.5407789,53.8108259]}'
 address: "136 Meanwood Road, Sheepscar "
 description: "Sadly we have found no picture of the Atlas Picture House in
