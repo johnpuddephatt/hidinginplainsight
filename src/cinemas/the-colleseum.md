@@ -3,6 +3,7 @@ title: The Coliseum
 date_open: "1908"
 date_close: "1961"
 status: Still visible
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1595964816/hidinginplainsight/colleseum_gaumontcinema.svg
 location: '{"type":"Point","coordinates":[-1.5471706,53.8022143]}'
 address: Cookridge Street
@@ -43,4 +44,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597323447/hidinginplainsight/The_Gaumont_20041210_86515445.jpg
     date: "1970"
     source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597392604/hidinginplainsight/Coliseum_2008523_166785.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
