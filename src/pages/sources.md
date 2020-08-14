@@ -4,7 +4,7 @@ display_in_navigation: true
 ---
 This project wouldn't have been possible were it not for the pre-existing research and writing already carried out on the history of Leeds cinemas. Below are sources from which the project has drawn from, which will continually be updated as the project progresses.
 
-![](https://res.cloudinary.com/hpph/image/upload/v1597401068/hidinginplainsight/Burmantofts_brochure.jpg)
+![](https://res.cloudinary.com/hpph/image/upload/v1597401238/hidinginplainsight/Burmantofts_brochure_2.jpg)
 
 ### Books
 
