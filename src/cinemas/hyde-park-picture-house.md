@@ -26,6 +26,10 @@ photos:
     source: Thomas Morris
   - file: https://res.cloudinary.com/hpph/image/upload/v1597423438/hidinginplainsight/Hyde_Park_-_Thomas_Morris_4.tiff
     caption: Thomas Morris
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597424981/hidinginplainsight/Hyde_Park_-_Thomas_Morris_5.tiff
+    source: Thomas Morris
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597425015/hidinginplainsight/Hyde_Park_-_Thomas_Morris_7.tiff
+    source: Thomas Morris
 alt_title: This is just a test
 title: Hyde Park Picture House
 date_open: "1914"
