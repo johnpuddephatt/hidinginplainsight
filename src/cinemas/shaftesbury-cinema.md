@@ -7,15 +7,15 @@ colour: Cream
 image: https://res.cloudinary.com/hpph/image/upload/v1596451154/hidinginplainsight/shaftesburycinema.svg
 location: '{"type":"Point","coordinates":[-1.4992422,53.8015949]}'
 address: Corner of Harehills Lane and York Road
-description: "This is another of the many cinemas in Leeds to have been designed
+description: This is another of the many cinemas in Leeds to have been designed
   by J.P. Crawford of Harehills. It was one of his later cinemas, built in
   Art-Deco style. It opened in 1928 and had a capacity of 1,603 across stalls
   and balcony. According to one source it was fitted with 'the provision of wide
-  chairs for two'. "
+  chairs for two'. The building included a ballroom and row of shops along the
+  side adjacent to York Road.
 description_extended: >-
-  The cinema had a ballroom which opened in 1929 and there was a row of shops
-  along the York Road side of the building. The main auditorium also had a large
-  stage and The Black Dyke band played there when it opened in 1928. Later it
+  The cinema had a ballroom, which opened in 1929, and the main auditorium had a
+  large stage. The Black Dyke band played there when it opened in 1928. Later it
   hosted performances by Cliff Richard and Gene Vincent.\
 
   \
