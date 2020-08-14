@@ -3,7 +3,7 @@ title: Briggate Picture House
 date_open: "1911"
 date_close: "1939"
 status: Demolished
-colour: Blue
+colour: Cream
 image: https://res.cloudinary.com/hpph/image/upload/v1595964821/hidinginplainsight/briggatepicturehouse.svg
 location: '{"type":"Point","coordinates":[-1.5426269,53.7967902]}'
 address: 46 Briggate, City Centre
