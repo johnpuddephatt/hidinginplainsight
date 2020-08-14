@@ -3,6 +3,7 @@ title: Scala
 date_open: "1922"
 date_close: "1957"
 status: Still visible
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1596451156/hidinginplainsight/scala.svg
 location: '{"type":"Point","coordinates":[-1.543213,53.7980069]}'
 address: 12 Albion Place, Lands Lane, Leeds
@@ -17,4 +18,11 @@ description_extended: "'Scala' was a popular name for cinemas in the 20th
   super sized cinemas in other cities. The Scala opened in the same year as the
   Majestic, this was a 'year of super cinemas' for Leeds, although the Scala had
   fewer seats than the Majestic."
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597396069/hidinginplainsight/Scala01a.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+  - source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+    file: https://res.cloudinary.com/hpph/image/upload/v1597396020/hidinginplainsight/Scala_01.jpg
 ---
