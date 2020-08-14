@@ -1,7 +1,5 @@
 ---
 photos:
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597333475/hidinginplainsight/HPPH.jpg
-    source: Tom Joy
   - file: https://res.cloudinary.com/hpph/image/upload/v1597424122/hidinginplainsight/HPPH_-_1959_14.jpg
     source: Hyde Park Picture House
     date: "1959"
@@ -22,6 +20,8 @@ photos:
     caption: ""
     date: Circa 1960s
     source: Hyde Park Picture House
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597333475/hidinginplainsight/HPPH.jpg
+    source: Tom Joy
   - file: https://res.cloudinary.com/hpph/image/upload/v1597423142/hidinginplainsight/Hyde_Park_-_Thomas_Morris_1.tiff
     source: Thomas Morris
   - file: https://res.cloudinary.com/hpph/image/upload/v1597423438/hidinginplainsight/Hyde_Park_-_Thomas_Morris_4.tiff
