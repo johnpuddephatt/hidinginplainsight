@@ -27,8 +27,8 @@
             </div>
           </div>
           <div class="lightbox-navigation">
-            <button class="button previous" :disabled="open == 0" @click.stop="open--">&larr;</button>
-            <button class="button next" :disabled="open == (photos.length - 1)"  @click.stop="open++">&rarr;</button>
+            <button v-if="photos.length > 1" class="button previous" :disabled="open == 0" @click.stop="open--">&larr;</button>
+            <button v-if="photos.length > 1" class="button next" :disabled="open == (photos.length - 1)"  @click.stop="open++">&rarr;</button>
             <button class="button close" tabindex="1" @click="open = null">Close</button>
           </div>
         </div>
@@ -190,6 +190,7 @@ export default {
   flex-direction: row;
 
   @media screen and (orientation: portrait) {
+    top: 58px;
     flex-direction: column;
   }
 }
@@ -203,7 +204,7 @@ export default {
   justify-content: center;
   overflow: hidden;
   @media screen and (orientation:portrait) {
-    flex: 1 0 75vw;
+    flex: 1 0 100vw;
   }
 
   img {
@@ -222,7 +223,7 @@ export default {
   @media screen and (orientation:portrait) {
     width: 100%;
     flex: 1 1 auto;
-    padding: ms(0) 0;
+    padding: ms(0) 0 0;
   }
 }
 
@@ -256,6 +257,7 @@ export default {
   padding: ms(-2) ms(0) 0;
   @media screen and (orientation:portrait) {
     justify-content: flex-start;
+    padding: ms(-2) ms(0);
   }
 
   .close {

@@ -224,6 +224,10 @@ export default {
     &.is-cream {
       background-image: linear-gradient(to top, $cream 30%, white 30%);
     }
+
+    & > div {
+      height: 100%;
+    }
     margin-bottom: ms(2);
     padding-bottom: ms(4);
     height: calc(100vw - #{2 * ms(2)});
