@@ -3,6 +3,7 @@ title: Briggate Picture House
 date_open: "1911"
 date_close: "1939"
 status: Demolished
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1595964821/hidinginplainsight/briggatepicturehouse.svg
 location: '{"type":"Point","coordinates":[-1.5426269,53.7967902]}'
 address: 46 Briggate, City Centre
@@ -34,4 +35,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597316787/hidinginplainsight/Briggate_Picture_House_later_called_Rialto_Leeds_Libraries_200266_21055239.jpg
     source: Leeds Libraries Leodis.net
     date: "1939"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597391905/hidinginplainsight/Briggate_Picture_House_200266_21055239.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
