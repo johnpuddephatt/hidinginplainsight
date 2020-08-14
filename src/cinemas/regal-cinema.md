@@ -3,7 +3,7 @@ title: Regal Cinema
 date_open: "1936"
 date_close: "1964"
 status: Demolished
-colour: Blue
+colour: Cream
 image: https://res.cloudinary.com/hpph/image/upload/v1596451161/hidinginplainsight/regelcinema_crossgates.svg
 location: '{"type":"Point","coordinates":[-1.4516008,53.8062645]}'
 address: 40 Crossgates Road
