@@ -3,6 +3,7 @@ title: "Atlas Picture House "
 date_open: "1913"
 date_close: "1966"
 status: Demolished
+colour: Blue
 location: '{"type":"Point","coordinates":[-1.5407789,53.8108259]}'
 address: "136 Meanwood Road, Sheepscar "
 description: "Sadly we have found no picture of the Atlas Picture House in
@@ -21,4 +22,9 @@ description_extended: >-
   ***Sources:***\
 
   Leeds Cinemas Remembered by Robert E. Preedy
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597391589/hidinginplainsight/Atlas_Picture_House.jpg
+    source: We're making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+    caption: Only partially visible on the left of the photo.
 ---
