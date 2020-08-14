@@ -15,7 +15,7 @@ description: "The Pavilion was another of the many Leeds cinemas to have been
 description_extended: The Pavilion is now home to some new flats and although
   the building has changed substantially over the years, it has retained its
   distinctive frontage. When it was in use as a cinema, it was a destination on
-  a major tram route into Leeds, it now finds itself on the route of the
+  a major tram route into Leeds. It now finds itself on the route of the
   CityConnect cycle path from Leeds to Bradford.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597395128/hidinginplainsight/Pavillion_Cinema.jpg
