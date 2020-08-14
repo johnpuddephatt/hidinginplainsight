@@ -9,7 +9,7 @@ Presented by the Hyde Park Picture House, **Hiding In Plain Sight** is a new int
 
 
 
-![](https://res.cloudinary.com/hpph/image/upload/v1597279423/hidinginplainsight/Alexandra_about_.4_copy.jpg)
+![](https://res.cloudinary.com/hpph/image/upload/v1597399223/hidinginplainsight/Alexandra_about_.final.jpg)
 
 
 
@@ -19,7 +19,7 @@ Supported by Leeds Inspired and the National Lottery Heritage Fund, this ever ev
 
 
 
-![](https://res.cloudinary.com/hpph/image/upload/v1597279241/hidinginplainsight/Abbey_about_.4.jpg)
+![](https://res.cloudinary.com/hpph/image/upload/v1597399239/hidinginplainsight/Abbey_about_.final.jpg)
 
 
 
