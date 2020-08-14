@@ -3,6 +3,7 @@ title: Regent Picture House
 date_open: "1916"
 date_close: "1971"
 status: Still visible
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1596451158/hidinginplainsight/regentcinema.svg
 location: '{"type":"Point","coordinates":[-1.5212913,53.8011815]}'
 address: Torre House, Torre Road, Burmantofts
@@ -29,4 +30,8 @@ description_extended: >-
 
 
   Cinema Treasures
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597395713/hidinginplainsight/Regent_Picture_House.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
