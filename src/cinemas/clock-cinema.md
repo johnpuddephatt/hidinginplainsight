@@ -16,10 +16,10 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597317122/hidinginplainsight/Clock_Cinema_Leeds_Libraries_2002820_93064517.jpg
     source: Leeds Libraries Leodis.net
     date: "1939"
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597317127/hidinginplainsight/Clock_Cinema_Leeds_Libraries_2010812_171136.jpg
-    source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597392386/hidinginplainsight/Clock_Cinema.jpg
     date: "1938"
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597317127/hidinginplainsight/Clock_Cinema_Leeds_Libraries_2010812_171136.jpg
+    source: Leeds Libraries Leodis.net
 ---
