@@ -65,7 +65,8 @@ export default {
     return {
       zoom: 13,
       center: latLng(53.8125403,-1.5735477),
-      url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+      // url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+      url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
       mapOptions: {
         zoomSnap: 0.5,
@@ -174,7 +175,7 @@ export default {
 
   /* Small */
   .my-marker-cluster-small {
-    background-color: #f0f6fc;
+    background-color: $blue;
     box-shadow: 9px 9px 12px -7px rgba(0,0,0,0.25) !important;
   }
 
@@ -184,7 +185,7 @@ export default {
 
   /* Medium */
   .my-marker-cluster-large {
-    background-color: #aecdeb;
+    background-color: darken($blue,15%);
     box-shadow: 9px 9px 12px -7px rgba(0,0,0,0.25) !important;
   }
   .my-marker-cluster-large div {
