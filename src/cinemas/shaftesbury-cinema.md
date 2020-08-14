@@ -14,16 +14,15 @@ description: This is another of the many cinemas in Leeds to have been designed
   chairs for two'. The building included a ballroom and row of shops along the
   side adjacent to York Road.
 description_extended: >-
-  The cinema had a ballroom, which opened in 1929, and the main auditorium had a
-  large stage. The Black Dyke band played there when it opened in 1928. Later it
-  hosted performances by Cliff Richard and Gene Vincent.\
+  The main auditorium of the cinema had a large stage. The Black Dyke band
+  played there when it opened in 1928. Later it hosted performances by Cliff
+  Richard and Gene Vincent. The ballroom opened in 1929. 
 
-  \
 
   Associated British Cinemas (ABC) owned The Shafstesbury from 1939 until it closed in 1958. It reopened as a casino in 1962 and the main auditorium was also used for bingo. It then returned to screening films  in 1964 after being refurbished, but closed for good in 1975. 
 
 
-  The building was used as a Sikh temple for a time and the ballroom became a nightclub known as The Starlight Bar. You can still see the facade, which is used as a shop, but it has been somewhat obscured by footbridges that have been built across the York Road.
+  The main part of the building was used as a Sikh temple for a time and the ballroom became a nightclub known as The Starlight Bar. You can still see the facade, which is now used as a shop, but it has been somewhat obscured by footbridges that have been built across the York Road.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320822/hidinginplainsight/Shaftesbury_Cinema_Leeds_Libraries_3619.jpg
     source: Leeds Libraries Leodis.net
