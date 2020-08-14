@@ -20,7 +20,7 @@ description_extended: >-
   Hyde Park Picture House projectionist Allan Foster was a projectionist at the Lyric for several years. In September 2011, he and artist Lucy Skaer were given access to former cinema and they the got the projectors working again for an art-led piece commissioned by Pavillion. It was called 'Film for an Abandoned Projector'. The two Kalee 20 projectors had been left in place all this time and this type of projector was apparently manufactured in Leeds between 1947 and 1953, adding to the significance of the piece.
 
 
-  The building is still visible but now is being used by a kitchen and bathroom manfacturer.
+  The building is still visible but is now being used by a kitchen and bathroom manfacturer.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597394421/hidinginplainsight/Lyric_Picture_House.jpg
     source: We are making every effort to discover the ownership of this photo.
