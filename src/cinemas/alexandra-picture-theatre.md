@@ -28,6 +28,6 @@ description_extended: >-
   Wikipedia
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597391463/hidinginplainsight/Alexandra_Picture_Theatre.jpg
-    source: We're making every effort to discover the ownership of this photo.
+    source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
 ---
