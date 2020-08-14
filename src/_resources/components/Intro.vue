@@ -12,6 +12,7 @@
         <img src="/assets/images/lottery.png"/>
         <img src="/assets/images/leedsinspired.png"/>
         <img src="/assets/images/AAAB.png"/>
+        <img src="/assets/images/letsdance.png"/>
       </div>
       <div class="double-width no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('showcase-cinema-de-lux')"></div>
       <div class="double-width no-delay"><img @load="imageLoaded" :src="getCinemaImageBySlug('princess-theatre')"></div>
@@ -293,7 +294,7 @@ export default {
           font-weight: 900;
           font-style: italic;
           margin-bottom: ms(-4);
-          font-size: ms(5);
+          font-size: ms(4);
           @media screen and (orientation: landscape) {
             font-size: ms(8);
           }
@@ -302,7 +303,10 @@ export default {
         .post-title {
           margin-top: ms(0);
           margin-bottom: 0;
-          font-size: ms(0);
+          font-size: ms(-1);
+          @media screen and (orientation: landscape) {
+            font-size: ms(0);
+          }
           line-height: 1.2;
         }
 
@@ -329,11 +333,11 @@ export default {
         padding: ms(-4);
         grid-column-end: span 5;
         grid-column-start: 1;
-        grid-row-start: 8;
+        grid-row-start: 9;
         grid-row-end: span 1;
-        transition: all 0.75s 2s ease-in;
+        transition: all 1s 2.25s ease-in;
         @media screen and (orientation: landscape) {
-          padding: ms(0) ms(4);
+          padding: ms(0) ms(2);
           grid-column-end: span 4;
           grid-column-start: 4;
           grid-row-start: 5;
@@ -346,7 +350,8 @@ export default {
           display: block;
           width: 4em;
           height: auto;
-          flex: 0 1 20%;
+          flex: 0 1 16%;
+          image-rendering: auto;
 
           @media screen and (orientation: landscape) {
             width: 5em;
