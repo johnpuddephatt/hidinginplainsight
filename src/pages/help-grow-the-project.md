@@ -8,16 +8,14 @@ Lots of work has already gone into creating this resource but there’s still a 
 
 • Do you have any special cinema memories ? Head to a cinema's page to submit yours. 
 
-• How about any photos of old Leeds cinemas? We'd love to include them, send via: [info@lostcinemas.co.uk](mailto:info@lostcinemas.co.uk)
+• How about any photos of old Leeds cinemas? We'd love to include them, send via: [](mailto:info@lostcinemas.co.uk)info@hydeparkpicturehouse.co.uk
 
-• Or do you have some extra info that you think we should include? Please get in touch via: [info@lostcinemas.co.uk](mailto:info@lostcinemas.co.uk)
+• Or do you have some extra info that you think we should include? Please get in touch via: info@hydeparkpicturehouse.co.uk[](mailto:info@lostcinemas.co.uk)
+
+![](https://res.cloudinary.com/hpph/image/upload/v1597399559/hidinginplainsight/Tatler_newstheatre.jpg)
 
 ## Make a donation
 
 Out of 80 cinemas, the Hyde Park Picture House is one of the few lucky survivors. But we only remain open today thanks to the ongoing support and generosity of our audiences and community. If you'd like to see the Picture House continue working on projects like Hiding in Plain Sight, then please consider making a donation. No matter the size, we are hugely grateful for any support received. 
 
-- - -
-
-DONATE BUTTON\
-
-- - -
+![](https://res.cloudinary.com/hpph/image/upload/v1597399756/hidinginplainsight/Donate_button.jpg)
