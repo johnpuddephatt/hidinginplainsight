@@ -3,6 +3,7 @@ title: Victoria Picture Hall
 date_open: "1912"
 date_close: "1937"
 status: Demolished
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1596451149/hidinginplainsight/victoriapicturehall.svg
 location: '{"type":"Point","coordinates":[-1.5147024,53.7976631]}'
 address: Glenthorpe Crescent, Leeds
@@ -12,12 +13,12 @@ description: "The Victoria Cinema was designed by Harehills-based architect W.C.
   1937 to make way for York Road. "
 description_extended: >-
   H. Kellet from Leeds said "I remember when the air raids started, a big letter
-  'S' flashed on screen and we had to go home."
+  'S' flashed on screen and we had to go home." When the Victoria was
+  demolished, the larger Star Cinema was built close by, which opened the next
+  year in 1938.
 
-  When the Victoria was demolished, the larger Star Cinema was built close by, which opened the next year in 1938.
 
-
-  Sources:
+  **Sources:**
 
   Leeds Cinemas 2 by Robert Preedy
 
