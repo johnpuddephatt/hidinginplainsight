@@ -151,8 +151,7 @@ export default {
     position: absolute;
     display: grid;
     top: 0;
-    bottom: 0;
-    grid-auto-rows: 11.11%;
+    grid-auto-rows: 11.11vh;
     grid-template-columns: repeat(5, 11.11vh);
     grid-auto-flow: row dense;
     animation: downScroll 6s forwards cubic-bezier(.11,0,.92,.98);
