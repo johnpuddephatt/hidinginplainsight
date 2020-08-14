@@ -3,6 +3,7 @@ title: Holbeck Picture House
 date_open: "1916"
 date_close: "1962"
 status: Still visible
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1596451166/hidinginplainsight/holbeckpicturehouse.svg
 location: '{"type":"Point","coordinates":[-1.5598252,53.7854169]}'
 address: 99 Domestic Street, Holbeck
@@ -19,10 +20,14 @@ description_extended: >-
   __
 
 
-  ***Sources:***\
+  ***Sources:***
 
 
   Cinema Treasures\
 
   Leeds Cinemas Remembered by Robert E. Preedy
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597393764/hidinginplainsight/Holbeck_Picture_House.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
