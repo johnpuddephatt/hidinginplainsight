@@ -19,4 +19,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597392838/hidinginplainsight/Crown_Cinema.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597392842/hidinginplainsight/Crown_Cinema01.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
