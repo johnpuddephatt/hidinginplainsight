@@ -7,7 +7,7 @@ colour: Blue
 location: '{"type":"Point","coordinates":[-1.5411624,53.8000821]}'
 address: New Briggate, Leeds
 description: "The Grand Theatre and Opera House is included because it is
-  believed to have shown moving pictures, including Birth of a Nation in 1917.
+  believed to have shown moving pictures, including Birth of a Nation, in 1917.
   The theatre opened in 1878 and contains the Grand Assembly Rooms, a concert
   hall which seated 1,100. "
 description_extended: >-
