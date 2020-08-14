@@ -17,7 +17,4 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318512/hidinginplainsight/Cosy_Cinema_Leeds_Libraries_2002820_84516543.jpg
     source: Leeds Libraries Leodis.net
     date: "1938"
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597392681/hidinginplainsight/Cosy_Cinema.jpg
-    source: We are making every effort to discover the ownership of this photo.
-      Please contact us if you are the copyright holder.
 ---
