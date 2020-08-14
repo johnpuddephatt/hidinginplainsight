@@ -80,6 +80,7 @@ export default {
       imagesAllLoaded: false,
       errored: false,
       imagesLoaded: 0,
+      calculatedRowHeight: null
     }
   },
   watch: {
@@ -101,6 +102,18 @@ export default {
       })
       .finally(() => {
         this.cinemasLoaded = true;
+
+        var ua = window.navigator.userAgent;
+        var iOS = !!ua.match(/iPad/i) || !!ua.match(/iPhone/i);
+        var iOSSafari = iOS && !ua.match(/CriOS/i);
+
+        if(iOSSafari) {
+          this.$nextTick(() => {
+            let loadingInner = document.querySelector('.loading-inner');
+            this.calculatedRowHeight = document.body.clientHeight/9;
+            loadingInner.style.gridAutoRows = `${this.calculatedRowHeight}px`;
+          });
+        }
       });
 
 
