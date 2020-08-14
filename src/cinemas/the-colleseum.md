@@ -19,14 +19,14 @@ description_extended: >-
   transferred his operation New Century Picture to the Assembly Rooms. Moving
   pictures were so successful there that he bought the freehold of the Coliseum
   and turned it into Leeds’ first full time cinema. It was called The Gaumont
-  from 1938 until 1961. The Gaumont was a Bingo Hall until 1969, we're not sure
-  what happened to it during the 1970s and 80s but it was back in action as a
-  concert venue known as the Town & Country Club between 1992 and 2000 then it
+  from 1938 until 1961. The Gaumont was a bingo hall until 1969. We're not sure
+  what happened to it during the 1970s and 80s, but it was back in action as a
+  concert venue known as the Town & Country Club between 1992 and 2000, then it
   was Creation nightclub until 2007. Now the premises are known as the O2
   Academy.  
 
 
-  Sources:
+  **Sources:**
 
   Leeds Cinemas Remembered by Robert Preedy
 
