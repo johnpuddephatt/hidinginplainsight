@@ -19,3 +19,5 @@ Lots of work has already gone into creating this resource but there’s still a 
 Out of 80 cinemas, the Hyde Park Picture House is one of the few lucky survivors. But we only remain open today thanks to the ongoing support and generosity of our audiences and community. If you'd like to see the Picture House continue working on projects like Hiding in Plain Sight, then please consider making a donation. No matter the size, we are hugely grateful for any support received. 
 
 ![](https://res.cloudinary.com/hpph/image/upload/v1597400194/hidinginplainsight/Donate_button3.jpg)
+
+<a href="https://hydeparkpicturehouse.co.uk/donate" target="_blank" class="button">I’d like to make a donation!</a>
