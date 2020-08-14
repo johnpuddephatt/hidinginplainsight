@@ -19,7 +19,7 @@ description_extended: >-
   Richard and Gene Vincent. The ballroom opened in 1929. 
 
 
-  Associated British Cinemas (ABC) owned The Shafstesbury from 1939 until it closed in 1958. It reopened as a casino in 1962 and the main auditorium was also used for bingo. It then returned to screening films  in 1964 after being refurbished, but closed for good in 1975. 
+  Associated British Cinemas (ABC) owned The Shafstesbury from 1939 until it closed in 1958. It reopened as a casino in 1962 and the main auditorium was also used for bingo. It then returned to screening films in 1964 after being refurbished, but closed for good in 1975. 
 
 
   The main part of the building was used as a Sikh temple for a time and the ballroom became a nightclub known as The Starlight Bar. You can still see the facade, which is now used as a shop, but it has been somewhat obscured by footbridges that have been built across the York Road.
