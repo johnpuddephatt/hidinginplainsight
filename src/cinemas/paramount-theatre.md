@@ -16,13 +16,13 @@ description: Opening in 1932 with a staggering 2,556 seats and a grand Wurlitzer
 description_extended: >-
   Many people remember the Paramount for its deep carpets and snazzy staff
   uniforms. "You got two films, a stage show and of course, the organ" said K.W.
-  Neale "about three and a half hours of pur entertainment". In 1963 and in 1964
-  it staged concerts by The Beatles. It had various alterations made while it
-  was an Odeon, its auditorium was twinned in 1969, in 1978 a third screen was
-  added, using space that had been the Paramount Restaurant. In 1988 the Odeon
-  was refurbished and made into a 5-screen cinema, but it finally closed in
-  2001. The building is now a store, opening first as a Primark in August 2005
-  and now occupied by Sports Direct.
+  Neale "about three and a half hours of pure entertainment". In 1963 and in
+  1964 it staged concerts by The Beatles. It had various alterations made while
+  it was an Odeon; its auditorium was twinned in 1969 and in 1978 a third screen
+  was added, using space that had been the Paramount Restaurant. In 1988 the
+  Odeon was refurbished and made into a 5-screen cinema, but it finally closed
+  in 2001. The building is now a store, opening first as a Primark in August
+  2005 and now occupied by Sports Direct.
 
 
   __
