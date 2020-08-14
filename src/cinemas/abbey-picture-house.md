@@ -3,7 +3,7 @@ title: Abbey Picture House
 date_open: "1913"
 date_close: "1960"
 status: Still visible
-colour: Blue
+colour: Cream
 image: https://res.cloudinary.com/hpph/image/upload/v1595964823/hidinginplainsight/abbeypicturehouse.svg
 location: '{"type":"Point","coordinates":[-1.6021022,53.8174374]}'
 address: Delacey House, Abbey Rd, Leeds LS5 3HS
