@@ -23,6 +23,10 @@ description_extended: >-
   The building is still visible but is now being used by a kitchen and bathroom manfacturer.
 
 
+  __
+
+
+  ***Source:***
 
 
   https://theculturevulture.co.uk/all/the-lyric-cinema/
