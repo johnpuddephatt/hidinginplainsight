@@ -3,6 +3,7 @@ title: Odeon Luxe
 date_open: "2000"
 date_close: Present
 status: Open
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1596451153/hidinginplainsight/odeonluxe.svg
 location: '{"type":"Point","coordinates":[-1.7027628,53.8000108]}'
 address: "Gallagher Leisure Park, Thornbury, Bradford "
@@ -18,4 +19,8 @@ description_extended: ODEON is a very well-known cinema chain, not least for the
   entrepreneur Oscar Deutsch until it was taken over by the RANK organisation in
   1938, who continued to use the brand. The ODEON chain is now owned by AMC
   Theatres.
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597394796/hidinginplainsight/Odeon_Luxe.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
