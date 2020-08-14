@@ -3,7 +3,7 @@ title: The Atlas Picture House
 date_open: "1912"
 date_close: "1956"
 status: Demolished
-colour: Blue
+colour: Red
 location: '{"type":"Point","coordinates":[-1.5819803,53.8062566]}'
 address: 281 Kirkstall Road
 description: At present, we have no clear imagery of the cinema during its
