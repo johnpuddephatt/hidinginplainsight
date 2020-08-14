@@ -34,4 +34,10 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320295/hidinginplainsight/Odeon_Merrion_Leeds_Libraries_20041027_31448000.jpg
     source: Leeds Libraries Leodis.net
     date: circa 1965
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597394736/hidinginplainsight/Odeon_Merrion.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597394735/hidinginplainsight/Odeon_Merrion_01.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
