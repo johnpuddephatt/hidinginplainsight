@@ -3,6 +3,7 @@ title: Abbey Picture House
 date_open: "1913"
 date_close: "1960"
 status: Still visible
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1595964823/hidinginplainsight/abbeypicturehouse.svg
 location: '{"type":"Point","coordinates":[-1.6021022,53.8174374]}'
 address: Delacey House, Abbey Rd, Leeds LS5 3HS
@@ -28,4 +29,7 @@ photos:
     date: "1937"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597312205/hidinginplainsight/Abbey_Road_Leeds_Libraries_200794_164658.jpg
     source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597391027/hidinginplainsight/Abbey_Picture_House_2002820_4354494.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
