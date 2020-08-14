@@ -3,6 +3,7 @@ title: Clock Cinema
 date_open: "1938"
 date_close: "1976"
 status: Still visible
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1595964818/hidinginplainsight/clockcinema.svg
 location: '{"type":"Point","coordinates":[-1.5145764,53.8183621]}'
 address: 247-249 Roundhay Road, Harehills, Leeds LS8 4HS
@@ -17,4 +18,8 @@ photos:
     date: "1939"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597317127/hidinginplainsight/Clock_Cinema_Leeds_Libraries_2010812_171136.jpg
     source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597392386/hidinginplainsight/Clock_Cinema.jpg
+    date: "1938"
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
