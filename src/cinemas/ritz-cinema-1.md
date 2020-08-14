@@ -10,7 +10,7 @@ address: Vicar Lane, Leeds
 description: The Ritz Cinema opened in 1934 with one luxurious auditorium,
   seating 1,100 in the stalls and 850 in the circle. Since then it has been
   known by many different names. Ritz was a brand of ABC (Associated British
-  Cinemas), but when the building was refurbished in 1959 its name changed to
+  Cinemas), but when the building was refurbished in 1959, its name changed to
   ABC. Ten years later in 1969 it was 'twinned', reopening in 1970 with two
   screens.
 description_extended: >-
@@ -21,9 +21,7 @@ description_extended: >-
   In 1986, the ABC chain was taken over by Cannon Cinemas, who were themselves taken over by MGM in 1993, so the cinema changed its name each time. By 1998 it had become the ABC once again. 
 
 
-
-
-  Sources: \
+  **Sources:** \
 
   Cinema Treasures\
 
