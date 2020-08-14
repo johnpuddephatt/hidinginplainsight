@@ -3,7 +3,7 @@ title: Kingsway Cinema
 date_open: "1937"
 date_close: "1959"
 status: Demolished
-colour: Blue
+colour: Orange
 image: https://res.cloudinary.com/hpph/image/upload/v1596451162/hidinginplainsight/kingswaycinema.svg
 location: '{"type":"Point","coordinates":[-1.5367717,53.8389148]}'
 address: Harrogate Road, Moortown
