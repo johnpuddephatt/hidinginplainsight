@@ -3,6 +3,7 @@ title: Grand Theatre & Opera House
 date_open: "1906"
 date_close: Present
 status: Open
+colour: Blue
 location: '{"type":"Point","coordinates":[-1.5411624,53.8000821]}'
 address: New Briggate, Leeds
 description: "The Grand Theatre and Opera House is included because it is
@@ -23,8 +24,11 @@ description_extended: >-
 
   Leeds Cinemas Remembered by Robert E. Preedy
 photos:
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597318707/hidinginplainsight/Grand_Theatre_Opera_House_Leeds_Libraries_20021216_29047793.jpg
-    source: Leeds Libraries Leodis.net
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597318768/hidinginplainsight/Grand_Theatre_Opera_House_Leeds_Civic_Trust_2003213_51559085.jpg
-    source: Leeds Civic Trust
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597393464/hidinginplainsight/Grand_Theatre_Opera_House_2003213_51559085.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+  - source: Leeds Libraries Leodis.net
+    file: https://res.cloudinary.com/hpph/image/upload/v1597318707/hidinginplainsight/Grand_Theatre_Opera_House_Leeds_Libraries_20021216_29047793.jpg
+  - source: Leeds Civic Trust
+    file: https://res.cloudinary.com/hpph/image/upload/v1597318768/hidinginplainsight/Grand_Theatre_Opera_House_Leeds_Civic_Trust_2003213_51559085.jpg
 ---
