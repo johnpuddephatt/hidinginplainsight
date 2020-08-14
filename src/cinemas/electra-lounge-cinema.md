@@ -8,7 +8,7 @@ image: https://res.cloudinary.com/hpph/image/upload/v1596451165/hidinginplainsig
 location: '{"type":"Point","coordinates":[-1.550459,53.8132378]}'
 address: "Jubilee Terrace, Woodhouse "
 description: The Electra opened in 1916 and had 660 seats. After closure in 1957
-  it became a printers until demolished, even the road Jubilee Terrace no longer
+  it became a printers until demolished. Even the road Jubilee Terrace no longer
   exists.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597393345/hidinginplainsight/Electra_Lounge_Cinema.jpg
