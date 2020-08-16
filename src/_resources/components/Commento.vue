@@ -20,7 +20,6 @@ export default {
 
   methods: {
     loadCommento() {
-        console.log('initialising...');
         let commentoScript = document.createElement('script');
         commentoScript.setAttribute('data-page-id', `/cinemas/${this.slug}`);
         commentoScript.setAttribute('data-auto-init', true);
@@ -30,7 +29,9 @@ export default {
   },
 
   mounted () {
-    this.loadCommento();
+    setTimeout(() => {
+      this.loadCommento();
+    }, 1000);
   },
   beforeDestroy() {
     delete window.commento;

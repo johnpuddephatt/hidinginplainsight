@@ -57,7 +57,6 @@ export default {
   mounted() {
       document.addEventListener("keydown", (e) => {
         if(this.open){
-          console.log('keydown');
 
           if (e.keyCode == 27) {
               this.open = null

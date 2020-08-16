@@ -84,7 +84,6 @@ export default {
     },
     imageLoaded($event) {
       let ratio = $event.target.naturalWidth/$event.target.naturalHeight;
-      console.log(ratio);
       if(ratio >= 1.6) {
         this.imageClass = 'is-x-wide';
       }
