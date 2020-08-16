@@ -21,7 +21,7 @@
           <div class="sidebar-menu--subtitle">
             <span class="sidebar-menu--status">{{cinema.status}}</span>
             <span class="sidebar-menu--photos" v-if="cinema.photo_count">{{cinema.photo_count}}</span>
-            <span class="sidebar-menu--comments" v-if="commentCounts[`/cinemas/${cinema.slug}`]">{{ commentCounts[`/cinemas/${cinema.slug}`]}}</span>
+            <span class="sidebar-menu--comments" v-if="commentCounts && commentCounts[`/cinemas/${cinema.slug}`]">{{ commentCounts[`/cinemas/${cinema.slug}`]}}</span>
           </div>
         </div>
       </router-link>
