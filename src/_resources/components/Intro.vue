@@ -294,7 +294,7 @@ export default {
           font-weight: 900;
           font-style: italic;
           margin-bottom: ms(-4);
-          font-size: ms(4);
+          font-size: ms(5);
           @media screen and (orientation: landscape) {
             font-size: ms(8);
           }
@@ -304,7 +304,9 @@ export default {
           margin-top: ms(0);
           margin-bottom: 0;
           font-size: ms(-1);
+          max-width: 12em;
           @media screen and (orientation: landscape) {
+            max-width: none;
             font-size: ms(0);
           }
           line-height: 1.2;
@@ -348,7 +350,7 @@ export default {
         img {
           position: static;
           display: block;
-          width: 4em;
+          width: 3.5em;
           height: auto;
           flex: 0 1 16%;
           image-rendering: auto;

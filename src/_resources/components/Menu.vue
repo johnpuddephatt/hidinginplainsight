@@ -9,7 +9,6 @@
       <button class="button" v-if="!isLandscape" @click="menuOpen = !menuOpen" v-html="menuOpen ? 'Show map' : 'Show list'"></button>
     </div>
     <input class="search-input" type="text" v-model="search" placeholder="Search by name.."/>
-    {{ commentCounts }}
 
     <nav class="sidebar-menu">
       <router-link v-for="cinema in filteredList" class="sidebar-menu--item" :class="cinema.slug == clicked ? 'active' : ''" :to="{ name: 'cinema', params: { slug: cinema.slug } }" :ref="cinema.slug" @mouseenter.native="mouseoverStart($event, cinema.slug)" :key="cinema.slug">
@@ -19,7 +18,11 @@
         </div>
         <div>
           <h3 class="sidebar-menu--title" v-html="cinema.title"></h3>
-          <p class="sidebar-menu--status">{{cinema.status}}</p>
+          <div class="sidebar-menu--subtitle">
+            <span class="sidebar-menu--status">{{cinema.status}}</span>
+            <span class="sidebar-menu--photos" v-if="cinema.photo_count">{{cinema.photo_count}}</span>
+            <span class="sidebar-menu--comments" v-if="commentCounts[`/cinemas/${cinema.slug}`]">{{ commentCounts[`/cinemas/${cinema.slug}`]}}</span>
+          </div>
         </div>
       </router-link>
     </nav>
@@ -73,9 +76,9 @@ export default {
         };
 
         axios
-          .post('https://commento.letsdance.agency/api/comment/count', postData)
+          .post('https://commento.letsdance.agency/api/comment/count', JSON.stringify(postData))
           .then(response => {
-            this.commentCounts = response.data
+            this.commentCounts = response.data.commentCounts
           })
           .catch(error => {
             this.errored = true
@@ -256,10 +259,47 @@ export default {
   font-weight: 400 !important;
 }
 
-.sidebar-menu--status {
+.sidebar-menu--subtitle {
+  display: flex;
+  flex-direction: row;
   color: $gray;
   font-size: ms(-1);
+  margin-top: ms(-6);
   margin-bottom: 0;
+
+  span {
+    display: inline-block;
+
+    &::before {
+      vertical-align: text-top  ;
+      display: inline-block;
+      height: 1.1em;
+      width: 1.2em;
+      content: '';
+      margin-right: 0.3em;
+      background-size: contain;
+      background-position: center right;
+      background-repeat: no-repeat;
+      opacity: 0.2;
+    }
+
+    + span {
+      margin-left: ms(-4);
+    }
+  }
+}
+
+.sidebar-menu--status::before {
+  background-image: url(/assets/images/eye-icon.svg);
+}
+
+.sidebar-menu--comments::before {
+  background-image: url(/assets/images/comment-icon.svg);
+}
+
+.sidebar-menu--photos::before {
+  background-image: url(/assets/images/camera-icon.svg);
+
 }
 
 </style>
