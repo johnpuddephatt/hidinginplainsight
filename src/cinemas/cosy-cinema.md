@@ -3,7 +3,7 @@ title: Cosy Cinema
 date_open: "1910"
 date_close: "1938"
 status: Demolished
-colour: Blue
+colour: Orange
 image: https://res.cloudinary.com/hpph/image/upload/v1595964813/hidinginplainsight/cosycinema.svg
 location: '{"type":"Point","coordinates":[-1.5051994,53.8000409]}'
 address: Accomodation Road (now York Road)

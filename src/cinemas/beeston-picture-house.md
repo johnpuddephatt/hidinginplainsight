@@ -3,7 +3,7 @@ title: Beeston Picture House
 date_open: "1920"
 date_close: "1959"
 status: Demolished
-colour: Blue
+colour: Red
 image: https://res.cloudinary.com/hpph/image/upload/v1595964822/hidinginplainsight/beestonpicturehouse.svg
 location: '{"type":"Point","coordinates":[-1.5676787,53.7721162]}'
 address: Town Street, Beeston

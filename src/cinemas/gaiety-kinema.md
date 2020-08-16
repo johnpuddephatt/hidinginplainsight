@@ -3,6 +3,7 @@ title: Gaiety Kinema
 date_open: "1921"
 date_close: "1958"
 status: Demolished
+colour: Orange
 image: https://res.cloudinary.com/hpph/image/upload/v1596451168/hidinginplainsight/gaiety.svg
 location: '{"type":"Point","coordinates":[-1.523142,53.8115615]}'
 address: 91 Roundhay Road, Harehills, Leeds

@@ -3,6 +3,7 @@ title: Harehills Picture House
 date_open: "1912"
 date_close: "1959"
 status: Demolished
+colour: Orange
 image: https://res.cloudinary.com/hpph/image/upload/v1596451166/hidinginplainsight/harehillspicturehouse.svg
 location: '{"type":"Point","coordinates":[-1.511811,53.807842]}'
 address: "Corner of Florence Street and Compton Road, Harehills "

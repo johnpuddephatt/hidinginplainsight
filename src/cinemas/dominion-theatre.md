@@ -3,7 +3,7 @@ title: Dominion Theatre
 date_open: "1934"
 date_close: "1967"
 status: Demolished
-colour: Blue
+colour: Red
 image: https://res.cloudinary.com/hpph/image/upload/v1596451169/hidinginplainsight/dominiontheatre.svg
 location: '{"type":"Point","coordinates":[-1.5311269,53.8269743]}'
 address: Montreal Avenue

@@ -3,6 +3,7 @@ title: Bramley Picture Palace
 date_open: "1912"
 date_close: "1961"
 status: Demolished
+colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1595964820/hidinginplainsight/bramleypicturehouse.svg
 location: '{"type":"Point","coordinates":[-1.6279131,53.8116399]}'
 address: 203 Lower Town Street, Bramley

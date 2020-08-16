@@ -3,6 +3,7 @@ title: Queen's Picture Theatre
 date_open: "1924"
 date_close: "1957"
 status: Demolished
+colour: Orange
 image: https://res.cloudinary.com/hpph/image/upload/v1596451163/hidinginplainsight/queenspicturehouse.svg
 location: '{"type":"Point","coordinates":[-1.547538,53.7860112]}'
 address: Corner of Jack Lane and Meadow Road, Holbeck

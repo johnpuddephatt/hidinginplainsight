@@ -30,7 +30,13 @@ description_extended: >-
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597319834/hidinginplainsight/Lounge_Picture_House_Leeds_Libraries_2002610_20599001.jpg
     source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597425677/hidinginplainsight/FB_IMG_1597420778319.jpg
+    source: Steve Moore
   - file: https://res.cloudinary.com/hpph/image/upload/v1597394178/hidinginplainsight/Lounge.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597425677/hidinginplainsight/FB_IMG_1597420788571.jpg
+    source: Steve Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597425677/hidinginplainsight/FB_IMG_1597420823461.jpg
+    source: Steve Moore
 ---
