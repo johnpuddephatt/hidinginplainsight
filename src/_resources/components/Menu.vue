@@ -9,6 +9,8 @@
       <button class="button" v-if="!isLandscape" @click="menuOpen = !menuOpen" v-html="menuOpen ? 'Show map' : 'Show list'"></button>
     </div>
     <input class="search-input" type="text" v-model="search" placeholder="Search by name.."/>
+    {{ commentCounts }}
+
     <nav class="sidebar-menu">
       <router-link v-for="cinema in filteredList" class="sidebar-menu--item" :class="cinema.slug == clicked ? 'active' : ''" :to="{ name: 'cinema', params: { slug: cinema.slug } }" :ref="cinema.slug" @mouseenter.native="mouseoverStart($event, cinema.slug)" :key="cinema.slug">
         <div class="image">
@@ -35,7 +37,8 @@ export default {
     return {
       search: null,
       menuOpen: false,
-      currentlyHovered: null
+      currentlyHovered: null,
+      commentCounts: null
     }
   },
   computed: {
@@ -60,6 +63,24 @@ export default {
           }
         }
       }
+    },
+    cinemas: function (cinemas) {
+      if(cinemas.length) {
+
+        let postData = {
+          "domain": "https://lostcinemas.co.uk",
+          "paths" : this.cinemas.map(cinema => `/cinemas/${cinema.slug}`)
+        };
+
+        axios
+          .post('https://commento.letsdance.agency/api/comment/count', postData)
+          .then(response => {
+            this.commentCounts = response.data
+          })
+          .catch(error => {
+            this.errored = true
+          })
+      }
     }
   },
   methods: {
@@ -80,7 +101,8 @@ export default {
       this.currentlyHovered = null;
     }
   },
-  mounted() {}
+  mounted() {
+  }
 }
 </script>
 
@@ -121,7 +143,7 @@ export default {
 .search-input {
   border-radius: 99999px;
   margin: 0 ms(0) ms(-2);
-  
+
   @media screen and (orientation: landscape) {
     margin: 0 ms(2) ms(-2);
   }
