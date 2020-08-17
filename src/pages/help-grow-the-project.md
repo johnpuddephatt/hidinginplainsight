@@ -12,7 +12,7 @@ Lots of work has already gone into creating this resource but there’s still a 
 
 • Or do you have some extra info that you think we should include? Please get in touch: info@hydeparkpicturehouse.co.uk[](mailto:info@lostcinemas.co.uk)
 
-![](https://res.cloudinary.com/hpph/image/upload/v1597400221/hidinginplainsight/Tatler_newstheatre2.jpg)
+![](https://res.cloudinary.com/hpph/image/upload/v1597691542/hidinginplainsight/contribute.jpg)
 
 ### Make a donation
 
