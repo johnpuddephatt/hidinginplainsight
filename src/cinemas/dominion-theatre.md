@@ -20,4 +20,13 @@ photos:
       Please contact us if you are the copyright holder.
   - source: Leeds Libraries Leodis.net
     file: https://res.cloudinary.com/hpph/image/upload/v1597675061/hidinginplainsight/Dominion_202056_177631.jpg
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677208/hidinginplainsight/Dominion01.jpg
+    source: Steven Moore
+    date: "1990"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677210/hidinginplainsight/Dominion02.jpg
+    date: "1990"
+    source: Steven Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677210/hidinginplainsight/Dominion03.jpg
+    date: "1990"
+    source: Steven Moore
 ---
