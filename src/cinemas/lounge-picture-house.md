@@ -39,4 +39,12 @@ photos:
     source: Steve Moore
   - file: https://res.cloudinary.com/hpph/image/upload/v1597425677/hidinginplainsight/FB_IMG_1597420823461.jpg
     source: Steve Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676196/hidinginplainsight/Lounge_screen.jpg
+    source: Steven Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676197/hidinginplainsight/Lounge_foyer02.jpg
+    source: Steven Moore
+    date: Pre 2000
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676198/hidinginplainsight/Lounge_foyer01.jpg
+    source: Steven Moore
+    date: Post 2000
 ---
