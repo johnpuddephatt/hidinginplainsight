@@ -22,4 +22,25 @@ photos:
       Please contact us if you are the copyright holder.
   - file: https://res.cloudinary.com/hpph/image/upload/v1597317127/hidinginplainsight/Clock_Cinema_Leeds_Libraries_2010812_171136.jpg
     source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677004/hidinginplainsight/Clock01.jpg
+    source: Steven Moore
+    date: "1991"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677006/hidinginplainsight/Clock03.jpg
+    source: Steven Moore
+    date: "1991"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677005/hidinginplainsight/Clock05.jpg
+    source: Steven Moore
+    date: "1991"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677005/hidinginplainsight/Clock04.jpg
+    source: Steven Moore
+    date: "1991"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677005/hidinginplainsight/Clock06.jpg
+    source: Steven Moore
+    date: "1991"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677007/hidinginplainsight/Clock07.jpg
+    source: Steven Moore
+    date: "1991"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677004/hidinginplainsight/Clock02.jpg
+    source: Steven Moore
+    date: "1991"
 ---
