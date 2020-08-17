@@ -60,4 +60,26 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597395071/hidinginplainsight/Paramount_Theatre.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676665/hidinginplainsight/Paramount07.jpg
+    source: Steven Moore / Bob Preedy
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676662/hidinginplainsight/Paramount01.jpg
+    date: Early 1990s
+    source: Steven Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676662/hidinginplainsight/Paramount06.jpg
+    caption: Screen 1
+    source: Steven Moore
+    date: Early 1990s
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676663/hidinginplainsight/Paramount03.jpg
+    caption: Screen 1
+    source: Steven Moore
+    date: Early 1990s
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676661/hidinginplainsight/Paramount02.jpg
+    source: Steven Moore
+    date: Early 1990s
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676661/hidinginplainsight/Paramount04.jpg
+    date: Early 1990s
+    source: Steven Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676662/hidinginplainsight/Paramount05.jpg
+    source: Steven Moore
+    date: "1990"
 ---
