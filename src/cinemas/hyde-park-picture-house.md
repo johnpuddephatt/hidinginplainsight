@@ -30,6 +30,18 @@ photos:
     source: Thomas Morris
   - file: https://res.cloudinary.com/hpph/image/upload/v1597425015/hidinginplainsight/Hyde_Park_-_Thomas_Morris_7.tiff
     source: Thomas Morris
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676077/hidinginplainsight/HPPH_1990_screen_02.jpg
+    source: Steven Moore
+    date: "1990"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676079/hidinginplainsight/HPPH_1990_screen.jpg
+    source: Steven Moore
+    date: "1990"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676079/hidinginplainsight/HPPH_1990_seats.jpg
+    date: "1990"
+    source: Steven Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676079/hidinginplainsight/HPPH_1990_projection.jpg
+    source: Steven Moore
+    date: "1990"
 alt_title: This is just a test
 title: Hyde Park Picture House
 date_open: "1914"
