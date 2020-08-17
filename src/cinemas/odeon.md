@@ -40,4 +40,31 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597394735/hidinginplainsight/Odeon_Merrion_01.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677495/hidinginplainsight/Odeon_Merrion03.jpg
+    source: Steven Moore
+    date: "1990"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677499/hidinginplainsight/Odeon_Merrion07.jpg
+    source: Steven Moore
+    date: "1990"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677496/hidinginplainsight/Odeon_Merrion04.jpg
+    source: Steven Moore
+    date: "1990"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677494/hidinginplainsight/Odeon_Merrion02.jpg
+    source: Steven Moore
+    date: "1990"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677497/hidinginplainsight/Odeon_Merrion05.jpg
+    source: Steven Moore
+    date: "1990"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677501/hidinginplainsight/Odeon_Merrion08.jpg
+    source: Steven Moore
+    date: "1990"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677501/hidinginplainsight/Odeon_Merrion09.jpg
+    source: Steven Moore
+    date: "1990"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677500/hidinginplainsight/Odeon_Merrion01.jpg
+    source: Steven Moore
+    date: "1990"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677498/hidinginplainsight/Odeon_Merrion06.jpg
+    source: Steven Moore
+    date: "1990"
 ---
