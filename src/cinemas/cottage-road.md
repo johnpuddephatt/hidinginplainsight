@@ -22,4 +22,12 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597392726/hidinginplainsight/Cottage_Road.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597675944/hidinginplainsight/Cottage_Road_exterior.jpg
+    source: Steven Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597675949/hidinginplainsight/Cottage_Road_screen.jpg
+    source: Steven Moore
+  - source: Steven Moore
+    file: https://res.cloudinary.com/hpph/image/upload/v1597675951/hidinginplainsight/Cottage_Road_projection.jpg
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597675947/hidinginplainsight/Cottage_Road_foyer.jpg
+    source: Steven Moore
 ---
