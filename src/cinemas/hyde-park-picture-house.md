@@ -42,6 +42,9 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597676079/hidinginplainsight/HPPH_1990_projection.jpg
     source: Steven Moore
     date: "1990"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597678065/hidinginplainsight/HPPH1950s.jpg
+    date: 1950s
+    source: Yorkshire Post
 alt_title: This is just a test
 title: Hyde Park Picture House
 date_open: "1914"
