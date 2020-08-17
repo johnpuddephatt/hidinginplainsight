@@ -82,4 +82,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597676662/hidinginplainsight/Paramount05.jpg
     source: Steven Moore
     date: "1990"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597677809/hidinginplainsight/Paramount1950s.jpg
+    source: Ralph Wallis
+    date: 1950s
 ---
