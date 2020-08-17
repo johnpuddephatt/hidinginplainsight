@@ -20,4 +20,16 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597396223/hidinginplainsight/Star_Cinema.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676298/hidinginplainsight/Star01.jpg
+    date: Early 1990s
+    source: Steven Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597676296/hidinginplainsight/Star03.jpg
+    source: Steven Moore
+    date: Early 1990s
+  - source: Steven Moore
+    date: Early 1990s
+    file: https://res.cloudinary.com/hpph/image/upload/v1597676295/hidinginplainsight/Star02.jpg
+  - source: Steven Moore
+    date: Early 1990s
+    file: https://res.cloudinary.com/hpph/image/upload/v1597676297/hidinginplainsight/Star04.jpg
 ---
