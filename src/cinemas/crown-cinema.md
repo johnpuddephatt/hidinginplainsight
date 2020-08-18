@@ -21,7 +21,10 @@ description_extended: >-
   In 2008 the derelict building was bought by Mr Arthur Cowie for rennovation purposes, with the intention to turn it into a manufacturing unit. He contacted us via this website and told us that when he acquired it, the former cinema had been used as a gym and "was in dreadful condition". 
 
 
-  He had the facade underpinned and its corners rebuilt, but part of the top portion had to be removed, for safety reasons. He made a few more disoveries along the way. \
+  He had the decorative facade underpinned and its corners were rebuilt, but part of the top portion had to be removed for safety reasons. 
+
+
+  He told us about a few more disoveries he made along the way: \
 
   \
 
