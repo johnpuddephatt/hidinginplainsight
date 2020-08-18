@@ -8,10 +8,10 @@ image: https://res.cloudinary.com/hpph/image/upload/v1595964819/hidinginplainsig
 location: '{"type":"Point","coordinates":[-1.5483172,53.7959672]}'
 address: Queens Hotel Building, City Square, Leeds
 description: "Opened in 1938, the News Theatre was part of the Queen's Hotel
-  building. It has been known as The Classic and the Tatler News Theatre. Its
-  cinematic life, however, ended in the 1980s when it became a nightclub called
-  Planet Earth. It was boarded up in 2007 and appears to have lost its
-  architectural pinnacle. "
+  building. It has been known as The Classic, the Tatler News Theatre and the
+  Cinema on the Square. Its cinematic life, however, ended in the 1980s when it
+  became a nightclub called Planet Earth. It was boarded up in 2007 and appears
+  to have lost its architectural pinnacle. "
 description_extended: The Queens Hotel opened in 1937 and the News Theatre
   opened the following year, offering a newsreel service. In 1966 it became
   known as The Classic, but the name quickly changed to Tatler Film Club in
@@ -33,4 +33,8 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597394616/hidinginplainsight/The_News_Theatre.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597752608/hidinginplainsight/News18082020.jpg
+    source: Steven Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597752610/hidinginplainsight/News18082020_01.jpg
+    source: Steven Moore
 ---
