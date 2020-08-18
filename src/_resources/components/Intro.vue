@@ -316,7 +316,7 @@ export default {
           font-weight: 900;
           font-style: italic;
           margin-bottom: ms(-4);
-          font-size: ms(5);
+          font-size: ms(4);
           @media screen and (orientation: landscape) {
             font-size: ms(8);
           }
@@ -340,7 +340,7 @@ export default {
 
         .pre-title {
           // color: $gray;
-          font-size: ms(-2);
+          font-size: ms(-3);
           margin-top: ms(0);
           margin-bottom: ms(-2);
           -webkit-font-smoothing: antialiased;
