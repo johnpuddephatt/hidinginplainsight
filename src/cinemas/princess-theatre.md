@@ -15,4 +15,12 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597395433/hidinginplainsight/Princess_Theatre.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597753775/hidinginplainsight/Princess18082020.jpg
+    source: Steven Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597753774/hidinginplainsight/Princess18082020_01.jpg
+    source: Steven Moore
+    date: 1990s
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597753772/hidinginplainsight/Princess_02.jpg
+    date: 1990s
+    source: Steven Moore
 ---
