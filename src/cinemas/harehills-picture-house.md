@@ -5,8 +5,8 @@ date_close: "1959"
 status: Demolished
 colour: Orange
 image: https://res.cloudinary.com/hpph/image/upload/v1596451166/hidinginplainsight/harehillspicturehouse.svg
-location: '{"type":"Point","coordinates":[-1.511811,53.807842]}'
-address: "Corner of Florence Street and Compton Road, Harehills "
+location: '{"type":"Point","coordinates":[-1.5169327,53.8168048]}'
+address: "Corner of Roundhay Road and Karnac Road, Harehills "
 description: "Another cinema designed by Harehills based architect J.P.
   Crawford, this one had 594 seats and opened in 1912. The name was changed in
   1932 to the Western Talkie Theatre, no doubt when sound equipment was
