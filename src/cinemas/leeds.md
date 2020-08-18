@@ -15,4 +15,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597395247/hidinginplainsight/Leeds_Playhouse.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597752874/hidinginplainsight/Playhouse18082020.jpg
+    source: Steven Moore
+    date: "2002"
 ---
