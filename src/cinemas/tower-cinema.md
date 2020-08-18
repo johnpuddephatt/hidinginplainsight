@@ -18,6 +18,9 @@ description_extended: The Grand Arcade was originally built by the New Briggate
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597321086/hidinginplainsight/Tower_Cinema_Leeds_Libraries_2013220_174356.jpg
     source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597753001/hidinginplainsight/Tower18082020.jpg
+    source: Steven Moore
+    date: 1980s
   - file: https://res.cloudinary.com/hpph/image/upload/v1597327031/hidinginplainsight/The_Tower_20041210_20061892.jpg
     date: "1970"
     source: Leeds Libraries Leodis.net
