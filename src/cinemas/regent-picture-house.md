@@ -34,4 +34,10 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597395713/hidinginplainsight/Regent_Picture_House.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597753629/hidinginplainsight/Regent18082020.jpg
+    source: Steven Moore
+    date: 1990s
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597753630/hidinginplainsight/Regent18082020_01.jpg
+    date: 1990s
+    source: Steven Moore
 ---
