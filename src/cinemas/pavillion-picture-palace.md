@@ -17,4 +17,9 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597395178/hidinginplainsight/Pavillion_Picture_Palace.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597753504/hidinginplainsight/Pavillion18082020.jpg
+    caption: An intriguing a bit of something that was showing still in the late
+      80s, before the modern shop fronts were attached
+    date: 1980s
+    source: Steven Moore
 ---
