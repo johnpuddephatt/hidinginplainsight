@@ -15,4 +15,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597396184/hidinginplainsight/Showcase_Cinema_de_Lux.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - source: Steven Moore
+    date: 1990s
+    file: https://res.cloudinary.com/hpph/image/upload/v1597753147/hidinginplainsight/Showcase18082020.jpg
 ---
