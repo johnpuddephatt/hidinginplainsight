@@ -34,4 +34,10 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597394421/hidinginplainsight/Lyric_Picture_House.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597753320/hidinginplainsight/Lyric18082020.jpg
+    date: 1980s
+    source: Steven Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597753322/hidinginplainsight/Lyric18082020_01.jpg
+    source: Steven Moore
+    date: 1980s
 ---
