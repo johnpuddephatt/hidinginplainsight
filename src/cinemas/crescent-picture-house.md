@@ -16,4 +16,9 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597392768/hidinginplainsight/Crescent_Picture_House.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597754050/hidinginplainsight/Crescent18082020.jpg
+    date: 1990s
+    source: Steven Moore
+  - date: 1990s
+    source: Steven Moore
 ---
