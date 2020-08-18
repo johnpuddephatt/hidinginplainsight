@@ -1,6 +1,6 @@
 <template>
   <div v-if="cinemasLoaded" v-show="imagesAllLoaded" class="loading-wrapper">
-    <div class="loading-inner">
+    <div ref="loadingInner" class="loading-inner">
       <div class="welcome">
         <p class="pre-title">The Hyde Park Picture House presents</p>
         <h1>Hiding in<br> Plain Sight</h1>
@@ -57,6 +57,13 @@
       <div class="double-width"><img @load="imageLoaded" :src="getCinemaImageBySlug('holbeck-picture-house')"></div>
       <div></div>
       <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </div>
   <loading class="loading-panel__home" v-else></loading>
@@ -88,11 +95,13 @@ export default {
     imagesLoaded: function (count) {
       if(count == 38) {
         this.imagesAllLoaded = true;
+        this.$refs.loadingInner.classList.add('animate');
         inView('.loading-inner div', 0.5);
       }
     }
   },
   mounted() {
+
     axios
       .get('/api/cinemas.json')
       .then(response => {
@@ -162,14 +171,19 @@ export default {
   }
 
   .loading-inner {
+    &.animate {
+      animation: downScroll 6s forwards cubic-bezier(.11,0,.92,.98);
+
+      @media screen and (orientation: landscape) {
+        animation: sideScroll 7s forwards cubic-bezier(.11,0,.92,.98);
+      }
+    }
     position: absolute;
     display: grid;
     top: 0;
     grid-auto-rows: 11.11vh;
     grid-template-columns: repeat(5, 11.11vh);
     grid-auto-flow: row dense;
-    animation: downScroll 6s forwards cubic-bezier(.11,0,.92,.98);
-    transform: translateY(-105%);
 
     @media screen and (orientation: landscape) {
       top: auto;
@@ -181,15 +195,21 @@ export default {
       grid-template-columns: none;
       grid-template-rows: repeat(5, 10vw);
       grid-auto-flow: column dense;
-      animation: sideScroll 7s forwards cubic-bezier(.11,0,.92,.98);
-      transform: translateX(105%);
+    }
+
+    &.intersection-observer-active {
+      div {
+        opacity: 0;
+        transition: opacity 0s ease-in;
+        transition-delay: 0s;
+      }
     }
 
     div {
       position: relative;
       border: 0.5vw solid white;
-      opacity: 0;
-      transition: opacity 0.5s ease-in;
+      transition: opacity 0.75s ease-in;
+      transition-delay: 0s !important;
 
       img {
         position: absolute;
@@ -206,8 +226,9 @@ export default {
         image-rendering: -moz-crisp-edges;
       }
 
-      &.in-view {
-        opacity: 1;
+      &.out-of-view {
+        transition: opacity 0s ease-in;
+        opacity: 0;
       }
 
       &.double-height {
@@ -275,6 +296,7 @@ export default {
         background-color: white !important;
         padding: ms(-2);
         transition: all 0.75s 2s ease-in;
+        transition-delay: 2s !important;
         transform: translateY(#{ms(-4)});
 
         &.in-view {
@@ -286,7 +308,7 @@ export default {
           grid-column-start: 3;
           grid-row-start: 2;
           grid-row-end: span 3;
-          // transition-delay: 1.5s;
+          transition-delay: 1.5s !important;
         }
 
         h1 {
@@ -298,6 +320,10 @@ export default {
           @media screen and (orientation: landscape) {
             font-size: ms(8);
           }
+          @media screen and (min-width: 1200px) {
+              font-size: ms(10);
+          }
+
         }
 
         .post-title {
@@ -378,7 +404,7 @@ export default {
 
   @keyframes sideScroll {
     0% {
-      transform: translateX(95%)
+      transform: translateX(100%)
     }
     100% {
       transform: translateX(0%)
@@ -387,7 +413,7 @@ export default {
 
   @keyframes downScroll {
     0% {
-      transform: translateY(-85%)
+      transform: translateY(-100%)
     }
     100% {
       transform: translateY(0%)

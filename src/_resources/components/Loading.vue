@@ -41,11 +41,15 @@ export default {
     div {
       position: absolute;
       border: 4px solid $gray;
-      opacity: 1;
       border-radius: 50%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
       animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
       &:nth-child(2) {
-        animation-delay: -0.5s;
+        animation-delay: 0.5s;
       }
     }
   }
@@ -53,17 +57,11 @@ export default {
 
   @keyframes lds-ripple {
     0% {
-      top: 36px;
-      left: 36px;
-      width: 0;
-      height: 0;
+      transform: scale(0);
       opacity: 1;
     }
     100% {
-      top: 0px;
-      left: 0px;
-      width: 72px;
-      height: 72px;
+      transform: scale(1);
       opacity: 0;
     }
   }
