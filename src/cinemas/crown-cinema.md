@@ -18,7 +18,7 @@ description_extended: >-
   Rialto.
 
 
-  In 2008 the building was bought by Mr Arthur Cowie for rennovation purposes, with the intention to turn it into a manufacturing unit. He contacted us via this website and told us that the former cinema had been used as a gym and "was in dreadful condition". 
+  In 2008 the derelict building was bought by Mr Arthur Cowie for rennovation purposes, with the intention to turn it into a manufacturing unit. He contacted us via this website and told us that when he acquired it, the former cinema had been used as a gym and "was in dreadful condition". 
 
 
   He had the facade underpinned and its corners rebuilt, but part of the top portion had to be removed, for safety reasons. He made a few more disoveries along the way. \
