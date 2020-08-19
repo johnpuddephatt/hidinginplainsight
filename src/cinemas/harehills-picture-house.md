@@ -13,7 +13,7 @@ description: "This large cinema on Rounday Road had a distinctive domed roof,
   and surrounding shops were demolished in 1968.  "
 description_extended: The Harehills Picture House was built by Clifford Lax. His
   firm built a number of cinemas in Leeds and had an office on what would later
-  become the site of the Clock Cinema in Harehills.
+  become the site of the Clock Cinema.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318890/hidinginplainsight/Harehills_Picture_House_Leeds_Libraries_20031013_58454532.jpg
     source: Leeds Libraries Leodis.net
