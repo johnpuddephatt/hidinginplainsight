@@ -11,7 +11,5 @@ description: "Another cinema designed by Harehills based architect J.P.
   1932 to the Western Talkie Theatre, no doubt when sound equipment was
   installed, and then again in 1954 when it was changed to Vogue and 'smartened
   up a bit'. "
-photos:
-  - {}
-  - {}
+photos: []
 ---
