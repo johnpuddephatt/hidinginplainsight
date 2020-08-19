@@ -97,7 +97,7 @@ export default {
     top: 0;
     height: 100%;
     width: ms(0);
-    @media screen and (orientation: landscape) {
+    @media screen and (orientation: landscape) and (min-width: 800px) {
       width: ms(2);
     }
     background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
@@ -136,7 +136,7 @@ export default {
   border: solid ms(-2) transparent;
   background-clip: content-box;
 
-  @media screen and (orientation: landscape) {
+  @media screen and (orientation: landscape) and (min-width: 800px) {
     flex: 0 0 30%;
     border: solid ms(0) transparent;
   }

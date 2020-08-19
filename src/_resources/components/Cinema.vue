@@ -132,7 +132,7 @@ export default {
   z-index: 9999999;
   background-color: white;
 
-  @media screen and (orientation: landscape) {
+  @media screen and (orientation: landscape) and (min-width: 800px) {
     padding: 0 ms(4) ms(2);
     left: $sidebar-width;
   }
@@ -140,7 +140,7 @@ export default {
   .container {
     max-width: 800px;
     margin: 0 auto;
-    @media screen and (orientation: landscape) {
+    @media screen and (orientation: landscape) and (min-width: 800px) {
       margin: ms(6) auto;
     }
   }
@@ -158,14 +158,14 @@ export default {
 
   .cinema-title {
     font-size: ms(3);
-    @media screen and (orientation: landscape) {
+    @media screen and (orientation: landscape) and (min-width: 800px) {
       font-size: ms(5);
     }
     font-weight: 700;
     margin-bottom: 0;
 
     span {
-      @media screen and (orientation: landscape) {
+      @media screen and (orientation: landscape) and (min-width: 800px) {
         display: inline-block;
         margin-right: ms(1);
       }
@@ -177,7 +177,7 @@ export default {
       color: $gray;
       font-size: ms(2);
       vertical-align: baseline;
-      @media screen and (orientation: landscape) {
+      @media screen and (orientation: landscape) and (min-width: 800px) {
         display: inline-block;
       }
     }
@@ -230,7 +230,7 @@ export default {
     margin-bottom: ms(2);
     padding-bottom: ms(4);
     height: calc(100vw - #{2 * ms(2)});
-    @media screen and (orientation: landscape) {
+    @media screen and (orientation: landscape) and (min-width: 800px) {
       height: 0.5 * 800px;
       background-image: linear-gradient(to top, $blue 40%, white 40%);
       &.is-red {
@@ -251,7 +251,7 @@ export default {
       object-fit: contain;
       object-position: center bottom;
 
-      @media screen and (orientation: landscape) {
+      @media screen and (orientation: landscape) and (min-width: 800px) {
         height: 0.5 * 800px;
         width: 0.5 * 800px;
         padding-bottom: ms(2);
@@ -259,7 +259,7 @@ export default {
       &.is-square {
         width: 60vw;
 
-        @media screen and (orientation: landscape) {
+        @media screen and (orientation: landscape) and (min-width: 800px) {
           width: 0.4 * 800px;
         }
       }
@@ -267,7 +267,7 @@ export default {
       &.is-x-wide {
         width: calc(100vw - 3 * ms(2));
 
-        @media screen and (orientation: landscape) {
+        @media screen and (orientation: landscape) and (min-width: 800px) {
           width: 0.65 * 800px;
         }
       }
@@ -275,7 +275,7 @@ export default {
       &.is-x-tall {
         // height: 60vw;
 
-        @media screen and (orientation: landscape) {
+        @media screen and (orientation: landscape) and (min-width: 800px) {
           height: 0.575 * 800px;
           transform: translateY(#{-0.075 * 800px});
         }

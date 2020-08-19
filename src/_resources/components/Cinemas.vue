@@ -160,7 +160,7 @@ export default {
   display: flex;
   flex-direction: column;
 
-  @media screen and (orientation: landscape) {
+  @media screen and (orientation: landscape) and (min-width: 800px) {
     flex-direction: row;
   }
 }

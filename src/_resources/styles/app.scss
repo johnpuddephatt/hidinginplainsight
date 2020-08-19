@@ -143,7 +143,7 @@ html, body {
   }
 
   .funders {
-    @media screen and (orientation: landscape) {
+    @media screen and (orientation: landscape) and (min-width: 800px) {
       display: none;
     }
 
@@ -210,7 +210,7 @@ html, body {
   padding: ms(2) ms(0);
   margin: 0 auto;
 
-  @media screen and (orientation: landscape) {
+  @media screen and (orientation: landscape) and (min-width: 800px) {
     padding: ms(4) ms(0);
   }
 }

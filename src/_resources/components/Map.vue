@@ -135,7 +135,7 @@ export default {
     height: auto !important;
     flex: 1;
 
-    @media screen and (orientation: landscape) {
+    @media screen and (orientation: landscape) and (min-width: 800px) {
       width: calc(100vw - #{$sidebar-width}) !important;
       // height: 100% !important;
     }

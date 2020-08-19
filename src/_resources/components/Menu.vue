@@ -132,7 +132,7 @@ export default {
     transition: top 1s ease, z-index 0s ease;
   }
 
-  @media screen and (orientation: landscape) {
+  @media screen and (orientation: landscape) and (min-width: 800px) {
     overflow-y: auto;
     position: static;
     padding: ms(8) 0;
@@ -147,7 +147,7 @@ export default {
   border-radius: 99999px;
   margin: 0 ms(0) ms(-2);
 
-  @media screen and (orientation: landscape) {
+  @media screen and (orientation: landscape) and (min-width: 800px) {
     margin: 0 ms(2) ms(-2);
   }
   border: 1px solid $medium-gray;
@@ -173,7 +173,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (orientation: landscape) {
+  @media screen and (orientation: landscape) and (min-width: 800px) {
     padding: 0 ms(2) ms(2);
   }
 }
@@ -197,7 +197,7 @@ export default {
   border-left: ms(2)/4 solid transparent;
   border-bottom: 1px solid $light-gray;
 
-  @media screen and (orientation: landscape) {
+  @media screen and (orientation: landscape) and (min-width: 800px) {
     padding: ms(-2) ms(-1) ms(-2) ms(2) * 0.75;
   }
 

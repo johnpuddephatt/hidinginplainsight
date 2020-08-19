@@ -174,7 +174,7 @@ export default {
     &.animate {
       animation: downScroll 6s forwards cubic-bezier(.11,0,.92,.98);
 
-      @media screen and (orientation: landscape) {
+      @media screen and (orientation: landscape) and (min-width: 800px) {
         animation: sideScroll 7s forwards cubic-bezier(.11,0,.92,.98);
       }
     }
@@ -185,7 +185,7 @@ export default {
     grid-template-columns: repeat(5, 11.11vh);
     grid-auto-flow: row dense;
 
-    @media screen and (orientation: landscape) {
+    @media screen and (orientation: landscape) and (min-width: 800px) {
       top: auto;
       bottom: auto;
       direction: rtl;
@@ -303,7 +303,7 @@ export default {
           transform: scale(1);
         }
 
-        @media screen and (orientation: landscape) {
+        @media screen and (orientation: landscape) and (min-width: 800px) {
           grid-column-end: span 6;
           grid-column-start: 3;
           grid-row-start: 2;
@@ -317,10 +317,10 @@ export default {
           font-style: italic;
           margin-bottom: ms(-4);
           font-size: ms(4);
-          @media screen and (orientation: landscape) {
+          @media screen and (orientation: landscape) and (min-width: 800px) {
             font-size: ms(8);
           }
-          @media screen and (min-width: 1200px) {
+          @media screen and (min-width: 1400px) {
               font-size: ms(10);
           }
 
@@ -331,7 +331,7 @@ export default {
           margin-bottom: 0;
           font-size: ms(-1);
           max-width: 12em;
-          @media screen and (orientation: landscape) {
+          @media screen and (orientation: landscape) and (min-width: 800px) {
             max-width: none;
             font-size: ms(0);
           }
@@ -345,7 +345,7 @@ export default {
           margin-bottom: ms(-2);
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
-          @media screen and (orientation: landscape) {
+          @media screen and (orientation: landscape) and (min-width: 800px) {
             font-size: ms(-1);
           }
         }
@@ -364,7 +364,7 @@ export default {
         grid-row-start: 9;
         grid-row-end: span 1;
         transition: all 1s 2.25s ease-in;
-        @media screen and (orientation: landscape) {
+        @media screen and (orientation: landscape) and (min-width: 800px) {
           padding: ms(0) ms(2);
           grid-column-end: span 4;
           grid-column-start: 4;
@@ -381,7 +381,7 @@ export default {
           flex: 0 1 16%;
           image-rendering: auto;
 
-          @media screen and (orientation: landscape) {
+          @media screen and (orientation: landscape) and (min-width: 800px) {
             width: 5em;
           }
         }
