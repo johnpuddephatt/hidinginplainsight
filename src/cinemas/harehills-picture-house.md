@@ -15,6 +15,4 @@ description: "Another cinema designed by Harehills based architect J.P.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318890/hidinginplainsight/Harehills_Picture_House_Leeds_Libraries_20031013_58454532.jpg
     source: Leeds Libraries Leodis.net
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597318886/hidinginplainsight/Harehills_Picture_House_Leeds_Libraries_8874.jpg
-    source: Leeds Libraries Leodis.net
 ---
