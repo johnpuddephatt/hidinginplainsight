@@ -9,6 +9,17 @@ location: '{"type":"Point","coordinates":[-1.5169327,53.8168048]}'
 address: "Corner of Roundhay Road and Karnac Road, Harehills "
 description: "This large cinema on Rounday Road had a distinctive domed roof. It
   could seat 900 with 700 seats in stalls and 200 in the balcony. "
+description_extended: >-
+  The Harehills Picture House was built by Clifford Lax. His firm built a number
+  of cinemas in Leeds and had an office on what would later become the site of
+  the Clock Cinema in Harehills.
+
+
+
+
+
+
+  <!--EndFragment-->
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318890/hidinginplainsight/Harehills_Picture_House_Leeds_Libraries_20031013_58454532.jpg
     source: Leeds Libraries Leodis.net
