@@ -15,4 +15,16 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597392098/hidinginplainsight/Carr_Croft_Cinema.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597918146/hidinginplainsight/Carr_Croft_Cinema_2018.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597918124/hidinginplainsight/Carr_Croft_Cinema_2018_01.jpg
+    date: "2018"
+    source: Bryn Hans
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597918172/hidinginplainsight/Carr_Croft_Cinema_2018_02.jpg
+    date: "2018"
+    source: Bryn Hans
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597918183/hidinginplainsight/Carr_Croft_Cinema_2018_03.jpg
+    date: "2018"
+    source: Bryn Hans
 ---
