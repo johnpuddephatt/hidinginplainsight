@@ -30,6 +30,9 @@ description_extended: >-
 
   Cinema Treasures
 photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597913035/hidinginplainsight/Newton_Picture_Palace_200318_73315066.jpg
+    date: "1959"
+    source: WYAS, Leeds, LC/ENG/CP 16/1, no. 3
   - file: https://res.cloudinary.com/hpph/image/upload/v1597394569/hidinginplainsight/Newtown_Picture_Palace_01.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
