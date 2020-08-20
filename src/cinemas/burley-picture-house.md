@@ -12,4 +12,8 @@ description: Opened in 1913, the Burley Picture House was colloquially known as
   posted on the Leodis website appear to be largely favourable. The cinema could
   seat a very cosy 161 patrons and apparently accepted payment via washed glass
   jars for matinee screenings. It closed in 1959 and was shortly demolished.
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597911520/hidinginplainsight/Burley_Picture_House_200356_36733645.jpg
+    date: "1959"
+    source: WYAS, Leeds, LC/ENG/CP 61/1, no. 61
 ---
