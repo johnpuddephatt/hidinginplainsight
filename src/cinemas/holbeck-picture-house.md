@@ -30,4 +30,13 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597393764/hidinginplainsight/Holbeck_Picture_House.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597918750/hidinginplainsight/Holbeck_Picture_House_2018.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597918739/hidinginplainsight/Holbeck_Picure_House_2018_01.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597918721/hidinginplainsight/Holbeck_Picure_House_2018_02.jpg
+    source: Bryn Hans
+    date: "2018"
 ---
