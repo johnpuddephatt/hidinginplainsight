@@ -13,6 +13,6 @@ description: The Victory Picture Palace was another of the many Leeds cinemas to
   Oatlands Lane after a major redevelopment in the area.
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597396318/hidinginplainsight/Victory_Picture_Palace.jpg
-    source: We are making every effort to discover the ownership of this photo.
-      Please contact us if you are the copyright holder.
+    source: WYAS, Leeds, LC/ENG/CP 67/1, no. 5
+    date: "1958"
 ---
