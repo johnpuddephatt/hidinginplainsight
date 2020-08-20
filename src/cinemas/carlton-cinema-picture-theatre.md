@@ -13,5 +13,6 @@ description: "Opened in 1920, the Carlton is one of 14 Leeds cinemas designed by
   1965 and been demolished to make way for the inner ring road. "
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597752346/hidinginplainsight/Carlton18082020.jpg
-    source: Steven Moore
+    source: WYAS, Leeds, LC/ENG/CP 29, no. 97
+    date: "1964"
 ---
