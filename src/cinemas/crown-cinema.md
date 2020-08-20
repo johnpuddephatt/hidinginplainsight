@@ -41,4 +41,13 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597392842/hidinginplainsight/Crown_Cinema01.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597918606/hidinginplainsight/Crown_Cinema_2018.jpg
+    date: "2018"
+    source: Bryn Hans
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597918570/hidinginplainsight/Crown_Cinema_2018_02.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597918557/hidinginplainsight/Crown_Cinema_2018_01.jpg
+    source: Bryn Hans
+    date: "2018"
 ---
