@@ -32,4 +32,13 @@ photos:
   - source: Steven Moore
     date: Early 1990s
     file: https://res.cloudinary.com/hpph/image/upload/v1597676297/hidinginplainsight/Star04.jpg
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597919912/hidinginplainsight/Star_Cinema_2018.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597919911/hidinginplainsight/Star_Cinema_2018_01.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597919905/hidinginplainsight/Star_Cinema_2018_02.jpg
+    source: Bryn Hans
+    date: "2018"
 ---
