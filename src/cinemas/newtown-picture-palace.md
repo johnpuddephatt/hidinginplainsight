@@ -39,4 +39,16 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597394667/hidinginplainsight/Newtown_Picture_Palace.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597919428/hidinginplainsight/Newton_Picutre_Palace_03.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597919371/hidinginplainsight/Newton_Picture_Palace_2018_01.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597919370/hidinginplainsight/Newton_Picture_Palace_2018.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597919351/hidinginplainsight/Newton_Picture_Palace_2018_02.jpg
+    source: Bryn Hans
+    date: "2018"
 ---
