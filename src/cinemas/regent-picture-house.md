@@ -45,4 +45,5 @@ photos:
     date: "2018"
   - source: Bryn Hans
     date: "2018"
+    file: https://res.cloudinary.com/hpph/image/upload/v1597919746/hidinginplainsight/Regent_Pciture_House_2018_01.jpg
 ---
