@@ -23,4 +23,34 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597321040/hidinginplainsight/Tivoli_Cinema_Leeds_Libraries_2002820_21601504.jpg
     source: Leeds Libraries Leodis.net
     date: "1937"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597920185/hidinginplainsight/Tivoli_Cinema_2018.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597920370/hidinginplainsight/Tivoli_Cinema_2018_01.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597920082/hidinginplainsight/Tivoli_Cinema_2018_02.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597920370/hidinginplainsight/Tivoli_Cinema_2018_03.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597920105/hidinginplainsight/Tivoli_Cinema_2018_04.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597920193/hidinginplainsight/Tivoli_Cinema_2018_05.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597920212/hidinginplainsight/Tivoli_Cinema_2018_06.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597920139/hidinginplainsight/Tivoli_Cinema_2018_07.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597920142/hidinginplainsight/Tivoli_Cinema_2018_08.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597920214/hidinginplainsight/Tivoli_Cinema_2018_09.jpg
+    source: Bryn Hans
+    date: "2018"
 ---
