@@ -21,4 +21,5 @@ photos:
     source: Steven Moore
   - date: 1990s
     source: Steven Moore
+    file: https://res.cloudinary.com/hpph/image/upload/v1597754050/hidinginplainsight/Crescent18082020_01.jpg
 ---
