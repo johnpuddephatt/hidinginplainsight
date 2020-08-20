@@ -40,4 +40,9 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597753630/hidinginplainsight/Regent18082020_01.jpg
     date: 1990s
     source: Steven Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597919751/hidinginplainsight/Regent_Picture_House_2018.jpg
+    source: Bryn Hans
+    date: "2018"
+  - source: Bryn Hans
+    date: "2018"
 ---
