@@ -22,4 +22,16 @@ photos:
   - date: 1990s
     source: Steven Moore
     file: https://res.cloudinary.com/hpph/image/upload/v1597754050/hidinginplainsight/Crescent18082020_01.jpg
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597918297/hidinginplainsight/Crescent_Picture_House_2018_02.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597918283/hidinginplainsight/Crescent_Picture_House_2018_01.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597918317/hidinginplainsight/Crescent_Picture_House_2018_03.jpg
+    date: "2018"
+    source: Bryn Hans
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597918334/hidinginplainsight/Crescent_Picture_House_2018_04.jpg
+    source: Bryn Hans
+    date: "2018"
 ---
