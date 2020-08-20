@@ -13,6 +13,9 @@ description: Opened in 1913, the Burley Picture House was colloquially known as
   seat a very cosy 161 patrons and apparently accepted payment via washed glass
   jars for matinee screenings. It closed in 1959 and was shortly demolished.
 photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597912172/hidinginplainsight/BUrley_Picture_House_200356_73409671.jpg
+    date: "1959"
+    source: WYAS, Leeds, LC/ENG/CP 61/1, no. 60
   - file: https://res.cloudinary.com/hpph/image/upload/v1597911520/hidinginplainsight/Burley_Picture_House_200356_36733645.jpg
     date: "1959"
     source: WYAS, Leeds, LC/ENG/CP 61/1, no. 61
