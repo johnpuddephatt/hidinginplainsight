@@ -23,4 +23,10 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597753772/hidinginplainsight/Princess_02.jpg
     date: 1990s
     source: Steven Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597919585/hidinginplainsight/Princess_Theatre_2018.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597919582/hidinginplainsight/Princess_Theatre_2018_01.jpg
+    source: Bryn Hans
+    date: "2018"
 ---
