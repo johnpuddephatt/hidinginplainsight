@@ -85,4 +85,6 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597677809/hidinginplainsight/Paramount1950s.jpg
     source: Ralph Wallis
     date: 1950s
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597913114/hidinginplainsight/Paramount_2004128_9870547.jpg
+    source: WYAS, Leeds, LC/ENG/CP 5, no. 7/20
 ---
