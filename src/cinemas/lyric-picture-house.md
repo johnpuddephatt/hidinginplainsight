@@ -40,4 +40,13 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597753322/hidinginplainsight/Lyric18082020_01.jpg
     source: Steven Moore
     date: 1980s
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597919082/hidinginplainsight/Lyric_Picture_House_2018.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597919069/hidinginplainsight/Lyric_Picture_House_2018_02.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597919060/hidinginplainsight/Lyric_Picture_House_2018_01.jpg
+    date: "2018"
+    source: Bryn Hans
 ---
