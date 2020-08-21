@@ -29,4 +29,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597919582/hidinginplainsight/Princess_Theatre_2018_01.jpg
     source: Bryn Hans
     date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1598000100/hidinginplainsight/The_Princess_Theatre_2018_02.jpg
+    source: Bryn Hans
+    date: "2018"
 ---
