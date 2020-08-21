@@ -3,6 +3,7 @@ title: Palace Picture Hall
 date_open: "1912"
 date_close: "1964"
 status: Demolished
+colour: Orange
 image: https://res.cloudinary.com/hpph/image/upload/v1596451151/hidinginplainsight/palacepicturehall.svg
 location: '{"type":"Point","coordinates":[-1.5906921,53.7983903]}'
 address: Eyres Avenue, Armley
@@ -23,4 +24,20 @@ description_extended: >-
 
 
   It has now been demolished.
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597999514/hidinginplainsight/Palace_Picture_Hall_20041210_92383975.jpg
+    source: Leeds Libraries Leodis.net
+    date: "1970"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597999868/hidinginplainsight/Palace_Picture_Hall_2018_01.jpg
+    date: "2018"
+    source: Bryn Hans
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597999868/hidinginplainsight/Palace_Picture_Hall_2018_02.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597999896/hidinginplainsight/Palace_Picture_Hall_2018_03.jpg
+    source: Bryn Hans
+    date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597999904/hidinginplainsight/Palace_Picture_Hall_2018_04.jpg
+    source: Bryn Hans
+    date: "2018"
 ---
