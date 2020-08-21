@@ -22,14 +22,6 @@ photos:
     source: Hyde Park Picture House
   - file: https://res.cloudinary.com/hpph/image/upload/v1597333475/hidinginplainsight/HPPH.jpg
     source: Tom Joy
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597423142/hidinginplainsight/Hyde_Park_-_Thomas_Morris_1.tiff
-    source: Thomas Morris
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597423438/hidinginplainsight/Hyde_Park_-_Thomas_Morris_4.tiff
-    caption: Thomas Morris
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597424981/hidinginplainsight/Hyde_Park_-_Thomas_Morris_5.tiff
-    source: Thomas Morris
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597425015/hidinginplainsight/Hyde_Park_-_Thomas_Morris_7.tiff
-    source: Thomas Morris
   - file: https://res.cloudinary.com/hpph/image/upload/v1597676077/hidinginplainsight/HPPH_1990_screen_02.jpg
     source: Steven Moore
     date: "1990"
@@ -45,6 +37,14 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597678065/hidinginplainsight/HPPH1950s.jpg
     date: 1950s
     source: Yorkshire Post
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597999212/hidinginplainsight/HPPH_Laura_03.jpg
+    source: Laura Ager
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597999198/hidinginplainsight/HPPH_Laura_01.jpg
+    source: Laura Ager
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597999191/hidinginplainsight/HPPH_Laura_04.jpg
+    source: Laura Ager
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597999225/hidinginplainsight/HPPH_Laura_02.jpg
+    source: Laura Ager
 alt_title: This is just a test
 title: Hyde Park Picture House
 date_open: "1914"
