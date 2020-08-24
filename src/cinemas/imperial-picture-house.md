@@ -5,7 +5,7 @@ date_close: "1940"
 status: Still visible
 colour: Red
 image: https://res.cloudinary.com/hpph/image/upload/v1596451165/hidinginplainsight/imperialpicturehouse.svg
-location: '{"type":"Point","coordinates":[-1.5675741,53.8004702]}'
+location: '{"type":"Point","coordinates":[-1.5672845,53.8003277]}'
 address: 79 Kirkstall Road
 description: This 700 seat cinema opened in 1913 on Kirkstall Road and it is one
   of the lucky ones, as it has survived. Although the building hasn't been used
