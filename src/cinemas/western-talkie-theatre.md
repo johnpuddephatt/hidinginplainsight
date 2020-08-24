@@ -5,7 +5,7 @@ date_close: "1960"
 status: Still visible
 colour: Blue
 image: https://res.cloudinary.com/hpph/image/upload/v1596451149/hidinginplainsight/westerntalkie.svg
-location: '{"type":"Point","coordinates":[-1.5873581,53.7978532]}'
+location: '{"type":"Point","coordinates":[-1.5879076,53.7978465]}'
 address: 4 Branch Road, Armley
 description: This small cinema was converted from a Primitive Methodist Chapel
   and opened in 1910. In 1933 it was renamed the Western Talkie Cinema, the most
