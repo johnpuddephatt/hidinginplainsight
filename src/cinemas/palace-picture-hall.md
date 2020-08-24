@@ -5,7 +5,7 @@ date_close: "1964"
 status: Demolished
 colour: Orange
 image: https://res.cloudinary.com/hpph/image/upload/v1596451151/hidinginplainsight/palacepicturehall.svg
-location: '{"type":"Point","coordinates":[-1.5906921,53.7983903]}'
+location: '{"type":"Point","coordinates":[-1.590727,53.7985471]}'
 address: Eyres Avenue, Armley
 description: The Palace Picture Hall opened in 1912. It seems to have been
   briefly called Pictureland when it was owned by American Bioscope Co. Ltd. It
