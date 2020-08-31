@@ -6,7 +6,7 @@ Lots of work has already gone into creating this resource but there’s still a 
 
 ### Share your cinema knowledge!
 
-• Do you have any special cinema memories ? Head to a cinema's page to submit yours. 
+• Do you have any special cinema memories ? Head to a cinema's page to submit yours.
 
 • How about any photos of old Leeds cinemas? We'd love to include them, send via: [](mailto:info@lostcinemas.co.uk)info@hydeparkpicturehouse.co.uk
 
@@ -16,6 +16,6 @@ Lots of work has already gone into creating this resource but there’s still a 
 
 ### Make a donation
 
-Out of 80 cinemas, the Hyde Park Picture House is one of the few lucky survivors. But we only remain open today thanks to the ongoing support and generosity of our audiences and community. If you'd like to see the Picture House continue working on projects like Hiding in Plain Sight, then please consider making a donation. No matter the size, we are hugely grateful for any support received. 
+Out of 80 cinemas, the Hyde Park Picture House is one of the few lucky survivors. But we only remain open today thanks to the ongoing support and generosity of our audiences and community. If you'd like to see the Picture House continue working on projects like Hiding in Plain Sight, then please consider making a donation. No matter the size, we are hugely grateful for any support received.
 
-<a href="https://hydeparkpicturehouse.co.uk/donate" target="_blank" class="button is-primary is-large">I’d like to make a donation!</a>
+<a href="https://hydeparkpicturehouse.co.uk/donate-project" target="_blank" class="button is-primary is-large">I’d like to make a donation!</a>

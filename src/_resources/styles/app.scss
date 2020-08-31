@@ -69,23 +69,19 @@ html, body {
   padding: ms(1) ms(0);
   display: none;
 
+  z-index: 99999999;
+  text-align: center;
+  position: relative;
+  line-height: ms(8);
+
   &.show {
-    display: flex;
-    @media screen and (orientation: portrait) {
-      display: block;
+    display: block;
+    @media screen and (orientation: landscape) and (min-width: 800px) {
+      display: flex;
     }
   }
 
-  @media screen and (orientation: portrait) {
-    z-index: 99999999;
-    text-align: center;
-    position: relative;
-    margin-right: 0;
-    line-height: ms(8);
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: $blue;
+  @media screen and (orientation: landscape) and (min-width: 800px) {
   }
 }
 
@@ -95,10 +91,10 @@ html, body {
   right: ms(0);
   transform: translateY(-50%);
   z-index: 999999999;
-  display: none;
+  display: block;
 
-  @media screen and (orientation: portrait) {
-    display: block;
+  @media screen and (orientation: landscape) and (min-width: 800px) {
+    display: none;
   }
 }
 
@@ -114,31 +110,44 @@ html, body {
 
 .primary-navigation {
   line-height: ms(1);
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  background-color: white;
+  border-left: 1px solid $medium-gray;
+  padding-top: ms(10);
+  position: fixed;
+  width: 75vw;
+  height: 100vh;
+  height: -webkit-fill-available;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  transform: translateX(100vw);
+  display: flex;
+  flex-direction: column;
 
-  @media screen and (orientation: portrait) {
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    background-color: white;
-    border-left: 1px solid $medium-gray;
-    padding-top: ms(10);
-    position: fixed;
-    width: 75vw;
-    height: 100vh;
-    height: -webkit-fill-available;
-    top: 0;
-    left: 0;
-    z-index: 9999999;
-    transform: translateX(100vw);
-    display: flex;
-    flex-direction: column;
+
+  @media screen and (orientation: landscape) and (min-width: 800px) {
+    display: block;
+    transform: none;
+    z-index: auto;
+    position: static;
+    background-color: transparent;
+    border-left: none;
+    padding-top: 0;
+    width: auto;
+    height: auto;
   }
 
   a {
     display: inline-block;
-    margin-right: ms(2);
-    @media screen and (orientation: portrait) {
-      margin-right: 0;
-      padding: ms(0) ms(2);
-      text-align: right;
+
+    margin-right: 0;
+    padding: ms(0) ms(2);
+    text-align: right;
+    @media screen and (orientation: landscape) and (min-width: 800px) {
+      margin-right: ms(2);
+      padding: 0;
+      text-align: left;
     }
   }
 
@@ -181,7 +190,7 @@ html, body {
 .site-title {
   font-weight: 900;
   font-size: ms(2);
-  line-height: ms(1);
+  line-height: ms(2);
   margin-right: ms(4);
   font-style: italic;
   font-family: mikado;
@@ -190,8 +199,8 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 0.02rem;
 
-  @media screen and (orientation: portrait) {
-    line-height: ms(2);
+  @media screen and (orientation: landscape) and (min-width: 800px) {
+    line-height: ms(1);
   }
 }
 
