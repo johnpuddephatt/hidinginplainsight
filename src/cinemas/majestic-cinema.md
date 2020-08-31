@@ -60,4 +60,10 @@ photos:
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
     date: "1923"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1598861735/hidinginplainsight/majestic310820.jpg
+    date: circa 1990
+    source: Steven Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1598861735/hidinginplainsight/majestic310820_01.jpg
+    date: circa 1990
+    source: Steven Moore
 ---
