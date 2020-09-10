@@ -26,7 +26,7 @@ This project wouldn't have been possible were it not for the pre-existing resear
 
 • [Cinema Treasures](http://cinematreasures.org/) 
 
-• [Bug and Flea ](www.bugandflea.com)
+• [Bug and Flea ](https://www.bugandflea.com/)
 
 • [*The distribution of picture halls in Leeds*, *1910 to 1939* by Nick Redfern](https://nickredfern.wordpress.com/2009/04/02/the-distribution-of-picture-halls-in-leeds-1910-to-1939/)
 
