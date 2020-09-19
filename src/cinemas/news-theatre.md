@@ -37,4 +37,7 @@ photos:
     source: Steven Moore
   - file: https://res.cloudinary.com/hpph/image/upload/v1597752610/hidinginplainsight/News18082020_01.jpg
     source: Steven Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600522332/hidinginplainsight/The_News_Theatre_Tramway_Museum_Society_20091230_169965.jpg
+    source: Tramway Museum Society
+    date: "1952"
 ---
