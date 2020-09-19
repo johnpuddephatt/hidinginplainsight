@@ -43,4 +43,10 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597677004/hidinginplainsight/Clock02.jpg
     source: Steven Moore
     date: "1991"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600522262/hidinginplainsight/Clock_Cinema_Tramway_Museum_Society_20091230_169962.jpg
+    source: Tramway Museum Society
+    date: "1950"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600522262/hidinginplainsight/Clock_Cinema_Tramway_Museum_Society_20091230_169963.jpg
+    source: Tramway Museum Society
+    date: "1950"
 ---
