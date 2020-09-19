@@ -47,4 +47,8 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597392604/hidinginplainsight/Coliseum_2008523_166785.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600522429/hidinginplainsight/Coliseum_The_Gaumont_Cinema_H._Ainscough_20031029_38070315.jpg
+    caption: ""
+    source: H. Ainscough
+    date: "1966"
 ---
