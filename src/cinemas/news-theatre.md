@@ -40,4 +40,6 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1600522332/hidinginplainsight/The_News_Theatre_Tramway_Museum_Society_20091230_169965.jpg
     source: Tramway Museum Society
     date: "1952"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600603805/hidinginplainsight/The_News_Theatre_K._S._Wheelan_20041210_96389407.jpg
+    source: Mr K. S. Wheelan
 ---
