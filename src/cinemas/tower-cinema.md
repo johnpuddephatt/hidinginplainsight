@@ -23,7 +23,7 @@ photos:
     date: 1980s
   - file: https://res.cloudinary.com/hpph/image/upload/v1597327031/hidinginplainsight/The_Tower_20041210_20061892.jpg
     date: "1970"
-    source: Leeds Libraries Leodis.net
+    source: Mr K. S. Wheelan
   - source: Leeds Libraries Leodis.net
     file: https://res.cloudinary.com/hpph/image/upload/v1597327031/hidinginplainsight/The_Tower_20171011_176305.jpg
     date: circa 1920s
