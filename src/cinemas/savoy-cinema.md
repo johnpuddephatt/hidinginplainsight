@@ -19,4 +19,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597395974/hidinginplainsight/Savoy_Cinema.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600603798/hidinginplainsight/Savoy_Cinema_K._S._Wheelan_20041210_67922610.jpg
+    source: Mr K. S. Wheelan
+    date: "1970"
 ---
