@@ -17,4 +17,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597316963/hidinginplainsight/Clifton_Cinema_Leeds_Libraries_594.jpg
     source: Leeds Libraries Leodis.net
     date: "1939"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600603787/hidinginplainsight/Clifton_Cinema_K._S._Wheelan_20041210_30080813.jpg
+    source: Mr K. S. Wheelan
+    date: "1970"
 ---
