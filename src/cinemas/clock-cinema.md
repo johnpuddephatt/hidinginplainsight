@@ -49,4 +49,6 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1600522262/hidinginplainsight/Clock_Cinema_Tramway_Museum_Society_20091230_169963.jpg
     source: Tramway Museum Society
     date: "1950"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600604738/hidinginplainsight/Clock_Cinema_Stephen_Howden_2011131_171726.jpg
+    source: Stephen Howden, Leodis
 ---
