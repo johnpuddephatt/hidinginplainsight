@@ -66,4 +66,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1598861735/hidinginplainsight/majestic310820_01.jpg
     date: circa 1990
     source: Steven Moore
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600603786/hidinginplainsight/Majestic_Cinema_K._S._Wheelan_20041210_27526492.jpg
+    source: Mr K. S. Wheelan
+    date: "1923"
 ---
