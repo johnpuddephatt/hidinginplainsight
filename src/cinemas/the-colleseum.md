@@ -51,4 +51,7 @@ photos:
     caption: ""
     source: H. Ainscough
     date: "1966"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600603781/hidinginplainsight/Coliseum_The_Gaumont_Cinema_K._S._Wheelan_20041210_86515445.jpg
+    source: Mr K. S. Wheelan
+    date: "1970"
 ---
