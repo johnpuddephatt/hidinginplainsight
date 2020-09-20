@@ -40,4 +40,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597999904/hidinginplainsight/Palace_Picture_Hall_2018_04.jpg
     source: Bryn Hans
     date: "2018"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600603802/hidinginplainsight/Palace_Picture_Hall_K._S._Wheelan_20041210_92383975.jpg
+    source: Mr K. S. Wheelan
+    date: "1970"
 ---
