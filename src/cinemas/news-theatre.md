@@ -42,4 +42,7 @@ photos:
     date: "1952"
   - file: https://res.cloudinary.com/hpph/image/upload/v1600603805/hidinginplainsight/The_News_Theatre_K._S._Wheelan_20041210_96389407.jpg
     source: Mr K. S. Wheelan
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600604812/hidinginplainsight/The_News_Theatre_Francis_Frith_Collection_200836_166312.jpg
+    source: Copyright The Francis Frith Collection
+    date: "1965"
 ---
