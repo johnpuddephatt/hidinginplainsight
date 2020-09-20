@@ -67,4 +67,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597677498/hidinginplainsight/Odeon_Merrion06.jpg
     source: Steven Moore
     date: "1990"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600603811/hidinginplainsight/Odeon_Merrion_K._S._Wheelan_20041210_89648074.jpg
+    source: Mr K. S. Wheelan
+    date: "1970"
 ---
