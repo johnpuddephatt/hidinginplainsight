@@ -54,4 +54,8 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1600603781/hidinginplainsight/Coliseum_The_Gaumont_Cinema_K._S._Wheelan_20041210_86515445.jpg
     source: Mr K. S. Wheelan
     date: "1970"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1603874550/hidinginplainsight/Gaumont_aerofilms.jpg
+    date: "1947"
+    source: Aerofilms, Historic England
+    caption: The Coliseum can be seen in the bottom right of the image.
 ---
