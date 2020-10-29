@@ -1,6 +1,6 @@
 ---
 title: Majestic Cinema
-date_open: "1920"
+date_open: "1922"
 date_close: "1969"
 status: Still visible
 colour: Red
