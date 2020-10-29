@@ -90,6 +90,4 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1600603808/hidinginplainsight/Paramount_Theatre_K._S._Wheelan_20041210_18264407.jpg
     source: Mr K. S. Wheelan
     date: "1933"
-  - source: Mr K. S. Wheelan
-    date: "1970"
 ---
