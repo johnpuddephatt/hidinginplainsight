@@ -10,6 +10,7 @@
     "leaflet": "^1.6.0",
     "leaflet-providers": "^1.10.1",
     "vue": "^2.6.11",
+    "vue-analytics": "^5.22.1",
     "vue-countup-v2": "^4.0.0",
     "vue-router": "^3.3.4",
     "vue2-leaflet": "^2.5.2",

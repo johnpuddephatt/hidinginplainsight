@@ -1,6 +1,7 @@
 ---
 layout: /layouts/default.njk
 ---
+{% include 'analytics.njk' %}
 {% include 'header.njk' %}
 <div class="container">
   <h1 class="page-title">{{ title }}</h1>
@@ -8,6 +9,7 @@ layout: /layouts/default.njk
     {{ content | safe }}
   </div>
 </div>
+
 <style>
 .site-header {
   display: flex !important;

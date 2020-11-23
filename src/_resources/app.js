@@ -1,8 +1,14 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import 'leaflet/dist/leaflet.css';
+import VueAnalytics from 'vue-analytics';
 
 Vue.use(VueRouter);
+
+Vue.use(VueAnalytics, {
+    id: 'UA-48108307-2',
+    VueRouter
+});
 
 window.axios = require('axios');
 
