@@ -1,14 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import 'leaflet/dist/leaflet.css';
-import VueAnalytics from 'vue-analytics';
+import VueGtag from "vue-gtag";
 
 Vue.use(VueRouter);
-
-Vue.use(VueAnalytics, {
-    id: 'UA-48108307-2',
-    VueRouter
-});
 
 window.axios = require('axios');
 
@@ -43,6 +38,11 @@ const routes = [
 const router = new VueRouter({
   routes // short for `routes: routes`
 })
+
+Vue.use(VueGtag, {
+  config: { id: 'UA-48108307-2' },
+  disableScriptLoad: true
+}, router)
 
 const app = new Vue({
   router
