@@ -23,7 +23,7 @@ export default {
         let commentoScript = document.createElement('script');
         commentoScript.setAttribute('data-page-id', `/cinemas/${this.slug}`);
         commentoScript.setAttribute('data-auto-init', true);
-        commentoScript.setAttribute('src', 'https://commento.letsdance.agency/js/commento.js');
+        commentoScript.setAttribute('src', 'https://commento.jdp.org.uk/js/commento.js');
         this.$refs.commento.parentNode.appendChild(commentoScript);
     }
   },
