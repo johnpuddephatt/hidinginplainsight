@@ -76,7 +76,7 @@ export default {
         };
 
         axios
-          .post('https://commento.letsdance.agency/api/comment/count', JSON.stringify(postData))
+          .post('https://commento.jdp.org.uk/api/comment/count', JSON.stringify(postData))
           .then(response => {
             this.commentCounts = response.data.commentCounts
           })
