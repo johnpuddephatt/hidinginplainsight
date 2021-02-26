@@ -12,4 +12,7 @@ description: "The Olympia Picture Hall appears to have been converted from a
   until 1934. It has since been used as warehousing and sales space. Corrugated
   steel cladding now obscures the upper windows but the building is still in use
   as a Shisha lounge and snooker hall, with a chip shop at the front. "
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1614331795/hidinginplainsight/img392_Olympia.jpg
+    source: Jane Ellis
 ---
