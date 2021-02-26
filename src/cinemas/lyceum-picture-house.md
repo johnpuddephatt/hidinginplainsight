@@ -30,4 +30,6 @@ description_extended: >-
 
 
   *Leodis*
+photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1614331800/hidinginplainsight/img323b_Lyceum_1.jpg
 ---
