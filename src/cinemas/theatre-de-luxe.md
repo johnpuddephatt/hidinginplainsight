@@ -14,9 +14,11 @@ description: This cinema started out as a theatre, as many did in the first
   sandwiched in between Lipton Grocers and Alexandra Cafe Tea Rooms on Kirkgate.
 description_extended: ""
 photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1614417551/hidinginplainsight/TheatredeLuxeYEP.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320986/hidinginplainsight/Theatre_de_Luxe_Leeds_Libraries_1105.jpg
     source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320989/hidinginplainsight/Theatre_de_Luxe_Leeds_Libraries_409.jpg
     source: Leeds Libraries Leodis.net
-  - file: https://res.cloudinary.com/hpph/image/upload/v1614417551/hidinginplainsight/TheatredeLuxeYEP.jpg
 ---
