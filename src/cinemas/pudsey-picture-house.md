@@ -18,4 +18,6 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597395494/hidinginplainsight/Pudsey_Picture_House.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - source: Jane Ellis
+    file: https://res.cloudinary.com/hpph/image/upload/v1614417293/hidinginplainsight/img415_Pudsey_Picture_Hse_J_Ellis.jpg
 ---
