@@ -26,27 +26,27 @@ photos:
     date: "1953"
   - file: https://res.cloudinary.com/hpph/image/upload/v1600603805/hidinginplainsight/The_News_Theatre_K._S._Wheelan_20041210_96389407.jpg
     source: Mr K. S. Wheelan
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597320183/hidinginplainsight/The_News_Theatre_Leeds_Libraries_3610.jpg
-    source: Leeds Libraries Leodis.net
-    date: "1953"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1614510666/hidinginplainsight/auditorium.jpg
+    source: Tony Newman
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320189/hidinginplainsight/The_News_Theatre_Leeds_Libraries_956.jpg
     source: Leeds Libraries Leodis.net
     caption: "1938"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600522332/hidinginplainsight/The_News_Theatre_Tramway_Museum_Society_20091230_169965.jpg
+    source: Tramway Museum Society
+    date: "1952"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597320183/hidinginplainsight/The_News_Theatre_Leeds_Libraries_3610.jpg
+    source: Leeds Libraries Leodis.net
+    date: "1953"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597394616/hidinginplainsight/The_News_Theatre.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600604812/hidinginplainsight/The_News_Theatre_Francis_Frith_Collection_200836_166312.jpg
+    source: Copyright The Francis Frith Collection
+    date: "1965"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597752608/hidinginplainsight/News18082020.jpg
     source: Steven Moore
   - file: https://res.cloudinary.com/hpph/image/upload/v1597752610/hidinginplainsight/News18082020_01.jpg
     source: Steven Moore
-  - file: https://res.cloudinary.com/hpph/image/upload/v1600522332/hidinginplainsight/The_News_Theatre_Tramway_Museum_Society_20091230_169965.jpg
-    source: Tramway Museum Society
-    date: "1952"
-  - file: https://res.cloudinary.com/hpph/image/upload/v1600604812/hidinginplainsight/The_News_Theatre_Francis_Frith_Collection_200836_166312.jpg
-    source: Copyright The Francis Frith Collection
-    date: "1965"
-  - file: https://res.cloudinary.com/hpph/image/upload/v1614510666/hidinginplainsight/auditorium.jpg
-    source: Tony Newman
   - file: https://res.cloudinary.com/hpph/image/upload/v1614510666/hidinginplainsight/planet_earth.jpg
     date: David Simpson
 ---
