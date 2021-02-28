@@ -72,10 +72,14 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1614509708/hidinginplainsight/exterior_2014.jpg
     date: "2014"
     caption: Exterior showing fire damage.
+    source: Harry Rigby
   - file: https://res.cloudinary.com/hpph/image/upload/v1614509788/hidinginplainsight/inside_fire_destruction.jpg
     caption: Interior showing fire damage.
     date: "2014"
+    source: Harry Rigby
   - file: https://res.cloudinary.com/hpph/image/upload/v1614509789/hidinginplainsight/recruiting_office.jpg
     caption: Recruiting office on the site of the Majestic.
     date: "1914"
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
 ---
