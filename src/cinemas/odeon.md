@@ -5,7 +5,7 @@ date_close: "1977"
 status: Still visible
 colour: Orange
 image: https://res.cloudinary.com/hpph/image/upload/v1596451156/hidinginplainsight/odeon.svg
-location: '{"type":"Point","coordinates":[-1.5444267,53.8024693]}'
+location: '{"type":"Point","coordinates":[-1.5443891,53.8019308]}'
 address: Merion Centre, Merrion Way
 description: The Merrion Centre Odeon opened in 1964 and closed only 13 years
   later in 1977. It had 900 seats and could screen 70mm film prints. It was a
