@@ -32,27 +32,12 @@ description_extended: >-
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597321349/hidinginplainsight/Majestic_Cinema_Leeds_Museums_and_Galleries_201122_171752.jpg
     source: Leeds Museum and Galleries
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597319903/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_10108.jpg
-    source: Leeds Libraries Leodis.net
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597319894/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_511.jpg
-    source: Leeds Libraries Leodis.net
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597319895/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_2002129_81084842.jpg
-    source: Leeds Libraries Leodis.net
-    date: "1923"
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597319910/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_3603.jpg
-    source: Leeds Libraries Leodis.net
-    date: "1947"
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597319911/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_3949.jpg
-    source: Leeds Libraries Leodis.net
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597319908/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_3945.jpg
-    source: Leeds Libraries Leodis.net
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597319915/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_563.jpg
-    source: Leeds Libraries Leodis.net
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597394481/hidinginplainsight/Majestic_1923.jpg
+  - file: https://res.cloudinary.com/hpph/image/upload/v1614509789/hidinginplainsight/recruiting_office.jpg
+    caption: Recruiting office on the site of the Majestic.
+    date: "1914"
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
-    date: "1923"
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597394480/hidinginplainsight/Majestic_02_1923.jpg
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597394481/hidinginplainsight/Majestic_1923.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
     date: "1923"
@@ -60,15 +45,32 @@ photos:
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
     date: "1923"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597394480/hidinginplainsight/Majestic_02_1923.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+    date: "1923"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319895/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_2002129_81084842.jpg
+    source: Leeds Libraries Leodis.net
+    date: "1923"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319910/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_3603.jpg
+    source: Leeds Libraries Leodis.net
+    date: "1947"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319894/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_511.jpg
+    source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319911/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_3949.jpg
+    source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319908/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_3945.jpg
+    source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319915/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_563.jpg
+    source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1598861735/hidinginplainsight/majestic310820.jpg
     date: circa 1990
     source: Steven Moore
   - file: https://res.cloudinary.com/hpph/image/upload/v1598861735/hidinginplainsight/majestic310820_01.jpg
     date: circa 1990
     source: Steven Moore
-  - file: https://res.cloudinary.com/hpph/image/upload/v1600603786/hidinginplainsight/Majestic_Cinema_K._S._Wheelan_20041210_27526492.jpg
-    source: Mr K. S. Wheelan
-    date: "1923"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597319903/hidinginplainsight/Majestic_Cinema_Leeds_Libraries_10108.jpg
+    source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1614509708/hidinginplainsight/exterior_2014.jpg
     date: "2014"
     caption: Exterior showing fire damage.
@@ -77,9 +79,4 @@ photos:
     caption: Interior showing fire damage.
     date: "2014"
     source: Harry Rigby
-  - file: https://res.cloudinary.com/hpph/image/upload/v1614509789/hidinginplainsight/recruiting_office.jpg
-    caption: Recruiting office on the site of the Majestic.
-    date: "1914"
-    source: We are making every effort to discover the ownership of this photo.
-      Please contact us if you are the copyright holder.
 ---
