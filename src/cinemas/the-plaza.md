@@ -38,4 +38,10 @@ photos:
     source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320648/hidinginplainsight/The_Plaza_Leeds_Libraries_2003103_69370669.jpg
     source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1614536849/hidinginplainsight/Plaza01.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+  - source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+    file: https://res.cloudinary.com/hpph/image/upload/v1614536849/hidinginplainsight/Mondo_Cane.jpg
 ---
