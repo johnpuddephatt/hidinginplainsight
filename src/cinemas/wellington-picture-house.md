@@ -14,4 +14,5 @@ description: The Wellington Picture House, was situated on Wellington street,
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1614511894/hidinginplainsight/cinema.jpg
     source: Mike Blakemore
+    date: "1921"
 ---
