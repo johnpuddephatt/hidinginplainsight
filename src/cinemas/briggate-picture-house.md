@@ -32,6 +32,10 @@ description_extended: >-
 
   Leodis
 photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1614513260/hidinginplainsight/Rialto.jpg
+    date: We are making every effort to discover the ownership of this photo. Please
+      contact us if you are the copyright holder.
+    caption: "1937"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597391905/hidinginplainsight/Briggate_Picture_House_200266_21055239.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
