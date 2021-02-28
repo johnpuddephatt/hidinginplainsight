@@ -26,6 +26,9 @@ description_extended: >-
 
   The cinema closed in 1977 after just 13 years, but for many years afterwards the boarded-up entrances could still be seen from within the Merrion Centre atrium. Much of the cinema's interior remained intact, hidden away from the public apart from on the occasional Heritage Open Day event, but the old cinema fittings have now been removed and the site is ready for a new development.
 photos:
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600603811/hidinginplainsight/Odeon_Merrion_K._S._Wheelan_20041210_89648074.jpg
+    source: Mr K. S. Wheelan
+    date: "1970"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320302/hidinginplainsight/Odeon_Merrion_Leeds_Libraries_2003102_19016665.jpg
     source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597320297/hidinginplainsight/Odeon_Merrion_Leeds_Libraries_20041027_58658999.jpg
@@ -67,7 +70,4 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597677498/hidinginplainsight/Odeon_Merrion06.jpg
     source: Steven Moore
     date: "1990"
-  - file: https://res.cloudinary.com/hpph/image/upload/v1600603811/hidinginplainsight/Odeon_Merrion_K._S._Wheelan_20041210_89648074.jpg
-    source: Mr K. S. Wheelan
-    date: "1970"
 ---
