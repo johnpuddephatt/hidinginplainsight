@@ -36,7 +36,7 @@ description_extended: >-
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318171/hidinginplainsight/Coliseum_The_Gaumont_Cinema_Leeds_Libraries_2002927_8745974.jpg
     source: Leeds Libraries Leodis.net
-    date: ""
+    date: "1946"
   - file: https://res.cloudinary.com/hpph/image/upload/v1603874550/hidinginplainsight/Gaumont_aerofilms.jpg
     date: "1947"
     source: Aerofilms, Historic England
