@@ -15,11 +15,11 @@ description: "The Majestic was Leeds' first 'super cinema' with a huge
   depicting chariots and horsemen. "
 description_extended: >-
   The Majestic had a pipe organ and an in-house Symphony Orchestra, which was
-  conducted by Francois Grandpierre. Its dome was 84 feet, larger than the dome
-  of St Paul's Cathedral in London. The cinema changed hands several times while
-  it was open, but in 1969 it was closed by the Rank Organisation (who had
-  bought the Gaumont-British chain in 1941) and the building was transformed
-  into Majestic Bingo. 
+  conducted by Francois Grandpierre. Its dome was 84 feet wide and decorated
+  with a great frieze depicting chariots and horsemen.
+
+
+  The cinema changed hands several times while it was open, but in 1969 it was closed by the Rank Organisation (who had bought the Gaumont-British chain in 1941) and the building was transformed into Majestic Bingo. 
 
 
   The building is now protected with a grade 2 listing and one of its heritage features is the 'marmo' terracotta tiling of its facade, which was made by Leeds Fireclay of Burmantofts. 
