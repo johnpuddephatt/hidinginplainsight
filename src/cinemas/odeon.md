@@ -18,10 +18,10 @@ description_extended: >-
   centre in 1964. The entrance to the cinema was situated opposite what is now
   the entrance to Morrisons supermarket. There were two Odeon cinemas in Leeds
   at this time, the other was the former Paramount on The Headrow. They were
-  part of the Rank cinema chain, who also owned The Majestic. 
+  part of the Rank cinema chain, who also owned The Majestic.
 
 
-  When it first opened, the Merrion Centre was an open air development. It was claimed that it was the biggest shopping centre of its kind, although it was quickly eclipsed by Birmingham's Bull Ring centre which opened later the same year. In the early 1970s the Merrion House office block was added, which was occupied by Leeds City Council. The centre was also enclosed with a roof and the cinema was accessed through a set of doors on a balcony above the ground floor shopping level. 
+  When it first opened, the Merrion Centre was an open air development. It was claimed that it was the biggest shopping centre of its kind, although it was quickly eclipsed by Birmingham's Bull Ring centre which opened later the same year. In the early 1970s the Merrion House office block was added, which was occupied by Leeds City Council. The centre was also enclosed with a roof and the cinema was accessed through a set of doors on a balcony above the ground floor shopping level.
 
 
   The cinema closed in 1977 after just 13 years, but for many years afterwards the boarded-up entrances could still be seen from within the Merrion Centre atrium. Much of the cinema's interior remained intact, hidden away from the public apart from on the occasional Heritage Open Day event, but the old cinema fittings have now been removed and the site is ready for a new development.
@@ -70,4 +70,6 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1600603811/hidinginplainsight/Odeon_Merrion_K._S._Wheelan_20041210_89648074.jpg
     source: Mr K. S. Wheelan
     date: "1970"
+tour_number: 1
+audio: '/uploads/audio.mp3'
 ---

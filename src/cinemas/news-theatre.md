@@ -45,4 +45,6 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1600604812/hidinginplainsight/The_News_Theatre_Francis_Frith_Collection_200836_166312.jpg
     source: Copyright The Francis Frith Collection
     date: "1965"
+tour_number: 2
+audio: 'bar'
 ---

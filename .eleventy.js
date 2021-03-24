@@ -37,6 +37,11 @@ module.exports = function(eleventyConfig) {
     return str;
   })
 
+
+  eleventyConfig.addCollection('tours', collection => {
+    return collection.getFilteredByGlob('./src/tours/*.md');
+  });
+
   // Collections
 
   eleventyConfig.addCollection('pages', collection => {
@@ -52,6 +57,17 @@ module.exports = function(eleventyConfig) {
       if (aTitle < bTitle) return -1;
       else if (aTitle > bTitle) return 1;
       else return 0;
+    });
+  });
+
+  eleventyConfig.addFilter('whereSlug', function (array, value) {
+    return array.filter(item => {
+      let slug = slugify(item.data.title, {
+        lower: true,
+        replacement: "-",
+        remove: /[*+~.·,()'"`´%!?¿:@]/g
+      });
+      return (slug == value);
     });
   });
 

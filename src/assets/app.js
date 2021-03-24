@@ -1994,7 +1994,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     googleMapsLink: function googleMapsLink() {
-      return "https://www.google.com/maps/search/?api=1&query=".concat(this.cinema.location.coordinates[1], ",").concat(this.cinema.location.coordinates[0]);
+      return "https://www.google.com/maps/search/?api=1&query=".concat(this.cinema.location.coordinates[1], "%2C").concat(this.cinema.location.coordinates[0]);
     }
   },
   methods: {
@@ -2514,6 +2514,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2522,12 +2534,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Map',
-  props: ['cinemas', 'clicked'],
+  props: ['tour', 'geojson', 'cinemas', 'clicked'],
   components: {
     'v-icondefault': vue2_leaflet__WEBPACK_IMPORTED_MODULE_2__["LIconDefault"],
     LPopup: vue2_leaflet__WEBPACK_IMPORTED_MODULE_2__["LPopup"],
     LMap: vue2_leaflet__WEBPACK_IMPORTED_MODULE_2__["LMap"],
     LTileLayer: vue2_leaflet__WEBPACK_IMPORTED_MODULE_2__["LTileLayer"],
+    LGeoJson: vue2_leaflet__WEBPACK_IMPORTED_MODULE_2__["LGeoJson"],
     LMarker: vue2_leaflet__WEBPACK_IMPORTED_MODULE_2__["LMarker"],
     LIcon: vue2_leaflet__WEBPACK_IMPORTED_MODULE_2__["LIcon"],
     LControlZoom: vue2_leaflet__WEBPACK_IMPORTED_MODULE_2__["LControlZoom"],
@@ -2535,8 +2548,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      zoom: 13,
-      center: Object(leaflet__WEBPACK_IMPORTED_MODULE_1__["latLng"])(53.8125403, -1.5735477),
+      zoom: this.tour ? 16 : 13,
+      center: this.tour ? Object(leaflet__WEBPACK_IMPORTED_MODULE_1__["latLng"])(53.7993475, -1.5432696) : Object(leaflet__WEBPACK_IMPORTED_MODULE_1__["latLng"])(53.8125403, -1.5735477),
       // url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
       url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -2566,9 +2579,22 @@ __webpack_require__.r(__webpack_exports__);
       }
     };
   },
+  mounted: function mounted() {},
+  computed: {
+    styleFunction: function styleFunction() {
+      return function () {
+        return {
+          weight: 2,
+          color: "#ff0000",
+          opacity: 1,
+          fillOpacity: 0
+        };
+      };
+    }
+  },
   watch: {
     clicked: function clicked(_clicked) {
-      if (this.$router.currentRoute.name == 'cinemas' && _clicked) {
+      if ((this.$router.currentRoute.name == 'cinemas' || this.$router.currentRoute.name == 'tour') && _clicked) {
         // if !mapActive, then we're interacting with the sidebar so should flyTo.
         if (!this.mapActive) {
           this.$refs.map.mapObject.flyTo(this.$refs[_clicked][0].latLng, 17);
@@ -2594,6 +2620,9 @@ __webpack_require__.r(__webpack_exports__);
     markerClicked: function markerClicked($event, slug) {
       this.$emit('marker-clicked', slug);
       this.currentlyClicked = slug;
+    },
+    googleMapsDirections: function googleMapsDirections(cinema) {
+      return "https://www.google.com/maps/dir/?api=1&destination=".concat(cinema.location.coordinates[1], "%2C").concat(cinema.location.coordinates[0]);
     }
   }
 });
@@ -2642,10 +2671,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Menu',
-  props: ['cinemas', 'clicked', 'isLandscape'],
+  props: ['tour', 'cinemas', 'clicked', 'isLandscape'],
   components: {
     ICountUp: vue_countup_v2__WEBPACK_IMPORTED_MODULE_0___default.a
   },
@@ -2719,7 +2754,7 @@ __webpack_require__.r(__webpack_exports__);
       if (!this.menuOpen) {
         this.currentlyHovered = slug;
         setTimeout(function () {
-          if (_this3.currentlyHovered === slug && _this3.$router.currentRoute.name == 'cinemas') {
+          if (_this3.currentlyHovered === slug && (_this3.$router.currentRoute.name == 'cinemas' || _this3.$router.currentRoute.name == 'tour')) {
             _this3.$emit('menu-hovered', slug);
           }
         }, 750);
@@ -2771,6 +2806,131 @@ __webpack_require__.r(__webpack_exports__);
   methods: {},
   mounted: function mounted() {}
 });
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/_resources/components/Tour.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./src/_resources/components/Tour.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Map_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Map.vue */ "./src/_resources/components/Map.vue");
+/* harmony import */ var _Menu_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Menu.vue */ "./src/_resources/components/Menu.vue");
+/* harmony import */ var _Popup_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Popup.vue */ "./src/_resources/components/Popup.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'Overview',
+  props: [],
+  components: {
+    Map: _Map_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Menu: _Menu_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+    Popup: _Popup_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
+  },
+  data: function data() {
+    return {
+      tour: {},
+      clicked: null,
+      errored: false,
+      cinemasLoaded: false,
+      siteDataLoaded: false,
+      hasVisitedBefore: false
+    };
+  },
+  watch: {
+    hasVisitedBefore: function hasVisitedBefore(newValue) {
+      localStorage.hasVisitedBefore = newValue;
+    }
+  },
+  methods: {
+    onMarkerClicked: function onMarkerClicked(slug) {
+      this.clicked = slug;
+    },
+    onMenuHovered: function onMenuHovered(slug) {
+      if (this.$router.currentRoute.name != 'tour') {
+        this.$router.push({
+          name: 'tour'
+        });
+      }
+
+      this.clicked = slug;
+    },
+    isLandscape: function isLandscape() {
+      return document.documentElement.clientWidth > document.documentElement.clientHeight;
+    },
+    confirmEntrance: function confirmEntrance() {
+      this.hasVisitedBefore = true;
+    }
+  },
+  created: function created() {
+    if (localStorage.hasVisitedBefore) {
+      this.hasVisitedBefore = localStorage.hasVisitedBefore;
+    }
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('/api/site.json').then(function (response) {
+      _this.site = response.data;
+    })["catch"](function (error) {
+      console.log(error);
+      _this.errored = true;
+    })["finally"](function () {
+      return _this.siteDataLoaded = true;
+    });
+    axios.get("/api/tour/".concat(this.$route.params.tourslug, ".json")).then(function (response) {
+      _this.tour = response.data;
+    })["catch"](function (error) {
+      console.log(error);
+      _this.errored = true;
+    })["finally"](function () {
+      return _this.cinemasLoaded = true;
+    });
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/_resources/components/Tours.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./src/_resources/components/Tours.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+//
+//
+//
+//
 
 /***/ }),
 
@@ -2914,7 +3074,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-italic-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: italic;\n  font-display: block;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-bold-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-bold-webfont.woff\") format(\"woff\");\n  font-weight: 700;\n  font-style: normal;\n  font-display: block;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-regular-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-regular-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n  font-display: block;\n}\n@font-face {\n  font-family: \"mikado\";\n  src: url(\"/assets/fonts/mikadoblack-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/mikadoblack-italic-webfont.woff\") format(\"woff\");\n  font-weight: 900;\n  font-style: italic;\n  font-display: block;\n}\n* {\n  font-family: karla, sans-serif;\n}\n.leaflet-container {\n  width: 100%;\n  height: auto !important;\n  flex: 1;\n}\n@media screen and (orientation: landscape) and (min-width: 800px) {\n.leaflet-container {\n    width: calc(100vw - 320px) !important;\n}\n}\n.marker-cluster,\n.marker-cluster div {\n  border-radius: 500px;\n}\n.marker-cluster.active {\n  outline: 2px solid yellow;\n}\n.marker-cluster div {\n  height: 30px;\n  width: 30px;\n  margin: 5px;\n  text-align: center;\n  line-height: 30px;\n}\n\n/* Small */\n.my-marker-cluster-small {\n  background-color: #aecdeb;\n  box-shadow: 9px 9px 12px -7px rgba(0, 0, 0, 0.25) !important;\n}\n.my-marker-cluster-small div {\n  background-color: white;\n}\n\n/* Medium */\n.my-marker-cluster-large {\n  background-color: #71a7dc;\n  box-shadow: 9px 9px 12px -7px rgba(0, 0, 0, 0.25) !important;\n}\n.my-marker-cluster-large div {\n  background-color: white;\n}\n.leaflet-container a.leaflet-popup-close-button {\n  width: 30px;\n  height: 24px;\n  font: 30px/17px Tahoma, Verdana, sans-serif;\n}\n.leaflet-popup-content-wrapper {\n  max-width: 320px;\n  width: 100vw;\n  font-size: 1rem !important;\n  padding: 1rem 0.6944444444rem;\n  border-radius: 0 !important;\n  box-shadow: 13px 19px 12px -7px rgba(0, 0, 0, 0.2) !important;\n}\n.leaflet-popup-content-wrapper .cinema-title {\n  font-size: 1.2rem;\n  font-weight: 700;\n  margin-bottom: 0.25em;\n}\n.leaflet-popup-content-wrapper .cinema-address {\n  font-size: 0.8333333333rem;\n  color: #85898E;\n}\n.leaflet-popup-content-wrapper .cinema-address::before {\n  content: \"\";\n  display: inline-block;\n  background-image: url(/assets/images/marker-icon-red.svg);\n  width: 0.75em;\n  height: 1em;\n  margin-right: 0.25em;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: left;\n}\n.leaflet-popup-content-wrapper p {\n  margin: 0 0 1.2rem;\n}\n@media screen and (orientation: portrait) {\n.leaflet-popup {\n    display: none;\n}\n}\n.leaflet-overlay-pane svg path {\n  stroke: #df7839 !important;\n  fill: rgba(223, 120, 57, 0.5) !important;\n}", ""]);
+exports.push([module.i, "@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-italic-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: italic;\n  font-display: block;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-bold-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-bold-webfont.woff\") format(\"woff\");\n  font-weight: 700;\n  font-style: normal;\n  font-display: block;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-regular-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-regular-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n  font-display: block;\n}\n@font-face {\n  font-family: \"mikado\";\n  src: url(\"/assets/fonts/mikadoblack-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/mikadoblack-italic-webfont.woff\") format(\"woff\");\n  font-weight: 900;\n  font-style: italic;\n  font-display: block;\n}\n* {\n  font-family: karla, sans-serif;\n}\n.leaflet-container {\n  width: 100%;\n  height: auto !important;\n  flex: 1;\n}\n@media screen and (orientation: landscape) and (min-width: 800px) {\n.leaflet-container {\n    width: calc(100vw - 320px) !important;\n}\n}\n.marker-cluster,\n.marker-cluster div {\n  border-radius: 500px;\n}\n.marker-cluster.active {\n  outline: 2px solid yellow;\n}\n.marker-cluster div {\n  height: 30px;\n  width: 30px;\n  margin: 5px;\n  text-align: center;\n  line-height: 30px;\n}\n\n/* Small */\n.my-marker-cluster-small {\n  background-color: #aecdeb;\n  box-shadow: 9px 9px 12px -7px rgba(0, 0, 0, 0.25) !important;\n}\n.my-marker-cluster-small div {\n  background-color: white;\n}\n\n/* Medium */\n.my-marker-cluster-large {\n  background-color: #71a7dc;\n  box-shadow: 9px 9px 12px -7px rgba(0, 0, 0, 0.25) !important;\n}\n.my-marker-cluster-large div {\n  background-color: white;\n}\n.leaflet-container a.leaflet-popup-close-button {\n  width: 30px;\n  height: 24px;\n  font: 30px/17px Tahoma, Verdana, sans-serif;\n}\n.leaflet-popup-content-wrapper {\n  max-width: 320px;\n  width: 100vw;\n  font-size: 1rem !important;\n  padding: 1rem 0.6944444444rem;\n  border-radius: 0 !important;\n  box-shadow: 13px 19px 12px -7px rgba(0, 0, 0, 0.2) !important;\n}\n.leaflet-popup-content-wrapper .cinema-title {\n  font-size: 1.2rem;\n  font-weight: 700;\n  margin-bottom: 0.25em;\n}\n.leaflet-popup-content-wrapper .cinema-address {\n  font-size: 0.8333333333rem;\n  color: #85898E;\n}\n.leaflet-popup-content-wrapper .cinema-address::before {\n  content: \"\";\n  display: inline-block;\n  background-image: url(/assets/images/marker-icon-red.svg);\n  width: 0.75em;\n  height: 1em;\n  margin-right: 0.25em;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: left;\n}\n.leaflet-popup-content-wrapper .cinema-audio audio {\n  width: 100%;\n  margin-bottom: 1rem;\n}\n.leaflet-popup-content-wrapper p {\n  margin: 0 0 1.2rem;\n}\n@media screen and (orientation: portrait) {\n.leaflet-popup {\n    display: none;\n}\n}", ""]);
 
 // exports
 
@@ -2933,7 +3093,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-italic-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: italic;\n  font-display: block;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-bold-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-bold-webfont.woff\") format(\"woff\");\n  font-weight: 700;\n  font-style: normal;\n  font-display: block;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-regular-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-regular-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n  font-display: block;\n}\n@font-face {\n  font-family: \"mikado\";\n  src: url(\"/assets/fonts/mikadoblack-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/mikadoblack-italic-webfont.woff\") format(\"woff\");\n  font-weight: 900;\n  font-style: italic;\n  font-display: block;\n}\n* {\n  font-family: karla, sans-serif;\n}\n.sidebar {\n  z-index: 999999;\n  position: absolute;\n  background-color: white;\n  padding: 1.44rem 0;\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n  top: calc(100% - 4.9536rem);\n  border-top: 1px solid #efefef;\n  transition: top 1s ease, z-index 1.5s ease;\n}\n.sidebar.menu-open {\n  overflow-y: auto;\n  z-index: 9999999;\n  top: 0;\n  transition: top 1s ease, z-index 0s ease;\n}\n@media screen and (orientation: landscape) and (min-width: 800px) {\n.sidebar {\n    overflow-y: auto;\n    position: static;\n    padding: 4.29981696rem 0;\n    border-top: none;\n    border-right: 2px solid #efefef;\n    width: 320px;\n    height: 100%;\n}\n}\n.search-input {\n  border-radius: 99999px;\n  margin: 0 1rem 0.6944444444rem;\n  border: 1px solid #efefef;\n  width: calc(100% - 2.88rem);\n  padding: 0.4822530864rem 1rem;\n  padding-left: 2em;\n  background-image: url(/assets/images/search-icon.svg);\n  background-size: 1rem;\n  background-repeat: no-repeat;\n  background-position: 0.75em center;\n}\n@media screen and (orientation: landscape) and (min-width: 800px) {\n.search-input {\n    margin: 0 1.44rem 0.6944444444rem;\n}\n}\n.search-input:focus {\n  outline: none;\n  border-color: #85898E;\n}\n.sidebar--header {\n  line-height: 2.0736rem;\n  padding: 0 1rem 1.44rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n@media screen and (orientation: landscape) and (min-width: 800px) {\n.sidebar--header {\n    padding: 0 1.44rem 1.44rem;\n}\n}\n.sidebar--title {\n  font-weight: 700;\n  font-size: 1.44rem;\n}\n@media screen and (orientation: portrait) {\n.sidebar--title {\n    font-size: 1.2rem;\n}\n}\n.sidebar-menu--item {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  cursor: pointer;\n  transition: background-color ease 500ms, border ease 500ms;\n  padding: 0.6944444444rem 0.8333333333rem 0.6944444444rem 0.75rem;\n  border-left: 0.36rem solid transparent;\n  border-bottom: 1px solid #f8f8f8;\n}\n@media screen and (orientation: landscape) and (min-width: 800px) {\n.sidebar-menu--item {\n    padding: 0.6944444444rem 0.8333333333rem 0.6944444444rem 1.08rem;\n}\n}\n.sidebar-menu--item:hover {\n  background-color: #f0f6fc;\n}\n.sidebar-menu--item.active, .sidebar-menu--item.router-link-exact-active {\n  border-left-color: #f4d582;\n}\n.sidebar-menu--item .image {\n  flex: 0 0 75px;\n  display: block;\n  width: 75px;\n  height: 75px;\n  background-color: #fef6dd;\n  margin-right: 0.8333333333rem;\n  padding: 4px 4px 0;\n  position: relative;\n}\n.sidebar-menu--item .image img {\n  margin-left: auto;\n  margin-right: auto;\n  -o-object-fit: contain;\n     object-fit: contain;\n  -o-object-position: center bottom;\n     object-position: center bottom;\n  display: block;\n  height: 100%;\n  image-rendering: -webkit-optimize-contrast;\n}\n.sidebar-menu--item .image span {\n  font-size: 1.728rem;\n  color: #df7839;\n  font-weight: 700;\n  display: inline-block;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n.sidebar-menu--item:nth-child(4n-3) .image {\n  background-color: rgba(223, 120, 57, 0.1);\n}\n.sidebar-menu--item:nth-child(4n-2) .image {\n  background-color: rgba(244, 213, 130, 0.75);\n}\n.sidebar-menu--item:nth-child(4n-1) .image {\n  background-color: rgba(174, 205, 235, 0.4);\n}\n.sidebar-menu--item:nth-child(4n) .image {\n  background-color: #fef6dd;\n}\n.sidebar-menu--title {\n  font-weight: 400 !important;\n}\n.sidebar-menu--subtitle {\n  display: flex;\n  flex-direction: row;\n  color: #85898E;\n  font-size: 0.8333333333rem;\n  margin-top: 0.3348979767rem;\n  margin-bottom: 0;\n}\n.sidebar-menu--subtitle span {\n  display: inline-block;\n}\n.sidebar-menu--subtitle span::before {\n  vertical-align: text-top;\n  display: inline-block;\n  height: 1.1em;\n  width: 1.2em;\n  content: \"\";\n  margin-right: 0.3em;\n  background-size: contain;\n  background-position: center right;\n  background-repeat: no-repeat;\n  opacity: 0.2;\n}\n.sidebar-menu--subtitle span + span {\n  margin-left: 0.4822530864rem;\n}\n.sidebar-menu--status::before {\n  background-image: url(/assets/images/eye-icon.svg);\n}\n.sidebar-menu--comments::before {\n  background-image: url(/assets/images/comment-icon.svg);\n}\n.sidebar-menu--photos::before {\n  background-image: url(/assets/images/camera-icon.svg);\n}", ""]);
+exports.push([module.i, "@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-italic-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: italic;\n  font-display: block;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-bold-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-bold-webfont.woff\") format(\"woff\");\n  font-weight: 700;\n  font-style: normal;\n  font-display: block;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-regular-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-regular-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n  font-display: block;\n}\n@font-face {\n  font-family: \"mikado\";\n  src: url(\"/assets/fonts/mikadoblack-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/mikadoblack-italic-webfont.woff\") format(\"woff\");\n  font-weight: 900;\n  font-style: italic;\n  font-display: block;\n}\n* {\n  font-family: karla, sans-serif;\n}\n.sidebar {\n  z-index: 999999;\n  position: absolute;\n  background-color: white;\n  padding: 1.44rem 0;\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n  top: calc(100% - 4.9536rem);\n  border-top: 1px solid #efefef;\n  transition: top 1s ease, z-index 1.5s ease;\n}\n.sidebar.menu-open {\n  overflow-y: auto;\n  z-index: 9999999;\n  top: 0;\n  transition: top 1s ease, z-index 0s ease;\n}\n@media screen and (orientation: landscape) and (min-width: 800px) {\n.sidebar {\n    overflow-y: auto;\n    position: static;\n    padding: 4.29981696rem 0;\n    border-top: none;\n    border-right: 2px solid #efefef;\n    width: 320px;\n    height: 100%;\n}\n}\n.search-input {\n  border-radius: 99999px;\n  margin: 0 1rem 0.6944444444rem;\n  border: 1px solid #efefef;\n  width: calc(100% - 2.88rem);\n  padding: 0.4822530864rem 1rem;\n  padding-left: 2em;\n  background-image: url(/assets/images/search-icon.svg);\n  background-size: 1rem;\n  background-repeat: no-repeat;\n  background-position: 0.75em center;\n}\n@media screen and (orientation: landscape) and (min-width: 800px) {\n.search-input {\n    margin: 0 1.44rem 0.6944444444rem;\n}\n}\n.search-input:focus {\n  outline: none;\n  border-color: #85898E;\n}\n.sidebar--header {\n  line-height: 2.0736rem;\n  padding: 0 1rem 1.44rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n@media screen and (orientation: landscape) and (min-width: 800px) {\n.sidebar--header {\n    padding: 0 1.44rem 1.44rem;\n}\n}\n.sidebar--title {\n  font-weight: 700;\n  font-size: 1.44rem;\n}\n@media screen and (orientation: portrait) {\n.sidebar--title {\n    font-size: 1.2rem;\n}\n}\n.sidebar-menu--item {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  cursor: pointer;\n  transition: background-color ease 500ms, border ease 500ms;\n  padding: 0.6944444444rem 0.8333333333rem 0.6944444444rem 0.75rem;\n  border-left: 0.36rem solid transparent;\n  border-bottom: 1px solid #f8f8f8;\n}\n@media screen and (orientation: landscape) and (min-width: 800px) {\n.sidebar-menu--item {\n    padding: 0.6944444444rem 0.8333333333rem 0.6944444444rem 1.08rem;\n}\n}\n.sidebar-menu--item:hover {\n  background-color: #f0f6fc;\n}\n.sidebar-menu--item.active, .sidebar-menu--item.router-link-exact-active {\n  border-left-color: #f4d582;\n}\n.sidebar-menu--item .image {\n  flex: 0 0 75px;\n  display: block;\n  width: 75px;\n  height: 75px;\n  background-color: #fef6dd;\n  margin-right: 0.8333333333rem;\n  padding: 4px 4px 0;\n  position: relative;\n}\n.sidebar-menu--item .image img {\n  margin-left: auto;\n  margin-right: auto;\n  -o-object-fit: contain;\n     object-fit: contain;\n  -o-object-position: center bottom;\n     object-position: center bottom;\n  display: block;\n  height: 100%;\n  image-rendering: -webkit-optimize-contrast;\n}\n.sidebar-menu--item .image span {\n  font-size: 1.728rem;\n  color: #df7839;\n  font-weight: 700;\n  display: inline-block;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n.sidebar-menu--item:nth-child(4n-3) .image {\n  background-color: rgba(223, 120, 57, 0.1);\n}\n.sidebar-menu--item:nth-child(4n-2) .image {\n  background-color: rgba(244, 213, 130, 0.75);\n}\n.sidebar-menu--item:nth-child(4n-1) .image {\n  background-color: rgba(174, 205, 235, 0.4);\n}\n.sidebar-menu--item:nth-child(4n) .image {\n  background-color: #fef6dd;\n}\n.sidebar-menu--tour-number {\n  display: inline-block;\n  margin-bottom: 0.3348979767rem;\n  font-size: 0.8333333333rem;\n  padding: 0 0.5em;\n  border-radius: 3em;\n  background-color: #f4d582;\n}\n.sidebar-menu--title {\n  font-weight: 400 !important;\n}\n.sidebar-menu--subtitle {\n  display: flex;\n  flex-direction: row;\n  color: #85898E;\n  font-size: 0.8333333333rem;\n  margin-top: 0.3348979767rem;\n  margin-bottom: 0;\n}\n.sidebar-menu--subtitle span {\n  display: inline-block;\n}\n.sidebar-menu--subtitle span::before {\n  vertical-align: text-top;\n  display: inline-block;\n  height: 1.1em;\n  width: 1.2em;\n  content: \"\";\n  margin-right: 0.3em;\n  background-size: contain;\n  background-position: center right;\n  background-repeat: no-repeat;\n  opacity: 0.2;\n}\n.sidebar-menu--subtitle span + span {\n  margin-left: 0.4822530864rem;\n}\n.sidebar-menu--status::before {\n  background-image: url(/assets/images/eye-icon.svg);\n}\n.sidebar-menu--comments::before {\n  background-image: url(/assets/images/comment-icon.svg);\n}\n.sidebar-menu--photos::before {\n  background-image: url(/assets/images/camera-icon.svg);\n}", ""]);
 
 // exports
 
@@ -2953,6 +3113,25 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 // module
 exports.push([module.i, "@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-italic-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: italic;\n  font-display: block;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-bold-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-bold-webfont.woff\") format(\"woff\");\n  font-weight: 700;\n  font-style: normal;\n  font-display: block;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-regular-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-regular-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n  font-display: block;\n}\n@font-face {\n  font-family: \"mikado\";\n  src: url(\"/assets/fonts/mikadoblack-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/mikadoblack-italic-webfont.woff\") format(\"woff\");\n  font-weight: 900;\n  font-style: italic;\n  font-display: block;\n}\n* {\n  font-family: karla, sans-serif;\n}\n.mobile-popup {\n  border-top: 1px solid #efefef;\n  position: fixed;\n  z-index: 999999;\n  background-color: white;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  padding: 1rem;\n  margin: 0;\n  display: flex;\n  flex-direction: row;\n}\n@media screen and (orientation: landscape) {\n.mobile-popup {\n    display: none;\n}\n}\n.mobile-popup .image {\n  flex: 0 0 75px;\n  display: block;\n  width: 75px;\n  height: 75px;\n  background-color: #fef6dd;\n  margin-right: 0.5787037037rem;\n  padding-top: 10px;\n  position: relative;\n}\n.mobile-popup .image img {\n  margin-left: auto;\n  margin-right: auto;\n  -o-object-fit: contain;\n     object-fit: contain;\n  -o-object-position: center;\n     object-position: center;\n  display: block;\n  height: 100%;\n  image-rendering: -webkit-optimize-contrast;\n}\n.mobile-popup .image span {\n  font-size: 1.728rem;\n  color: #df7839;\n  font-weight: 700;\n  display: inline-block;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n.mobile-popup .cinema-title {\n  font-size: 1.2rem;\n  font-weight: 700;\n}\n.mobile-popup .cinema-address {\n  font-size: 0.8333333333rem;\n  line-height: 1;\n  color: #85898E;\n  margin-left: 0.75em;\n}\n.mobile-popup .cinema-address::before {\n  content: \"\";\n  display: inline-block;\n  background-image: url(/assets/images/marker-icon-red.svg);\n  width: 0.75em;\n  margin-left: -1em;\n  height: 1.25em;\n  margin-right: 0.25em;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: left bottom;\n}\n.mobile-popup p {\n  margin-bottom: 0;\n}\n.mobile-popup .popup-footer {\n  margin-left: auto;\n  padding-left: 0.4822530864rem;\n}\n.mobile-popup .popup-footer .button {\n  display: block;\n  text-align: center;\n}\n.mobile-popup .popup-footer .button + .button {\n  margin-top: 0.2325680394rem;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./src/_resources/components/Tour.vue?vue&type=style&index=0&lang=scss&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./src/_resources/components/Tour.vue?vue&type=style&index=0&lang=scss& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-italic-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: italic;\n  font-display: block;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-bold-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-bold-webfont.woff\") format(\"woff\");\n  font-weight: 700;\n  font-style: normal;\n  font-display: block;\n}\n@font-face {\n  font-family: \"karla\";\n  src: url(\"/assets/fonts/karla-regular-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/karla-regular-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n  font-display: block;\n}\n@font-face {\n  font-family: \"mikado\";\n  src: url(\"/assets/fonts/mikadoblack-italic-webfont.woff2\") format(\"woff2\"), url(\"/assets/fonts/mikadoblack-italic-webfont.woff\") format(\"woff\");\n  font-weight: 900;\n  font-style: italic;\n  font-display: block;\n}\n* {\n  font-family: karla, sans-serif;\n}\n.dialog {\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  z-index: 9999999999;\n  background-color: rgba(255, 255, 255, 0.95);\n  padding: 4.29981696rem 2.0736rem;\n  border-radius: 1rem;\n  -webkit-animation: popup 1s forwards;\n          animation: popup 1s forwards;\n  width: 100%;\n  max-width: 680px;\n  text-align: center;\n}\n.dialog .dialog-inner {\n  max-width: 400px;\n  margin: 0 auto;\n}\n.dialog h3 {\n  font-family: mikado;\n  font-size: 2.985984rem;\n  font-weight: 900;\n  font-style: italic;\n  margin-bottom: 1.44rem;\n}\n.dialog .button {\n  margin-top: 1.728rem;\n}\n@-webkit-keyframes popup {\n0% {\n    transform: translate(-50%, -40%);\n    opacity: 0;\n}\n100% {\n    transform: translate(-50%, -50%);\n    opacity: 1;\n}\n}\n@keyframes popup {\n0% {\n    transform: translate(-50%, -40%);\n    opacity: 0;\n}\n100% {\n    transform: translate(-50%, -50%);\n    opacity: 1;\n}\n}\n.dialog-wrapper {\n  position: fixed;\n  z-index: 9999999998;\n  background-color: rgba(0, 0, 0, 0.5);\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n.map-wrapper {\n  position: relative;\n  overflow: hidden;\n  flex: 1 1 100%;\n  display: flex;\n  flex-direction: column;\n}\n@media screen and (orientation: landscape) and (min-width: 800px) {\n.map-wrapper {\n    flex-direction: row;\n}\n}", ""]);
 
 // exports
 
@@ -20609,6 +20788,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./src/_resources/components/Tour.vue?vue&type=style&index=0&lang=scss&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./src/_resources/components/Tour.vue?vue&type=style&index=0&lang=scss& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Tour.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./src/_resources/components/Tour.vue?vue&type=style&index=0&lang=scss&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/lib/addStyles.js":
 /*!****************************************************!*\
   !*** ./node_modules/style-loader/lib/addStyles.js ***!
@@ -21856,163 +22065,155 @@ var render = function() {
     [
       !_vm.cinemaLoaded
         ? _c("loading")
-        : _c(
-            "div",
-            { staticClass: "container" },
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass: "back-link",
-                  attrs: { to: { name: "cinemas" } }
-                },
-                [_vm._v("← Back to map")]
-              ),
-              _vm._v(" "),
-              _vm.cinema.image
-                ? _c(
-                    "div",
-                    {
-                      staticClass: "image-container",
-                      class: "is-" + _vm.cinema.colour.toLowerCase()
-                    },
-                    [
+        : _c("div", { staticClass: "container" }, [
+            _c(
+              "a",
+              {
+                staticClass: "back-link",
+                attrs: { href: "#" },
+                on: {
+                  click: function($event) {
+                    return _vm.$router.go(-1)
+                  }
+                }
+              },
+              [_vm._v("← Back to map")]
+            ),
+            _vm._v(" "),
+            _vm.cinema.image
+              ? _c(
+                  "div",
+                  {
+                    staticClass: "image-container",
+                    class: "is-" + _vm.cinema.colour.toLowerCase()
+                  },
+                  [
+                    _c("transition", { attrs: { name: "slide-from-right" } }, [
                       _c(
-                        "transition",
-                        { attrs: { name: "slide-from-right" } },
-                        [
-                          _c(
-                            "div",
+                        "div",
+                        {
+                          directives: [
                             {
-                              directives: [
-                                {
-                                  name: "show",
-                                  rawName: "v-show",
-                                  value: _vm.isImageLoaded,
-                                  expression: "isImageLoaded"
-                                }
-                              ]
-                            },
-                            [
-                              _c("img", {
-                                class: _vm.imageClass,
-                                attrs: { src: _vm.cinema.image },
-                                on: {
-                                  load: function($event) {
-                                    return _vm.imageLoaded($event)
-                                  }
-                                }
-                              })
-                            ]
-                          )
+                              name: "show",
+                              rawName: "v-show",
+                              value: _vm.isImageLoaded,
+                              expression: "isImageLoaded"
+                            }
+                          ]
+                        },
+                        [
+                          _c("img", {
+                            class: _vm.imageClass,
+                            attrs: { src: _vm.cinema.image },
+                            on: {
+                              load: function($event) {
+                                return _vm.imageLoaded($event)
+                              }
+                            }
+                          })
                         ]
                       )
-                    ],
-                    1
+                    ])
+                  ],
+                  1
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _c("div", { staticClass: "panel" }, [
+              _c("h2", { staticClass: "cinema-title" }, [
+                _c("span", [_vm._v(_vm._s(_vm.cinema.title))]),
+                _vm._v(" "),
+                _c("small", [
+                  _vm._v(
+                    _vm._s(_vm.cinema.date_open || "unknown") +
+                      " – " +
+                      _vm._s(_vm.cinema.date_close || "unknown")
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _vm.cinema.address
+                ? _c(
+                    "a",
+                    {
+                      staticClass: "cinema-address",
+                      attrs: { target: "_blank", href: _vm.googleMapsLink }
+                    },
+                    [_vm._v(_vm._s(_vm.cinema.address))]
                   )
                 : _vm._e(),
               _vm._v(" "),
-              _c("div", { staticClass: "panel" }, [
-                _c("h2", { staticClass: "cinema-title" }, [
-                  _c("span", [_vm._v(_vm._s(_vm.cinema.title))]),
-                  _vm._v(" "),
-                  _c("small", [
-                    _vm._v(
-                      _vm._s(_vm.cinema.date_open || "unknown") +
-                        " – " +
-                        _vm._s(_vm.cinema.date_close || "unknown")
-                    )
+              _c("div", {
+                staticClass: "cinema-description",
+                domProps: { innerHTML: _vm._s(_vm.cinema.description) }
+              }),
+              _vm._v(" "),
+              _vm.cinema.description_extended
+                ? _c("details", [
+                    _c("summary", [_vm._v("Read more")]),
+                    _vm._v(" "),
+                    _c("div", {
+                      staticClass: "summary-content",
+                      domProps: {
+                        innerHTML: _vm._s(_vm.cinema.description_extended)
+                      }
+                    })
                   ])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "panel" },
+              [
+                _c("h3", { staticClass: "panel-heading" }, [_vm._v("Photos")]),
+                _vm._v(" "),
+                _vm.cinema.photos.length
+                  ? _c("gallery", {
+                      attrs: {
+                        cinemaTitle: _vm.cinema.title,
+                        photos: _vm.cinema.photos
+                      }
+                    })
+                  : _c("div", { staticClass: "empty-photos" }, [
+                      _c("p", [
+                        _vm._v("We’ve not found any photos of this cinema yet.")
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        {
+                          staticClass: "button is-secondary",
+                          attrs: {
+                            href:
+                              "mailto:info@hydeparkpicturehouse.co.uk?subject=Photo%20of%20" +
+                              _vm.cinema.title +
+                              "&body=" +
+                              encodeURIComponent(
+                                "Please indicate if you are the copyright owner, or indicate who you believe the copyright owner to be so we can attempt to gain permission to use the image on the site."
+                              )
+                          }
+                        },
+                        [_vm._v("Send us a photo")]
+                      )
+                    ])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "panel" },
+              [
+                _c("h3", { staticClass: "panel-heading" }, [
+                  _vm._v("Share your memories")
                 ]),
                 _vm._v(" "),
-                _vm.cinema.address
-                  ? _c(
-                      "a",
-                      {
-                        staticClass: "cinema-address",
-                        attrs: { target: "_blank", href: _vm.googleMapsLink }
-                      },
-                      [_vm._v(_vm._s(_vm.cinema.address))]
-                    )
-                  : _vm._e(),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass: "cinema-description",
-                  domProps: { innerHTML: _vm._s(_vm.cinema.description) }
-                }),
-                _vm._v(" "),
-                _vm.cinema.description_extended
-                  ? _c("details", [
-                      _c("summary", [_vm._v("Read more")]),
-                      _vm._v(" "),
-                      _c("div", {
-                        staticClass: "summary-content",
-                        domProps: {
-                          innerHTML: _vm._s(_vm.cinema.description_extended)
-                        }
-                      })
-                    ])
-                  : _vm._e()
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "panel" },
-                [
-                  _c("h3", { staticClass: "panel-heading" }, [
-                    _vm._v("Photos")
-                  ]),
-                  _vm._v(" "),
-                  _vm.cinema.photos.length
-                    ? _c("gallery", {
-                        attrs: {
-                          cinemaTitle: _vm.cinema.title,
-                          photos: _vm.cinema.photos
-                        }
-                      })
-                    : _c("div", { staticClass: "empty-photos" }, [
-                        _c("p", [
-                          _vm._v(
-                            "We’ve not found any photos of this cinema yet."
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "button is-secondary",
-                            attrs: {
-                              href:
-                                "mailto:info@hydeparkpicturehouse.co.uk?subject=Photo%20of%20" +
-                                _vm.cinema.title +
-                                "&body=" +
-                                encodeURIComponent(
-                                  "Please indicate if you are the copyright owner, or indicate who you believe the copyright owner to be so we can attempt to gain permission to use the image on the site."
-                                )
-                            }
-                          },
-                          [_vm._v("Send us a photo")]
-                        )
-                      ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "panel" },
-                [
-                  _c("h3", { staticClass: "panel-heading" }, [
-                    _vm._v("Share your memories")
-                  ]),
-                  _vm._v(" "),
-                  _c("commento", { attrs: { slug: _vm.slug } })
-                ],
-                1
-              )
-            ],
-            1
-          )
+                _c("commento", { attrs: { slug: _vm.slug } })
+              ],
+              1
+            )
+          ])
     ],
     1
   )
@@ -22836,6 +23037,19 @@ var render = function() {
       _vm._v(" "),
       _c("v-icondefault", { attrs: { "image-path": "/assets/images/" } }),
       _vm._v(" "),
+      _vm.geojson
+        ? _c("l-geo-json", {
+            attrs: {
+              geojson: _vm.geojson,
+              "options-style": {
+                weight: 4,
+                color: "#d17d47",
+                fillOpacity: 0
+              }
+            }
+          })
+        : _vm._e(),
+      _vm._v(" "),
       _c(
         "v-marker-cluster",
         { attrs: { options: _vm.clusterOptions } },
@@ -22873,10 +23087,32 @@ var render = function() {
                       : _vm._e()
                   ]),
                   _vm._v(" "),
+                  cinema.audio
+                    ? _c("div", { staticClass: "cinema-audio" }, [
+                        _c("audio", {
+                          attrs: { controls: "", src: cinema.audio }
+                        })
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "popup-footer" },
                     [
+                      _vm.tour
+                        ? _c(
+                            "a",
+                            {
+                              staticClass: "button",
+                              attrs: {
+                                href: _vm.googleMapsDirections(cinema),
+                                target: "_blank"
+                              }
+                            },
+                            [_vm._v("Get directions")]
+                          )
+                        : _vm._e(),
+                      _vm._v(" "),
                       _c(
                         "button",
                         {
@@ -22895,10 +23131,15 @@ var render = function() {
                         {
                           staticClass: "button is-primary",
                           attrs: {
-                            to: {
-                              name: "cinema",
-                              params: { slug: cinema.slug }
-                            }
+                            to: _vm.tour
+                              ? {
+                                  name: "tourcinema",
+                                  params: { slug: cinema.slug }
+                                }
+                              : {
+                                  name: "cinema",
+                                  params: { slug: cinema.slug }
+                                }
                           }
                         },
                         [_vm._v("View")]
@@ -22966,64 +23207,86 @@ var render = function() {
       }
     },
     [
-      _c("div", { staticClass: "sidebar--header" }, [
-        _c(
-          "h2",
-          { staticClass: "sidebar--title" },
-          [
-            _c("ICountUp", {
-              attrs: {
-                delay: 500,
-                endVal: _vm.cinemas.length,
-                options: { useEasing: false, duration: 3 }
-              }
-            }),
-            _vm._v(" cinemas")
-          ],
-          1
-        ),
-        _vm._v(" "),
-        !_vm.isLandscape
-          ? _c("button", {
-              staticClass: "button",
-              domProps: {
-                innerHTML: _vm._s(_vm.menuOpen ? "Show map" : "Show list")
-              },
-              on: {
-                click: function($event) {
-                  _vm.menuOpen = !_vm.menuOpen
-                }
-              }
-            })
-          : _vm._e()
-      ]),
+      !_vm.tour
+        ? _c("div", { staticClass: "sidebar--header" }, [
+            _c(
+              "h2",
+              { staticClass: "sidebar--title" },
+              [
+                _c("ICountUp", {
+                  attrs: {
+                    delay: 500,
+                    endVal: _vm.cinemas.length,
+                    options: { useEasing: false, duration: 3 }
+                  }
+                }),
+                _vm._v(" cinemas")
+              ],
+              1
+            ),
+            _vm._v(" "),
+            !_vm.isLandscape
+              ? _c("button", {
+                  staticClass: "button",
+                  domProps: {
+                    innerHTML: _vm._s(_vm.menuOpen ? "Show map" : "Show list")
+                  },
+                  on: {
+                    click: function($event) {
+                      _vm.menuOpen = !_vm.menuOpen
+                    }
+                  }
+                })
+              : _vm._e()
+          ])
+        : _c("div", { staticClass: "sidebar--header" }, [
+            _c("h2", { staticClass: "sidebar--title" }, [
+              _vm._v("Hiding in Plain Sight Walking Tour")
+            ]),
+            _vm._v(" "),
+            !_vm.isLandscape
+              ? _c("button", {
+                  staticClass: "button",
+                  domProps: {
+                    innerHTML: _vm._s(_vm.menuOpen ? "Show map" : "Show list")
+                  },
+                  on: {
+                    click: function($event) {
+                      _vm.menuOpen = !_vm.menuOpen
+                    }
+                  }
+                })
+              : _vm._e()
+          ]),
       _vm._v(" "),
-      _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.search,
-            expression: "search"
-          }
-        ],
-        staticClass: "search-input",
-        attrs: { type: "text", placeholder: "Search by name.." },
-        domProps: { value: _vm.search },
-        on: {
-          input: function($event) {
-            if ($event.target.composing) {
-              return
+      !_vm.tour
+        ? _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.search,
+                expression: "search"
+              }
+            ],
+            staticClass: "search-input",
+            attrs: { type: "text", placeholder: "Search by name.." },
+            domProps: { value: _vm.search },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.search = $event.target.value
+              }
             }
-            _vm.search = $event.target.value
-          }
-        }
-      }),
+          })
+        : _vm._e(),
       _vm._v(" "),
       _c(
         "nav",
         { staticClass: "sidebar-menu" },
-        _vm._l(_vm.filteredList, function(cinema) {
+        _vm._l(_vm.filteredList, function(cinema, key) {
           return _c(
             "router-link",
             {
@@ -23032,7 +23295,11 @@ var render = function() {
               refInFor: true,
               staticClass: "sidebar-menu--item",
               class: cinema.slug == _vm.clicked ? "active" : "",
-              attrs: { to: { name: "cinema", params: { slug: cinema.slug } } },
+              attrs: {
+                to: _vm.tour
+                  ? { name: "tourcinema", params: { slug: cinema.slug } }
+                  : { name: "cinema", params: { slug: cinema.slug } }
+              },
               nativeOn: {
                 mouseenter: function($event) {
                   return _vm.mouseoverStart($event, cinema.slug)
@@ -23047,6 +23314,12 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", [
+                _vm.tour
+                  ? _c("div", { staticClass: "sidebar-menu--tour-number" }, [
+                      _vm._v("Stop " + _vm._s(key + 1))
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
                 _c("h3", {
                   staticClass: "sidebar-menu--title",
                   domProps: { innerHTML: _vm._s(cinema.title) }
@@ -23152,6 +23425,140 @@ var render = function() {
       1
     )
   ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/_resources/components/Tour.vue?vue&type=template&id=1ad92901&":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/_resources/components/Tour.vue?vue&type=template&id=1ad92901& ***!
+  \*********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "map-wrapper" },
+    [
+      _c("transition", { attrs: { name: "fade" } }, [
+        !_vm.hasVisitedBefore && _vm.siteDataLoaded
+          ? _c("div", { staticClass: "dialog-wrapper" }, [
+              _c("div", { staticClass: "dialog" }, [
+                _c("div", { staticClass: "dialog-inner" }, [
+                  _c("h3", [_vm._v(_vm._s(_vm.site.welcome_title))]),
+                  _vm._v(" "),
+                  _c("p", {
+                    domProps: {
+                      innerHTML: _vm._s(
+                        _vm.site.welcome_message
+                          .replace(/(?:\r\n|\r|\n)/g, "<br />")
+                          .replace("$number", _vm.cinemas.length)
+                      )
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "button is-primary is-large",
+                      on: { click: _vm.confirmEntrance }
+                    },
+                    [_vm._v("Enter")]
+                  )
+                ])
+              ])
+            ])
+          : _vm._e()
+      ]),
+      _vm._v(" "),
+      _vm.tour
+        ? _c("Menu", {
+            attrs: {
+              tour: true,
+              cinemas: _vm.tour.cinemas,
+              isLandscape: _vm.isLandscape(),
+              clicked: _vm.clicked
+            },
+            on: { "menu-hovered": _vm.onMenuHovered }
+          })
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.tour
+        ? _c("Map", {
+            attrs: {
+              tour: true,
+              geojson: _vm.tour.geojson,
+              cinemas: _vm.tour.cinemas,
+              clicked: _vm.clicked
+            },
+            on: { "marker-clicked": _vm.onMarkerClicked }
+          })
+        : _vm._e(),
+      _vm._v(" "),
+      _c(
+        "transition",
+        { attrs: { name: "popup" } },
+        _vm._l(_vm.tour.cinemas, function(cinema) {
+          return _vm.clicked == cinema.slug
+            ? _c("Popup", {
+                key: cinema.slug,
+                attrs: { cinema: cinema },
+                on: {
+                  close: function($event) {
+                    _vm.clicked = null
+                  }
+                }
+              })
+            : _vm._e()
+        }),
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "transition",
+        { attrs: { name: "slide" } },
+        [_c("router-view", { key: _vm.$route.params.slug })],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/_resources/components/Tours.vue?vue&type=template&id=43f79842&":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/_resources/components/Tours.vue?vue&type=template&id=43f79842& ***!
+  \**********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [_vm._v("TBC")])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -50623,7 +51030,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Loading_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Loading.vue */ "./src/_resources/components/Loading.vue");
 /* harmony import */ var _components_Cinemas_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Cinemas.vue */ "./src/_resources/components/Cinemas.vue");
 /* harmony import */ var _components_Cinema_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Cinema.vue */ "./src/_resources/components/Cinema.vue");
-/* harmony import */ var _components_404_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/404.vue */ "./src/_resources/components/404.vue");
+/* harmony import */ var _components_Tour_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Tour.vue */ "./src/_resources/components/Tour.vue");
+/* harmony import */ var _components_Tours_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/Tours.vue */ "./src/_resources/components/Tours.vue");
+/* harmony import */ var _components_404_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/404.vue */ "./src/_resources/components/404.vue");
 
 
 
@@ -50635,10 +51044,22 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
 
 
 
+
+
 var routes = [{
   path: '/',
   component: _components_Intro_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
   name: 'intro'
+}, {
+  path: '/tour/:tourslug',
+  component: _components_Tour_vue__WEBPACK_IMPORTED_MODULE_8__["default"],
+  name: 'tour',
+  children: [{
+    path: ':slug',
+    component: _components_Cinema_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
+    props: true,
+    name: 'tourcinema'
+  }]
 }, {
   path: '/cinemas',
   component: _components_Cinemas_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
@@ -50651,7 +51072,7 @@ var routes = [{
   }]
 }, {
   path: '*',
-  component: _components_404_vue__WEBPACK_IMPORTED_MODULE_8__["default"]
+  component: _components_404_vue__WEBPACK_IMPORTED_MODULE_10__["default"]
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   routes: routes // short for `routes: routes`
@@ -51516,6 +51937,165 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Popup_vue_vue_type_template_id_214a115a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Popup_vue_vue_type_template_id_214a115a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/_resources/components/Tour.vue":
+/*!********************************************!*\
+  !*** ./src/_resources/components/Tour.vue ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Tour_vue_vue_type_template_id_1ad92901___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Tour.vue?vue&type=template&id=1ad92901& */ "./src/_resources/components/Tour.vue?vue&type=template&id=1ad92901&");
+/* harmony import */ var _Tour_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Tour.vue?vue&type=script&lang=js& */ "./src/_resources/components/Tour.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Tour_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Tour.vue?vue&type=style&index=0&lang=scss& */ "./src/_resources/components/Tour.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _Tour_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Tour_vue_vue_type_template_id_1ad92901___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Tour_vue_vue_type_template_id_1ad92901___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/_resources/components/Tour.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/_resources/components/Tour.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./src/_resources/components/Tour.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tour_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Tour.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/_resources/components/Tour.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tour_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/_resources/components/Tour.vue?vue&type=style&index=0&lang=scss&":
+/*!******************************************************************************!*\
+  !*** ./src/_resources/components/Tour.vue?vue&type=style&index=0&lang=scss& ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Tour_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Tour.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./src/_resources/components/Tour.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Tour_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Tour_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Tour_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Tour_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Tour_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/_resources/components/Tour.vue?vue&type=template&id=1ad92901&":
+/*!***************************************************************************!*\
+  !*** ./src/_resources/components/Tour.vue?vue&type=template&id=1ad92901& ***!
+  \***************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tour_vue_vue_type_template_id_1ad92901___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Tour.vue?vue&type=template&id=1ad92901& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/_resources/components/Tour.vue?vue&type=template&id=1ad92901&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tour_vue_vue_type_template_id_1ad92901___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tour_vue_vue_type_template_id_1ad92901___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/_resources/components/Tours.vue":
+/*!*********************************************!*\
+  !*** ./src/_resources/components/Tours.vue ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Tours_vue_vue_type_template_id_43f79842___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Tours.vue?vue&type=template&id=43f79842& */ "./src/_resources/components/Tours.vue?vue&type=template&id=43f79842&");
+/* harmony import */ var _Tours_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Tours.vue?vue&type=script&lang=js& */ "./src/_resources/components/Tours.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Tours_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Tours_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Tours_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Tours_vue_vue_type_template_id_43f79842___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Tours_vue_vue_type_template_id_43f79842___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/_resources/components/Tours.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/_resources/components/Tours.vue?vue&type=script&lang=js&":
+/*!**********************************************************************!*\
+  !*** ./src/_resources/components/Tours.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tours_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Tours.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/_resources/components/Tours.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tours_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tours_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tours_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tours_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tours_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/_resources/components/Tours.vue?vue&type=template&id=43f79842&":
+/*!****************************************************************************!*\
+  !*** ./src/_resources/components/Tours.vue?vue&type=template&id=43f79842& ***!
+  \****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tours_vue_vue_type_template_id_43f79842___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Tours.vue?vue&type=template&id=43f79842& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/_resources/components/Tours.vue?vue&type=template&id=43f79842&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tours_vue_vue_type_template_id_43f79842___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tours_vue_vue_type_template_id_43f79842___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

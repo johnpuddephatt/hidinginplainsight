@@ -1,5 +1,4 @@
 <template>
-
   <l-map
     id="map"
     ref="map"
@@ -15,6 +14,15 @@
     <l-control-zoom :position="'bottomright'" />
     <l-tile-layer :url="url" :attribution="attribution" />
     <v-icondefault :image-path="'/assets/images/'"></v-icondefault>
+    <l-geo-json
+        v-if="geojson"
+        :geojson="geojson"
+        :options-style="{
+          weight: 4,
+          color: '#d17d47',
+          fillOpacity: 0
+        }"
+      />
     <v-marker-cluster :options="clusterOptions">
       <l-marker :ref="cinema.slug" v-for="cinema in cinemas" :key="cinema.slug" :lat-lng="getLatLng(cinema.location.coordinates)" @click="markerClicked($event, cinema.slug)">
         <l-popup :options="{offset: [0, -34], closeButton: false}">
@@ -22,9 +30,13 @@
             <h3 class="cinema-title" v-html="cinema.title"></h3>
             <p class="cinema-address" v-if="cinema.address">{{ cinema.address }}</p>
           </div>
+          <div class="cinema-audio" v-if="cinema.audio">
+            <audio controls :src="cinema.audio" />
+          </div>
           <div class="popup-footer">
+            <a v-if="tour" class="button" :href="googleMapsDirections(cinema)" target="_blank">Get directions</a>
             <button class="button" v-if="" @click="currentPopup.closePopup()">Close</button>
-            <router-link class="button is-primary" :to="{ name: 'cinema', params: { slug: cinema.slug } }">View</router-link>
+            <router-link class="button is-primary" :to="tour ? { name: 'tourcinema', params: { slug: cinema.slug } } : { name: 'cinema', params: { slug: cinema.slug } }">View</router-link>
           </div>
         </l-popup>
         <l-icon
@@ -45,17 +57,18 @@ import "leaflet/dist/leaflet.css";
 import L from 'leaflet';
 import { divIcon as DivIcon, point as Point } from "leaflet";
 import { latLng } from "leaflet";
-import { LIconDefault,LPopup, LIcon, LMap, LTileLayer, LMarker, LControlZoom } from 'vue2-leaflet';
+import { LIconDefault,LPopup, LIcon, LMap, LTileLayer, LGeoJson, LMarker, LControlZoom } from 'vue2-leaflet';
 import Vue2LeafletMarkerCluster from 'vue2-leaflet-markercluster'
 
 export default {
   name: 'Map',
-  props: ['cinemas','clicked'],
+  props: ['tour','geojson','cinemas','clicked'],
   components: {
     'v-icondefault': LIconDefault,
     LPopup,
     LMap,
     LTileLayer,
+    LGeoJson,
     LMarker,
     LIcon,
     LControlZoom,
@@ -63,8 +76,8 @@ export default {
   },
   data () {
     return {
-      zoom: 13,
-      center: latLng(53.8125403,-1.5735477),
+      zoom: this.tour ? 16 : 13,
+      center: this.tour ? latLng(53.7993475,-1.5432696) : latLng(53.8125403,-1.5735477),
       // url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
       url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -90,9 +103,23 @@ export default {
       }
     }
   },
+  mounted() {
+  },
+  computed: {
+    styleFunction() {
+     return () => {
+       return {
+         weight: 2,
+         color: "#ff0000",
+         opacity: 1,
+         fillOpacity: 0
+       };
+     };
+    },
+  },
   watch: {
     clicked: function (clicked) {
-      if(this.$router.currentRoute.name == 'cinemas' && clicked) {
+      if((this.$router.currentRoute.name == 'cinemas' || this.$router.currentRoute.name == 'tour') && clicked) {
 
         // if !mapActive, then we're interacting with the sidebar so should flyTo.
         if(!this.mapActive) {
@@ -122,6 +149,10 @@ export default {
     markerClicked($event, slug) {
       this.$emit('marker-clicked', slug);
       this.currentlyClicked = slug;
+    },
+
+    googleMapsDirections: function(cinema) {
+      return `https://www.google.com/maps/dir/?api=1&destination=${cinema.location.coordinates[1]}%2C${cinema.location.coordinates[0]}`;
     }
   },
 }
@@ -230,6 +261,13 @@ export default {
         }
       }
 
+      .cinema-audio {
+        audio {
+          width: 100%;
+          margin-bottom: ms(0);
+        }
+      }
+
       p {
         margin: 0 0 ms(1);
       }
@@ -240,10 +278,10 @@ export default {
       display: none;
     }
   }
-
-  .leaflet-overlay-pane svg path {
-    stroke: $red !important;
-    fill: transparentize($red, 0.5) !important;
-  }
+  //
+  // .leaflet-overlay-pane svg path {
+  //   stroke: $red !important;
+  //   fill: transparentize($red, 0.5) !important;
+  // }
 
 </style>

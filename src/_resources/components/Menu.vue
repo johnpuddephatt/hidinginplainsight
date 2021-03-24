@@ -1,6 +1,7 @@
 <template>
   <div class="sidebar" :class="menuOpen ? 'menu-open' : ''" @mouseleave="currentlyHovered = null">
-    <div class="sidebar--header">
+
+    <div v-if="!tour" class="sidebar--header">
       <h2 class="sidebar--title"> <ICountUp
       :delay="500"
       :endVal="cinemas.length"
@@ -8,15 +9,20 @@
     /> cinemas</h2>
       <button class="button" v-if="!isLandscape" @click="menuOpen = !menuOpen" v-html="menuOpen ? 'Show map' : 'Show list'"></button>
     </div>
-    <input class="search-input" type="text" v-model="search" placeholder="Search by name.."/>
+    <div v-else class="sidebar--header">
+      <h2 class="sidebar--title">Hiding in Plain Sight Walking Tour</h2>
+      <button class="button" v-if="!isLandscape" @click="menuOpen = !menuOpen" v-html="menuOpen ? 'Show map' : 'Show list'"></button>
+    </div>
+    <input v-if="!tour" class="search-input" type="text" v-model="search" placeholder="Search by name.."/>
 
     <nav class="sidebar-menu">
-      <router-link v-for="cinema in filteredList" class="sidebar-menu--item" :class="cinema.slug == clicked ? 'active' : ''" :to="{ name: 'cinema', params: { slug: cinema.slug } }" :ref="cinema.slug" @mouseenter.native="mouseoverStart($event, cinema.slug)" :key="cinema.slug">
+      <router-link v-for="(cinema, key) in filteredList" class="sidebar-menu--item" :class="cinema.slug == clicked ? 'active' : ''" :to="tour ? { name: 'tourcinema', params: { slug: cinema.slug } } : { name: 'cinema', params: { slug: cinema.slug } }" :ref="cinema.slug" @mouseenter.native="mouseoverStart($event, cinema.slug)" :key="cinema.slug">
         <div class="image">
           <img v-if="cinema.image_small" :src="cinema.image_small" />
           <span v-else>?</span>
         </div>
         <div>
+          <div class="sidebar-menu--tour-number" v-if="tour">Stop {{ key + 1 }}</div>
           <h3 class="sidebar-menu--title" v-html="cinema.title"></h3>
           <div class="sidebar-menu--subtitle">
             <span class="sidebar-menu--status">{{cinema.status}}</span>
@@ -34,7 +40,7 @@ import ICountUp from 'vue-countup-v2';
 
 export default {
   name: 'Menu',
-  props: ['cinemas','clicked', 'isLandscape'],
+  props: ['tour','cinemas','clicked', 'isLandscape'],
   components: {ICountUp},
   data() {
     return {
@@ -94,7 +100,7 @@ export default {
       if(!this.menuOpen) {
         this.currentlyHovered = slug;
         setTimeout(() => {
-          if(this.currentlyHovered === slug && this.$router.currentRoute.name == 'cinemas') {
+          if(this.currentlyHovered === slug && (this.$router.currentRoute.name == 'cinemas' || this.$router.currentRoute.name == 'tour')) {
             this.$emit('menu-hovered',slug);
           }
         },750);
@@ -253,6 +259,15 @@ export default {
   &:nth-child(4n) .image {
     background-color: $cream;
   }
+}
+
+.sidebar-menu--tour-number {
+  display: inline-block;
+  margin-bottom: ms(-6);
+  font-size: ms(-1);
+  padding: 0 0.5em;
+  border-radius: 3em;
+  background-color: $orange;
 }
 
 .sidebar-menu--title {

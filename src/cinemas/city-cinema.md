@@ -13,4 +13,6 @@ description: "Not to be confused with the Tatler Film Club. This 550 seat city
 description_extended: In 1925 the name was changed to the Savoy and then, in
   1931, to the Academy. In 1965 the whole site was replaced by a tower block
   named Royal Exchange House, currently known as Park Plaza Hotel.
+tour_number: 3
+audio: 'buz'
 ---

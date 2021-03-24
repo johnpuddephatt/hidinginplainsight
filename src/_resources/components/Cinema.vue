@@ -2,7 +2,7 @@
     <div class="cinema-panel">
       <loading v-if="!cinemaLoaded"></loading>
       <div v-else class="container">
-        <router-link class="back-link" :to="{ name: 'cinemas'}">&larr; Back to map</router-link>
+        <a href="#" class="back-link" @click="$router.go(-1)">&larr; Back to map</a>
         <div v-if="cinema.image" class="image-container" :class="`is-${ cinema.colour.toLowerCase() }`">
           <transition name="slide-from-right">
             <div v-show="isImageLoaded">
@@ -64,7 +64,7 @@ export default {
   },
   computed: {
     googleMapsLink: function() {
-      return `https://www.google.com/maps/search/?api=1&query=${this.cinema.location.coordinates[1]},${this.cinema.location.coordinates[0]}`;
+      return `https://www.google.com/maps/search/?api=1&query=${this.cinema.location.coordinates[1]}%2C${this.cinema.location.coordinates[0]}`;
     }
   },
   methods: {

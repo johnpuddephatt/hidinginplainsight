@@ -11,6 +11,9 @@ import Intro from './components/Intro.vue';
 import Loading from './components/Loading.vue';
 import Cinemas from './components/Cinemas.vue';
 import Cinema from './components/Cinema.vue';
+import Tour from './components/Tour.vue';
+import Tours from './components/Tours.vue';
+
 import NotFound from './components/404.vue';
 
 const routes = [
@@ -18,6 +21,19 @@ const routes = [
     path: '/',
     component: Intro,
     name: 'intro'
+  },
+  {
+    path: '/tour/:tourslug',
+    component: Tour,
+    name: 'tour',
+    children: [
+      {
+        path: ':slug',
+        component: Cinema,
+        props: true,
+        name: 'tourcinema'
+      },
+    ]
   },
   {
     path: '/cinemas',
