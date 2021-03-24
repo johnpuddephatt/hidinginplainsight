@@ -27,10 +27,18 @@ description_extended: >-
 
   Leodis
 photos:
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597395908/hidinginplainsight/Ritz_Super_Cinema_01.jpg
-    source: We are making every effort to discover the ownership of this photo.
-      Please contact us if you are the copyright holder.
   - file: https://res.cloudinary.com/hpph/image/upload/v1600603796/hidinginplainsight/Ritz_Super_Cinema_Cannon_ABC_MGM_K._S._Wheelan_20041210_81531924.jpg
     source: Mr K. S. Wheelan
     date: "1970"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597395908/hidinginplainsight/Ritz_Super_Cinema_01.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1614537830/hidinginplainsight/ritz_abc_auditorium.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+  - source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+    file: https://res.cloudinary.com/hpph/image/upload/v1614537989/hidinginplainsight/ritz_abc_projection.jpg
+  - file: https://res.cloudinary.com/hpph/image/upload/v1614537831/hidinginplainsight/ritz_abc_closed.jpg
+    source: Tony Newman
 ---

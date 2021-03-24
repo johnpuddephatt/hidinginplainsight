@@ -36,26 +36,24 @@ description_extended: >-
 photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318171/hidinginplainsight/Coliseum_The_Gaumont_Cinema_Leeds_Libraries_2002927_8745974.jpg
     source: Leeds Libraries Leodis.net
+    date: "1946"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1603874550/hidinginplainsight/Gaumont_aerofilms.jpg
+    date: "1947"
+    source: Aerofilms, Historic England
+    caption: The Coliseum can be seen in the bottom right of the image.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1600522429/hidinginplainsight/Coliseum_The_Gaumont_Cinema_H._Ainscough_20031029_38070315.jpg
+    caption: ""
+    source: H. Ainscough
+    date: "1966"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597323447/hidinginplainsight/The_Gaumont_20041210_86515445.jpg
+    date: "1970"
+    source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318172/hidinginplainsight/Coliseum_The_Gaumont_Cinema_Leeds_Libraries_2002927_61434573.jpg
     source: Leeds Libraries Leodis.net
     date: "1946"
   - file: https://res.cloudinary.com/hpph/image/upload/v1597318170/hidinginplainsight/Coliseum_The_Gaumont_Cinema_Leeds_Libraries_201662_175822.jpg
     source: Leeds Libraries Leodis.net
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597323447/hidinginplainsight/The_Gaumont_20041210_86515445.jpg
-    date: "1970"
-    source: Leeds Libraries Leodis.net
   - file: https://res.cloudinary.com/hpph/image/upload/v1597392604/hidinginplainsight/Coliseum_2008523_166785.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
-  - file: https://res.cloudinary.com/hpph/image/upload/v1600522429/hidinginplainsight/Coliseum_The_Gaumont_Cinema_H._Ainscough_20031029_38070315.jpg
-    caption: ""
-    source: H. Ainscough
-    date: "1966"
-  - file: https://res.cloudinary.com/hpph/image/upload/v1600603781/hidinginplainsight/Coliseum_The_Gaumont_Cinema_K._S._Wheelan_20041210_86515445.jpg
-    source: Mr K. S. Wheelan
-    date: "1970"
-  - file: https://res.cloudinary.com/hpph/image/upload/v1603874550/hidinginplainsight/Gaumont_aerofilms.jpg
-    date: "1947"
-    source: Aerofilms, Historic England
-    caption: The Coliseum can be seen in the bottom right of the image.
 ---

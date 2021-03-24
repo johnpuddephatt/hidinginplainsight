@@ -19,10 +19,22 @@ description_extended: "'Scala' was a popular name for cinemas in the 20th
   Majestic, this was a 'year of super cinemas' for Leeds, although the Scala had
   fewer seats than the Majestic."
 photos:
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597396069/hidinginplainsight/Scala01a.jpg
+  - file: https://res.cloudinary.com/hpph/image/upload/v1614514209/hidinginplainsight/Scala01.jpg
+    date: "1957"
+  - file: https://res.cloudinary.com/hpph/image/upload/v1614514208/hidinginplainsight/auditorium_2004120_603261292.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1614514198/hidinginplainsight/Tea_room_2004120_360478700.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
   - source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
     file: https://res.cloudinary.com/hpph/image/upload/v1597396020/hidinginplainsight/Scala_01.jpg
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597396069/hidinginplainsight/Scala01a.jpg
+    source: We are making every effort to discover the ownership of this photo.
+      Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1614514209/hidinginplainsight/lift.jpg
+    source: Lost Leeds Adventures
+  - file: https://res.cloudinary.com/hpph/image/upload/v1614514209/hidinginplainsight/stairway.jpg
+    source: Lost Leeds Adventures
 ---

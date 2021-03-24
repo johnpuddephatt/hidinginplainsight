@@ -18,4 +18,6 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597396400/hidinginplainsight/Warner_Villiage.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - source: Jane Ellis
+    file: https://res.cloudinary.com/hpph/image/upload/v1614417295/hidinginplainsight/img467_Warner_Village_J_Ellis.jpg
 ---

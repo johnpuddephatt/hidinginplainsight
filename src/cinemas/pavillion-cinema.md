@@ -21,4 +21,7 @@ photos:
   - file: https://res.cloudinary.com/hpph/image/upload/v1597395128/hidinginplainsight/Pavillion_Cinema.jpg
     source: We are making every effort to discover the ownership of this photo.
       Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1614331795/hidinginplainsight/img395_Pavilion_after_the_fire.jpg
+    source: Jane Ellis
+    caption: After the fire, before refurbishment.
 ---

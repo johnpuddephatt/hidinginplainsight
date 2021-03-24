@@ -16,20 +16,20 @@ description: The Tower Cinema, also known as Tower Picture House, opened in
 description_extended: The Grand Arcade was originally built by the New Briggate
   Arcade Company in 1897.
 photos:
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597321086/hidinginplainsight/Tower_Cinema_Leeds_Libraries_2013220_174356.jpg
-    source: Leeds Libraries Leodis.net
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597753001/hidinginplainsight/Tower18082020.jpg
-    source: Steven Moore
-    date: 1980s
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597327031/hidinginplainsight/The_Tower_20041210_20061892.jpg
-    date: "1970"
-    source: Mr K. S. Wheelan
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597396274/hidinginplainsight/Tower_Cinema.jpg
+    source: Tony Newman
+    date: "1951"
   - source: Leeds Libraries Leodis.net
     file: https://res.cloudinary.com/hpph/image/upload/v1597327031/hidinginplainsight/The_Tower_20171011_176305.jpg
     date: circa 1920s
-  - file: https://res.cloudinary.com/hpph/image/upload/v1597396274/hidinginplainsight/Tower_Cinema.jpg
-    source: We are making every effort to discover the ownership of this photo.
-      Please contact us if you are the copyright holder.
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597321086/hidinginplainsight/Tower_Cinema_Leeds_Libraries_2013220_174356.jpg
+    source: Leeds Libraries Leodis.net
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597327031/hidinginplainsight/The_Tower_20041210_20061892.jpg
+    date: "1970"
+    source: Mr K. S. Wheelan
+  - file: https://res.cloudinary.com/hpph/image/upload/v1597753001/hidinginplainsight/Tower18082020.jpg
+    source: Steven Moore
+    date: 1980s
   - file: https://res.cloudinary.com/hpph/image/upload/v1597752440/hidinginplainsight/Towerprojection18082020.jpg
     source: Steven Moore
     date: "1985"
