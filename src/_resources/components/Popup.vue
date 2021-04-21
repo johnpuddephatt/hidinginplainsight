@@ -52,7 +52,8 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  transition: bottom 0.5s;
+  transition: transform 0.5s, bottom 0.5s;
+  
   @media screen and (orientation: landscape) and (min-width: 800px) {
     left: $sidebar-width;
     bottom: ms(-2);
