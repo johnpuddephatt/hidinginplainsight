@@ -25,7 +25,7 @@
       />
     <v-marker-cluster :options="clusterOptions">
       <l-marker :ref="cinema.slug" v-for="cinema in cinemas" :key="cinema.slug" :lat-lng="getLatLng(cinema.location.coordinates)" @click="markerClicked($event, cinema.slug)">
-        <l-popup :options="{offset: [0, -34], closeButton: false}">
+        <!-- <l-popup :options="{offset: [0, -34], closeButton: false}">
           <div class="popup-header">
             <h3 class="cinema-title" v-html="cinema.title"></h3>
             <p class="cinema-address" v-if="cinema.address">{{ cinema.address }}</p>
@@ -38,7 +38,7 @@
             <button class="button" v-if="" @click="currentPopup.closePopup()">Close</button>
             <router-link class="button is-primary" :to="is_tour ? { name: 'tourcinema', params: { slug: cinema.slug } } : { name: 'cinema', params: { slug: cinema.slug } }">View</router-link>
           </div>
-        </l-popup>
+        </l-popup> -->
         <l-icon
           :iconSize="clicked == cinema.slug ? [50,82] : [25,41]"
           :icon-anchor="clicked == cinema.slug ? [25,82] : [12.5,41]"

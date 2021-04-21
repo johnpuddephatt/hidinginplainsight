@@ -1,21 +1,16 @@
 <template>
   <div class="map-wrapper">
-    <transition name="fade">
-      <div class="dialog-wrapper" v-if="!hasVisitedBefore && siteDataLoaded">
-        <div class="dialog">
-          <div class="dialog-inner">
-            <h3>{{ site.welcome_title }}</h3>
-            <p v-html="site.welcome_message.replace(/(?:\r\n|\r|\n)/g, '<br />').replace('$number', cinemas.length)"></p>
-            <button class="button is-primary is-large" @click="confirmEntrance">Enter</button>
-          </div>
-        </div>
-      </div>
-    </transition>
-    <Menu :is_tour="true" v-if="tour" :cinemas="tour.cinemas" :isLandscape="isLandscape()" :clicked="clicked" @menu-hovered="onMenuHovered"></Menu>
+
+    <Menu :audio_active="audio_active" :is_tour="true" v-if="tour" :cinemas="tour.cinemas" :isLandscape="isLandscape()" :clicked="clicked" @menu-hovered="onMenuHovered"></Menu>
     <Map :is_tour="true" v-if="tour" :geojson="tour.geojson" :poi="tour.poi" :cinemas="tour.cinemas" :clicked="clicked" @marker-clicked="onMarkerClicked"></Map>
+
     <transition name="popup">
-      <Popup v-for="cinema in tour.cinemas" :cinema="cinema" @close="clicked = null" v-if="clicked == cinema.slug" :key="cinema.slug"></Popup>
+      <Popup :audio_active="audio_active" :is_tour="true" v-for="cinema in tour.cinemas" :cinema="cinema" @close="clicked = null" @start-audio="onStartAudio" v-if="clicked == cinema.slug" :key="cinema.slug"></Popup>
     </transition>
+    <transition name="popup">
+      <Audio v-if="audio_active" @audio-ended="audio_active = null" :audio_active="audio_active" :is_tour="true"></Audio>
+    </transition>
+
     <transition name="slide">
       <router-view :key="$route.params.slug"></router-view>
     </transition>
@@ -26,11 +21,13 @@
 import Map from './Map.vue';
 import Menu from './Menu.vue';
 import Popup from './Popup.vue';
+import Audio from './Audio.vue';
 
 export default {
   name: 'Overview',
   props: [],
   components: {
+    Audio,
     Map,
     Menu,
     Popup
@@ -42,7 +39,8 @@ export default {
       errored: false,
       cinemasLoaded: false,
       siteDataLoaded: false,
-      hasVisitedBefore: false
+      hasVisitedBefore: false,
+      audio_active: null,
     }
   },
   watch: {
@@ -51,6 +49,9 @@ export default {
     }
   },
   methods: {
+    onStartAudio: function(audio) {
+      this.audio_active = audio;
+    },
     onMarkerClicked: function(slug) {
       this.clicked = slug;
     },

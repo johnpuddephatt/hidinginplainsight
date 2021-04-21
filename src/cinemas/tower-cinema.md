@@ -6,7 +6,7 @@ status: Still visible
 colour: Cream
 image: https://res.cloudinary.com/hpph/image/upload/v1596451150/hidinginplainsight/towercinema.svg
 location: '{"type":"Point","coordinates":[-1.5407883,53.800433]}'
-address: 54, New Briggate
+address: 54 New Briggate
 description: The Tower Cinema, also known as Tower Picture House, opened in
   1920, with seating for 1,188 people. It was created by converting part of the
   Grand Arcade, the designs for this were supplied by Harehill-based architect,

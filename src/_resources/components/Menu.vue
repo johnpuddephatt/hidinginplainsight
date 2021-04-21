@@ -1,18 +1,23 @@
 <template>
-  <div class="sidebar" :class="menuOpen ? 'menu-open' : ''" @mouseleave="currentlyHovered = null">
+  <div class="sidebar" :class="{ 'menu-open' : menuOpen, 'audio-active': audio_active }" @mouseleave="currentlyHovered = null">
 
-    <div v-if="!is_tour" class="sidebar--header">
-      <h2 class="sidebar--title"> <ICountUp
-      :delay="500"
-      :endVal="cinemas.length"
-      :options="{useEasing: false, duration: 3}"
-    /> cinemas</h2>
+    <div class="sidebar--header">
+      <div>
+        <h1 class="sidebar--title">Hiding in Plain Sight</h1>
+        <h2 v-if="is_tour" class="sidebar--subtitle">
+          Walking tour
+        </h2>
+        <h2 v-else class="sidebar--subtitle">
+          <ICountUp
+            :delay="500"
+            :endVal="cinemas.length"
+            :options="{useEasing: false, duration: 3}"/>
+          cinemas
+        </h2>
+      </div>
       <button class="button" v-if="!isLandscape" @click="menuOpen = !menuOpen" v-html="menuOpen ? 'Show map' : 'Show list'"></button>
     </div>
-    <div v-else class="sidebar--header">
-      <h2 class="sidebar--title">Hiding in Plain Sight Walking Tour</h2>
-      <button class="button" v-if="!isLandscape" @click="menuOpen = !menuOpen" v-html="menuOpen ? 'Show map' : 'Show list'"></button>
-    </div>
+
     <input v-if="!is_tour" class="search-input" type="text" v-model="search" placeholder="Search by name.."/>
 
     <nav class="sidebar-menu">
@@ -40,7 +45,7 @@ import ICountUp from 'vue-countup-v2';
 
 export default {
   name: 'Menu',
-  props: ['is_tour','cinemas','clicked', 'isLandscape'],
+  props: ['is_tour','cinemas','clicked', 'audio_active', 'isLandscape'],
   components: {ICountUp},
   data() {
     return {
@@ -127,21 +132,26 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  top: calc(100% - #{2 * ms(2) + ms(4)});
   border-top: 1px solid $medium-gray;
-  transition: top 1s ease, z-index 1.5s ease;
+  transition: top 0.5s ease-in-out, z-index 1.5s ease;
+  top: calc(100% - #{2 * ms(3) + ms(4)});
+
+  &.audio-active {
+    top: calc(100% - #{2 * ms(3) + ms(4)}  - 3rem);
+
+  }
 
   &.menu-open {
     overflow-y: auto;
     z-index: 9999999;
     top: 0;
-    transition: top 1s ease, z-index 0s ease;
+    transition: top 0.5s ease-in-out, z-index 0s ease;
   }
 
   @media screen and (orientation: landscape) and (min-width: 800px) {
     overflow-y: auto;
     position: static;
-    padding: ms(8) 0;
+    padding: ms(6) 0;
     border-top: none;
     border-right: 2px solid $medium-gray;
     width: $sidebar-width;
@@ -152,14 +162,15 @@ export default {
 .search-input {
   border-radius: 99999px;
   margin: 0 ms(0) ms(-2);
-
-  @media screen and (orientation: landscape) and (min-width: 800px) {
-    margin: 0 ms(2) ms(-2);
-  }
   border: 1px solid $medium-gray;
   width: calc(100% - #{2 * ms(2)});
   padding: ms(-4) ms(0);
   padding-left: 2em;
+
+  @media screen and (orientation: landscape) and (min-width: 800px) {
+    margin: 0 ms(-1) ms(-2);
+    width: calc(100% - #{2 * ms(-1)});
+  }
 
   &:focus {
     outline: none;
@@ -185,11 +196,29 @@ export default {
 }
 
 .sidebar--title {
-  font-weight: 700;
+  font-weight: 900;
   font-size: ms(2);
+  line-height: 1;
+  font-style: italic;
+  font-family: mikado;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.02rem;
+  margin-bottom: ms(-6);
 
-  @media screen and (orientation: portrait) {
-    font-size: ms(1);
+  @media screen and (orientation: landscape) and (min-width: 800px) {
+    display: none;
+  }
+}
+
+.sidebar--subtitle {
+  font-weight: 700;
+  font-size: ms(0);
+  color: $gray;
+
+  @media screen and (orientation: landscape) and (min-width: 800px) {
+    font-size: ms(2);
+    color: $black;
   }
 }
 
