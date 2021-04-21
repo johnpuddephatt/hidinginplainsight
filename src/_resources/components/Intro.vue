@@ -404,7 +404,7 @@ export default {
 
   @keyframes sideScroll {
     0% {
-      transform: translateX(100%)
+      transform: translateX(90%)
     }
     100% {
       transform: translateX(0%)
