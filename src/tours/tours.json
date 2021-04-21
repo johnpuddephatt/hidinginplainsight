@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/tour.njk",
+  "permalink": "/api/tour/{{ title | slugify }}.json"
+}

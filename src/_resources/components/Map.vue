@@ -34,9 +34,9 @@
             <audio controls :src="cinema.audio" />
           </div>
           <div class="popup-footer">
-            <a v-if="tour" class="button" :href="googleMapsDirections(cinema)" target="_blank">Get directions</a>
+            <a v-if="is_tour" class="button" :href="googleMapsDirections(cinema)" target="_blank">Get directions</a>
             <button class="button" v-if="" @click="currentPopup.closePopup()">Close</button>
-            <router-link class="button is-primary" :to="tour ? { name: 'tourcinema', params: { slug: cinema.slug } } : { name: 'cinema', params: { slug: cinema.slug } }">View</router-link>
+            <router-link class="button is-primary" :to="is_tour ? { name: 'tourcinema', params: { slug: cinema.slug } } : { name: 'cinema', params: { slug: cinema.slug } }">View</router-link>
           </div>
         </l-popup>
         <l-icon
@@ -47,6 +47,16 @@
           :icon-url="clicked == cinema.slug ? '/assets/images/marker-icon-red.svg' : '/assets/images/marker-icon.svg'" />
       </l-marker>
     </v-marker-cluster>
+
+    <l-marker :ref="point.slug" v-for="point in poi" :key="point.slug" :lat-lng="getLatLng(point.location.coordinates)">
+      <l-popup :options="{offset: [0, -34], closeButton: false}">
+        <div class="popup-header">
+          <h3 class="cinema-title" v-html="point.name"></h3>
+          <p class="cinema-address" v-if="point.description" v-html="point.description"></p>
+        </div>
+      </l-popup>
+      <l-icon icon-url="/assets/images/star-icon.svg"/>
+    </l-marker>
   </l-map>
 
 </template>
@@ -62,7 +72,7 @@ import Vue2LeafletMarkerCluster from 'vue2-leaflet-markercluster'
 
 export default {
   name: 'Map',
-  props: ['tour','geojson','cinemas','clicked'],
+  props: ['is_tour','geojson', 'poi', 'cinemas','clicked'],
   components: {
     'v-icondefault': LIconDefault,
     LPopup,
@@ -76,8 +86,8 @@ export default {
   },
   data () {
     return {
-      zoom: this.tour ? 16 : 13,
-      center: this.tour ? latLng(53.7993475,-1.5432696) : latLng(53.8125403,-1.5735477),
+      zoom: this.is_tour ? 16 : 13,
+      center: this.is_tour ? latLng(53.7993475,-1.5432696) : latLng(53.8125403,-1.5735477),
       // url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
       url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -90,6 +100,7 @@ export default {
       currentPopup: null,
       clusterOptions: {
         spiderLegPolylineOptions: { weight: 4, color: '#aecdeb', opacity: 0.75 },
+        disableClusteringAtZoom: this.is_tour ? 14 : 16,
         // Create our custom cluster icon replacement with the `iconCreateFunction` api
         // See: https://github.com/Leaflet/Leaflet.markercluster#customising-the-clustered-markers
         iconCreateFunction: cluster => {
@@ -152,7 +163,7 @@ export default {
     },
 
     googleMapsDirections: function(cinema) {
-      return `https://www.google.com/maps/dir/?api=1&destination=${cinema.location.coordinates[1]}%2C${cinema.location.coordinates[0]}`;
+      return `https://www.google.com/maps/dir/?api=1&travelmode=walking&destination=${cinema.location.coordinates[1]}%2C${cinema.location.coordinates[0]}`;
     }
   },
 }
