@@ -2,7 +2,7 @@
     <div class="cinema-panel">
       <loading v-if="!cinemaLoaded"></loading>
       <div v-else class="container">
-        <a href="#" class="back-link" @click="$router.go(-1)">&larr; Back to map</a>
+        <button class="back-link" @click="$router.go(-1)">&larr; Back to map</button>
         <div v-if="cinema.image" class="image-container" :class="`is-${ cinema.colour.toLowerCase() }`">
           <transition name="slide-from-right">
             <div v-show="isImageLoaded">

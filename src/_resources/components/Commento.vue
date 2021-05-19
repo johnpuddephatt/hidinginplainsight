@@ -23,6 +23,8 @@ export default {
         let commentoScript = document.createElement('script');
         commentoScript.setAttribute('data-page-id', `/cinemas/${this.slug}`);
         commentoScript.setAttribute('data-auto-init', true);
+        commentoScript.setAttribute('data-no-websockets', true);
+        commentoScript.setAttribute('data-no-livereload', true);
         commentoScript.setAttribute('src', 'https://commento.jdp.org.uk/js/commento.js');
         this.$refs.commento.parentNode.appendChild(commentoScript);
     }
