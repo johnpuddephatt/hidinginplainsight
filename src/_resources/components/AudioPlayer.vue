@@ -15,8 +15,8 @@
     <div class="audio-popup--progress">
       <input v-model="playbackTime" type="range" min="0" :max="audioDuration" class="audio-popup--slider" name="position" />
 
-      <div v-show="!audioLoaded" style="color: #94bcec">
-        Loading please wait...
+      <div v-show="!audioLoaded">
+        &nbsp;Loading...&nbsp;
       </div>
 
       <div v-show="audioLoaded" class="audio-popup--time">
