@@ -2,7 +2,7 @@
   "slug": "{{ title | slugify }}",
   "title": "{{ title | safe }}",
   "introduction": "{{ introduction | safe }}",
-  "cinemas": [
+  "stops": [
     {% for stop in stops %}
       {% set cinema = collections.cinemas | whereSlug(stop.cinema) | first %}
       {% if cinema %}
@@ -20,6 +20,27 @@
           "status": "{{ data.status | safe }}",
           "address": "{{ data.address | safe }}",
           "audio": "{{ stop.audio | safe }}"
+        }{{ '' if loop.last else ',' }}
+      {% endif %}
+    {% endfor %}
+  ],
+  "cinemas": [
+    {% for cinema in cinemas %}
+      {% set cinema = collections.cinemas | whereSlug(cinema.cinema) | first %}
+      {% if cinema %}
+        {% set data = cinema.data %}
+        {
+          "slug": "{{ data.title | slugify }}",
+          "title": "{{ data.title }}",
+          {% if data.image %}
+            "image": "{{ data.image | safe }}",
+            "image_thumb":  "{{ data.image | replace('/image/upload/', '/image/upload/w_175,e_trim,c_scale/f_auto/') | safe}}",
+            "image_small": "{{ data.image | replace('/image/upload/', '/image/upload/w_750,h_750,e_trim,c_crop,g_north/w_200,h_200,c_fit,g_north/f_auto/') | safe}}",
+          {% endif %}
+          "location": {{ data.location | safe }},
+          "photo_count": {{ data.photos | length }},
+          "status": "{{ data.status | safe }}",
+          "address": "{{ data.address | safe }}"
         }{{ '' if loop.last else ',' }}
       {% endif %}
     {% endfor %}

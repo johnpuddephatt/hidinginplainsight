@@ -72,12 +72,11 @@ export default {
   watch: {
     clicked: function (clicked) {
       if(clicked) {
-        console.log(clicked);
         this.menuOpen = false;
-        let clickedMenuElement = this.$refs[clicked][0].$el;
+        let clickedMenuElement = this.$refs[clicked];
         if(clickedMenuElement) {
           if (this.isLandscape && !this.currentlyHovered) {
-            clickedMenuElement.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+            clickedMenuElement[0].scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
           }
         }
       }

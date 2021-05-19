@@ -13,12 +13,17 @@
       </div>
     </transition>
 
-    <Menu :audio_active="audio_active" :tour_title="tour.title" v-if="tour.title" :cinemas="tour.cinemas" :isLandscape="isLandscape()" :clicked="clicked" @menu-hovered="onMenuHovered"></Menu>
-    <Map :is_tour="true" v-if="tour.title" :geojson="tour.geojson" :poi="tour.poi" :cinemas="tour.cinemas" :clicked="clicked" @marker-clicked="onMarkerClicked"></Map>
+    <Menu :audio_active="audio_active" :tour_title="tour.title" v-if="tour.title" :cinemas="tour.stops" :isLandscape="isLandscape()" :clicked="clicked" @menu-hovered="onMenuHovered"></Menu>
+    <Map :is_tour="true" v-if="tour.title" :geojson="tour.geojson" :poi="tour.poi" :cinemas="tour.cinemas" :stops="tour.stops" :clicked="clicked" @marker-clicked="onMarkerClicked"></Map>
 
     <transition name="popup">
       <Popup :audio_active="audio_active" :is_tour="true" v-for="cinema in tour.cinemas" :cinema="cinema" @close="clicked = null" @start-audio="onStartAudio" v-if="clicked == cinema.slug" :key="cinema.slug"></Popup>
     </transition>
+
+    <transition name="popup">
+      <Popup :audio_active="audio_active" :is_tour="true" v-for="stop in tour.stops" :cinema="stop" @close="clicked = null" @start-audio="onStartAudio" v-if="clicked == stop.slug" :key="stop.slug"></Popup>
+    </transition>
+
     <transition name="popup">
       <!-- <Audio v-if="audio_active" @audio-ended="audio_active = null" :audio_active="audio_active" :is_tour="true"></Audio> -->
       <AudioPlayer :key="audio_active.slug" :autoplay="true" v-if="audio_active" playerid="1" @audio-ended="audio_active = null" :url="audio_active.audio" :is_tour="true"></AudioPlayer>
