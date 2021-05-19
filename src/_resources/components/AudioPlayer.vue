@@ -1,7 +1,7 @@
 <template>
 <div class="popup-container">
   <div class="audio-popup">
-    <audio @pause="pauseListener" @ended="endListener" preload="auto" style="display:none" ref="player" :id="playerid">
+    <audio :loadedmetadata="initSlider" @canplay="audioLoaded = true" @pause="pauseListener" @ended="endListener" preload="auto" style="display:none" ref="player" :id="playerid">
       <source :src="url" type="audio/mpeg" />
     </audio>
 
@@ -133,19 +133,19 @@ export default {
       var audio = this.$refs.player;
       //Wait for audio to load, then run initSlider() to get audio duration and set the max value of our slider
       // "loademetadata" Event https://www.w3schools.com/tags/av_event_loadedmetadata.asp
-      audio.addEventListener(
-        "loadedmetadata",
-        function(e) {
-          this.initSlider();
-        }.bind(this)
-      );
+      // audio.addEventListener(
+      //   "loadedmetadata",
+      //   function(e) {
+      //     this.initSlider();
+      //   }.bind(this)
+      // );
       // "canplay" HTML Event lets us know audio is ready for play https://www.w3schools.com/tags/av_event_canplay.asp
-      audio.addEventListener(
-        "canplay",
-        function(e) {
-          this.audioLoaded = true;
-        }.bind(this)
-      );
+      // audio.addEventListener(
+      //   "canplay",
+      //   function(e) {
+      //     this.audioLoaded = true;
+      //   }.bind(this)
+      // );
       //Wait for audio to begin play, then start playback listener function
       this.$watch("isPlaying", function() {
         if (this.isPlaying) {
