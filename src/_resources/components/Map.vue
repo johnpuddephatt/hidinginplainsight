@@ -39,14 +39,22 @@
             <router-link class="button is-primary" :to="is_tour ? { name: 'tourcinema', params: { slug: cinema.slug } } : { name: 'cinema', params: { slug: cinema.slug } }">View</router-link>
           </div>
         </l-popup> -->
-        <l-icon v-if="is_tour && key == 0" icon-url="/assets/images/start-icon.svg" :iconSize="clicked == cinema.slug ? [60,60] : [40,40]"/>
-        <l-icon v-else-if="is_tour && key == (cinemas.length - 1)" icon-url="/assets/images/end-icon.svg" :iconSize="clicked == cinema.slug ? [60,60] : [40,40]"/>
+        <l-icon v-if="is_tour && key == 0"
+          icon-url="/assets/images/start-icon.svg"
+          icon-retina-url="/assets/images/start-icon.svg"
+          :iconSize="clicked == cinema.slug ? [60,60] : [40,40]"/>
+
+        <l-icon v-else-if="is_tour && key == (cinemas.length - 1)"
+          icon-url="/assets/images/end-icon.svg"
+          icon-retina-url="/assets/images/end-icon.svg"
+          :iconSize="clicked == cinema.slug ? [60,60] : [40,40]"/>
 
         <l-icon v-else
           :iconSize="clicked == cinema.slug ? [52,82] : [26,41]"
           :icon-anchor="clicked == cinema.slug ? [25,82] : [12.5,41]"
           :popupAnchor="[0,-37]"
-          :icon-url="clicked == cinema.slug ? '/assets/images/marker-icon-red.svg' : '/assets/images/marker-icon.svg'" />
+          :icon-url="clicked == cinema.slug ? '/assets/images/marker-icon-red.svg' : '/assets/images/marker-icon.svg'"
+          :icon-retina-url="clicked == cinema.slug ? '/assets/images/marker-icon-red.svg' : '/assets/images/marker-icon.svg'" />
       </l-marker>
     </v-marker-cluster>
 
