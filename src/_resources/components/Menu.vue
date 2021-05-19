@@ -4,8 +4,8 @@
     <div class="sidebar--header">
       <div>
         <h1 class="sidebar--title">Hiding in Plain Sight</h1>
-        <h2 v-if="is_tour" class="sidebar--subtitle">
-          Walking tour
+        <h2 v-if="tour_title" class="sidebar--subtitle">
+          {{ tour_title }}
         </h2>
         <h2 v-else class="sidebar--subtitle">
           <ICountUp
@@ -18,7 +18,7 @@
       <button class="button" v-if="!isLandscape" @click="menuOpen = !menuOpen" v-html="menuOpen ? 'Show map' : 'Show list'"></button>
     </div>
 
-    <input v-if="!is_tour" class="search-input" type="text" v-model="search" placeholder="Search by name.."/>
+    <input v-if="!tour_title" class="search-input" type="text" v-model="search" placeholder="Search by name.."/>
 
     <nav class="sidebar-menu">
       <!-- <router-link v-for="(cinema, key) in filteredList" class="sidebar-menu--item" :class="cinema.slug == clicked ? 'active' : ''" :to="is_tour ? { name: 'tourcinema', params: { slug: cinema.slug } } : { name: 'cinema', params: { slug: cinema.slug } }" :ref="cinema.slug" @mouseenter.native="mouseoverStart($event, cinema.slug)" :key="cinema.slug"> -->
@@ -28,7 +28,7 @@
           <span v-else>?</span>
         </div>
         <div>
-          <div class="sidebar-menu--tour-number" v-if="is_tour">Stop {{ key + 1 }}</div>
+          <div class="sidebar-menu--tour-number" v-if="tour_title">Stop {{ key + 1 }}</div>
           <h3 class="sidebar-menu--title" v-html="cinema.title"></h3>
           <div class="sidebar-menu--subtitle">
             <span class="sidebar-menu--status">{{cinema.status}}</span>
@@ -47,7 +47,7 @@ import ICountUp from 'vue-countup-v2';
 
 export default {
   name: 'Menu',
-  props: ['is_tour','cinemas','clicked', 'audio_active', 'isLandscape'],
+  props: ['tour_title','cinemas','clicked', 'audio_active', 'isLandscape'],
   components: {ICountUp},
   data() {
     return {
@@ -237,7 +237,7 @@ export default {
   border-bottom: 1px solid $light-gray;
 
   @media screen and (orientation: landscape) and (min-width: 800px) {
-    padding: ms(-2) ms(-1) ms(-2) ms(2) * 0.75;
+    padding: ms(-1) ms(-1) ms(-2) ms(2);
   }
 
   &:hover {
@@ -296,8 +296,8 @@ export default {
 
 .sidebar-menu--tour-number {
   display: inline-block;
-  margin-bottom: ms(-6);
-  font-size: ms(-1);
+  margin-bottom: ms(-5);
+  font-size: ms(-2);
   padding: 0 0.5em;
   border-radius: 3em;
   background-color: $orange;

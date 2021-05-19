@@ -1,11 +1,10 @@
 <template>
   <div class="popup-container">
     <div class="audio-popup">
-      <audio @ended="audioEnded" controls ref="audio" id="my-audio">
+      <audio @ended="audioEnded" controls controlslist="nodownload" ref="audio" id="my-audio">
         <source :src="audio_active" type="audio/mpeg">=
       </audio>
-      <!-- <button @click="$refs.audio.play()" id="play">play</button>
-      <button @click="$refs.audio.pause()" id="pause">pause</button> -->
+      <button aria-label="Stop audio" class="audio-stop" @click="audioEnded">×</button>
     </div>
   </div>
 </template>
@@ -57,12 +56,12 @@ export default {
   right: 0;
   @media screen and (orientation: landscape) and (min-width: 800px) {
     left: $sidebar-width;
-    bottom: ms(-2);
+    bottom: ms(2);
   }
 }
 
 .audio-popup {
-  width: 640px;
+  width: 540px;
   height: 3rem;
   position: relative;
   max-width: 100%;
@@ -74,7 +73,13 @@ export default {
   }
   display: flex;
   flex-direction: row;
+}
 
+.audio-stop {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
 }
 
 </style>

@@ -1,5 +1,6 @@
 ---
 title: City centre walking tour
+introduction: Hello and welcome to our tour here we’ll tell you a little bit about it like where it is, how long it will take and how to use it. This will run over a few lines and be a couple of sentences or so, just the essential information people need.
 stops:
 - cinema: news-theatre
   audio: '/uploads/audio.mp3'

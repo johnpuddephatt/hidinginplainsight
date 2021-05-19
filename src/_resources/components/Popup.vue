@@ -13,7 +13,7 @@
         </div>
         <div class="popup-footer">
           <router-link class="" :to="{ name: is_tour ? 'tourcinema' : 'cinema', params: { slug: cinema.slug } }">View</router-link>
-          <button v-if="is_tour && cinema.audio" @click="$emit('start-audio', cinema.audio)">Play audio</button>
+          <button v-if="is_tour && cinema.audio" @click="$emit('start-audio', {slug: cinema.slug, title: cinema.title, audio: cinema.audio })">Play audio</button>
           <a v-if="is_tour && cinema.location" target="_blank" :href="googleMapsDirections(cinema)">Get directions</a>
         </div>
       </div>
@@ -56,22 +56,21 @@ export default {
 
   @media screen and (orientation: landscape) and (min-width: 800px) {
     left: $sidebar-width;
-    bottom: ms(-2);
+    bottom: ms(2);
   }
 
   &.audio-active {
     bottom: 3rem;
     @media screen and (orientation: landscape) and (min-width: 800px) {
-    bottom: calc(#{ms(-2)} + 3rem);
+    bottom: calc(#{ms(2)} + 3rem);
     }
   }
 }
 
 .mobile-popup {
-  width: 640px;
+  width: 540px;
   position: relative;
   max-width: 100%;
-  border-top: 1px solid $medium-gray;
   background-color: white;
   margin: 0 auto;
   @media screen and (orientation: landscape) and (min-width: 800px) {
@@ -82,10 +81,17 @@ export default {
 
   .image {
     flex: 0 0 100px;
-    display: block;
     width: 100px;
     height: 100px;
-    background-color: $cream;
+
+    @media screen and (orientation: landscape) and (min-width: 800px) {
+      flex: 0 0 125px;
+      width: 125px;
+      height: 125px;
+
+    }
+    display: block;
+    background-color: transparentize($orange,0.25);
     position: relative;
 
     img {
@@ -113,6 +119,9 @@ export default {
   .cinema-title {
     font-size: ms(1);
     font-weight: 700;
+    @media screen and (orientation: landscape) and (min-width: 800px) {
+      font-size: ms(2);
+    }
   }
 
   .cinema-address {
@@ -158,19 +167,24 @@ export default {
   }
 
   .popup-footer {
+    background-color: $light-gray;
     margin-top: auto;
-    border-top: 1px solid $light-gray;
+    border-top: 1px solid $medium-gray;
     font-size: ms(-1);
     display: flex;
     flex-direction: row;
 
+    @media screen and (orientation: landscape) and (min-width: 800px) {
+      font-size: ms(0);
+    }
+
     > * {
-      padding: ms(-3) ms(-4);
+      padding: ms(-4) ms(-4);
       flex: 1 1 auto;
       text-align: center;
 
       + * {
-        border-left: 1px solid $light-gray;
+        border-left: 1px solid $medium-gray;
       }
     }
 

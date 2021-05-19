@@ -1,6 +1,7 @@
 {
   "slug": "{{ title | slugify }}",
   "title": "{{ title | safe }}",
+  "introduction": "{{ introduction | safe }}",
   "cinemas": [
     {% for stop in stops %}
       {% set cinema = collections.cinemas | whereSlug(stop.cinema) | first %}

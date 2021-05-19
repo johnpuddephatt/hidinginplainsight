@@ -1,12 +1,12 @@
 <template>
   <div class="map-wrapper">
     <transition name="fade">
-      <div class="dialog-wrapper" v-if="!hasVisitedBefore && siteDataLoaded">
+      <div class="dialog-wrapper" v-if="!confirmedEntrance && siteDataLoaded">
         <div class="dialog">
           <div class="dialog-inner">
             <h3>{{ site.welcome_title }}</h3>
             <p v-html="site.welcome_message.replace(/(?:\r\n|\r|\n)/g, '<br />').replace('$number', cinemas.length)"></p>
-            <button class="button is-primary is-large" @click="confirmEntrance">Enter</button>
+            <button class="button is-primary is-large" @click="confirmedEntrance = true">Enter</button>
           </div>
         </div>
       </div>
@@ -42,13 +42,11 @@ export default {
       errored: false,
       cinemasLoaded: false,
       siteDataLoaded: false,
-      hasVisitedBefore: false
+      confirmedEntrance: false
     }
   },
   watch: {
-    hasVisitedBefore(newValue) {
-      localStorage.hasVisitedBefore = newValue;
-    }
+
   },
   methods: {
     onMarkerClicked: function(slug) {
@@ -62,15 +60,9 @@ export default {
     },
     isLandscape() {
       return (document.documentElement.clientWidth > document.documentElement.clientHeight);
-    },
-    confirmEntrance() {
-      this.hasVisitedBefore = true;
     }
   },
   created() {
-    if (localStorage.hasVisitedBefore) {
-      this.hasVisitedBefore = localStorage.hasVisitedBefore;
-    }
   },
   mounted () {
     axios

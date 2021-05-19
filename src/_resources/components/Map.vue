@@ -24,7 +24,7 @@
         }"
       />
     <v-marker-cluster :options="clusterOptions">
-      <l-marker :ref="cinema.slug" v-for="cinema in cinemas" :key="cinema.slug" :lat-lng="getLatLng(cinema.location.coordinates)" @click="markerClicked($event, cinema.slug)">
+      <l-marker :ref="cinema.slug" v-for="(cinema, key) in cinemas" :key="cinema.slug" :lat-lng="getLatLng(cinema.location.coordinates)" @click="markerClicked($event, cinema.slug)">
         <!-- <l-popup :options="{offset: [0, -34], closeButton: false}">
           <div class="popup-header">
             <h3 class="cinema-title" v-html="cinema.title"></h3>
@@ -39,11 +39,13 @@
             <router-link class="button is-primary" :to="is_tour ? { name: 'tourcinema', params: { slug: cinema.slug } } : { name: 'cinema', params: { slug: cinema.slug } }">View</router-link>
           </div>
         </l-popup> -->
-        <l-icon
-          :iconSize="clicked == cinema.slug ? [50,82] : [25,41]"
+        <l-icon v-if="is_tour && key == 0" icon-url="/assets/images/start-icon.svg" :iconSize="clicked == cinema.slug ? [60,60] : [40,40]"/>
+        <l-icon v-else-if="is_tour && key == (cinemas.length - 1)" icon-url="/assets/images/end-icon.svg" :iconSize="clicked == cinema.slug ? [60,60] : [40,40]"/>
+
+        <l-icon v-else
+          :iconSize="clicked == cinema.slug ? [52,82] : [26,41]"
           :icon-anchor="clicked == cinema.slug ? [25,82] : [12.5,41]"
           :popupAnchor="[0,-37]"
-          :className="clicked == cinema.slug ? 'large' : ''"
           :icon-url="clicked == cinema.slug ? '/assets/images/marker-icon-red.svg' : '/assets/images/marker-icon.svg'" />
       </l-marker>
     </v-marker-cluster>
@@ -167,7 +169,7 @@ export default {
     },
 
     googleMapsDirections: function(cinema) {
-      return `https://www.google.com/maps/dir/?api=1&travelmode=walking&destination=${cinema.location.coordinates[1]}%2C${cinema.location.coordinates[0]}`;
+      return `https://www.google.com/maps/dir/?api=1&travelmode=walking&destination=${cinema.location?.coordinates[1]}%2C${cinema.location?.coordinates[0]}`;
     }
   },
 }

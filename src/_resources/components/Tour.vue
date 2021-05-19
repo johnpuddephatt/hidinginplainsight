@@ -1,14 +1,27 @@
 <template>
   <div class="map-wrapper">
 
-    <Menu :audio_active="audio_active" :is_tour="true" v-if="tour" :cinemas="tour.cinemas" :isLandscape="isLandscape()" :clicked="clicked" @menu-hovered="onMenuHovered"></Menu>
-    <Map :is_tour="true" v-if="tour" :geojson="tour.geojson" :poi="tour.poi" :cinemas="tour.cinemas" :clicked="clicked" @marker-clicked="onMarkerClicked"></Map>
+    <transition name="fade">
+      <div class="dialog-wrapper" v-if="!confirmedEntrance && siteDataLoaded">
+        <div class="dialog">
+          <div class="dialog-inner">
+            <h3>{{ tour.title }}</h3>
+            <div v-html="tour.introduction"></div>
+            <button class="button is-primary is-large" @click="confirmedEntrance = true">Start</button>
+          </div>
+        </div>
+      </div>
+    </transition>
+
+    <Menu :audio_active="audio_active" :tour_title="tour.title" v-if="tour.title" :cinemas="tour.cinemas" :isLandscape="isLandscape()" :clicked="clicked" @menu-hovered="onMenuHovered"></Menu>
+    <Map :is_tour="true" v-if="tour.title" :geojson="tour.geojson" :poi="tour.poi" :cinemas="tour.cinemas" :clicked="clicked" @marker-clicked="onMarkerClicked"></Map>
 
     <transition name="popup">
       <Popup :audio_active="audio_active" :is_tour="true" v-for="cinema in tour.cinemas" :cinema="cinema" @close="clicked = null" @start-audio="onStartAudio" v-if="clicked == cinema.slug" :key="cinema.slug"></Popup>
     </transition>
     <transition name="popup">
-      <Audio v-if="audio_active" @audio-ended="audio_active = null" :audio_active="audio_active" :is_tour="true"></Audio>
+      <!-- <Audio v-if="audio_active" @audio-ended="audio_active = null" :audio_active="audio_active" :is_tour="true"></Audio> -->
+      <AudioPlayer :key="audio_active.slug" :autoplay="true" v-if="audio_active" playerid="1" @audio-ended="audio_active = null" :url="audio_active.audio" :is_tour="true"></AudioPlayer>
     </transition>
 
     <transition name="slide">
@@ -22,12 +35,14 @@ import Map from './Map.vue';
 import Menu from './Menu.vue';
 import Popup from './Popup.vue';
 import Audio from './Audio.vue';
+import AudioPlayer from './AudioPlayer.vue';
 
 export default {
   name: 'Overview',
   props: [],
   components: {
     Audio,
+    AudioPlayer,
     Map,
     Menu,
     Popup
@@ -39,14 +54,12 @@ export default {
       errored: false,
       cinemasLoaded: false,
       siteDataLoaded: false,
-      hasVisitedBefore: false,
+      confirmedEntrance: false,
       audio_active: null,
     }
   },
   watch: {
-    hasVisitedBefore(newValue) {
-      localStorage.hasVisitedBefore = newValue;
-    }
+
   },
   methods: {
     onStartAudio: function(audio) {
@@ -64,14 +77,10 @@ export default {
     isLandscape() {
       return (document.documentElement.clientWidth > document.documentElement.clientHeight);
     },
-    confirmEntrance() {
-      this.hasVisitedBefore = true;
-    }
+
   },
   created() {
-    if (localStorage.hasVisitedBefore) {
-      this.hasVisitedBefore = localStorage.hasVisitedBefore;
-    }
+
   },
   mounted () {
     axios
