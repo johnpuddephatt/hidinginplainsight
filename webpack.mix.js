@@ -5,6 +5,7 @@ mix.setPublicPath('.');
 mix.js('src/_resources/app.js', 'src/assets/')
 .sass('src/_resources/styles/app.scss', 'src/assets/')
 .copy('src/_resources/images/**/*', 'src/assets/images/')
+.browserSync('dist.hidinginplainsight.localhost')
 .copy('src/_resources/fonts/**/*', 'src/assets/fonts/');
 // Full API
 // mix.js(src, output);

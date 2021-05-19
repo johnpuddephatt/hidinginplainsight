@@ -1,7 +1,7 @@
 <template>
 <div class="popup-container">
   <div class="audio-popup">
-    <audio @pause="pauseListener" @ended="endListener" style="display:none" ref="player" :id="playerid">
+    <audio @pause="pauseListener" @ended="endListener" preload="auto" style="display:none" ref="player" :id="playerid">
       <source :src="url" type="audio/mpeg" />
     </audio>
 
@@ -172,6 +172,7 @@ export default {
       });
 
       this.$watch("audioLoaded", function() {
+        console.log('audio loaded watcher');
         if(this.audioLoaded && this.autoplay) {
           this.toggleAudio();
         }
