@@ -25,20 +25,6 @@
       />
     <v-marker-cluster :options="clusterOptions">
       <l-marker :ref="cinema.slug" v-for="(cinema, key) in cinemas" :key="cinema.slug" :lat-lng="getLatLng(cinema.location.coordinates)" @click="markerClicked($event, cinema.slug)">
-        <!-- <l-popup :options="{offset: [0, -34], closeButton: false}">
-          <div class="popup-header">
-            <h3 class="cinema-title" v-html="cinema.title"></h3>
-            <p class="cinema-address" v-if="cinema.address">{{ cinema.address }}</p>
-          </div>
-          <div class="cinema-audio" v-if="cinema.audio">
-            <audio controls :src="cinema.audio" />
-          </div>
-          <div class="popup-footer">
-            <a v-if="is_tour" class="button" :href="googleMapsDirections(cinema)" target="_blank">Get directions</a>
-            <button class="button" v-if="" @click="currentPopup.closePopup()">Close</button>
-            <router-link class="button is-primary" :to="is_tour ? { name: 'tourcinema', params: { slug: cinema.slug } } : { name: 'cinema', params: { slug: cinema.slug } }">View</router-link>
-          </div>
-        </l-popup> -->
         <l-icon v-if="is_tour && key == 0"
           icon-url="/assets/images/start-icon.svg"
           icon-retina-url="/assets/images/start-icon.svg"
@@ -313,16 +299,5 @@ export default {
         }
       }
   }
-
-  @media screen and (orientation: portrait) {
-    .leaflet-popup {
-      display: none;
-    }
-  }
-  //
-  // .leaflet-overlay-pane svg path {
-  //   stroke: $red !important;
-  //   fill: transparentize($red, 0.5) !important;
-  // }
 
 </style>
