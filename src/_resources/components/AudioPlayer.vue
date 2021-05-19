@@ -132,16 +132,12 @@ export default {
 
       var audio = this.$refs.player;
 
-      if(this.autoplay) {
-        this.toggleAudio();
-      }
-
       //Wait for audio to begin play, then start playback listener function
       this.$watch("isPlaying", function() {
         if (this.isPlaying) {
           var audio = this.$refs.player;
           this.initSlider();
-          //console.log("Audio playback started.");
+          console.log("Audio playback started.");
           //prevent starting multiple listeners at the same time
           if (!this.listenerActive) {
             this.listenerActive = true;
@@ -160,6 +156,10 @@ export default {
           this.$refs.player.currentTime = this.playbackTime;
         }
       });
+
+      if(this.autoplay) {
+        this.toggleAudio();
+      }
 
     });
   }
