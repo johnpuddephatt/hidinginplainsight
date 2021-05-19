@@ -69,7 +69,7 @@
           <div class="cinema-description" v-if="point.description" v-html="point.description"></div>
         </div>
       </l-popup>
-      <l-icon icon-url="/assets/images/star-icon.svg" :iconSize="[40,70]"/>
+      <l-icon icon-url="/assets/images/star-icon.svg" icon-retina-url="/assets/images/star-icon.svg" :iconSize="[40,70]"/>
     </l-marker>
   </l-map>
 

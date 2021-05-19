@@ -131,21 +131,11 @@ export default {
     this.$nextTick(function() {
 
       var audio = this.$refs.player;
-      //Wait for audio to load, then run initSlider() to get audio duration and set the max value of our slider
-      // "loademetadata" Event https://www.w3schools.com/tags/av_event_loadedmetadata.asp
-      // audio.addEventListener(
-      //   "loadedmetadata",
-      //   function(e) {
-      //     this.initSlider();
-      //   }.bind(this)
-      // );
-      // "canplay" HTML Event lets us know audio is ready for play https://www.w3schools.com/tags/av_event_canplay.asp
-      // audio.addEventListener(
-      //   "canplay",
-      //   function(e) {
-      //     this.audioLoaded = true;
-      //   }.bind(this)
-      // );
+
+      if(this.autoplay) {
+        this.toggleAudio();
+      }
+
       //Wait for audio to begin play, then start playback listener function
       this.$watch("isPlaying", function() {
         if (this.isPlaying) {
@@ -171,16 +161,6 @@ export default {
         }
       });
 
-      this.$watch("audioLoaded", function() {
-        console.log('audio loaded watcher');
-        if(this.audioLoaded && this.autoplay) {
-          this.toggleAudio();
-        }
-      });
-
-      this.$watch("url", function() {
-        console.log(this.url);
-      });
     });
   }
 };
