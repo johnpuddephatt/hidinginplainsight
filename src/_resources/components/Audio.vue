@@ -50,7 +50,7 @@ export default {
 }
 
 .popup-container {
-  z-index: 999999;
+  z-index: 9999999;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -62,7 +62,7 @@ export default {
 }
 
 .audio-popup {
-  width: 800px;
+  width: 640px;
   height: 3rem;
   position: relative;
   max-width: 100%;

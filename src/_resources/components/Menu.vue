@@ -21,7 +21,8 @@
     <input v-if="!is_tour" class="search-input" type="text" v-model="search" placeholder="Search by name.."/>
 
     <nav class="sidebar-menu">
-      <router-link v-for="(cinema, key) in filteredList" class="sidebar-menu--item" :class="cinema.slug == clicked ? 'active' : ''" :to="is_tour ? { name: 'tourcinema', params: { slug: cinema.slug } } : { name: 'cinema', params: { slug: cinema.slug } }" :ref="cinema.slug" @mouseenter.native="mouseoverStart($event, cinema.slug)" :key="cinema.slug">
+      <!-- <router-link v-for="(cinema, key) in filteredList" class="sidebar-menu--item" :class="cinema.slug == clicked ? 'active' : ''" :to="is_tour ? { name: 'tourcinema', params: { slug: cinema.slug } } : { name: 'cinema', params: { slug: cinema.slug } }" :ref="cinema.slug" @mouseenter.native="mouseoverStart($event, cinema.slug)" :key="cinema.slug"> -->
+      <div v-for="(cinema, key) in filteredList" class="sidebar-menu--item"  @click="$emit('menu-hovered',cinema.slug)" :ref="cinema.slug" :key="cinema.slug">
         <div class="image">
           <img v-if="cinema.image_small" :src="cinema.image_small" />
           <span v-else>?</span>
@@ -35,7 +36,8 @@
             <span class="sidebar-menu--comments" v-if="commentCounts && commentCounts[`/cinemas/${cinema.slug}`]">{{ commentCounts[`/cinemas/${cinema.slug}`]}}</span>
           </div>
         </div>
-      </router-link>
+      </div>
+      <!-- </router-link> -->
     </nav>
   </div>
 </template>
@@ -70,9 +72,11 @@ export default {
   watch: {
     clicked: function (clicked) {
       if(clicked) {
+        console.log(clicked);
+        this.menuOpen = false;
         let clickedMenuElement = this.$refs[clicked][0].$el;
-        if(clickedMenuElement && (this.menuOpen || this.isLandscape)) {
-          if(!this.currentlyHovered) {
+        if(clickedMenuElement) {
+          if (this.isLandscape && !this.currentlyHovered) {
             clickedMenuElement.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
           }
         }
@@ -98,22 +102,22 @@ export default {
     }
   },
   methods: {
-    clickMenuElement(event, slug) {
-      this.$router.push({ name: 'cinema', params: { slug: slug } })
-    },
-    mouseoverStart(event, slug) {
-      if(!this.menuOpen) {
-        this.currentlyHovered = slug;
-        setTimeout(() => {
-          if(this.currentlyHovered === slug && (this.$router.currentRoute.name == 'cinemas' || this.$router.currentRoute.name == 'tour')) {
-            this.$emit('menu-hovered',slug);
-          }
-        },750);
-      }
-    },
-    mouseoverCancel() {
-      this.currentlyHovered = null;
-    }
+    // clickMenuElement(event, slug) {
+    //   this.$router.push({ name: 'cinema', params: { slug: slug } })
+    // },
+    // mouseoverStart(event, slug) {
+    //   if(!this.menuOpen) {
+    //     this.currentlyHovered = slug;
+    //     setTimeout(() => {
+    //       if(this.currentlyHovered === slug && (this.$router.currentRoute.name == 'cinemas' || this.$router.currentRoute.name == 'tour')) {
+    //         this.$emit('menu-hovered',slug);
+    //       }
+    //     },750);
+    //   }
+    // },
+    // mouseoverCancel() {
+    //   this.currentlyHovered = null;
+    // }
   },
   mounted() {
   }

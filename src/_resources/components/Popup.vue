@@ -12,7 +12,7 @@
           <p v-if="cinema.address" class="cinema-address">{{ cinema.address.split(',')[0] }}</p>
         </div>
         <div class="popup-footer">
-          <router-link class="" :to="{ name: 'cinema', params: { slug: cinema.slug } }">View</router-link>
+          <router-link class="" :to="{ name: is_tour ? 'tourcinema' : 'cinema', params: { slug: cinema.slug } }">View</router-link>
           <button v-if="is_tour && cinema.audio" @click="$emit('start-audio', cinema.audio)">Play audio</button>
           <a v-if="is_tour && cinema.location" target="_blank" :href="googleMapsDirections(cinema)">Get directions</a>
         </div>
@@ -47,13 +47,13 @@ export default {
 @import '../styles/base.scss';
 
 .popup-container {
-  z-index: 999999;
+  z-index: 9999999;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   transition: transform 0.5s, bottom 0.5s;
-  
+
   @media screen and (orientation: landscape) and (min-width: 800px) {
     left: $sidebar-width;
     bottom: ms(-2);
@@ -68,7 +68,7 @@ export default {
 }
 
 .mobile-popup {
-  width: 800px;
+  width: 640px;
   position: relative;
   max-width: 100%;
   border-top: 1px solid $medium-gray;
@@ -168,7 +168,6 @@ export default {
       padding: ms(-3) ms(-4);
       flex: 1 1 auto;
       text-align: center;
-      color: $gray;
 
       + * {
         border-left: 1px solid $light-gray;

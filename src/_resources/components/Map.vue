@@ -11,7 +11,7 @@
     :noBlockingAnimations="true"
     @mouseenter="mapActive = true"
     @mouseleave="mapActive = false">
-    <l-control-zoom :position="'bottomright'" />
+    <l-control-zoom :position="'topleft'" />
     <l-tile-layer :url="url" :attribution="attribution" />
     <v-icondefault :image-path="'/assets/images/'"></v-icondefault>
     <l-geo-json
@@ -50,12 +50,16 @@
 
     <l-marker :ref="point.slug" v-for="point in poi" :key="point.slug" :lat-lng="getLatLng(point.location.coordinates)">
       <l-popup :options="{offset: [0, -34], closeButton: false}">
+        <div class="cinema-photo" v-if="point.photo">
+          <img  :src="point.photo" />
+        </div>
         <div class="popup-header">
           <h3 class="cinema-title" v-html="point.name"></h3>
-          <p class="cinema-address" v-if="point.description" v-html="point.description"></p>
+          <p class="cinema-address" v-if="point.address" v-html="point.address"></p>
+          <div class="cinema-description" v-if="point.description" v-html="point.description"></div>
         </div>
       </l-popup>
-      <l-icon icon-url="/assets/images/star-icon.svg"/>
+      <l-icon icon-url="/assets/images/star-icon.svg" :iconSize="[40,70]"/>
     </l-marker>
   </l-map>
 
@@ -255,6 +259,18 @@ export default {
         margin-bottom: 0.25em;
       }
 
+      .cinema-photo {
+        margin: -1.8em -1.82em 1rem;
+
+        img {
+          max-height: 35vh;
+          object-fit: cover;
+          object-position: center;
+          width: 100%;
+        }
+
+      }
+
       .cinema-address {
         font-size: ms(-1);
         color: $gray;
@@ -281,6 +297,10 @@ export default {
 
       p {
         margin: 0 0 ms(1);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
   }
 
