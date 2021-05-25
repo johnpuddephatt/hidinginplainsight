@@ -35,7 +35,9 @@
     </v-marker-cluster>
 
     <l-marker :ref="stop.slug" v-for="(stop, key) in stops" :key="stop.slug" :lat-lng="getLatLng(stop.location.coordinates)" @click="markerClicked($event, stop.slug)">
-      <l-icon v-if="is_tour" :icon-anchor="[17, 26]" class-name="stop-icon">{{ key + 1 }}</l-icon>
+      <l-icon class-name="stop-icon" v-if="is_tour" :icon-anchor="[17, 26]">
+        <div :class="{'active': clicked == stop.slug   }">{{ key + 1 }}</div>
+      </l-icon>
     </l-marker>
 
     <l-marker :ref="point.slug" v-for="point in poi" :key="point.slug" :lat-lng="getLatLng(point.location.coordinates)">
@@ -167,15 +169,22 @@ export default {
   @import '../styles/base.scss';
 
   .stop-icon {
-    font-size: 14px;
-    font-weight: 900;
-    width: 34px !important;
-    height: 34px !important;
-    background: #fff;
-    border-radius: 100px;
-    text-align: center;
-    line-height: 28px;
-    border: 3px solid $red;
+    > div {
+      font-size: 14px;
+      font-weight: 900;
+      width: 34px !important;
+      height: 34px !important;
+      background: #fff;
+      border-radius: 100px;
+      text-align: center;
+      line-height: 28px;
+      border: 3px solid $red;
+      transition: transform 200ms;
+
+      &.active {
+        transform: scale(1.4);
+      }
+    }
 
   }
 

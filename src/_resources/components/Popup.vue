@@ -1,5 +1,5 @@
 <template>
-  <div class="popup-container" :class="{'audio-active': audio_active   }">
+  <div class="popup-container" :class="{'secondary-popup-active': secondary_popup_active   }">
     <div class="mobile-popup">
       <div class="image">
         <img v-if="cinema.image_small" :src="cinema.image_small" />
@@ -24,7 +24,7 @@
 <script>
 export default {
   name: 'Popup',
-  props: ['cinema', 'is_tour', 'audio_active'],
+  props: ['cinema', 'is_tour', 'secondary_popup_active'],
   components: {},
   data() {
     return {
@@ -59,7 +59,7 @@ export default {
     bottom: ms(2);
   }
 
-  &.audio-active {
+  &.secondary-popup-active {
     bottom: 3rem;
     @media screen and (orientation: landscape) and (min-width: 800px) {
     bottom: calc(#{ms(2)} + 3rem);

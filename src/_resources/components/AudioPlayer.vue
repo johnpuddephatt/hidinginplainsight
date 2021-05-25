@@ -56,6 +56,9 @@ export default {
       var audio = this.$refs.player;
       if (audio) {
         this.audioDuration = Math.round(audio.duration);
+        setTimeout(()=>{
+          this.audioDuration = Math.round(audio.duration);
+        }, 1000);
       }
     },
     //Convert audio current time from seconds to min:sec display

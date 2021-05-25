@@ -3,32 +3,33 @@ title: City centre walking tour
 introduction: Hello and welcome to our tour here we’ll tell you a little bit about it like where it is, how long it will take and how to use it. This will run over a few lines and be a couple of sentences or so, just the essential information people need.
 stops:
 - cinema: news-theatre
-  audio: '/uploads/audio.mp3'
+  audio: '/uploads/intro-and-news-theatre.mp3'
 - cinema: majestic-cinema
-  audio: '/uploads/themajestic.mp3'
+  audio: '/uploads/the-majestic.mp3'
+- cinema: city-cinema
+  audio: '/uploads/city-cinema.mp3'
 - cinema: briggate-picture-house
-  audio: '/uploads/audio.mp3'
+  audio: '/uploads/briggate-picture-house.mp3'
 - cinema: theatre-de-luxe
-  audio: '/uploads/audio.mp3'
+  audio: '/uploads/theatre-de-luxe.mp3'
 - cinema: scala
-  audio: '/uploads/audio.mp3'
+  audio: '/uploads/scala.mp3'
 - cinema: theatre-royal
-  audio: '/uploads/audio.mp3'
+  audio: '/uploads/theatre-royal.mp3'
 - cinema: empire-palace-theatre
-  audio: '/uploads/audio.mp3'
+  audio: '/uploads/empire-palace-theatre.mp3'
 - cinema: paramount-theatre
-  audio: '/uploads/audio.mp3'
+  audio: '/uploads/paramount-theatre.mp3'
 - cinema: the-plaza
-  audio: '/uploads/audio.mp3'
+  audio: '/uploads/the-plaza.mp3'
 - cinema: grand-theatre-and-opera-house
-  audio: '/uploads/audio.mp3'
+  audio: '/uploads/grand-theatre-and-opera-house.mp3'
 - cinema: tower-cinema
-  audio: '/uploads/audio.mp3'
+  audio: '/uploads/tower-cinema.mp3'
 - cinema: the-coliseum
-  audio: '/uploads/audio.mp3'
+  audio: '/uploads/the-coliseum.mp3'
 cinemas:
 - cinema: wellington-picture-house
-- cinema: city-cinema
 - cinema: ritz-cinema
 - cinema: odeon-merrion-centre
 geojson: |
