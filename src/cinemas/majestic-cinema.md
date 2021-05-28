@@ -5,7 +5,7 @@ date_close: "1969"
 status: Still visible
 colour: Red
 image: https://res.cloudinary.com/hpph/image/upload/v1596451160/hidinginplainsight/majesticcinema.svg
-location: '{"type":"Point","coordinates":[-1.5476239,53.7965383]}'
+location: '{"type":"Point","coordinates":[-1.5486463,53.7962713]}'
 address: Corner of Quebec Street and Wellington Street, Leeds City Square
 description: "The Majestic was Leeds' first 'super cinema' with a huge
   auditorium seating 2,500 people. It had an orchestra, a restaurant and a
