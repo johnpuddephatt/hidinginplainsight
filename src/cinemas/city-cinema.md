@@ -4,7 +4,7 @@ date_open: "1916"
 date_close: "1964"
 status: Demolished
 colour: Blue
-location: '{"type":"Point","coordinates":[-1.5467159,53.796162]}'
+location: '{"type":"Point","coordinates":[-1.5469171,53.7962538]}'
 address: Royal Exchange Chambers, 7-9 Boar Lane, Leeds, LS1 6EN
 description: "Not to be confused with the Tatler Film Club. This 550 seat city
   centre cinema was another J. P. Crawford design. Crawford was an architect who
