@@ -5,7 +5,7 @@ date_close: "1957"
 status: Still visible
 colour: Red
 image: https://res.cloudinary.com/hpph/image/upload/v1596451156/hidinginplainsight/scala.svg
-location: '{"type":"Point","coordinates":[-1.543213,53.7980069]}'
+location: '{"type":"Point","coordinates":[-1.5430014,53.7979068]}'
 address: 12 Albion Place, Lands Lane, Leeds
 description: "The Scala was designed by Birmingham-based architects Essex and
   Goodman, who designed the Birmingham and Liverpool Scala cinemas. The building
