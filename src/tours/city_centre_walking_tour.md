@@ -1,6 +1,7 @@
 ---
 title: City centre walking tour
-introduction: Welcome! The tour begins just inside the main entrance of Leeds Station. When you’re ready, tap <strong>start</strong> below, then select location ① on the map.<br><br>Select <strong>play audio</strong> to hear the cinema’s history and tap <strong>view</strong> to find out more and see old photos.<br><br>Follow the directions in the audio, and when the audio ends, select <strong>go to the next stop</strong> to continue. Off we go!
+introduction: >-
+  Welcome! The tour begins just inside the main entrance of Leeds Station. When you’re ready, tap <strong>start</strong> below, then select location ① on the map.<br><br>Select <strong>play audio</strong> to hear the cinema’s history and tap <strong>view</strong> to find out more and see old photos.<br><br>Follow the directions in the audio, and when the audio ends, select <strong>go to the next stop</strong> to continue. Off we go!
 stops:
   - cinema: news-theatre
     audio: "/uploads/intro-and-news-theatre.mp3"
