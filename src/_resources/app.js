@@ -1,65 +1,69 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import 'leaflet/dist/leaflet.css';
+import Vue from "vue";
+import VueRouter from "vue-router";
+import "leaflet/dist/leaflet.css";
 import VueGtag from "vue-gtag";
 
 Vue.use(VueRouter);
 
-window.axios = require('axios');
+window.axios = require("axios");
 
-import Intro from './components/Intro.vue';
-import Loading from './components/Loading.vue';
-import Cinemas from './components/Cinemas.vue';
-import Cinema from './components/Cinema.vue';
-import Tour from './components/Tour.vue';
-import Tours from './components/Tours.vue';
+import Intro from "./components/Intro.vue";
+import Loading from "./components/Loading.vue";
+import Cinemas from "./components/Cinemas.vue";
+import Cinema from "./components/Cinema.vue";
+import Tour from "./components/Tour.vue";
+import Tours from "./components/Tours.vue";
 
-import NotFound from './components/404.vue';
+import NotFound from "./components/404.vue";
 
 const routes = [
   {
-    path: '/',
+    path: "/",
     component: Intro,
-    name: 'intro'
+    name: "intro",
   },
   {
-    path: '/tour/:tourslug',
+    path: "/tour/:tourslug",
     component: Tour,
-    name: 'tour',
+    name: "tour",
     children: [
       {
-        path: ':slug',
+        path: ":slug",
         component: Cinema,
         props: true,
-        name: 'tourcinema'
+        name: "tourcinema",
       },
-    ]
+    ],
   },
   {
-    path: '/cinemas',
+    path: "/cinemas",
     component: Cinemas,
-    name: 'cinemas',
+    name: "cinemas",
     children: [
       {
-        path: ':slug',
+        path: ":slug",
         component: Cinema,
         props: true,
-        name: 'cinema'
+        name: "cinema",
       },
-    ]
+    ],
   },
-  { path: '*', component: NotFound }
-]
+  { path: "*", component: NotFound },
+];
 
 const router = new VueRouter({
-  routes // short for `routes: routes`
-})
+  routes, // short for `routes: routes`
+});
 
-Vue.use(VueGtag, {
-  config: { id: 'UA-48108307-2' },
-  disableScriptLoad: true
-}, router)
+Vue.use(
+  VueGtag,
+  {
+    config: { id: "UA-48108307-2" },
+    disableScriptLoad: true,
+  },
+  router
+);
 
 const app = new Vue({
-  router
-}).$mount('#app')
+  router,
+}).$mount("#app");

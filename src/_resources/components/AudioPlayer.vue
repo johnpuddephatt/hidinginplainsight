@@ -94,7 +94,7 @@ export default {
   data() {
     return {
       playbackTime: 0,
-      audioDuration: 100,
+      audioDuration: 999,
       audioLoaded: false,
       isPlaying: false,
     };
@@ -105,9 +105,9 @@ export default {
       var audio = this.$refs.player;
       if (audio) {
         this.audioDuration = Math.round(audio.duration);
-        setTimeout(() => {
+        audio.addEventListener("canplay", () => {
           this.audioDuration = Math.round(audio.duration);
-        }, 1000);
+        });
       }
     },
     //Convert audio current time from seconds to min:sec display

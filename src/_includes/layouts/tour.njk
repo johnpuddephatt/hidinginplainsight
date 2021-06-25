@@ -1,7 +1,7 @@
 {
   "slug": "{{ title | slugify }}",
   "title": "{{ title | safe }}",
-  "introduction": "{{ introduction | safe }}",
+  "introduction": "{{ introduction | markdownify | jsonify | safe }}",
   "stops": [
     {% for stop in stops %}
       {% set cinema = collections.cinemas | whereSlug(stop.cinema) | first %}
@@ -55,6 +55,15 @@
         "description": "{{ point.description  | jsonify | safe }}",
         "location": {{ point.location | safe }},
         "photo": "{{ point.photo | safe }}"
+      }{{ '' if loop.last else ',' }}
+    {% endfor %}
+  ],
+  "pages": [
+    {% for page in pages %}
+      {
+        "slug": "{{ page.name | slugify }}",
+        "name": "{{ page.name | safe }}",
+        "content": "{{ page.content | markdownify | jsonify | safe }}"
       }{{ '' if loop.last else ',' }}
     {% endfor %}
   ]

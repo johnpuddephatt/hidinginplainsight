@@ -1,7 +1,11 @@
 ---
 title: City centre walking tour
-introduction: >-
-  Welcome! The tour begins just inside the main entrance of Leeds Station. When you’re ready, tap <strong>start</strong> below, then select location ① on the map.<br><br>Select <strong>play audio</strong> to hear the cinema’s history and tap <strong>view</strong> to find out more and see old photos.<br><br>Follow the directions in the audio, and when the audio ends, select <strong>go to the next stop</strong> to continue. Off we go!
+introduction: |
+  Welcome! The tour begins at Leeds Train Station, in the circular lobby just inside the entrance doors to City Square. When you’re ready, tap **start** below, then select location ① on the map.
+
+  Select **play audio** to hear the cinema’s history and tap **view** to find out more and see old photos.
+
+  Follow the directions in the audio, and when the audio ends, select **go to the next stop** to continue. Off we go!
 stops:
   - cinema: news-theatre
     audio: "/uploads/intro-and-news-theatre.mp3"
@@ -311,6 +315,27 @@ geojson: |
       }
     }
   ]}
+pages:
+  - name: About
+    content: |
+      This tour has been commissioned by the [Hyde Park Picture House](https://www.hydeparkpicturehouse.co.uk/) to increase an understanding of the cinematic history of Leeds, and to encourage and support the preservation of the cinemas that still survive, cinemas that are essential to our shared culture and community.
+
+      Preserve cinema history by donating to the Hyde Park Picture House. [Donate Now](https://www.hydeparkpicturehouse.co.uk/donate/).
+
+      The subject of cinema history in Leeds is vast, and we unfortunately can’t include all the details we would like. However, within the rich resources and archives that exist on cinemas in Leeds, there is often information about types of projectors, the projectionists, sound technology, and most importantly the memoires and recollections of the audiences themselves, that are all so important to the life and history of cinemas. Our continuing heritage projects will hopefully uncover more of these fascinating details.
+      This audio tour is based on the Invisible Cinema Walking Tour, a commission by Conway and Young for the Hyde Park Picture House’s 100th birthday celebrations and designed by Ben Waddington. A special thanks also goes to Dr Laura Ager ([@doc_u_laura](https://twitter.com/doc_u_laura)), whose dedicated research, knowledge and cycling skills both inspired and laid the foundations of the tour.
+
+      The tour was voiced by Leeds author SJ Bradley ([@BradleyBooks](https://twitter.com/BradleyBooks))
+      Music by Faded Auditoria. You can also listen to and download the music used in this tour in full & for free. [Visit our Bandcamp page](https://hydeparkpicturehouse.bandcamp.com/).
+
+      If you have any memories, photos, or Leeds cinema history you’d like to share with us, please email [info@hydeparkpicturehouse.co.uk](mailto:info@hydeparkpicturehouse.co.uk).
+  - name: Accessibility
+    content: |
+      We’ve tried to make this tour as accessible and easy to use as possible. If you have any problems, please contact [info@hydeparkpicturehouse.co.uk](mailto:info@hydeparkpicturehouse.co.uk) and we’ll be happy to help you.
+
+      - The tour is at ground level throughout.
+      - There are many places to stop & take a break during the tour
+      - If you would prefer to read the transcript during the tour, [you can download the PDF here](/assets/HIPs_Audio_Tour_transcript.pdf)
 poi:
   - name: Kirkgate Market
     address: Vicar Lane
@@ -342,4 +367,22 @@ poi:
       Original feature still visible to rear of building.
     location: '{"type":"Point","coordinates":[-1.5410950345332062,53.797951574653915]}'
     photo: /assets/images/Empire_sign_rear.jpg
+  - name: Tower Cinema sign
+    address: Merrion Street, Leeds.
+    description: |
+      You can still see the large, faded sign for the Tower Cinema, that was painted on the side of the building.
+    location: '{"type":"Point","coordinates":[-1.5403,53.80044]}'
+    photo: /assets/images/Tower_sign.jpg
+  - name: Leeds Playhouse
+    address: Quarry Hill, Leeds.
+    description: |
+      Whilst primarily a Theatre, the Playhouse was equipped to screen films, and was used on Sundays by the Leeds Film Society. The first film presented was Harold Lloyd in "The Kid Brother" (1928), on 27th September 1970.
+    location: '{"type":"Point","coordinates":[-1.5345968682712139,53.7981477272484]}'
+    photo: /assets/images/Playhouse.jpg
+  - name: Stead’s Pork Shop
+    address: 111 Briggate, Leeds.
+    description: |
+      In the Leeds census of 1891, Robert Stead is listed as owning a Pork Butchers at 111 Briggate. According to cinema historian Robert Preedy, this is the site of the first public film screenings in Leeds in the 1890s. Image: Louis Le Prince single lens camera.
+    location: '{"type":"Point","coordinates":[-1.5418,53.79801]}'
+    photo: /assets/images/Single_lens_camera.jpg
 ---
