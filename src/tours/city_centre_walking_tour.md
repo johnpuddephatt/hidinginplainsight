@@ -374,10 +374,10 @@ poi:
     location: '{"type":"Point","coordinates":[-1.5403,53.80044]}'
     photo: /assets/images/Tower_sign.jpg
   - name: Leeds Playhouse
-    address: Quarry Hill, Leeds.
+    address: Willow Terrace Rd, Leeds. (original site)
     description: |
       Whilst primarily a Theatre, the Playhouse was equipped to screen films, and was used on Sundays by the Leeds Film Society. The first film presented was Harold Lloyd in "The Kid Brother" (1928), on 27th September 1970.
-    location: '{"type":"Point","coordinates":[-1.5345968682712139,53.7981477272484]}'
+    location: '{"type":"Point","coordinates":[-1.55255,53.80419]}'
     photo: /assets/images/Playhouse.jpg
   - name: Stead’s Pork Shop
     address: 111 Briggate, Leeds.
