@@ -316,7 +316,7 @@ geojson: |
     }
   ]}
 pages:
-  - name: About
+  - name: About this tour
     content: |
       This tour has been commissioned by the [Hyde Park Picture House](https://www.hydeparkpicturehouse.co.uk/) to increase an understanding of the cinematic history of Leeds, and to encourage and support the preservation of the cinemas that still survive, cinemas that are essential to our shared culture and community.
 
