@@ -2,7 +2,7 @@
   <div class="map-wrapper">
     <transition name="fade">
       <div class="dialog-wrapper" v-if="!confirmedEntrance && siteDataLoaded">
-        <div class="dialog">
+        <div class="dialog text-center">
           <div class="dialog-inner">
             <h3>{{ site.welcome_title }}</h3>
             <p

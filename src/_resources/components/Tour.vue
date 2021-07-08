@@ -243,7 +243,8 @@ export default {
 
   @media (orientation: portrait) {
     top: 0.75em;
-    right: 6em;
+    right: 4.5em;
+    gap: 0.25em;
 
     .button {
       font-size: ms(-1);
