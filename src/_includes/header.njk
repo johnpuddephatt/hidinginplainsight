@@ -12,7 +12,7 @@
   <input type="checkbox" id="navToggle">
   <nav class="primary-navigation">
     <a href="/#/cinemas">Cinemas</a>
-    <a href="/#/tour/city-centre-walking-tour">Walking tour</a>
+    {# <a href="/#/tour/city-centre-walking-tour">Walking tour</a> #}
     {% for page in collections.pages %}
       {% if page.data.display_in_navigation %}
         <a href="{{page.url }}">{{ page.data.title }}</a>

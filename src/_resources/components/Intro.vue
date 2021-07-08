@@ -12,16 +12,18 @@
           <router-link
             class="enter-link button is-primary"
             :to="{ name: 'cinemas' }"
-            >Explore them all</router-link
+            >Enter</router-link
           >
-          <router-link
+          <!-- 
+            ^^ Explore them all
+            <router-link
             class="enter-link button is-primary"
             :to="{
               name: 'tour',
               params: { tourslug: 'city-centre-walking-tour' },
             }"
             >Take the walking tour</router-link
-          >
+          > -->
         </div>
       </div>
       <div class="funders">
