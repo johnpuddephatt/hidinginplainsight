@@ -188,7 +188,7 @@ export default {
         if (this.isPlaying) {
           var audio = this.$refs.player;
           this.initSlider();
-          console.log("Audio playback started.");
+          console.log(this.$refs.player.src);
           this.$gtag.event("Playing audio", {
             event_category: "audio",
             event_label: this.$refs.player.src,
