@@ -191,7 +191,7 @@ export default {
           console.log(this.$refs.player.currentSrc);
           this.$gtag.event("Playing audio", {
             event_category: "audio",
-            event_label: this.$refs.player.currentSrc,
+            event_label: this.$refs.player.currentSrc1,
           });
           //prevent starting multiple listeners at the same time
           if (!this.listenerActive) {
