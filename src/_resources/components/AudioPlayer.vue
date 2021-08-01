@@ -189,6 +189,7 @@ export default {
           var audio = this.$refs.player;
           this.initSlider();
           let playerSrc = this.$refs.player.currentSrc;
+          console.log(playerSrc);
           this.$gtag.event("Playing audio", {
             event_category: "audio",
             event_label: playerSrc,
