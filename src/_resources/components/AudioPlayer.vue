@@ -189,6 +189,10 @@ export default {
           var audio = this.$refs.player;
           this.initSlider();
           console.log("Audio playback started.");
+          this.$gtag.event("Playing audio", {
+            event_category: "audio",
+            event_label: this.$refs.player.src,
+          });
           //prevent starting multiple listeners at the same time
           if (!this.listenerActive) {
             this.listenerActive = true;
