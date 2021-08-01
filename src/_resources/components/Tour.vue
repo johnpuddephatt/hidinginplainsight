@@ -188,10 +188,9 @@ export default {
     onStartAudio: function(audio) {
       this.audio_active = audio;
 
-      console.log(audio);
       this.$gtag.event("Playing audio", {
         event_category: "audio",
-        event_label: audio,
+        event_label: audio.title,
       });
     },
     onMarkerClicked: function(slug) {
