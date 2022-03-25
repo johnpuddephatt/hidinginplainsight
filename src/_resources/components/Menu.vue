@@ -90,7 +90,7 @@ export default {
         };
 
         axios
-          .post('https://commento.jdp.org.uk/api/comment/count', JSON.stringify(postData))
+          .post('https://letsdance-commento.herokuapp.com/api/comment/count', JSON.stringify(postData))
           .then(response => {
             this.commentCounts = response.data.commentCounts
           })
