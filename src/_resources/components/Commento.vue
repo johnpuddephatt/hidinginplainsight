@@ -25,7 +25,7 @@ export default {
         commentoScript.setAttribute('data-auto-init', true);
         commentoScript.setAttribute('data-no-websockets', true);
         commentoScript.setAttribute('data-no-livereload', true);
-        commentoScript.setAttribute('src', 'https://letsdance-commento.herokuapp.com/js/commento.js');
+        commentoScript.setAttribute('src', 'https://letsdance-commento.fly.dev/js/commento.js');
         this.$refs.commento.parentNode.appendChild(commentoScript);
     }
   },
